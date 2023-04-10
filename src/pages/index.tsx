@@ -2,7 +2,7 @@ import Link from "next/link";
 //import Head from "next/link";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
 import VideoBackground from "../components/VideoBackground";
-//import { HPCarousel } from "../components/HPCarousel";
+import { HPCarousel } from "../components/HPCarousel";
 // SEO
 
 // GA-4
@@ -47,7 +47,9 @@ const HomePage = () => {
             <h1>
               Front End <span>Dev & Designer</span>
             </h1>
-            <div id="type-text">{/* <HPCarousel /> */}</div>
+            <div id="type-text">
+              <HPCarousel />
+            </div>
           </div>
           <div className="text-inner-other-container">
             <h3>Founder of Monocode</h3>

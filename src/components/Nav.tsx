@@ -11,15 +11,14 @@ import { LDToggle } from "./LDToggle";
 import { LDToggleMobile } from "./LDToggle";
 
 export const Nav = () => {
-  // const body = document.body;
-  // const NavToggle = () => {
-  //   body.classList.add("menu-open");
-  //   const mobileMenu = document.querySelector(".mb-nav-container");
-  //   (mobileMenu as HTMLElement).style.display = "flex";
-  // };
+  const NavToggle = () => {
+    document.body.classList.add("menu-open");
+    const mobileMenu = document.querySelector(".mb-nav-container");
+    (mobileMenu as HTMLElement).style.display = "flex";
+  };
   return (
     <header className="nav-container">
-      {/* <PagePositionScrollBar /> */}
+      <PagePositionScrollBar />
       <Link href="/" className="nav-container__name-container">
         <div className="logo-container">
           {/* <WeatherAPI /> */}
@@ -79,8 +78,7 @@ export const Nav = () => {
         </ul>
       </nav>
       <LDToggleMobile viewport={"mobile"} />
-      {/* <div id="nav-icon" onClick={NavToggle}> */}
-      <div id="nav-icon">
+      <div id="nav-icon" onClick={NavToggle}>
         <span></span>
         <span></span>
         <span></span>

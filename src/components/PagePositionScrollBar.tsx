@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-// SASS
-import "./PagePositionScrollBar.module.scss";
 
 export const PagePositionScrollBar = () => {
   const [scrollWidth, setScrollWidth] = useState<string>("0");

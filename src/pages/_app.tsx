@@ -1,16 +1,3 @@
-import "../styles/global.scss";
-import "../components/Nav.scss";
-import "../components/Footer.scss";
-import "../components/CookieConsent.scss";
-import "../components/LDToggle.scss";
-import "../components/VideoBackground.scss";
-import "../components/ReadMore.scss";
-import "../components/Clients.scss";
-import "../components/BackToTop.scss";
-
-import "./index.scss";
-import "./about.scss";
-
 import type { AppProps } from "next/app";
 import { Layout } from "../components/Layout";
 
@@ -34,7 +21,23 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
       </div>
-      {/* <MobileNav /> */}
+      <MobileNav />
     </>
   );
 }
+
+import "../styles/global.scss";
+import "../components/Nav.scss";
+import "../components/Footer.scss";
+import "../components/CookieConsent.scss";
+import "../components/LDToggle.scss";
+import "../components/VideoBackground.scss";
+import "../components/ReadMore.scss";
+import "../components/Clients.scss";
+import "../components/BackToTop.scss";
+import "../components/PagePositionScrollBar.scss";
+import "../components/MobileNav.scss";
+import "../components/HPCarousel.scss";
+
+import "./index.scss";
+import "./about.scss";

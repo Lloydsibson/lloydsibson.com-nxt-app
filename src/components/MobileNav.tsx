@@ -1,6 +1,5 @@
-import "./MobileNav.scss";
+import Link from "next/link";
 
-import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -16,11 +15,8 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 //import { CovidAPIWidget } from "./CovidAPIWidget";
 
 export const MobileNav = () => {
-  const body = document.body;
   const NavItemToggle = () => {
-    body.classList.remove("menu-open");
-    body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.classList.remove("menu-open");
     // REMOVES MOBILE NAV AFTER NAV CLOSES
     setTimeout(() => {
       const menu = document.querySelector(".mb-nav-container");
@@ -28,7 +24,7 @@ export const MobileNav = () => {
     }, 400);
   };
   const NavOverlayToggle = () => {
-    body.classList.remove("menu-open");
+    document.body.classList.remove("menu-open");
     // REMOVES MOBILE NAV AFTER NAV CLOSES
     setTimeout(() => {
       const menu = document.querySelector(".mb-nav-container");
@@ -49,47 +45,38 @@ export const MobileNav = () => {
         <div className="custom-divider"></div>
         <ul>
           <li>
-            <NavLink
-              to={"/"}
-              end={true}
-              onClick={NavItemToggle}
-              className="isActive"
-            >
+            <Link href="/" onClick={NavItemToggle} className="isActive">
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faHome} />
               </div>
               Home
-            </NavLink>
+            </Link>
           </li>
           <li>
             {/* <a href="#Offline">About Me</a> */}
-            <NavLink to={"/about"} onClick={NavItemToggle}>
+            <Link href="/about" onClick={NavItemToggle}>
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faUser} />
               </div>
               About
-            </NavLink>
+            </Link>
           </li>
           <li>
             {/* <a href="#Offline">Portfolio</a> */}
-            <NavLink to={"/portfolio"} onClick={NavItemToggle}>
+            <Link href="/portfolio" onClick={NavItemToggle}>
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faFolder} />
               </div>
               Portfolio
-            </NavLink>
+            </Link>
           </li>
           <li>
-            <NavLink
-              to={"/contact"}
-              className="contact"
-              onClick={NavItemToggle}
-            >
+            <Link href="/contact" className="contact" onClick={NavItemToggle}>
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faComment} />
               </div>
               Contact
-            </NavLink>
+            </Link>
           </li>
         </ul>
         {/* <CovidAPIWidget /> */}
