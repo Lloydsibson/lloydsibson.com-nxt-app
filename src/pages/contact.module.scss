@@ -1,0 +1,105 @@
+@import "../styles/global.module.scss";
+
+.content-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 70px;
+  .content-container__contact-details-container {
+    width: 38%;
+    padding-right: 5%;
+    .contact-cta-container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding-bottom: 30px;
+      background-color: #333;
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      // border-left: 7px solid $secondary-color;
+      width: 100%;
+      &:first-child {
+        .contact-cta-container__icon {
+          svg {
+            width: 38px;
+            height: 38px;
+          }
+        }
+      }
+      .contact-cta-container__icon {
+        padding: 0 23px 5px 0;
+        max-width: 55px;
+        svg {
+          color: #c2c2c2;
+          width: 32px;
+          height: 32px;
+        }
+      }
+      .contact-cta-container__text {
+        h3 {
+          font-size: 1.1rem;
+          margin: 0 0 7px 0;
+        }
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          a {
+            // text-decoration: underline;
+            text-align: center;
+            display: block;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #178740;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 500;
+            box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
+            // margin: 0 3px;
+            &:hover {
+              background-color: #1fbd59;
+            }
+          }
+        }
+      }
+    }
+  }
+  .content-container__message-container {
+    width: 65%;
+    .subheading-container {
+      padding-top: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 1205px) {
+  .content-container
+    .content-container__contact-details-container
+    .contact-cta-container:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  .content-container {
+    flex-direction: column;
+    .content-container__contact-details-container {
+      width: 100%;
+      padding-right: 0;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+    }
+    .content-container__message-container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .content-container {
+    padding: 0 20px;
+  }
+}

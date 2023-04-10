@@ -1,0 +1,130 @@
+.toggle-container {
+  label {
+    display: flex;
+    span {
+      display: inline-block;
+      width: 45px;
+      height: 25px;
+      background-color: #e9e9e9;
+      position: relative;
+      transition: 0.3s all ease-in-out;
+      border-radius: 100px;
+      position: relative;
+      &:hover {
+        cursor: pointer;
+      }
+      &:after {
+        content: "";
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-color: #fff;
+        position: absolute;
+        top: 2.5px;
+        left: 2.5px;
+        border-radius: 100%;
+        transform: translateX(0);
+        transition: 0.3s all ease-in-out;
+      }
+      .icon {
+        margin: 0;
+        position: absolute;
+      }
+      .icon.moon {
+        font-size: 0.77rem;
+        top: 6.5px;
+        left: 5px;
+      }
+      .icon.sun {
+        font-size: 0.8rem;
+        top: 5.8px;
+        right: 6px;
+        margin-right: 0;
+      }
+    }
+    input[type="checkbox"] {
+      display: none;
+      &:checked + span {
+        background-color: #6a00e0;
+      }
+      &:checked + span:after {
+        transform: translateX(19.5px);
+      }
+    }
+  }
+}
+
+.toggle-container.mobile {
+  label {
+    input[type="checkbox"]:checked + span:after {
+      transform: translateX(20px);
+    }
+    span {
+      width: 50px;
+      height: 30px;
+      &:after {
+        height: 24px;
+        width: 24px;
+        top: 3px;
+        left: 3px;
+      }
+      .icon.moon {
+        font-size: 0.95rem;
+        top: 7.5px;
+        left: 4px;
+      }
+      .icon.sun {
+        font-size: 1rem;
+        top: 7px;
+        right: 3.5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .toggle-container.mobile {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .toggle-container.desktop {
+    display: none;
+    //margin-top: 20px;
+    // label span {
+    //   width: 55px;
+    //   height: 30px;
+    //   &:after {
+    //     height: 22px;
+    //     width: 22px;
+    //     top: 3.5px;
+    //     left: 5px;
+    //   }
+    //   .icon {
+    //     font-size: 1rem;
+    //     top: 7px;
+    //     left: 5px;
+    //   }
+    // }
+    // input[type="checkbox"] {
+    //   &:checked + span:after {
+    //     transform: translateX(23px);
+    //   }
+    // }
+  }
+}
+
+@media only screen and (max-width: 747px) {
+  .toggle-container.mobile {
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .toggle-container.mobile {
+    display: none;
+  }
+  .toggle-container.desktop {
+    margin-left: 40px;
+    margin-bottom: 2px;
+  }
+}

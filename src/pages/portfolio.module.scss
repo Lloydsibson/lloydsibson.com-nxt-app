@@ -1,0 +1,804 @@
+.portfolio-container__volunteering-container .subheading-container {
+  padding-top: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.portfolio-container__filters-container {
+  margin: 0 0 2em;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: unset;
+    padding: 0;
+    margin-top: 0;
+    li {
+      display: unset;
+      font-size: 0.77rem;
+      line-height: 1.5;
+      padding: 3px 14px;
+      opacity: 0.5;
+    }
+  }
+}
+
+.portfolio-container__volunteering-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .subheading-container {
+    width: 100%;
+  }
+  .vt-role-container {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 70px;
+    .vt-role-container__company-logo {
+      margin-right: 20px;
+      img {
+        width: 74px;
+        height: auto;
+        border-radius: 100%;
+        margin-top: -5px;
+        box-shadow: 0 2px 4px rgb(0 0 0 / 40%), 0 7px 13px -3px rgb(0 0 0 / 30%),
+          inset 0 -3px 0 rgb(0 0 0 / 20%);
+      }
+    }
+    .vt-role-container__role {
+      width: calc(100% - 75px);
+      .vt-role-title {
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 1.24rem;
+      }
+      .vt-role-company-name {
+        margin: 7px auto;
+        font-weight: 400;
+      }
+      .vt-role-other {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .vt-role-other__date {
+          margin: 0;
+          font-size: 0.9rem;
+          font-weight: 400;
+          opacity: 0.5;
+          span {
+            font-weight: 400;
+          }
+        }
+        .vt-role-other__industry {
+          margin: 0;
+          font-size: 0.9rem;
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .vt-role-summary-container {
+    padding: 0 70px;
+    p {
+      margin: 25px auto 0 auto;
+    }
+  }
+  .vt-role-techstack {
+    width: 100%;
+    padding: 0 0 0 70px;
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 13.72px;
+      font-weight: 500;
+    }
+    .vt-role-techstack__tech {
+      display: flex;
+      margin-left: -5px;
+      margin-right: -5px;
+      a {
+        display: block;
+        width: 100%;
+        max-width: 55px;
+        margin: 5px;
+        img {
+          width: 55px;
+          height: auto;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .border-rd {
+          border-radius: 100px;
+        }
+      }
+    }
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+  }
+  .vt-role-links {
+    width: 100%;
+    padding: 0 70px;
+    h3 {
+      margin-top: 30px;
+      font-weight: 500;
+    }
+    .vt-role-links__two-wide {
+      display: flex;
+      align-items: center;
+      margin-left: -10px;
+      margin-right: -10px;
+      a {
+        margin: 0 7.5px;
+        width: 50%;
+        img {
+          width: 100%;
+          max-width: 70px;
+          height: auto;
+        }
+      }
+      .vt-role-links-websites,
+      .vt-role-links-other {
+        width: 50%;
+      }
+      .vt-role-links-websites {
+        display: flex;
+        .vt-role-links-websites__arclight-music,
+        .vt-role-links-websites__arclight-apparel {
+          // width: 33.33%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #444;
+          padding: 25px;
+          border-radius: 20px;
+          height: 110px;
+          box-shadow: 0 2px 4px rgb(0 0 0 / 40%),
+            0 7px 13px -3px rgb(0 0 0 / 30%), inset 0 -3px 0 rgb(0 0 0 / 20%);
+          transition: all 0.2s ease-in-out;
+          img {
+            width: 100%;
+            height: auto;
+            max-width: 160px;
+          }
+          &:hover {
+            transform: scale(1.04);
+          }
+        }
+      }
+      .vt-role-links-other {
+        display: flex;
+        .vt-role-links-other__links {
+          display: flex;
+          width: 50%;
+          a {
+            .vt-role-links__figma,
+            .vt-role-links__instagram,
+            .vt-role-links__facebook,
+            .vt-role-links__youtube {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              height: 110px;
+              padding: 27.77px 20px;
+              background: rgb(55, 170, 156);
+              background: -moz-linear-gradient(
+                0deg,
+                rgba(55, 170, 156, 1) 0%,
+                rgba(68, 68, 68, 1) 100%
+              );
+              background: -webkit-linear-gradient(
+                0deg,
+                rgba(55, 170, 156, 1) 0%,
+                rgba(68, 68, 68, 1) 100%
+              );
+              background: linear-gradient(
+                0deg,
+                rgba(55, 170, 156, 1) 0%,
+                rgba(68, 68, 68, 1) 100%
+              );
+              filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#37aa9c",endColorstr="#444444",GradientType=1);
+              border-radius: 15px;
+              box-shadow: 0 2px 4px rgb(0 0 0 / 40%),
+                0 7px 13px -3px rgb(0 0 0 / 30%),
+                inset 0 -3px 0 rgb(0 0 0 / 20%);
+              transition: all 0.2s ease-in-out;
+              svg {
+                width: 100%;
+                height: 100%;
+                max-width: 70px;
+                // filter: drop-shadow(2px 4px 6px #222);
+              }
+              &:hover {
+                transform: scale(1.04);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .vt-role-posters {
+    width: 100%;
+    padding: 0 70px;
+    .vt-role-posters__title-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+      margin-bottom: calc(18.72px - 2%);
+      h3 {
+        margin: 0;
+        font-weight: 500;
+      }
+      .vt-role-posters-see-more {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.9rem;
+        padding-bottom: 4px;
+        transition: all 0.2s ease-in-out;
+        &:before {
+          display: block;
+          position: absolute;
+          content: "";
+          width: 100%;
+          background-color: #6700da;
+          height: 2px;
+          bottom: 0;
+        }
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+    .vt-role-links__posters {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: -2%;
+      margin-right: -2%;
+      .vt-role-poster {
+        display: flex;
+        position: relative;
+        width: 22%;
+        margin: 2%;
+        .vt-role-poster__poster {
+          width: 100%;
+          height: auto;
+          z-index: 9;
+          box-shadow: 0 2px 4px rgb(0 0 0 / 40%),
+            0 7px 13px -3px rgb(0 0 0 / 30%), inset 0 -3px 0 rgb(0 0 0 / 20%);
+        }
+        .spinner {
+          position: absolute;
+          left: 50%;
+          margin-left: -40px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+.portfolio-container__api-container {
+  padding: 0 70px;
+  .apis-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .api-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 23%;
+    margin: 1%;
+    line-height: normal;
+    a {
+      // border-bottom: 1px solid #d5d5d5;
+      // opacity: 0.55;
+      color: #d5d5d5;
+      // &:hover {
+      //   // opacity: 1;
+      //   // p {
+      //   //   // color: $primary-color;
+      //   // }
+      // }
+    }
+    // svg {
+    //   color: #d5d5d5;
+    //   margin-right: 5%;
+    //   font-size: 1.2rem;
+    //   width: 20px;
+    //   opacity: 0.55;
+    // }
+    .api-container__portfolio-link {
+      // background-color: #444;
+      background: rgb(103, 0, 218);
+      background: -moz-linear-gradient(
+        0deg,
+        rgba(103, 0, 218, 1) 0%,
+        rgba(17, 17, 17, 1) 100%
+      );
+      background: -webkit-linear-gradient(
+        0deg,
+        rgba(103, 0, 218, 1) 0%,
+        rgba(17, 17, 17, 1) 100%
+      );
+      background: linear-gradient(
+        0deg,
+        rgba(103, 0, 218, 1) 0%,
+        rgba(17, 17, 17, 1) 100%
+      );
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6700da",endColorstr="#111111",GradientType=1);
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 0 2px 4px rgb(0 0 0 / 40%), 0 7px 13px -3px rgb(0 0 0 / 30%),
+        inset 0 -3px 0 rgb(0 0 0 / 20%);
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.03);
+      }
+      img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+      }
+    }
+    .api-container__badge {
+      border-left: 7px solid #6700da;
+      position: absolute;
+      bottom: 20px;
+      z-index: 9;
+      background-color: #333;
+      // width: 67%;
+      text-align: center;
+      padding: 5px 15px;
+      // box-shadow: 0 2px 4px rgb(0 0 0 / 40%), 0 7px 13px -3px rgb(0 0 0 / 30%),
+      //   inset 0 -3px 0 rgb(0 0 0 / 20%);
+      p {
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+  .posted-container {
+    display: flex;
+    align-items: center;
+    opacity: 0.55;
+    span {
+      color: #d5d5d5;
+      margin-right: 5px;
+      font-size: 0.77rem;
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.portfolio-container__links-container {
+  padding: 0 70px;
+  .links-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .link-container {
+    display: flex;
+    align-items: center;
+    width: 23%;
+    margin: 1%;
+    line-height: normal;
+    a {
+      border-bottom: 1px solid #d5d5d5;
+      // opacity: 0.55;
+      color: #d5d5d5;
+      font-size: 1rem;
+      &:hover {
+        opacity: 1;
+        border-color: $secondary-color;
+      }
+    }
+    svg {
+      color: #d5d5d5;
+      margin-right: 5%;
+      font-size: 1.2rem;
+      width: 20px;
+      opacity: 0.55;
+    }
+  }
+  .posted-container {
+    display: flex;
+    align-items: center;
+    opacity: 0.75;
+    span {
+      color: #fff;
+      margin-right: 5px;
+      font-size: 0.77rem;
+      font-weight: 600;
+    }
+    p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// LIGHT CLASS
+body.light {
+  .portfolio-container__volunteering-container {
+    .vt-role-container {
+      .vt-role-container__role {
+        .vt-role-other {
+          .vt-role-other__date,
+          .vt-role-other__industry {
+            opacity: 1;
+            color: $light-secondary-text;
+          }
+        }
+      }
+    }
+    .vt-role-posters {
+      .vt-role-posters__title-container {
+        .vt-role-posters-see-more:before {
+          background-color: $light-theme;
+        }
+      }
+    }
+    .vt-role-links {
+      .vt-role-links__two-wide {
+        .vt-role-links-websites {
+          .vt-role-links-websites__arclight-music {
+            background-color: #1a1a1a;
+          }
+          .vt-role-links-websites__arclight-apparel {
+            background-color: #1a1a1a;
+          }
+        }
+        .vt-role-links-other {
+          .vt-role-links-other__links {
+            a {
+              .vt-role-links__figma,
+              .vt-role-links__instagram,
+              .vt-role-links__facebook,
+              .vt-role-links__youtube {
+                background: rgb(55, 170, 156);
+                background: -moz-linear-gradient(
+                  0deg,
+                  rgba(55, 170, 156, 1) 0%,
+                  rgba(26, 26, 26, 1) 100%
+                );
+                background: -webkit-linear-gradient(
+                  0deg,
+                  rgba(55, 170, 156, 1) 0%,
+                  rgba(26, 26, 26, 1) 100%
+                );
+                background: linear-gradient(
+                  0deg,
+                  rgba(55, 170, 156, 1) 0%,
+                  rgba(26, 26, 26, 1) 100%
+                );
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#37aa9c",endColorstr="#1a1a1a",GradientType=1);
+              }
+              svg {
+                //filter: brightness(0.5);
+                //opacity: 0.7;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .portfolio-container__api-container {
+    .api-container {
+      .api-container__badge {
+        background-color: #27242c;
+        border-left-color: $light-theme;
+        p {
+          color: $light-fg;
+        }
+      }
+      .api-container__portfolio-link {
+        // background-color: #27242c;
+        background: rgb(64, 128, 233);
+        background: -moz-linear-gradient(
+          0deg,
+          rgba(64, 128, 233, 1) 0%,
+          rgba(39, 36, 44, 1) 100%
+        );
+        background: -webkit-linear-gradient(
+          0deg,
+          rgba(64, 128, 233, 1) 0%,
+          rgba(39, 36, 44, 1) 100%
+        );
+        background: linear-gradient(
+          0deg,
+          rgba(64, 128, 233, 1) 0%,
+          rgba(39, 36, 44, 1) 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4080e9",endColorstr="#27242c",GradientType=1);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 560px) and (max-width: 1180px) {
+  .portfolio-container__api-container {
+    .api-container {
+      width: 48%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .portfolio-container__filters-container {
+    ul {
+      justify-content: center;
+    }
+  }
+  .portfolio-container__volunteering-container {
+    padding: 0;
+  }
+  .portfolio-container__volunteering-container .vt-role-techstack {
+    padding: 0;
+  }
+  .portfolio-container__volunteering-container .vt-role-techstack h3,
+  .portfolio-container__volunteering-container .vt-role-techstack p {
+    padding-left: 20px;
+  }
+  .portfolio-container__volunteering-container
+    .vt-role-techstack
+    .vt-role-techstack__tech
+    a:first-child {
+    margin-left: 20px;
+  }
+  .portfolio-container__volunteering-container
+    .vt-role-techstack
+    .vt-role-techstack__tech
+    a:last-child {
+    margin-right: 20px;
+  }
+  .portfolio-container__api-container,
+  .portfolio-container__links-container,
+  .portfolio-container__volunteering-container .subheading-container,
+  .portfolio-container__volunteering-container .vt-role-container,
+  .portfolio-container__volunteering-container .vt-role-summary-container,
+  .portfolio-container__volunteering-container .vt-role-links,
+  .portfolio-container__volunteering-container .vt-role-posters {
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1300px) {
+  .portfolio-container__links-container {
+    .link-container {
+      width: 31.3%;
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .vt-role-techstack__tech {
+    a {
+      img {
+        &:hover {
+          -webkit-animation: jello-horizontal 0.9s both;
+          animation: jello-horizontal 0.9s both;
+          @-webkit-keyframes jello-horizontal {
+            0% {
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+            }
+            30% {
+              -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+              -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+              -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+              -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+              -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+            }
+          }
+          @keyframes jello-horizontal {
+            0% {
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+            }
+            30% {
+              -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+              -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+              -webkit-transform: scale3d(1.15, 0.85, 1);
+              transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+              -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+              -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+              -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-techstack {
+      .vt-role-techstack__tech {
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
+    .vt-role-links {
+      .vt-role-links__two-wide {
+        flex-direction: column;
+        .vt-role-links-websites {
+          margin-bottom: 20px;
+        }
+        .vt-role-links-websites,
+        .vt-role-links-other {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-container {
+      .vt-role-container__role {
+        .vt-role-other {
+          flex-direction: column;
+          align-items: flex-start;
+          .vt-role-other__industry {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .portfolio-container__links-container {
+    .link-container {
+      width: 100%;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .portfolio-container__api-container {
+    .apis-container {
+      .api-container {
+        width: 100%;
+        margin: 30px 0 0 0;
+        &:first-child {
+          margin: 10px 0 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-links {
+      .vt-role-links__two-wide {
+        margin: 0 auto;
+        .vt-role-links-websites {
+          flex-direction: column;
+          a {
+            width: 100%;
+            display: block;
+            margin: 0;
+            .vt-role-links-websites__arclight-music {
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .vt-role-links-other {
+          flex-direction: column;
+          .vt-role-links-other__links {
+            width: 100%;
+            &:first-child {
+              margin-bottom: 15px;
+            }
+            a {
+              margin: 0;
+              &:first-child {
+                div {
+                  margin-right: 7.5px;
+                }
+              }
+              &:last-child {
+                div {
+                  margin-left: 7.5px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-posters {
+      .vt-role-links__posters {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .portfolio-container__api-container {
+    .api-container {
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 325px) and (max-width: 475px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-posters {
+      .vt-role-links__posters {
+        .vt-role-poster {
+          width: 46%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  .portfolio-container__volunteering-container {
+    .vt-role-posters {
+      .vt-role-links__posters {
+        .vt-role-poster {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

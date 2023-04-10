@@ -1,0 +1,29 @@
+.lazy-loading-spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  background-color: rgba(34, 34, 34, 0.5);
+}
+
+.light .lazy-loading-spinner-container {
+  background-color: rgba(244, 242, 247, 0.5);
+}
+.light .lazy-loading-spinner-container .double-bounce1,
+.light .lazy-loading-spinner-container .double-bounce2 {
+  background-color: #222;
+}
+
+@media (min-width: 900px) {
+  .lazy-loading-spinner-container {
+    min-height: 50vh;
+  }
+}
+
+@media (max-width: 900px) {
+  main,
+  .lazy-loading-spinner-container {
+    min-height: 75vh;
+  }
+}

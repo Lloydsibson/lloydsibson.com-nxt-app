@@ -1,0 +1,557 @@
+// LIGHT THEME CSS NEEDS TO BE MOVED TO INDIVIDUAL COMPONENTS
+
+// LIGHT MODE
+$light-theme: #174ea6;
+
+//$light-theme: #4ab282;
+//$light-theme: #5acdbf;
+//$light-theme: #69bec7;
+
+$light-bg: #f4f2f7;
+$light-fg: #ffffff;
+$light-fg-2: #f9f9f9;
+$light-primary-text: #27242c;
+$light-secondary-text: #4d4d51;
+
+body.light,
+body.light .loading-screen {
+  background: rgb(7, 28, 62);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(7, 28, 62, 1) 0%,
+    rgba(23, 78, 166, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(7, 28, 62, 1) 0%,
+    rgba(23, 78, 166, 1) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(7, 28, 62, 1) 0%,
+    rgba(23, 78, 166, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#071c3e",endColorstr="#174ea6",GradientType=1);
+}
+
+/* SCROLL TRACK */
+body.light::-webkit-scrollbar-track {
+  background: $light-theme;
+}
+
+// MOUSE - SELECTING TEXT - HIGHLIGHT COLOUR
+body.light ::selection {
+  background: $light-theme;
+  color: $light-fg;
+}
+
+body.light h1,
+body.light h2,
+body.light h3,
+body.light h4,
+body.light h5,
+body.light h6,
+body.light p,
+body.light span,
+body.light li,
+body.light a,
+body.light input,
+body.light textarea,
+body.light form,
+body.light button,
+body.light #cookie-message,
+body.light .skill-value,
+body.light #type-text,
+body.light .homepage.container p,
+body.light .homepage.container h3,
+body.light .footer-container .footer-container__legal p,
+body.light .footer-container .tech-stack-logos-container svg,
+body.light .cv-hero-container .cv-hero-container__info-container p,
+body.light .portfolio-container__links-container .link-container a,
+body.light .review-item .review-container .review-container__client-details h5 {
+  color: $light-primary-text;
+}
+
+body.light .cv-hero-container .cv-hero-container__info-container h6,
+body.light .review-item .review-container .review-container__client-details p {
+  color: $light-secondary-text;
+}
+
+// body.light .nav-container .contact {
+//   background-color: $light-fg;
+// }
+
+body.light .page-container {
+  background-color: $light-bg;
+}
+
+body.light .footer-container {
+  background-color: $light-fg-2;
+}
+
+body.light .footer-container {
+  border-color: $light-fg;
+}
+
+body.light .bk-to-top-container .bk-to-top-container__icon {
+  background-color: $light-fg;
+}
+
+body.light .toggle-container label span .icon.moon {
+  color: $light-fg;
+}
+
+body.light .toggle-container label span .icon.sun {
+  color: $light-secondary-text;
+}
+
+body.light .toggle-container input[type="checkbox"]:checked + span:after {
+  background-color: $light-fg;
+}
+
+body.light .bk-to-top-container .bk-to-top-container__icon svg {
+  color: $light-primary-text;
+}
+
+body.light .page-title-container {
+  border-color: $light-fg;
+  background-color: $light-fg-2;
+}
+
+body.light .cv-hero-container .cv-hero-container__info-container {
+  background-color: $light-fg-2;
+}
+
+body.light .page-title-container p {
+  color: $light-secondary-text;
+}
+
+// body.light .toggle-container input[type="checkbox"]:checked + span {
+//   background-color: $light-fg;
+// }
+
+// BUTTONS
+body.light .btn-primary a {
+  border-color: $light-secondary-text;
+}
+
+body.light .homepage .btn-primary a {
+  background-color: $light-theme;
+  color: $light-fg;
+}
+
+body.light .homepage .btn-primary:hover a {
+  transform: scale(1.05);
+}
+
+body.light .btn-primary a,
+body.light .submit-container .btn-primary-two {
+  border-color: $light-theme;
+  background-color: $light-theme;
+  color: $light-fg;
+}
+// body.light .btn-primary:hover a,
+// body.light .btn-primary-two:hover {
+//   background-color: $light-theme;
+//   color: $light-fg-2;
+// }
+
+.email-form-container form .submit-container button[disabled]:hover {
+  color: $light-fg;
+}
+
+body.light .btn-primary.bio-btn a {
+  color: $light-primary-text;
+}
+
+// SCROLL PAGE BAR
+body.light .bar-container {
+  background-color: $light-secondary-text;
+}
+body.light .bar-container .bar-container__bar {
+  background: rgb(171, 194, 231);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(171, 194, 231, 1) 0%,
+    rgba(64, 128, 233, 1) 25%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(171, 194, 231, 1) 0%,
+    rgba(64, 128, 233, 1) 25%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(171, 194, 231, 1) 0%,
+    rgba(64, 128, 233, 1) 25%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#abc2e7",endColorstr="#4080e9",GradientType=1);
+}
+
+// COVID WIDGET API
+body.light .covid-widget .covid-widget__title h4,
+body.light .covid-widget .covid-widget__two-wide .covid-info h5,
+body.light .covid-widget .covid-widget__two-wide .covid-info h6 {
+  color: $light-fg;
+}
+
+// // LIGHT MODE BACKGROUND
+// body.light .covid-widget {
+//   background-image: url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1628984881/img/covid-19-widget-light-mode.jpg);
+// }
+
+// body.light .covid-widget .covid-widget__two-wide .covid-info {
+//   background-color: rgba(64, 128, 233, 0.75);
+// }
+
+// NAV
+body.light .nav-container .logo-container {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+body.light .nav-container li a {
+  opacity: 1;
+  color: #726c7f;
+}
+
+body.light .nav-container li a:hover {
+  color: #000;
+}
+
+body.light .nav-container li a.selected {
+  color: #27242c;
+}
+
+// NAV (MOBILE)
+@media only screen and (max-width: 900px) {
+  body.light .nav-container {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  body.light .nav-container #nav-icon span {
+    background: $light-primary-text;
+  }
+  body.light .mb-nav-container {
+    background-color: $light-fg;
+  }
+  body.light .mb-nav-container ul li .mb-nav-container__icon svg,
+  body.light .mb-nav-container .tech-stack-logos-container a svg {
+    color: $light-secondary-text;
+  }
+  body.light .mb-nav-container ul li a.selected {
+    // background-color: $light-theme;
+    // color: $light-fg;
+    border-left-color: $light-theme;
+  }
+  // body.light .mb-nav-container ul li a.selected .mb-nav-container__icon svg {
+  //   color: $light-fg;
+  // }
+  body.light .mb-nav-container h3 {
+    background-color: $light-fg-2;
+    border-color: $light-fg;
+  }
+  body.light .mb-nav-container .tech-stack-logos-container {
+    background-color: $light-fg;
+    border-color: $light-fg;
+  }
+}
+
+// TITLE UNDERLINE
+body.light .subheading-container h2:before {
+  background-color: $light-theme;
+}
+
+body.light
+  .bio-container
+  .bio-container__bio
+  .bio-info-container
+  .bio-info-container__country
+  .bio-contact:after {
+  background-color: $light-theme;
+}
+
+// SVG ICONS
+body.light
+  .services-container
+  .services-container__services
+  .service-container
+  svg,
+body.light
+  .tech-stack-container.other
+  .tech-stack-container__fun-facts
+  .fun-facts-container
+  .fun-facts-container__fun-facts
+  svg {
+  color: $light-primary-text;
+}
+
+body.light
+  .content-container
+  .content-container__contact-details-container
+  .contact-cta-container
+  .contact-cta-container__icon
+  svg {
+  color: $light-primary-text;
+}
+
+// MORE SVG ICONS
+body.light .portfolio-container__links-container .link-container svg {
+  color: $light-secondary-text;
+}
+
+// PERCENTAGE BARS
+body.light
+  .skills-container
+  .skills-container__design-skills-container
+  .skills-inner-container__skill-percentage-container
+  .skill-percentage,
+body.light
+  .skills-container
+  .skills-container__dev-skills-container
+  .skills-inner-container__skill-percentage-container
+  .skill-percentage {
+  background-color: $light-theme;
+  border-color: $light-bg;
+}
+
+body.light
+  .skills-container
+  .skills-container__design-skills-container
+  .skills-inner-container__skill-percentage-container,
+body.light
+  .skills-container
+  .skills-container__dev-skills-container
+  .skills-inner-container__skill-percentage-container {
+  border-color: $light-secondary-text;
+}
+
+body.light
+  .skills-container
+  .skills-container__design-skills-container
+  .skills-inner-container__skill-title-container
+  .skill-value,
+body.light
+  .skills-container
+  .skills-container__dev-skills-container
+  .skills-inner-container__skill-title-container
+  .skill-value {
+  color: $light-secondary-text;
+}
+
+//
+body.light .tech-stack-container__info-container .tech-container p {
+  color: $light-secondary-text;
+}
+
+// FUN FACTS - CARDS
+body.light
+  .tech-stack-container.other
+  .tech-stack-container__fun-facts
+  .fun-facts-container
+  .fun-facts-container__fun-facts {
+  box-shadow: 5px 5px 10px #dcdade, -5px -5px 10px #ffffff;
+  background-color: $light-bg;
+  //border: unset;
+  // border-color: #d5d5d5;
+}
+body.light
+  .tech-stack-container.other
+  .tech-stack-container__fun-facts
+  .fun-facts-container
+  .fun-facts-container__fun-facts
+  span {
+  color: $light-secondary-text;
+}
+
+// CAROUSEL
+body.light .slick-dots li button:before {
+  background-color: $light-secondary-text;
+}
+
+body.light .testomonials-container .slick-dots li.slick-active button:before {
+  background-color: $light-theme;
+}
+
+// LINKS - PORTFOLIO
+body.light .portfolio-container__links-container .posted-container span {
+  color: #000;
+}
+
+body.light .portfolio-container__links-container .link-container a:hover {
+  border-color: $light-theme;
+}
+
+// PORTFOLIO CARDS
+body.light .portfolio-container__media-container .card-container {
+  border: unset;
+}
+
+// SMART WATCH
+body.light .google-news-wos__card .news-title {
+  color: $light-fg-2;
+}
+
+body.light .wos-widget-api #market span {
+  color: $light-fg;
+}
+
+// EVENT CARD API
+body.light .event-card-info__inner p {
+  color: $light-fg;
+}
+body.light .event-card-info__inner p.card-status {
+  color: #17cc6b;
+}
+body.light .event-card-info__inner p.card-cta {
+  color: $light-primary-text;
+}
+
+// REVIEW CONTAINER
+body.light .review-item .review-container {
+  background-color: $light-fg-2;
+  border-color: $light-fg;
+}
+
+// CONTACT FORM
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-info-container
+  label
+  input:focus,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-info-container
+  label
+  textarea:focus,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-message-container
+  label
+  input:focus,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-message-container
+  label
+  textarea:focus {
+  border-color: $light-theme;
+}
+
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-info-container
+  label
+  input,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-info-container
+  label
+  textarea,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-message-container
+  label
+  input,
+body.light
+  .email-form-container
+  form
+  .fs-contact-form-container__inner-container
+  .contact-message-container
+  label
+  textarea {
+  border-color: $light-secondary-text;
+}
+
+body.light .form-pp-container .control input:checked ~ .control-indicator {
+  background-color: $light-theme;
+}
+
+body.light .reset-form {
+  color: $light-primary-text;
+}
+
+body.light .form-pp-container .control-indicator {
+  background-color: #d1d1d6;
+}
+
+body.light
+  .content-container
+  .content-container__contact-details-container
+  .contact-cta-container {
+  background-color: $light-fg;
+}
+
+body.light
+  .content-container
+  .content-container__contact-details-container
+  .contact-cta-container
+  .contact-cta-container__text
+  p {
+  color: $light-secondary-text;
+}
+
+body.light .review-item .review-container .review-container__text-container p {
+  color: $light-secondary-text;
+}
+
+body.light .current-workplace-container a:hover {
+  border-color: $light-theme;
+}
+
+// COOKIE POLICY
+body.light #cookie-message .cookie-container {
+  // background: rgba(255, 255, 255, 0.75);
+  // border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #27242c;
+  color: #fff;
+  border-left-color: $light-theme;
+}
+
+body.light .cookie-container__cookies-left span {
+  color: #fff;
+}
+
+body.light #cookie-message #cookie-accept {
+  color: #fff;
+  border-color: $light-theme;
+  // background-color: $light-theme;
+}
+body.light #cookie-message #cookie-accept:hover {
+  background-color: $light-theme;
+  color: $light-fg;
+}
+
+body.light .bk-to-top-container .bk-to-top-container__icon:hover {
+  background-color: $light-theme;
+  svg {
+    color: $light-fg;
+  }
+}
+
+body.light .homepage.container .btn-container .btn-primary a span {
+  color: #fff;
+}
+
+body.light .custom-divider {
+  background-color: #d5d5d5;
+}
+
+body.light
+  .tech-stack-container__info-container
+  .tech-container
+  h3.skill-spotlight {
+  background-color: $light-theme;
+  color: #fff;
+}

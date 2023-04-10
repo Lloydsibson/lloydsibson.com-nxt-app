@@ -1,0 +1,40 @@
+.email-success-container {
+  display: flex;
+  margin-bottom: 15px;
+  background-color: #111;
+  border-left: 10px solid #6700da;
+  padding: 20px;
+  border-radius: 10px;
+  svg {
+    margin-right: 15px;
+    font-size: 30px;
+    color: #4fce64;
+  }
+  p {
+    margin: unset;
+    line-height: 21px;
+  }
+  .title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+  }
+  p.message {
+    font-size: 14px;
+    color: #b0b0b0;
+  }
+}
+
+// LIGHT MODE
+body.light {
+  .email-success-container {
+    background-color: #27242c;
+    border-left-color: #174ea6;
+    svg {
+      color: #1ad477;
+    }
+    p {
+      color: #fff;
+    }
+  }
+}

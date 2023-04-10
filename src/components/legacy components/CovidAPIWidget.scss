@@ -1,0 +1,159 @@
+@import "../App";
+
+// MOBILE WIDGET - BASE STYLES
+.covid-widget {
+  position: relative;
+  max-width: 280px;
+  margin: 20px 20px 0 20px;
+  text-transform: uppercase;
+  background-color: rgb(9 23 120);
+  background-image: url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1628442297/img/covid-19-widget.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px;
+  border-radius: 20px;
+  .covid-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    background: rgb(2, 0, 36);
+    background: -moz-linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    background: linear-gradient(
+      0deg,
+      rgba(2, 0, 36, 0) 50%,
+      rgba(0, 0, 0, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+  }
+  svg {
+    color: white;
+    position: absolute;
+    top: 13px;
+    right: 12px;
+    font-size: 24px;
+    display: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .covid-widget__title {
+    position: relative;
+    margin-bottom: 20px;
+    h4 {
+      font-size: 1.6rem;
+      line-height: 35px;
+      font-weight: 700;
+      margin: 0;
+    }
+    p {
+      font-size: 0.77rem;
+      font-weight: 500;
+      margin: 0;
+      line-height: 18px;
+      color: #fff;
+    }
+  }
+  .covid-widget__two-wide {
+    display: flex;
+    justify-content: space-between;
+    .covid-info {
+      background-color: rgba(21, 47, 158, 0.75);
+      border-radius: 10px;
+      width: 47%;
+      margin-bottom: 4%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 10px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.75));
+      h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 0 0 5px 0;
+      }
+      h6 {
+        font-size: 0.77rem;
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+    &:nth-child(5) {
+      .covid-info {
+        h5 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .covid-widget {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .covid-widget {
+    .covid-widget__two-wide {
+      flex-direction: column;
+      .covid-info {
+        width: 100%;
+        h5 {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+// DESKTOP WIDGET
+
+// .page-scroll > .covid-widget {
+//   position: absolute;
+//   bottom: 20px;
+//   left: 0;
+//   filter: drop-shadow(2px 4px 6px black);
+//   max-width: 250px;
+//   border-radius: 16px;
+//   svg {
+//     display: block;
+//   }
+//   .covid-widget__title {
+//     p {
+//       font-size: 0.65rem;
+//     }
+//   }
+//   .covid-widget__two-wide {
+//     .covid-info {
+//       h5 {
+//         font-size: 0.9rem;
+//       }
+//       h6 {
+//         font-size: 0.65rem;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen and (max-width: 900px) {
+//   .page-scroll {
+//     .covid-widget {
+//       display: none;
+//     }
+//   }
+// }
