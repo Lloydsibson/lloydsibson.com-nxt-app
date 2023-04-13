@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-// import { EmailForm } from "../components/EmailForm";
+import { EmailForm } from "../components/EmailForm";
 // import { Testimonials } from "../components/Testimonials";
 
 const ContactPage = () => {
@@ -75,7 +75,7 @@ const ContactPage = () => {
           <header className="subheading-container">
             <h2>How Can I Help You?</h2>
           </header>
-          {/* <EmailForm /> */}
+          <EmailForm />
         </section>
       </div>
     </>

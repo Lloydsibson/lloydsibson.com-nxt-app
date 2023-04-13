@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 900px) {
   // STOP SCROLLING WHEN MOBILE NAV OPENS
-  #root {
+  #__next {
     overflow: hidden;
   }
   .menu-open {

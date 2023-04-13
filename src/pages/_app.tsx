@@ -26,7 +26,20 @@ export default function App({ Component, pageProps }: AppProps) {
   );
 }
 
+// GLOBAL
 import "../styles/global.scss";
+
+// THEMES
+import "../themes/light.scss";
+
+// PAGES
+import "../styles/index.scss";
+import "../styles/about.scss";
+import "../styles/portfolio.scss";
+import "../styles/contact.scss";
+import "../styles/posters.scss";
+
+// COMPONENTS
 import "../components/Nav.scss";
 import "../components/Footer.scss";
 import "../components/CookieConsent.scss";
@@ -38,9 +51,5 @@ import "../components/BackToTop.scss";
 import "../components/PagePositionScrollBar.scss";
 import "../components/MobileNav.scss";
 import "../components/HPCarousel.scss";
-
-import "../styles/index.scss";
-import "../styles/about.scss";
-import "../styles/portfolio.scss";
-import "../styles/contact.scss";
-import "../styles/posters.scss";
+import "../components/EmailForm.scss";
+import "../components/EmailSuccessPopUp.scss";

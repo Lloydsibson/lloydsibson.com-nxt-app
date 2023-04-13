@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./EmailForm.scss";
 import { EmailSuccessPopUp } from "./EmailSuccessPopUp";
 //import Recaptcha from "react-google-recaptcha";
 // FORMSPREE

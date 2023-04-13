@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -15,6 +16,8 @@ import { faComment } from "@fortawesome/free-solid-svg-icons";
 //import { CovidAPIWidget } from "./CovidAPIWidget";
 
 export const MobileNav = () => {
+  const router = useRouter();
+
   const NavItemToggle = () => {
     document.body.classList.remove("menu-open");
     // REMOVES MOBILE NAV AFTER NAV CLOSES
@@ -45,7 +48,11 @@ export const MobileNav = () => {
         <div className="custom-divider"></div>
         <ul>
           <li>
-            <Link href="/" onClick={NavItemToggle} className="isActive">
+            <Link
+              href="/"
+              onClick={NavItemToggle}
+              className={router.pathname == "/" ? "active" : ""}
+            >
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faHome} />
               </div>
@@ -54,7 +61,11 @@ export const MobileNav = () => {
           </li>
           <li>
             {/* <a href="#Offline">About Me</a> */}
-            <Link href="/about" onClick={NavItemToggle}>
+            <Link
+              href="/about"
+              onClick={NavItemToggle}
+              className={router.pathname == "/about" ? "active" : ""}
+            >
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faUser} />
               </div>
@@ -63,7 +74,11 @@ export const MobileNav = () => {
           </li>
           <li>
             {/* <a href="#Offline">Portfolio</a> */}
-            <Link href="/portfolio" onClick={NavItemToggle}>
+            <Link
+              href="/portfolio"
+              onClick={NavItemToggle}
+              className={router.pathname == "/portfolio" ? "active" : ""}
+            >
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faFolder} />
               </div>
@@ -71,7 +86,13 @@ export const MobileNav = () => {
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="contact" onClick={NavItemToggle}>
+            <Link
+              href="/contact"
+              className={`contact ${
+                router.pathname == "/contact" ? "active" : ""
+              }`}
+              onClick={NavItemToggle}
+            >
               <div className="mb-nav-container__icon">
                 <FontAwesomeIcon icon={faComment} />
               </div>

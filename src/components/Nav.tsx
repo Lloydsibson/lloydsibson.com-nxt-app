@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faGithub } from "@fortawesome/free-brands-svg-icons";
 // import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -11,6 +12,8 @@ import { LDToggle } from "./LDToggle";
 import { LDToggleMobile } from "./LDToggle";
 
 export const Nav = () => {
+  const router = useRouter();
+
   const NavToggle = () => {
     document.body.classList.add("menu-open");
     const mobileMenu = document.querySelector(".mb-nav-container");
@@ -43,18 +46,35 @@ export const Nav = () => {
           // }}
         >
           <li>
-            <Link href="/">Home</Link>
+            <Link href="/" className={router.pathname == "/" ? "active" : ""}>
+              Home
+            </Link>
           </li>
           <li>
             {/* <a href="#Offline">About Me</a> */}
-            <Link href="/about">About</Link>
+            <Link
+              href="/about"
+              className={router.pathname == "/about" ? "active" : ""}
+            >
+              About
+            </Link>
           </li>
           <li>
             {/* <a href="#Offline">Portfolio</a> */}
-            <Link href="/portfolio">Portfolio</Link>
+            <Link
+              href="/portfolio"
+              className={router.pathname == "/portfolio" ? "active" : ""}
+            >
+              Portfolio
+            </Link>
           </li>
           <li>
-            <Link href="/contact" className="contact">
+            <Link
+              href="/contact"
+              className={`contact ${
+                router.pathname == "/contact" ? "active" : ""
+              }`}
+            >
               Contact
             </Link>
           </li>

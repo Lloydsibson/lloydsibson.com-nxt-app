@@ -1,5 +1,3 @@
-// SASS
-import "./EmailSuccessPopUp.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 

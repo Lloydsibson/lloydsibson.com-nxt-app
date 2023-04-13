@@ -1,5 +1,3 @@
-@import "../App";
-
 .email-form-container {
   form {
     // #recaptcha-google {
@@ -37,8 +35,9 @@
             box-shadow: none;
             outline: none;
             line-height: 1.5;
+            resize: vertical;
             &:focus {
-              border-color: $secondary-color;
+              border-color: #6700da;
             }
           }
           input,
@@ -89,7 +88,7 @@
 /* CUSTOM CHECKBOX */
 
 .form-pp-container.error {
-  border-color: $secondary-color;
+  border-color: #6700da;
 }
 .form-pp-container {
   display: flex;
@@ -119,8 +118,8 @@
 
   .control input {
     position: absolute;
-    left: 4px;
-    top: 8px;
+    left: 1px;
+    top: 7px;
     width: 19px;
     height: 19px;
     z-index: 0;
@@ -139,7 +138,7 @@
 
   .control input:checked ~ .control-indicator {
     color: #fff;
-    background-color: $secondary-color;
+    background-color: #6700da;
   }
 
   .control-indicator {
