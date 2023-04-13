@@ -403,7 +403,7 @@
       font-size: 1rem;
       &:hover {
         opacity: 1;
-        border-color: $secondary-color;
+        border-color: #6700da;
       }
     }
     svg {
@@ -440,7 +440,7 @@ body.light {
           .vt-role-other__date,
           .vt-role-other__industry {
             opacity: 1;
-            color: $light-secondary-text;
+            color: #4d4d51;
           }
         }
       }
@@ -448,7 +448,7 @@ body.light {
     .vt-role-posters {
       .vt-role-posters__title-container {
         .vt-role-posters-see-more:before {
-          background-color: $light-theme;
+          background-color: #174ea6;
         }
       }
     }
@@ -502,9 +502,9 @@ body.light {
     .api-container {
       .api-container__badge {
         background-color: #27242c;
-        border-left-color: $light-theme;
+        border-left-color: #174ea6;
         p {
-          color: $light-fg;
+          color: #ffffff;
         }
       }
       .api-container__portfolio-link {

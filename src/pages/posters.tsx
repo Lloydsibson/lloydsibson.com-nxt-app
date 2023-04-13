@@ -1,5 +1,3 @@
-import "./6-PostersPage.scss";
-
 const PostersPage = () => {
   return (
     <>

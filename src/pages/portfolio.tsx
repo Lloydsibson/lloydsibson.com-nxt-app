@@ -1,13 +1,12 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
-import "./4-PortfolioPage.scss";
-import { NavLink } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import {
-  ApiGoogleNewsWOSAction,
-  ApiGoogleLinkWOSAction,
-} from "../redux/ApiGoogleNewsWOSRedux";
-import { ApiStocksWOSAction } from "../redux/ApiStocksWOSRedux";
+import Link from "next/link";
+// import { useDispatch } from "react-redux";
+// import {
+//   ApiGoogleNewsWOSAction,
+//   ApiGoogleLinkWOSAction,
+// } from "../redux/ApiGoogleNewsWOSRedux";
+// import { ApiStocksWOSAction } from "../redux/ApiStocksWOSRedux";
 // import { Card } from "../components/Card";
 // import { Lightbox } from "../components/Lightbox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -22,79 +21,77 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 // import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
-import { AppleWatch } from "../components/AppleWatch";
+// import { AppleWatch } from "../components/AppleWatch";
 import { ReadMoreBtn } from "../components/ReadMore";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
-// SEO
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const PortfolioPage = () => {
   // REDUX DISPATCH
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   // API CALLS + UPDATES REDUX STORE
-  useEffect(() => {
-    ///////////////////////////////
-    const fetchGoogleNewsApi = async () => {
-      try {
-        const fetchNews = await fetch(
-          "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=watches%20of%20switzerland&pageNumber=1&pageSize=10&autoCorrect=true&fromPublishedDate=null&toPublishedDate=null",
-          {
-            method: "GET",
-            headers: {
-              "x-rapidapi-host":
-                "contextualwebsearch-websearch-v1.p.rapidapi.com",
-              "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
-            },
-          }
-        );
-        const returnedNews = await fetchNews?.json();
-        //console.log(returnedNews);
+  // useEffect(() => {
+  //   ///////////////////////////////
+  //   const fetchGoogleNewsApi = async () => {
+  //     try {
+  //       const fetchNews = await fetch(
+  //         "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=watches%20of%20switzerland&pageNumber=1&pageSize=10&autoCorrect=true&fromPublishedDate=null&toPublishedDate=null",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "x-rapidapi-host":
+  //               "contextualwebsearch-websearch-v1.p.rapidapi.com",
+  //             "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
+  //           },
+  //         }
+  //       );
+  //       const returnedNews = await fetchNews?.json();
+  //       //console.log(returnedNews);
 
-        const googleNewsTitle = await returnedNews?.value[0]?.title;
-        const googleNewsLink = await returnedNews?.value[0]?.url;
+  //       const googleNewsTitle = await returnedNews?.value[0]?.title;
+  //       const googleNewsLink = await returnedNews?.value[0]?.url;
 
-        // UPDATE REDUX STATE
-        dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
-        dispatch(ApiGoogleLinkWOSAction(googleNewsLink));
-      } catch (e: any) {
-        dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED: 24 HOUR COOLDOWN"));
-        console.log(e, "API Issue");
-      }
-    };
-    ///////////////////////////////
-    const fetchWosStockPrice = async () => {
-      try {
-        const fetchStockPrice = await fetch(
-          "https://alpha-vantage.p.rapidapi.com/query?symbol=WOSG.L&function=GLOBAL_QUOTE",
-          {
-            method: "GET",
-            headers: {
-              "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
-              "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
-            },
-          }
-        );
-        const returnedStockPrice = await fetchStockPrice.json();
-        //console.log(returnedStockPrice);
-        let stockPrice = returnedStockPrice["Global Quote"]["05. price"];
-        //console.log(stockPrice);
-        stockPrice = stockPrice.split(".")[0];
+  //       // UPDATE REDUX STATE
+  //       dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
+  //       dispatch(ApiGoogleLinkWOSAction(googleNewsLink));
+  //     } catch (e: any) {
+  //       dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED: 24 HOUR COOLDOWN"));
+  //       console.log(e, "API Issue");
+  //     }
+  //   };
+  //   ///////////////////////////////
+  //   const fetchWosStockPrice = async () => {
+  //     try {
+  //       const fetchStockPrice = await fetch(
+  //         "https://alpha-vantage.p.rapidapi.com/query?symbol=WOSG.L&function=GLOBAL_QUOTE",
+  //         {
+  //           method: "GET",
+  //           headers: {
+  //             "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
+  //             "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
+  //           },
+  //         }
+  //       );
+  //       const returnedStockPrice = await fetchStockPrice.json();
+  //       //console.log(returnedStockPrice);
+  //       let stockPrice = returnedStockPrice["Global Quote"]["05. price"];
+  //       //console.log(stockPrice);
+  //       stockPrice = stockPrice.split(".")[0];
 
-        // UPDATE REDUX STATE
-        dispatch(ApiStocksWOSAction(stockPrice));
-      } catch (e: any) {
-        dispatch(ApiStocksWOSAction("N/A"));
-        console.log(e, "API Error");
-      }
-    };
-    ///////////////////////////////
-    fetchGoogleNewsApi();
-    fetchWosStockPrice();
-  }, [dispatch]);
+  //       // UPDATE REDUX STATE
+  //       dispatch(ApiStocksWOSAction(stockPrice));
+  //     } catch (e: any) {
+  //       dispatch(ApiStocksWOSAction("N/A"));
+  //       console.log(e, "API Error");
+  //     }
+  //   };
+  //   ///////////////////////////////
+  //   fetchGoogleNewsApi();
+  //   fetchWosStockPrice();
+  // }, [dispatch]);
 
-  const body = document.body;
   const NavItemToggle = () => {
+    const body = document.body;
     body.classList.remove("menu-open");
     body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -316,14 +313,12 @@ const PortfolioPage = () => {
   };
 
   return (
-    <HelmetProvider>
-      <Helmet>
-        <title>Portfolio</title>
+    <>
+      {/* <title>Portfolio</title>
         <meta
           name="description"
           content="Selected development and design examples from previous clients and projects"
-        />
-      </Helmet>
+        /> */}
       <section className="page-title-container">
         <header>
           <h1>Portfolio</h1>
@@ -331,7 +326,7 @@ const PortfolioPage = () => {
         <p>Recent Examples</p>
       </section>
       <div className="portfolio-container">
-        <section className="portfolio-container__volunteering-container ">
+        <section className="portfolio-container__volunteering-container">
           <header className="subheading-container">
             <h2>Volunteering</h2>
           </header>
@@ -624,13 +619,13 @@ const PortfolioPage = () => {
           <div className="vt-role-posters">
             <div className="vt-role-posters__title-container">
               <h3>Recent Posters</h3>
-              <NavLink
-                to={"/posters"}
+              <Link
+                href="/posters"
                 className="vt-role-posters-see-more"
                 onClick={NavItemToggle}
               >
                 See All
-              </NavLink>
+              </Link>
             </div>
             <div className="vt-role-links__posters">
               <div className="vt-role-poster">
@@ -699,7 +694,7 @@ const PortfolioPage = () => {
           </header>
           <div className="apis-container">
             <div className="api-container">
-              <AppleWatch />
+              {/* <AppleWatch /> */}
               <div className="api-container__badge">
                 <p>API Example (LIVE)</p>
               </div>
@@ -783,7 +778,7 @@ const PortfolioPage = () => {
         </section>
       </div>
       {/* <Lightbox /> */}
-    </HelmetProvider>
+    </>
   );
 };
 

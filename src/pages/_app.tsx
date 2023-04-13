@@ -39,5 +39,8 @@ import "../components/PagePositionScrollBar.scss";
 import "../components/MobileNav.scss";
 import "../components/HPCarousel.scss";
 
-import "./index.scss";
-import "./about.scss";
+import "../styles/index.scss";
+import "../styles/about.scss";
+import "../styles/portfolio.scss";
+import "../styles/contact.scss";
+import "../styles/posters.scss";
