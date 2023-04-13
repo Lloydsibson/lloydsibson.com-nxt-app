@@ -53,3 +53,4 @@ import "../components/MobileNav.scss";
 import "../components/HPCarousel.scss";
 import "../components/EmailForm.scss";
 import "../components/EmailSuccessPopUp.scss";
+import "../components/Testimonials.scss";
