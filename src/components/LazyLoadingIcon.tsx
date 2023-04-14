@@ -1,6 +1,3 @@
-import "../App.scss";
-import "./LazyLoadingIcon.scss";
-
 const LazyLoadingIcon = () => {
   return (
     <div className="lazy-loading-spinner-container">
