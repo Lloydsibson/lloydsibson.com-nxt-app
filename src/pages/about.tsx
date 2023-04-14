@@ -520,7 +520,7 @@ const AboutPage = () => {
               <p>CI/CD</p>
             </div>
             <div className="tech-container__tech-info">
-              <h3>Next.JS + Vercel</h3>
+              <h3>Next.js + Vercel</h3>
               <p>React Framework</p>
             </div>
             <div className="tech-container__tech-info">
