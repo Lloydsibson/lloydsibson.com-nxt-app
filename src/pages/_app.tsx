@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }: AppProps) {
 import "../styles/global.scss";
 
 // THEMES
-import "../themes/light.scss";
+import "../themes/Light.scss";
 
 // PAGES
 import "../styles/index.scss";
