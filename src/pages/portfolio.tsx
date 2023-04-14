@@ -1,6 +1,7 @@
 // import { useEffect } from "react";
 
 import Link from "next/link";
+import Head from "next/head";
 // import { useDispatch } from "react-redux";
 // import {
 //   ApiGoogleNewsWOSAction,
@@ -314,16 +315,18 @@ const PortfolioPage = () => {
 
   return (
     <>
-      {/* <title>Portfolio</title>
+      <Head>
+        <title>Developer Portfolio</title>
         <meta
           name="description"
           content="Selected development and design examples from previous clients and projects"
-        /> */}
+        />
+      </Head>
       <section className="page-title-container">
         <header>
-          <h1>Portfolio</h1>
+          <h1>Dev Portfolio</h1>
         </header>
-        <p>Recent Examples</p>
+        <p>Selected Examples</p>
       </section>
       <div className="portfolio-container">
         <section className="portfolio-container__volunteering-container">

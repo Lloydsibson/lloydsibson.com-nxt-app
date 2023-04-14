@@ -1,5 +1,5 @@
 import Link from "next/link";
-//import Head from "next/link";
+import Head from "next/head";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
@@ -28,17 +28,15 @@ const HomePage = () => {
 
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>
-          Lloyd Sibson BA | Front End Developer & UI/UX Designe @ NEXT
+          Lloyd Sibson BA | Front-End Web Developer & UI/UX Designer
         </title>
         <meta
           name="description"
-          content="I've worked with over 200+ brands such as Rolex, Nike, Gucci & Adidas.
-          Founder of Monocode & UI Developer at Arclight Music. Supercharge
-          your brand into its best digital self."
+          content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
         />
-      </Head> */}
+      </Head>
       <VideoBackground />
       <section className="homepage container">
         <div className="homepage-container__text-container">

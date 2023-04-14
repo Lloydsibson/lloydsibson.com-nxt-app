@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        {/* <!-- Google Tag Manager --> */}
+        {/* GOOGLE TAG MANAGER */}
         <Script
           id="gtm-script"
           strategy="afterInteractive"
@@ -29,6 +29,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Main />
         <NextScript />
+        {/* TIDIO - CHAT BOT */}
+        <Script
+          id="tidio-script"
+          strategy="afterInteractive"
+          src="//code.tidio.co/1wuhil6yeuojhxucewyyy0jaz2uqup5q.js"
+          async
+        />
       </body>
     </Html>
   );

@@ -1,5 +1,6 @@
 //import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2023.pdf";
 import Link from "next/link";
+import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -46,13 +47,13 @@ const AboutPage = () => {
 
   return (
     <>
-      {/* <Helmet>
-        <title>About</title>
+      <Head>
+        <title>About Me</title>
         <meta
           name="description"
           content="Current and past experience, fun facts, previous clients and a downloadable CV available"
         />
-      </Helmet> */}
+      </Head>
       <div className="page-title-container about">
         <section className="page-title-container__banner">
           <header>
@@ -519,8 +520,8 @@ const AboutPage = () => {
               <p>CI/CD</p>
             </div>
             <div className="tech-container__tech-info">
-              <h3>FileZilla</h3>
-              <p>FTP</p>
+              <h3>Next.JS + Vercel</h3>
+              <p>React Framework</p>
             </div>
             <div className="tech-container__tech-info">
               <h3>Cloudinary</h3>

@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
@@ -8,18 +10,18 @@ import { Testimonials } from "../components/Testimonials";
 const ContactPage = () => {
   return (
     <>
-      {/* <Helmet>
+      <Head>
         <title>Contact</title>
         <meta
           name="description"
-          content="Reach out via e-mail or Whatsapp and see what other clients and companies have to say"
+          content="Reach out and see what other clients, colleagues and companies have to say"
         />
-      </Helmet> */}
+      </Head>
       <section className="page-title-container">
         <header>
           <h1>Contact</h1>
         </header>
-        <p>Lets Chat</p>
+        <p>Lets Chat ☕</p>
       </section>
       <Testimonials />
       <div className="content-container">
