@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { WosStockApi } from "./ApiStocksWOS";
-import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
+// import { WosStockApi } from "./ApiStocksWOS";
+// import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
 // SASS
-import "./AppleWatch.scss";
+// import "./AppleWatch.scss";
 
 export const AppleWatch = () => {
   const [watchDate, setWatchDate] = useState<string>("Date");
@@ -84,8 +84,8 @@ export const AppleWatch = () => {
             <div className="smart-watch__date-container__date">{watchDate}</div>
           </div>
           <div className="smart-watch__date-container__time">{watchTime}</div>
-          <GoogleNewsApi />
-          <WosStockApi />
+          {/* <GoogleNewsApi />
+          <WosStockApi /> */}
         </div>
       </div>
     </div>
