@@ -33,6 +33,9 @@
   height: 100%;
   transform: scale(1.2);
 }
+.html-video-container__img {
+  width: 100%;
+}
 // .html-video-container .mask {
 //   top: 0;
 //   left: 0;
@@ -51,42 +54,48 @@
 //   }
 // }
 
-@media only screen and (max-width: 1415px) {
-  /*     .html-video-container {display: none;}  */
-  //   .html-video-container .mask {
-  //     display: none;
-  //   }
-}
-@media only screen and (min-width: 992px) and (max-width: 1415px) {
-  .html-video-container video {
-    transform: scale(1.5);
-  }
-}
-@media only screen and (min-width: 600px) and (max-width: 992px) {
-  .html-video-container video {
-    transform: scale(2);
-  }
-}
+// @media only screen and (max-width: 1415px) {
+//   /*     .html-video-container {display: none;}  */
+//   //   .html-video-container .mask {
+//   //     display: none;
+//   //   }
+// }
+// @media only screen and (min-width: 992px) and (max-width: 1415px) {
+//   .html-video-container video {
+//     transform: scale(1.5);
+//   }
+// }
+// @media only screen and (min-width: 600px) and (max-width: 992px) {
+//   .html-video-container video {
+//     transform: scale(2);
+//   }
+// }
 
 @media only screen and (max-width: 900px) {
   .html-video-container {
-    opacity: 0.6;
+    transform: unset;
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .html-video-container {
-    transform: scale(1.28);
-    video {
-      transform: scale(4.5);
-    }
-  }
-}
-@media only screen and (min-width: 200px) and (max-width: 350px) {
-  .html-video-container {
-    transform: scale(1.5);
-    video {
-      transform: scale(4.5);
-    }
-  }
-}
+// @media only screen and (max-width: 900px) {
+//   .html-video-container {
+//     opacity: 0.6;
+//   }
+// }
+
+// @media only screen and (min-width: 300px) and (max-width: 600px) {
+//   .html-video-container {
+//     transform: scale(1.28);
+//     video {
+//       transform: scale(4.5);
+//     }
+//   }
+// }
+// @media only screen and (min-width: 200px) and (max-width: 350px) {
+//   .html-video-container {
+//     transform: scale(1.5);
+//     video {
+//       transform: scale(4.5);
+//     }
+//   }
+// }
