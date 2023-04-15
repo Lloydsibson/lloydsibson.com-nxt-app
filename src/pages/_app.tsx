@@ -50,8 +50,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <div className={`page-scroll ${PoppinsFont.className}`}>
+      <div className={PoppinsFont.className}>
         <CookieConsent />
+      </div>
+      <div className={`page-scroll ${PoppinsFont.className}`}>
         <div className="page-container">
           <Nav />
           <main>
@@ -63,7 +65,9 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
       </div>
-      <MobileNav />
+      <div className={PoppinsFont.className}>
+        <MobileNav />
+      </div>
       <div className={`loading-screen ${isLoading ? "-show" : "-hide"}`}>
         <div className="spinner">
           <div className="double-bounce1"></div>
