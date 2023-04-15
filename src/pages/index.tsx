@@ -3,6 +3,10 @@ import Head from "next/head";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
+
+import Image from "next/image";
+import logoBackground from "/public/assets/logo-homepage.png";
+
 // SEO
 
 // GA-4
@@ -71,9 +75,18 @@ const HomePage = () => {
           </div>
         </div>
         <div className="homepage-container__image-container">
-          <img
+          {/* <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
             alt="Monocode Logo"
+          /> */}
+          <Image
+            className="html-video-container__img"
+            src={logoBackground}
+            alt="Monocode Logo"
+            // width={500} automatically provided
+            // height={500} automatically provided
+            // blurDataURL="data:..." automatically provided
+            placeholder="blur" // Optional blur-up while loading
           />
         </div>
       </section>
