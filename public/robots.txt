@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow: /static/media/
+
+Sitemap: https://www.lloydsibson.com/sitemap.xml

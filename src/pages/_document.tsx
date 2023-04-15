@@ -17,6 +17,74 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PZP5NRH');`,
           }}
         />
+        <meta charSet="utf-8" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.lloydsibson.com/" />
+        <meta
+          property="og:title"
+          content="Lloyd Sibson BA | Front End Developer & UI/UX Designer"
+        />
+        <meta
+          property="og:description"
+          content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1596712667/img/new-social-share-2020-2.jpg"
+        />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://www.lloydsibson.com/" />
+        <meta
+          property="twitter:title"
+          content="Lloyd Sibson BA | Front End Developer & UI/UX Designer"
+        />
+        <meta
+          property="twitter:description"
+          content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1596712667/img/new-social-share-2020-2.jpg"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013673/favicon/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013673/favicon/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013673/favicon/favicon-16x16.png"
+        />
+        <link
+          rel="manifest"
+          href="https://res.cloudinary.com/cloudinary-ls-images/raw/upload/v1557013674/favicon/site.webmanifest"
+        />
+        <link
+          rel="mask-icon"
+          href="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013674/favicon/safari-pinned-tab.svg"
+          color="#00b5b8"
+        />
+        <meta name="apple-mobile-web-app-title" content="Monocode App" />
+        <link
+          rel="shortcut icon"
+          href="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013673/favicon/favicon.ico"
+        />
+        <meta name="application-name" content="Monocode App" />
+        <meta name="msapplication-TileColor" content="#6700da" />
+        <meta name="theme-color" content="#6700da" />
       </Head>
       <body>
         <noscript
