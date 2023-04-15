@@ -324,7 +324,7 @@ const PortfolioPage = () => {
       </Head>
       <section className="page-title-container">
         <header>
-          <h1>Dev Portfolio</h1>
+          <h1>Portfolio</h1>
         </header>
         <p>Selected Examples</p>
       </section>
