@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <div className={PoppinsFont.className}>
+      <div className={`font-cookie-container ${PoppinsFont.className}`}>
         <CookieConsent />
       </div>
       <div className={`page-scroll ${PoppinsFont.className}`}>

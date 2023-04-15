@@ -4,6 +4,13 @@ body #cookie-message.-close {
   bottom: -130px;
   z-index: -999;
 }
+.font-cookie-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+}
 #cookie-message {
   color: #fff;
   opacity: 1;
