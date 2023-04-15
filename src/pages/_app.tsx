@@ -9,6 +9,14 @@ import { MobileNav } from "../components/MobileNav";
 import CookieConsent from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 
+import { Poppins } from "next/font/google";
+
+const PoppinsFont = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["devanagari", "latin", "latin-ext"],
+});
+
 export default function App({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -42,8 +50,8 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <CookieConsent />
-      <div className="page-scroll">
+      <div className={`page-scroll ${PoppinsFont.className}`}>
+        <CookieConsent />
         <div className="page-container">
           <Nav />
           <main>
