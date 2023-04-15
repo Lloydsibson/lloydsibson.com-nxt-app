@@ -1,6 +1,4 @@
 // import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
-import videoPlaceHolder from "/public/assets/video-placeholder.png";
 
 const VideoBackground = () => {
   // const [backgroundVideoURL, setBackgroundVideoURL] = useState<string>("");
@@ -38,19 +36,10 @@ const VideoBackground = () => {
       >
         <source type="video/mp4" src={backgroundVideoURL} />
       </video> */}
-      {/* <img
+      <img
         className="html-video-container__img"
         src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1610816567/img/video-placeholder.png"
         alt="Man with his back turned"
-      /> */}
-      <Image
-        className="html-video-container__img"
-        src={videoPlaceHolder}
-        alt="Man with his back turned"
-        // width={500} automatically provided
-        // height={500} automatically provided
-        // blurDataURL="data:..." automatically provided
-        placeholder="blur" // Optional blur-up while loading
       />
 
       {/* <div className="mask"></div> */}

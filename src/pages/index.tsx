@@ -4,8 +4,8 @@ import Head from "next/head";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 
-import Image from "next/image";
-import logoBackground from "/public/assets/logo-homepage.png";
+// import Image from "next/image";
+// import logoBackground from "/public/assets/logo-homepage.png";
 
 // SEO
 
@@ -75,11 +75,11 @@ const HomePage = () => {
           </div>
         </div>
         <div className="homepage-container__image-container">
-          {/* <img
+          <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
             alt="Monocode Logo"
-          /> */}
-          <Image
+          />
+          {/* <Image
             className="html-video-container__img"
             src={logoBackground}
             alt="Monocode Logo"
@@ -87,7 +87,7 @@ const HomePage = () => {
             // height={500} automatically provided
             // blurDataURL="data:..." automatically provided
             placeholder="blur" // Optional blur-up while loading
-          />
+          /> */}
         </div>
       </section>
     </>
