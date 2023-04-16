@@ -48,7 +48,7 @@ const AboutPage = () => {
   return (
     <>
       <Head>
-        <title>About Me</title>
+        <title>About</title>
         <meta
           name="description"
           content="Current and past experience, fun facts, previous clients and a downloadable CV available"

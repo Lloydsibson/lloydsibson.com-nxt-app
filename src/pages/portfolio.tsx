@@ -316,7 +316,7 @@ const PortfolioPage = () => {
   return (
     <>
       <Head>
-        <title>Developer Portfolio</title>
+        <title>Portfolio</title>
         <meta
           name="description"
           content="Selected development and design examples from previous clients and projects"
