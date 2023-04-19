@@ -6,7 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         {/* GOOGLE TAG MANAGER */}
-        {/* <Script
+        <Script
           id="gtm-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PZP5NRH');`,
           }}
-        /> */}
+        />
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -87,12 +87,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <meta name="theme-color" content="#6700da" />
       </Head>
       <body>
-        {/* <noscript
+        <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PZP5NRH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
-        ></noscript> */}
+        ></noscript>
         <div className="website-background"></div>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Main />
