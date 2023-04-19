@@ -9,13 +9,13 @@ import { MobileNav } from "../components/MobileNav";
 import CookieConsent from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 
-// import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-// const PoppinsFont = Poppins({
-//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-//   style: ["normal", "italic"],
-//   subsets: ["devanagari", "latin", "latin-ext"],
-// });
+const PoppinsFont = Poppins({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  subsets: ["devanagari", "latin", "latin-ext"],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,10 +50,10 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <div className={`font-cookie-container`}>
+      <div className={`font-cookie-container ${PoppinsFont.className}`}>
         <CookieConsent />
       </div>
-      <div className={`page-scroll`}>
+      <div className={`page-scroll ${PoppinsFont.className}`}>
         <div className="page-container">
           <Nav />
           <main>
@@ -65,7 +65,9 @@ export default function App({ Component, pageProps }: AppProps) {
           <Footer />
         </div>
       </div>
-      <MobileNav />
+      <div className={`${PoppinsFont.className}`}>
+        <MobileNav />
+      </div>
       <div className={`loading-screen ${isLoading ? "-show" : "-hide"}`}>
         <div className="spinner">
           <div className="double-bounce1"></div>
