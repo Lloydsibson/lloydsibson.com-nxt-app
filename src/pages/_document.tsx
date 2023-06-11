@@ -6,10 +6,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script
-          data-project-id="eWg6toQZpbMQc8sCU7Bp3H1aVUfjWYpQXXoGnHZS"
-          src="https://snippet.meticulous.ai/v1/stagingMeticulousSnippet.js"
-        />
         {/* GOOGLE TAG MANAGER */}
         <Script
           id="gtm-script"
