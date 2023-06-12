@@ -1,4 +1,4 @@
-//import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2023.pdf";
+import CvTwoPage from "../../public/lloyd-sibson-ba-front-end-developer-cv-2023.pdf";
 import Link from "next/link";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -104,11 +104,11 @@ const AboutPage = () => {
             </p>
             <p className="bio-info-container__connections">500+ Connections</p>
             <div className="bio-links">
-              <div className="btn-primary disabled">
-                <a aria-disabled={true}>Download CV</a>
-                {/* <a href={CvTwoPage} download>
+              <div className="btn-primary">
+                {/* <a aria-disabled={true}>Download CV</a> */}
+                <a href={CvTwoPage} download>
                   Download CV
-                </a> */}
+                </a>
               </div>
               <div className="btn-primary bio-btn">
                 <a href="https://www.linkedin.com/in/lloyd-sibson/">
