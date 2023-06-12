@@ -1,5 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow: public/lloyd-sibson-ba-front-end-developer-cv-2023.pdf
+Disallow: /lloyd-sibson-ba-front-end-developer-cv-2023.pdf
 
 Sitemap: https://www.lloydsibson.com/sitemap.xml
