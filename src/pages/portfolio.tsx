@@ -105,6 +105,12 @@ const PortfolioPage = () => {
 
   const LinkData = [
     {
+      url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
+      linkText: "Cookie Banner Redesign",
+      postedDate: new Date(2023, 5, 28),
+      icon: faFigma,
+    },
+    {
       url: "https://youtu.be/23Af9vhmL-4",
       linkText: "QA Demo #98",
       postedDate: new Date(2022, 9, 27),
@@ -182,12 +188,12 @@ const PortfolioPage = () => {
     //   postedDate: new Date(2021, 0, 15),
     //   icon: faDesktop,
     // },
-    {
-      url: "https://www.mappinandwebb.com/rolex/contact-us",
-      linkText: "M&W Rolex Map",
-      postedDate: new Date(2020, 6, 22),
-      icon: faDesktop,
-    },
+    // {
+    //   url: "https://www.mappinandwebb.com/rolex/contact-us",
+    //   linkText: "M&W Rolex Map",
+    //   postedDate: new Date(2020, 6, 22),
+    //   icon: faDesktop,
+    // },
   ];
 
   // TAKES POSTED DATE AND WORKS OUT HOW MANY DAYS HAVE PASSED AGAINST CURRENT DATE
