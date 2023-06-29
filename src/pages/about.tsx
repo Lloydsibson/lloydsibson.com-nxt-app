@@ -632,7 +632,7 @@ const AboutPage = () => {
             <div className="fun-facts-container__fun-facts gaming">
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Completed</h3>
-              <span>Atomic Heart</span>
+              <span>Zelda BOTW</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />

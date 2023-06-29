@@ -1017,3 +1017,10 @@ body::-webkit-scrollbar-thumb {
   background-color: #111;
   margin: 40px auto;
 }
+
+.custom-divider.spotlight {
+  min-height: 8px;
+  width: 100%;
+  padding-top: 40px;
+  margin: 0 auto 40px auto;
+}

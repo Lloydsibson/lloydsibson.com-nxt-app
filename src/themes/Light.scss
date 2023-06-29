@@ -214,6 +214,10 @@ body.light .nav-container li a {
   color: #726c7f;
 }
 
+body.light .nav-container li a.active {
+  color: #000;
+}
+
 body.light .nav-container li a:hover {
   color: #000;
 }
@@ -253,6 +257,10 @@ body.light .nav-container li a.selected {
     background-color: $light-fg;
     border-color: $light-fg;
   }
+}
+
+body.light .subheading-container.spotlight h2 {
+  color: #fff;
 }
 
 // TITLE UNDERLINE
@@ -372,8 +380,24 @@ body.light .testomonials-container .slick-dots li.slick-active button:before {
 }
 
 // LINKS - PORTFOLIO
+body.light .portfolio-container__links-container {
+  background-color: #000;
+}
+
+body.light .portfolio-container__links-container.spotlight .link-container {
+  a,
+  p,
+  svg {
+    color: #fff;
+  }
+}
+
+// body.light h2 {
+//   color: ;
+// }
+
 body.light .portfolio-container__links-container .posted-container span {
-  color: #000;
+  color: #5294ff;
 }
 
 body.light .portfolio-container__links-container .link-container a:hover {
@@ -546,6 +570,10 @@ body.light .homepage.container .btn-container .btn-primary a span {
 
 body.light .custom-divider {
   background-color: #d5d5d5;
+}
+
+body.light .custom-divider.spotlight {
+  background-color: #000;
 }
 
 body.light

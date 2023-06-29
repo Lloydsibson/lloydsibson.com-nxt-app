@@ -13,9 +13,10 @@ import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
-import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+// import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+// import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faLink } from "@fortawesome/free-solid-svg-icons";
 // import { faVideo } from "@fortawesome/free-solid-svg-icons";
@@ -91,17 +92,17 @@ const PortfolioPage = () => {
   //   fetchWosStockPrice();
   // }, [dispatch]);
 
-  const NavItemToggle = () => {
-    const body = document.body;
-    body.classList.remove("menu-open");
-    body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    // REMOVES MOBILE NAV AFTER NAV CLOSES
-    setTimeout(() => {
-      const menu = document.querySelector(".mb-nav-container");
-      (menu as HTMLElement).style.display = "none";
-    }, 400);
-  };
+  // const NavItemToggle = () => {
+  //   const body = document.body;
+  //   body.classList.remove("menu-open");
+  //   body.scrollTop = 0; // For Safari
+  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  //   // REMOVES MOBILE NAV AFTER NAV CLOSES
+  //   setTimeout(() => {
+  //     const menu = document.querySelector(".mb-nav-container");
+  //     (menu as HTMLElement).style.display = "none";
+  //   }, 400);
+  // };
 
   const LinkData = [
     {
@@ -328,13 +329,34 @@ const PortfolioPage = () => {
           content="Selected development and design examples from previous clients and projects"
         />
       </Head>
-      <section className="page-title-container">
+      <section className="page-title-container portfolio">
         <header>
           <h1>Portfolio</h1>
         </header>
         <p>Selected Examples</p>
       </section>
       <div className="portfolio-container">
+        <section className="portfolio-container__links-container spotlight">
+          <header className="subheading-container spotlight">
+            <h2>Links</h2>
+          </header>
+          <div className="links-container">
+            {LinkData.map((LinkData, id) => (
+              <div key={id} className="link-container">
+                <FontAwesomeIcon icon={LinkData.icon} />
+                <div className="link-container__info">
+                  <a target="_blank" rel="noreferrer" href={LinkData.url}>
+                    {LinkData.linkText}
+                  </a>
+                  <div className="posted-container">
+                    {postedDate(LinkData.postedDate)}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+        <div className="custom-divider spotlight"></div>
         <section className="portfolio-container__volunteering-container">
           <header className="subheading-container">
             <h2>Volunteering</h2>
@@ -350,7 +372,16 @@ const PortfolioPage = () => {
             </div>
             <div className="vt-role-container__role">
               <h3 className="vt-role-title">UI Developer</h3>
-              <h4 className="vt-role-company-name">Arclight Music</h4>
+              <h4 className="vt-role-company-name">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.arclightmusic.co.uk"
+                >
+                  Arclight Music
+                </a>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
                   Jan 2019 - Present · <span>{currentRoleYearCalc()}</span> yrs
@@ -521,7 +552,7 @@ const PortfolioPage = () => {
               Formspree
             </p>
           </div>
-          <div className="vt-role-links">
+          {/* <div className="vt-role-links">
             <h3>Websites, Designs & Links</h3>
             <div className="vt-role-links__two-wide">
               <div className="vt-role-links-websites">
@@ -574,7 +605,6 @@ const PortfolioPage = () => {
                         height="70"
                         loading="lazy"
                       />
-                      {/* <FontAwesomeIcon icon={faFigma} /> */}
                     </div>
                   </a>
                   <a
@@ -584,10 +614,6 @@ const PortfolioPage = () => {
                     aria-label="Arclight Music's Facebook page"
                   >
                     <div className="vt-role-links__facebook">
-                      {/* <img
-                        src="https://via.placeholder.com/75"
-                        alt="Facebook's logo"
-                      /> */}
                       <FontAwesomeIcon icon={faFacebookSquare} />
                     </div>
                   </a>
@@ -600,10 +626,6 @@ const PortfolioPage = () => {
                     aria-label="Arclight Music's Instagram page"
                   >
                     <div className="vt-role-links__instagram">
-                      {/* <img
-                        src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/GitHub-logo_noc0g4.png"
-                        alt="Github's logo"
-                      /> */}
                       <FontAwesomeIcon icon={faInstagram} />
                     </div>
                   </a>
@@ -614,18 +636,14 @@ const PortfolioPage = () => {
                     aria-label="Arclight Music's YouTube channel"
                   >
                     <div className="vt-role-links__youtube">
-                      {/* <img
-                        src="https://via.placeholder.com/75"
-                        alt="Youtube's logo"
-                      /> */}
                       <FontAwesomeIcon icon={faYoutube} />
                     </div>
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="vt-role-posters">
+          </div> */}
+          {/* <div className="vt-role-posters">
             <div className="vt-role-posters__title-container">
               <h3>Recent Posters</h3>
               <Link
@@ -694,7 +712,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
         <div className="custom-divider"></div>
         <section className="portfolio-container__api-container">
@@ -728,24 +746,6 @@ const PortfolioPage = () => {
             </div>
             <div className="api-container">
               <a
-                href="https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Figma Account"
-              >
-                <div className="api-container__portfolio-link figma">
-                  <img
-                    src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/figma-logo_z80hhu.png"
-                    alt="Figma's logo"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                  />
-                </div>
-              </a>
-            </div>
-            <div className="api-container">
-              <a
                 href="https://codepen.io/lloydsibson/"
                 target="_blank"
                 rel="noreferrer"
@@ -762,27 +762,24 @@ const PortfolioPage = () => {
                 </div>
               </a>
             </div>
-          </div>
-        </section>
-        <div className="custom-divider"></div>
-        <section className="portfolio-container__links-container">
-          <header className="subheading-container">
-            <h2>Links</h2>
-          </header>
-          <div className="links-container">
-            {LinkData.map((LinkData, id) => (
-              <div key={id} className="link-container">
-                <FontAwesomeIcon icon={LinkData.icon} />
-                <div className="link-container__info">
-                  <a target="_blank" rel="noreferrer" href={LinkData.url}>
-                    {LinkData.linkText}
-                  </a>
-                  <div className="posted-container">
-                    {postedDate(LinkData.postedDate)}
-                  </div>
+            <div className="api-container">
+              <a
+                href="https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Figma Account"
+              >
+                <div className="api-container__portfolio-link figma">
+                  <img
+                    src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/figma-logo_z80hhu.png"
+                    alt="Figma's logo"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  />
                 </div>
-              </div>
-            ))}
+              </a>
+            </div>
           </div>
         </section>
       </div>
