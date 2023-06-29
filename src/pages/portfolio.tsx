@@ -391,19 +391,6 @@ const PortfolioPage = () => {
               </div>
             </div>
           </div>
-          <div className="vt-role-summary-container">
-            <p className="read-more-text">
-              Arclight Music Was Founded In 2019. Arclight Music was created to
-              give young musicians the opportunities that are lacking in a
-              modern, money hungry music scene to gain experience on stage and
-              the chance to showcase themselves in a way they have not been able
-              to for years. Also to do our part to keep live music alive by
-              promoting young musicians and encouraging the next generation to
-              follow a career in music whether it be performing, studio
-              management, etc.
-            </p>
-            <ReadMoreBtn text={"Read More"} />
-          </div>
           <div className="vt-role-techstack">
             <h3>Tech Stack</h3>
             <div className="vt-role-techstack__tech">
@@ -546,11 +533,24 @@ const PortfolioPage = () => {
                 />
               </a>
             </div>
-            <p>
+            <p style={{ display: "none" }}>
               React | Gatsby | GraphQL | Contentful | Sass | OpenCart |
               Eventbrite API | Trustpilot | Google Analytics | Appzi | Hotjar |
               Formspree
             </p>
+          </div>
+          <div className="vt-role-summary-container">
+            <p className="read-more-text">
+              Arclight Music Was Founded In 2019. Arclight Music was created to
+              give young musicians the opportunities that are lacking in a
+              modern, money hungry music scene to gain experience on stage and
+              the chance to showcase themselves in a way they have not been able
+              to for years. Also to do our part to keep live music alive by
+              promoting young musicians and encouraging the next generation to
+              follow a career in music whether it be performing, studio
+              management, etc.
+            </p>
+            <ReadMoreBtn text={"Read More"} />
           </div>
           {/* <div className="vt-role-links">
             <h3>Websites, Designs & Links</h3>
