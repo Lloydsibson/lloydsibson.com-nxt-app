@@ -25,6 +25,7 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 
 // import { AppleWatch } from "../components/AppleWatch";
 import { ReadMoreBtn } from "../components/ReadMore";
+import { TotalYearsCalc } from "@/components/TotalYearsCalc";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 
 const PortfolioPage = () => {
@@ -230,7 +231,7 @@ const PortfolioPage = () => {
     const beyond = <p>Posted {daysSince} Days Ago</p>;
 
     if (daysSince === 0) {
-      console.log("today");
+      // console.log("today");
       return today;
     } else if (daysSince === 1) {
       return day1;
@@ -239,85 +240,6 @@ const PortfolioPage = () => {
     } else {
       return beyond;
     }
-  };
-
-  const currentRoleYearCalc = () => {
-    const currentYear = new Date().getFullYear();
-    let roleYears: string | number = "-";
-    const startRoleYear = 2019;
-    roleYears = currentYear - startRoleYear;
-    return roleYears;
-  };
-
-  const currentRoleMonthCalc = () => {
-    const currentMonthRaw = new Date().getMonth();
-    let currentRoleMonth: string | number = "-";
-    switch (currentMonthRaw) {
-      case 0:
-        // code block
-        currentRoleMonth = 1;
-        break;
-
-      case 1:
-        // code block
-        currentRoleMonth = 2;
-        break;
-
-      case 2:
-        // code block
-        currentRoleMonth = 3;
-        break;
-
-      case 3:
-        // code block
-        currentRoleMonth = 4;
-        break;
-
-      case 4:
-        // code block
-        currentRoleMonth = 5;
-        break;
-
-      case 5:
-        // code block
-        currentRoleMonth = 6;
-        break;
-
-      case 6:
-        // code block
-        currentRoleMonth = 7;
-        break;
-
-      case 7:
-        // code block
-        currentRoleMonth = 8;
-        break;
-
-      case 8:
-        // code block
-        currentRoleMonth = 9;
-        break;
-
-      case 9:
-        // code block
-        currentRoleMonth = 10;
-        break;
-
-      case 10:
-        // code block
-        currentRoleMonth = 11;
-        break;
-
-      case 11:
-        // code block
-        currentRoleMonth = 12;
-        break;
-
-      default:
-      // code block
-      // DO NOTHING
-    }
-    return currentRoleMonth;
   };
 
   return (
@@ -384,8 +306,7 @@ const PortfolioPage = () => {
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
-                  Jan 2019 - Present · <span>{currentRoleYearCalc()}</span> yrs
-                  <span> {currentRoleMonthCalc()}</span> mths
+                  <TotalYearsCalc startYear={2019} startMonth={"Jan"} />
                 </h5>
                 <h6 className="vt-role-other__industry">Arts & Culture</h6>
               </div>

@@ -2,10 +2,10 @@
 import Link from "next/link";
 import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
-import { faDesktop } from "@fortawesome/free-solid-svg-icons";
-import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
-import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+// import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
+// import { faDesktop } from "@fortawesome/free-solid-svg-icons";
+// import { faHandHoldingHeart } from "@fortawesome/free-solid-svg-icons";
+// import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
@@ -13,6 +13,7 @@ import { faGuitar } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 import { Clients } from "../components/Clients";
 import { ReadMoreBtn } from "../components/ReadMore";
+import { TotalYearsCalc } from "../components/TotalYearsCalc";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 
 const AboutPage = () => {
@@ -136,6 +137,7 @@ const AboutPage = () => {
               </div>
               <h3>
                 <a href="https://www.next.co.uk/">Next</a>
+                <TotalYearsCalc startYear={2021} startMonth={"Oct"} />
               </h3>
             </div>
             <div className="bio-other-container__education">

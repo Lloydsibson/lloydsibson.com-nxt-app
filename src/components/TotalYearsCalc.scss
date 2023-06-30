@@ -1,0 +1,21 @@
+.role-total-years {
+  margin: unset;
+  font-size: 0.9rem;
+  opacity: 0.6;
+  font-weight: 400;
+  display: block;
+  span {
+    font-weight: 400;
+    font-size: 0.9rem;
+  }
+}
+
+body.light {
+  .role-total-years {
+    opacity: 1;
+    color: #4d4d51;
+    span {
+      color: #4d4d51;
+    }
+  }
+}
