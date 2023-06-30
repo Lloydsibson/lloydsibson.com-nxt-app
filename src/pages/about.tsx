@@ -139,7 +139,7 @@ const AboutPage = () => {
                 <a href="https://www.next.co.uk/">Next</a>
                 <CalcDiffTwoDates
                   startDate={"10/22/2021"}
-                  startYear={2019}
+                  startYear={2021}
                   startMonth={"Oct"}
                 />
               </h3>
