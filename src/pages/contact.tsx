@@ -1,9 +1,10 @@
 import Head from "next/head";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
+import { faPencil } from "@fortawesome/free-solid-svg-icons";
+import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { EmailForm } from "../components/EmailForm";
 import { Testimonials } from "../components/Testimonials";
 
@@ -32,43 +33,44 @@ const ContactPage = () => {
                 href="https://api.whatsapp.com/send?phone=447462944899"
                 aria-label="Message me on Whatsapp"
               >
-                <FontAwesomeIcon icon={faWhatsapp} />
+                <FontAwesomeIcon icon={faCode} />
               </a>
             </div>
             <div className="contact-cta-container__text">
-              <h3>WhatsApp</h3>
+              <h3>Website Development</h3>
               <p>
-                Instant message me for a faster response time.&nbsp;
-                <a
+                4+ years commercial experience within small, medium and
+                enterprise level businesses.
+                {/* <a
                   href="https://api.whatsapp.com/send?phone=447462944899"
                   aria-label="Message via Whatsapp"
                 >
                   Open in WhatsApp
-                </a>
+                </a> */}
               </p>
             </div>
           </div>
           <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
-              <FontAwesomeIcon icon={faMapMarkerAlt} />
+              <FontAwesomeIcon icon={faPencil} />
             </div>
             <div className="contact-cta-container__text">
-              <h3>Leicester, UK</h3>
+              <h3>UI/UX Design</h3>
               <p>
-                Located in the East Midlands. Open to projects and remote roles
-                - UK wide.
+                Graduated with a 2:1 from De Montfort University - a leading UK
+                university for Art & Design.
               </p>
             </div>
           </div>
           <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon icon={faTag} />
             </div>
             <div className="contact-cta-container__text">
-              <h3>Email</h3>
+              <h3>Upto 50% Off</h3>
               <p>
-                Just fill out the email form. I aim to respond to all enquiries
-                within 3 working days.
+                This offer is for new clients only. Please email me with your
+                requirements for a FREE quote.
               </p>
             </div>
           </div>
