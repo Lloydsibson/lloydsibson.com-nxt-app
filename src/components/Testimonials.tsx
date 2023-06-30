@@ -58,36 +58,6 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               <img
-                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1663239791/img/kiran-review_pr5tj6.jpg"
-                alt="Kirandeep Gills's selfie"
-                width="80"
-                height="80"
-              />
-              <div className="spinner">
-                <div className="double-bounce1"></div>
-                <div className="double-bounce2"></div>
-              </div>
-            </div>
-            <section className="review-container__text-container">
-              <p>
-                One of the most knowledgeable Devs Monetate has had in a very
-                long time! Always looking at ways we can better develop a
-                ticket.
-              </p>
-              {/* <ReadMoreBtn text={"Read More"} /> */}
-            </section>
-            <section className="review-container__client-details">
-              <h2>Kirandeep Gill</h2>
-              <h3>Senior QA Tester @ NEXT</h3>
-              {/* <h4>NEXT PLC</h4> */}
-            </section>
-          </article>
-        </div>
-
-        <div className="review-item">
-          <article className="review-container">
-            <div className="review-container__image-container">
-              <img
                 src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/car-review_ewlz1v.jpg"
                 alt="Carla Cabeça's selfie"
                 width="80"
@@ -124,8 +94,8 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               <img
-                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1663858758/img/jess-review_lesw90.jpg"
-                alt="Jess Bevans's selfie"
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1688124335/saul_e3mjs7.webp"
+                alt="Saul Gooding's selfie"
                 width="80"
                 height="80"
               />
@@ -136,16 +106,14 @@ export const Testimonials = () => {
             </div>
             <section className="review-container__text-container">
               <p>
-                An extremely talented Dev who can quickly put things right
-                should there be a problem. Always friendly when resolving issues
-                for QA.
+                The first person I&apos;ll approach if I have a technical
+                question. Contructive and thorough code reviews which
+                keep&apos;s the team to high standard.
               </p>
-              {/* <ReadMoreBtn text={"Read More"} /> */}
             </section>
             <section className="review-container__client-details">
-              <h2>Jess Bevans</h2>
-              <h3>Test Analyst @ NEXT</h3>
-              {/* <h4>NEXT PLC</h4> */}
+              <h2>Saul Gooding</h2>
+              <h3>Developer @ NEXT</h3>
             </section>
           </article>
         </div>
@@ -209,6 +177,95 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               <img
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1663239791/img/kiran-review_pr5tj6.jpg"
+                alt="Kirandeep Gills's selfie"
+                width="80"
+                height="80"
+              />
+              <div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+              </div>
+            </div>
+            <section className="review-container__text-container">
+              <p>
+                One of the most knowledgeable Devs Monetate has had in a very
+                long time! Always looking at ways we can better develop a
+                ticket.
+              </p>
+              {/* <ReadMoreBtn text={"Read More"} /> */}
+            </section>
+            <section className="review-container__client-details">
+              <h2>Kirandeep Gill</h2>
+              <h3>Senior QA Tester @ NEXT</h3>
+              {/* <h4>NEXT PLC</h4> */}
+            </section>
+          </article>
+        </div>
+        {/* <div className="review-item">
+          <article className="review-container">
+            <div className="review-container__image-container">
+              <img
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1663858758/img/jess-review_lesw90.jpg"
+                alt="Jess Bevans's selfie"
+                width="80"
+                height="80"
+              />
+              <div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+              </div>
+            </div>
+            <section className="review-container__text-container">
+              <p>
+                An extremely talented Dev who can quickly put things right
+                should there be a problem. Always friendly when resolving issues
+                for QA.
+              </p>
+            </section>
+            <section className="review-container__client-details">
+              <h2>Jess Bevans</h2>
+              <h3>Test Analyst @ NEXT</h3>
+            </section>
+          </article>
+        </div> */}
+        <div className="review-item">
+          <article className="review-container">
+            <div className="review-container__image-container">
+              <img
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1688124335/divya_cgxk3n.webp"
+                alt="Livia Nestianu's selfie"
+                width="80"
+                height="80"
+              />
+              <div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+              </div>
+            </div>
+            <section className="review-container__text-container">
+              <p>
+                He constantly seeks to make the code better. A quick learner who
+                contributes fresh ideas that enables the team to produce quality
+                work.
+              </p>
+              {
+                // <ReadMoreBtn text={"Read More"} />
+              }
+            </section>
+            <section className="review-container__client-details">
+              <h2>Divya Damien</h2>
+              <h3>Developer @ UST Innovation</h3>
+              {
+                // <h4>Watches of Switzerland</h4>
+              }
+            </section>
+          </article>
+        </div>
+        {/* <div className="review-item">
+          <article className="review-container">
+            <div className="review-container__image-container">
+              <img
                 src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/liv-review_micmm0.jpg"
                 alt="Livia Nestianu's selfie"
                 width="80"
@@ -245,7 +302,7 @@ export const Testimonials = () => {
               }
             </section>
           </article>
-        </div>
+        </div> */}
         {/* <div className="review-item">
           <article className="review-container">
             <div className="review-container__image-container">

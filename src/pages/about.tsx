@@ -256,7 +256,7 @@ const AboutPage = () => {
         <ReadMoreBtn text={"Read More"} />
       </section>
       <div className="custom-divider"></div>
-      <section className="services-container">
+      {/* <section className="services-container">
         <header className="subheading-container">
           <h2>What I Do</h2>
         </header>
@@ -319,7 +319,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <div className="custom-divider skills"></div>
+      <div className="custom-divider skills"></div> */}
       <section className="skills-container">
         <div className="skills-container__design-skills-container">
           <header className="subheading-container">
