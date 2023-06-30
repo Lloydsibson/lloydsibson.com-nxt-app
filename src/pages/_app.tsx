@@ -105,4 +105,4 @@ import "../components/EmailForm.scss";
 import "../components/EmailSuccessPopUp.scss";
 import "../components/Testimonials.scss";
 import "../components/LazyLoadingIcon.scss";
-import "../components/TotalYearsCalc.scss";
+import "../components/CalcDiffTwoDates.scss";

@@ -13,7 +13,7 @@ import { faGuitar } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 import { Clients } from "../components/Clients";
 import { ReadMoreBtn } from "../components/ReadMore";
-import { TotalYearsCalc } from "../components/TotalYearsCalc";
+import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 
 const AboutPage = () => {
@@ -137,7 +137,11 @@ const AboutPage = () => {
               </div>
               <h3>
                 <a href="https://www.next.co.uk/">Next</a>
-                <TotalYearsCalc startYear={2021} startMonth={"Oct"} />
+                <CalcDiffTwoDates
+                  startDate={"10/22/2021"}
+                  startYear={2019}
+                  startMonth={"Oct"}
+                />
               </h3>
             </div>
             <div className="bio-other-container__education">

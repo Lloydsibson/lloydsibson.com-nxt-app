@@ -25,7 +25,7 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 
 // import { AppleWatch } from "../components/AppleWatch";
 import { ReadMoreBtn } from "../components/ReadMore";
-import { TotalYearsCalc } from "@/components/TotalYearsCalc";
+import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 
 const PortfolioPage = () => {
@@ -306,7 +306,11 @@ const PortfolioPage = () => {
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
-                  <TotalYearsCalc startYear={2019} startMonth={"Jan"} />
+                  <CalcDiffTwoDates
+                    startDate={"01/01/2019"}
+                    startYear={2019}
+                    startMonth={"Jan"}
+                  />
                 </h5>
                 <h6 className="vt-role-other__industry">Arts & Culture</h6>
               </div>
