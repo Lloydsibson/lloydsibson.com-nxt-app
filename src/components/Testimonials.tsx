@@ -107,8 +107,8 @@ export const Testimonials = () => {
             <section className="review-container__text-container">
               <p>
                 The first person I&apos;ll approach if I have a technical
-                question. Contructive and thorough code reviews which
-                keep&apos;s the team to high standard.
+                question. Contructive and thorough code reviews which keeps the
+                team to a high standard.
               </p>
             </section>
             <section className="review-container__client-details">

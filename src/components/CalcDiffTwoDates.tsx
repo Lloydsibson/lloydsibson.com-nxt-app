@@ -9,13 +9,13 @@ export const CalcDiffTwoDates = ({
   startMonth,
   startYear,
 }: Props) => {
-  const TotalYearsAndMonthsCalc = () => {
-    // Assumes Date From (df) and Date To (dt) are valid etc...
-    var df = new Date(startDate);
-    var dt = new Date();
-    //var allMonths= dt.getMonth() - df.getMonth() + (12 * (dt.getFullYear() - df.getFullYear()));
-    var allYears = dt.getFullYear() - df.getFullYear();
-    var partialMonths = dt.getMonth() - df.getMonth();
+  const totalYearsAndMonthsCalc = () => {
+    // Assumes Date From (dateFrom) and Date To (currentDate) are valid etc...
+    var dateFrom = new Date(startDate);
+    var currentDate = new Date();
+    //var allMonths= currentDate.getMonth() - dateFrom.getMonth() + (12 * (currentDate.getFullYear() - dateFrom.getFullYear()));
+    var allYears = currentDate.getFullYear() - dateFrom.getFullYear();
+    var partialMonths = currentDate.getMonth() - dateFrom.getMonth();
     if (partialMonths < 0) {
       allYears--;
       partialMonths = partialMonths + 12;
@@ -32,7 +32,7 @@ export const CalcDiffTwoDates = ({
   return (
     <span className="role-total-years">
       {startMonth} {startYear} - Present ·{" "}
-      <span>{TotalYearsAndMonthsCalc()}</span>
+      <span>{totalYearsAndMonthsCalc()}</span>
     </span>
   );
 };
