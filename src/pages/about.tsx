@@ -17,7 +17,7 @@ import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 
 const AboutPage = () => {
-  const startDate: any = new Date(2018, 8, 17);
+  const startDate: any = new Date(2016, 8, 17);
   const currentDate: any = new Date();
   const currentYear: any = currentDate.getFullYear().toString();
   const calcWorkingDays = (startDate: any, currentDate: any) => {
@@ -334,34 +334,76 @@ const AboutPage = () => {
           <div className="skills-inner-container">
             <div className="skills-inner-container__skill-title-container">
               <h3>Graphic Design</h3>
-              <div className="skill-value">9 Yr.</div>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2015 > 1
+                  ? `${currentDate.getFullYear() - 2015} Yrs`
+                  : `${currentDate.getFullYear() - 2015} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "90%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2015) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
-
+            <div className="skills-inner-container__skill-title-container">
+              <h3>Design Tools</h3>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2015 > 1
+                  ? `${currentDate.getFullYear() - 2015} Yrs`
+                  : `${currentDate.getFullYear() - 2015} Yr`}
+              </div>
+            </div>
+            <div className="skills-inner-container__skill-percentage-container">
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2015) / 1
+                  )}0%`,
+                }}
+              ></div>
+            </div>
             <div className="skills-inner-container__skill-title-container">
               <h3>UI Design</h3>
-              <div className="skill-value">5 Yr.</div>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2019 > 1
+                  ? `${currentDate.getFullYear() - 2019} Yrs`
+                  : `${currentDate.getFullYear() - 2019} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "50%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2019) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
 
             <div className="skills-inner-container__skill-title-container">
-              <h3>Print Design</h3>
-              <div className="skill-value">7 Yr.</div>
+              <h3>UX Design</h3>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2021 > 1
+                  ? `${currentDate.getFullYear() - 2021} Yrs`
+                  : `${currentDate.getFullYear() - 2021} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "70%" }}></div>
-            </div>
-
-            <div className="skills-inner-container__skill-title-container">
-              <h3>Logo Design</h3>
-              <div className="skill-value">8 Yr.</div>
-            </div>
-            <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "80%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2021) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
           </div>
         </div>
@@ -372,34 +414,77 @@ const AboutPage = () => {
           <div className="skills-inner-container">
             <div className="skills-inner-container__skill-title-container">
               <h3>HTML/CSS</h3>
-              <div className="skill-value">5 Yr.</div>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2016 > 1
+                  ? `${currentDate.getFullYear() - 2016} Yrs`
+                  : `${currentDate.getFullYear() - 2016} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "50%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2016) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
 
             <div className="skills-inner-container__skill-title-container">
               <h3>JavaScript</h3>
-              <div className="skill-value">5 Yr.</div>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2016 > 1
+                  ? `${currentDate.getFullYear() - 2016} Yrs`
+                  : `${currentDate.getFullYear() - 2016} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "50%" }}></div>
-            </div>
-
-            <div className="skills-inner-container__skill-title-container">
-              <h3>TypeScript</h3>
-              <div className="skill-value">2 Yr.</div>
-            </div>
-            <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "20%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2016) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
 
             <div className="skills-inner-container__skill-title-container">
               <h3>React</h3>
-              <div className="skill-value">3 Yr.</div>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2020 > 1
+                  ? `${currentDate.getFullYear() - 2020} Yrs`
+                  : `${currentDate.getFullYear() - 2020} Yr`}
+              </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
-              <div className="skill-percentage" style={{ width: "30%" }}></div>
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2020) / 1
+                  )}0%`,
+                }}
+              ></div>
+            </div>
+            <div className="skills-inner-container__skill-title-container">
+              <h3>TypeScript</h3>
+              <div className="skill-value">
+                {currentDate.getFullYear() - 2022 > 1
+                  ? `${currentDate.getFullYear() - 2022} Yrs`
+                  : `${currentDate.getFullYear() - 2022} Yr`}
+              </div>
+            </div>
+            <div className="skills-inner-container__skill-percentage-container">
+              <div
+                className="skill-percentage"
+                style={{
+                  width: `${Math.floor(
+                    (currentDate.getFullYear() - 2022) / 1
+                  )}0%`,
+                }}
+              ></div>
             </div>
           </div>
         </div>
