@@ -31,7 +31,7 @@ export const Footer = () => {
         </li>
       </ul>
       <div className="footer-container__legal">
-        <p>© Lloyd Sibson {currentYear} | All rights reserved | V2.2.5</p>
+        <p>© Lloyd Sibson {currentYear} | All rights reserved </p>
         <div className="footer-tech-toggle-container">
           <div className="tech-stack-logos-container">
             <a

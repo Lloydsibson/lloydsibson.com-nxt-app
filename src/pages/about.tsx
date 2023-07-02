@@ -718,7 +718,9 @@ const AboutPage = () => {
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faClock} />
               <h3>Developer Hours</h3>
-              <span>{calcWorkingDays(startDate, currentDate) * 8}</span>
+              <span>
+                {(calcWorkingDays(startDate, currentDate) * 8).toLocaleString()}
+              </span>
             </div>
             <div className="fun-facts-container__fun-facts gaming">
               <FontAwesomeIcon icon={faGamepad} />
