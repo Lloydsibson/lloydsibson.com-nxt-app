@@ -29,12 +29,7 @@ const ContactPage = () => {
         <aside className="content-container__contact-details-container">
           <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
-              <a
-                href="https://api.whatsapp.com/send?phone=447462944899"
-                aria-label="Message me on Whatsapp"
-              >
-                <FontAwesomeIcon icon={faCode} />
-              </a>
+              <FontAwesomeIcon icon={faCode} />
             </div>
             <div className="contact-cta-container__text">
               <h3>Website Development</h3>
