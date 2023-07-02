@@ -39,8 +39,8 @@ const ContactPage = () => {
             <div className="contact-cta-container__text">
               <h3>Website Development</h3>
               <p>
-                4+ years commercial experience within small, medium and
-                enterprise level businesses.
+                {new Date().getFullYear() - 2016}+ years commercial experience
+                within small, medium and enterprise level businesses.
                 {/* <a
                   href="https://api.whatsapp.com/send?phone=447462944899"
                   aria-label="Message via Whatsapp"
