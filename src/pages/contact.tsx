@@ -50,7 +50,7 @@ const ContactPage = () => {
               <FontAwesomeIcon icon={faPencil} />
             </div>
             <div className="contact-cta-container__text">
-              <h3>UI/UX Design</h3>
+              <h3>UI & Graphic Design</h3>
               <p>
                 Graduated with a 2:1 from De Montfort University - a leading UK
                 university for Art & Design.
