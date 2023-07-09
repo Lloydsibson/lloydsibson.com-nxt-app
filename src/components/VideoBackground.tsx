@@ -29,6 +29,7 @@ const VideoBackground = () => {
         muted
         playsInline
         // ref="video"
+        controls={false}
         className="videoplayer"
         id="video"
         controlsList="nodownload"
