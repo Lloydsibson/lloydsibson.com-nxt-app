@@ -90,8 +90,8 @@ export const AppleWatch = () => {
         const returnedNews = await fetchNews?.json();
         //console.log(returnedNews);
 
-        const googleNewsTitle = await returnedNews?.value[0]?.title;
-        const googleNewsLink = await returnedNews?.value[0]?.link;
+        const googleNewsTitle = await returnedNews?.[0]?.title;
+        const googleNewsLink = await returnedNews?.[0]?.link;
 
         // UPDATE REDUX STATE
         dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
