@@ -23,7 +23,7 @@ const VideoBackground = () => {
   return (
     <section className="html-video-container">
       <video
-        //autoPlay
+        autoPlay
         ref={ref}
         loop
         muted
