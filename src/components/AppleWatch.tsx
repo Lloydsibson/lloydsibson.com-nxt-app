@@ -1,10 +1,17 @@
-import React, { useState, useEffect } from "react";
-// import { WosStockApi } from "./ApiStocksWOS";
-// import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
-// SASS
-// import "./AppleWatch.scss";
+import { useState, useEffect } from "react";
+import { WosStockApi } from "./ApiStocksWOS";
+import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
+import { useDispatch } from "react-redux";
+import {
+  ApiGoogleNewsWOSAction,
+  ApiGoogleLinkWOSAction,
+} from "../../redux/ApiGoogleNewsWOSRedux";
+import { ApiStocksWOSAction } from "../../redux/ApiStocksWOSRedux";
 
 export const AppleWatch = () => {
+  // REDUX DISPATCH
+  const dispatch = useDispatch();
+
   const [watchDate, setWatchDate] = useState<string>("Date");
   const [watchDay, setWatchDay] = useState<string>("Day");
   const [watchTime, setWatchTime] = useState<string>("00:00");
@@ -65,7 +72,66 @@ export const AppleWatch = () => {
       let watchTimeAndMinutes: string = `${currentHour}:${currentMinutes}`;
       setWatchTime(watchTimeAndMinutes);
     }, 1000);
-  }, []);
+
+    //API CALLS + UPDATES REDUX STORE
+    ///////////////////////////////
+    const fetchGoogleNewsApi = async () => {
+      try {
+        const fetchNews = await fetch(
+          "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=watches%20of%20switzerland&pageNumber=1&pageSize=10&autoCorrect=true&fromPublishedDate=null&toPublishedDate=null",
+          {
+            method: "GET",
+            headers: {
+              "x-rapidapi-host":
+                "contextualwebsearch-websearch-v1.p.rapidapi.com",
+              "x-rapidapi-key": `${process.env.NEXT_PUBLIC_RAPID_API_KEY}`,
+            },
+          }
+        );
+        const returnedNews = await fetchNews?.json();
+        //console.log(returnedNews);
+
+        const googleNewsTitle = await returnedNews?.value[0]?.title;
+        const googleNewsLink = await returnedNews?.value[0]?.url;
+
+        // UPDATE REDUX STATE
+        dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
+        dispatch(ApiGoogleLinkWOSAction(googleNewsLink));
+      } catch (e: any) {
+        dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED: 24 HOUR COOLDOWN"));
+        console.log(e, "API Issue");
+      }
+    };
+    ///////////////////////////////
+    const fetchWosStockPrice = async () => {
+      try {
+        const fetchStockPrice = await fetch(
+          "https://alpha-vantage.p.rapidapi.com/query?symbol=WOSG.L&function=GLOBAL_QUOTE",
+          {
+            method: "GET",
+            headers: {
+              "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
+              "x-rapidapi-key": `${process.env.NEXT_PUBLIC_RAPID_API_KEY}`,
+            },
+          }
+        );
+        const returnedStockPrice = await fetchStockPrice.json();
+        //console.log(returnedStockPrice);
+        let stockPrice = returnedStockPrice["Global Quote"]["05. price"];
+        //console.log(stockPrice);
+        stockPrice = stockPrice.split(".")[0];
+
+        // UPDATE REDUX STATE
+        dispatch(ApiStocksWOSAction(stockPrice));
+      } catch (e: any) {
+        dispatch(ApiStocksWOSAction("N/A"));
+        console.log(e, "API Error");
+      }
+    };
+    ///////////////////////////////
+    fetchGoogleNewsApi();
+    fetchWosStockPrice();
+  }, [dispatch]);
 
   return (
     <div className="smart-watch-container">
@@ -84,8 +150,8 @@ export const AppleWatch = () => {
             <div className="smart-watch__date-container__date">{watchDate}</div>
           </div>
           <div className="smart-watch__date-container__time">{watchTime}</div>
-          {/* <GoogleNewsApi />
-          <WosStockApi /> */}
+          <GoogleNewsApi />
+          <WosStockApi />
         </div>
       </div>
     </div>

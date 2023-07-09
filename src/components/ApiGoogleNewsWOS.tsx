@@ -1,12 +1,10 @@
-// import { useSelector } from "react-redux";
-// SASS
-import "./AppleWatch.scss";
+import { useSelector } from "react-redux";
 
 export const GoogleNewsApi = () => {
   // ACCESS STATE FROM REDUX STORE
-  // const { ApiGoogleNewsWOSState } = useSelector(
-  //   (state: any) => state.ApiGoogleNewsWOSStore
-  // );
+  const { ApiGoogleNewsWOSState } = useSelector(
+    (state: any) => state.ApiGoogleNewsWOSStore
+  );
 
   return (
     <div className="google-news-wos">
@@ -23,12 +21,12 @@ export const GoogleNewsApi = () => {
         </div>
         <div className="new-info-container">
           <a
-            // href={ApiGoogleNewsWOSState.googleLink}
+            href={ApiGoogleNewsWOSState.googleLink}
             className="news-link"
             target="_blank"
             rel="noreferrer"
           >
-            {/* <p className="news-title">{ApiGoogleNewsWOSState.googleNews}</p> */}
+            <p className="news-title">{ApiGoogleNewsWOSState.googleNews}</p>
           </a>
         </div>
       </div>

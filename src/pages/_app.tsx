@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { Provider } from "react-redux";
+import { store } from "../../redux/store";
 
 import type { AppProps } from "next/app";
 import { Layout } from "../components/Layout";
@@ -51,7 +53,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <>
+    <Provider store={store}>
       <CookieConsent />
       <div className={`page-scroll`}>
         <div className="page-container">
@@ -72,7 +74,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="double-bounce2"></div>
         </div>
       </div>
-    </>
+    </Provider>
   );
 }
 
@@ -106,3 +108,4 @@ import "../components/EmailSuccessPopUp.scss";
 import "../components/Testimonials.scss";
 import "../components/LazyLoadingIcon.scss";
 import "../components/CalcDiffTwoDates.scss";
+import "../components/AppleWatch.scss";

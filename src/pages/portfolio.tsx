@@ -1,13 +1,8 @@
 // import { useEffect } from "react";
 
-import Link from "next/link";
+//import { useEffect } from "react";
+//import Link from "next/link";
 import Head from "next/head";
-// import { useDispatch } from "react-redux";
-// import {
-//   ApiGoogleNewsWOSAction,
-//   ApiGoogleLinkWOSAction,
-// } from "../redux/ApiGoogleNewsWOSRedux";
-// import { ApiStocksWOSAction } from "../redux/ApiStocksWOSRedux";
 // import { Card } from "../components/Card";
 // import { Lightbox } from "../components/Lightbox";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,88 +18,12 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 // import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
-// import { AppleWatch } from "../components/AppleWatch";
+import { AppleWatch } from "../components/AppleWatch";
 import { ReadMoreBtn } from "../components/ReadMore";
 import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 
 const PortfolioPage = () => {
-  // REDUX DISPATCH
-  // const dispatch = useDispatch();
-
-  // API CALLS + UPDATES REDUX STORE
-  // useEffect(() => {
-  //   ///////////////////////////////
-  //   const fetchGoogleNewsApi = async () => {
-  //     try {
-  //       const fetchNews = await fetch(
-  //         "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=watches%20of%20switzerland&pageNumber=1&pageSize=10&autoCorrect=true&fromPublishedDate=null&toPublishedDate=null",
-  //         {
-  //           method: "GET",
-  //           headers: {
-  //             "x-rapidapi-host":
-  //               "contextualwebsearch-websearch-v1.p.rapidapi.com",
-  //             "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
-  //           },
-  //         }
-  //       );
-  //       const returnedNews = await fetchNews?.json();
-  //       //console.log(returnedNews);
-
-  //       const googleNewsTitle = await returnedNews?.value[0]?.title;
-  //       const googleNewsLink = await returnedNews?.value[0]?.url;
-
-  //       // UPDATE REDUX STATE
-  //       dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
-  //       dispatch(ApiGoogleLinkWOSAction(googleNewsLink));
-  //     } catch (e: any) {
-  //       dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED: 24 HOUR COOLDOWN"));
-  //       console.log(e, "API Issue");
-  //     }
-  //   };
-  //   ///////////////////////////////
-  //   const fetchWosStockPrice = async () => {
-  //     try {
-  //       const fetchStockPrice = await fetch(
-  //         "https://alpha-vantage.p.rapidapi.com/query?symbol=WOSG.L&function=GLOBAL_QUOTE",
-  //         {
-  //           method: "GET",
-  //           headers: {
-  //             "x-rapidapi-host": "alpha-vantage.p.rapidapi.com",
-  //             "x-rapidapi-key": `${process.env.REACT_APP_RAPID_API_KEY}`,
-  //           },
-  //         }
-  //       );
-  //       const returnedStockPrice = await fetchStockPrice.json();
-  //       //console.log(returnedStockPrice);
-  //       let stockPrice = returnedStockPrice["Global Quote"]["05. price"];
-  //       //console.log(stockPrice);
-  //       stockPrice = stockPrice.split(".")[0];
-
-  //       // UPDATE REDUX STATE
-  //       dispatch(ApiStocksWOSAction(stockPrice));
-  //     } catch (e: any) {
-  //       dispatch(ApiStocksWOSAction("N/A"));
-  //       console.log(e, "API Error");
-  //     }
-  //   };
-  //   ///////////////////////////////
-  //   fetchGoogleNewsApi();
-  //   fetchWosStockPrice();
-  // }, [dispatch]);
-
-  // const NavItemToggle = () => {
-  //   const body = document.body;
-  //   body.classList.remove("menu-open");
-  //   body.scrollTop = 0; // For Safari
-  //   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  //   // REMOVES MOBILE NAV AFTER NAV CLOSES
-  //   setTimeout(() => {
-  //     const menu = document.querySelector(".mb-nav-container");
-  //     (menu as HTMLElement).style.display = "none";
-  //   }, 400);
-  // };
-
   const LinkData = [
     {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
@@ -645,12 +564,12 @@ const PortfolioPage = () => {
             <h2>More</h2>
           </header>
           <div className="apis-container">
-            {/* <div className="api-container">
+            <div className="api-container">
               <AppleWatch />
               <div className="api-container__badge">
                 <p>API Example (LIVE)</p>
               </div>
-            </div> */}
+            </div>
             <div className="api-container">
               <a
                 href="https://github.com/Lloydsibson"
