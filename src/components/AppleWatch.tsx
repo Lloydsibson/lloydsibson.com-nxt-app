@@ -88,7 +88,7 @@ export const AppleWatch = () => {
           }
         );
         const returnedNews = await fetchNews?.json();
-        //console.log(returnedNews);
+        console.log(returnedNews);
 
         const googleNewsTitle = await returnedNews?.[0]?.title;
         const googleNewsLink = await returnedNews?.[0]?.link;
