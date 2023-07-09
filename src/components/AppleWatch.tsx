@@ -78,12 +78,11 @@ export const AppleWatch = () => {
     const fetchGoogleNewsApi = async () => {
       try {
         const fetchNews = await fetch(
-          "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=watches%20of%20switzerland&pageNumber=1&pageSize=10&autoCorrect=true&fromPublishedDate=null&toPublishedDate=null",
+          "https://real-time-news-data.p.rapidapi.com/search?query=Watches%20of%20Switzerland%20Group&country=GB&lang=en",
           {
             method: "GET",
             headers: {
-              "x-rapidapi-host":
-                "contextualwebsearch-websearch-v1.p.rapidapi.com",
+              "x-rapidapi-host": "real-time-news-data.p.rapidapi.com",
               "x-rapidapi-key": `${process.env.NEXT_PUBLIC_RAPID_API_KEY}`,
             },
           }
@@ -92,13 +91,13 @@ export const AppleWatch = () => {
         //console.log(returnedNews);
 
         const googleNewsTitle = await returnedNews?.value[0]?.title;
-        const googleNewsLink = await returnedNews?.value[0]?.url;
+        const googleNewsLink = await returnedNews?.value[0]?.link;
 
         // UPDATE REDUX STATE
         dispatch(ApiGoogleNewsWOSAction(googleNewsTitle));
         dispatch(ApiGoogleLinkWOSAction(googleNewsLink));
       } catch (e: any) {
-        dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED: 24 HOUR COOLDOWN"));
+        dispatch(ApiGoogleNewsWOSAction("API LIMIT REACHED"));
         console.log(e, "API Issue");
       }
     };
