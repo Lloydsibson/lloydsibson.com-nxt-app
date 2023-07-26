@@ -16,7 +16,6 @@ module.exports = {
   },
 };
 
-
 // Injected content via Sentry wizard below
 
 const { withSentryConfig } = require("@sentry/nextjs");
@@ -31,7 +30,7 @@ module.exports = withSentryConfig(
     silent: true,
 
     org: "lloyd-sibson",
-    project: "javascript-nextjs",
+    project: "lloydsibson-com-next-app",
   },
   {
     // For all available options, see:
