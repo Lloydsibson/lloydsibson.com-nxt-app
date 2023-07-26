@@ -94,7 +94,7 @@ const AboutPage = () => {
           <div className="bio-info-container">
             <h2 className="bio-info-container__name">Lloyd Sibson BA</h2>
             <h3 className="bio-info-container__sub-heading">
-              Senior Front End Developer @ Next 🛍️ | React | TypeScript |
+              Senior Front End Developer at Next 🛍️ | React | TypeScript |
               JavaScript | CSS | HTML | UI/UX | A/B Testing
             </h3>
             <p className="bio-info-container__country">
