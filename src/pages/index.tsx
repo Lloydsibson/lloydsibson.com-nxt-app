@@ -36,7 +36,7 @@ const HomePage = () => {
         <title>Lloyd Sibson BA | Front-End Web Developer & Designer</title>
         <meta
           name="description"
-          content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
+          content="Developer at NEXT with over 7+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
         />
       </Head>
       <VideoBackground />
