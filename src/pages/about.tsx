@@ -144,6 +144,24 @@ const AboutPage = () => {
                 />
               </h3>
             </div>
+            <div className="bio-other-container__company">
+              <div className="company-image">
+                <img
+                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1692825994/shell-small-logo-opt_kdr0im.png"
+                  alt="Shells logo"
+                  width="45"
+                  height="45"
+                />
+                <div className="spinner">
+                  <div className="double-bounce1"></div>
+                  <div className="double-bounce2"></div>
+                </div>
+              </div>
+              <h3>
+                <a href="https://www.shellenergy.co.uk/">Shell</a>
+                <span className="role-total-years">Mar 2021 - Oct 2021</span>
+              </h3>
+            </div>
             <div className="bio-other-container__education">
               <div className="education-image">
                 <img
