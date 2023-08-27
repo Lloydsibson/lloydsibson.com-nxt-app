@@ -95,6 +95,17 @@ export const Clients = () => {
           />
         </div>
         <div className="client-item">
+          <h3>Shell</h3>
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1693173998/shell-logo_yytzh7.png"
+            alt="Shell's logo"
+            width="80"
+            height="23"
+            loading="lazy"
+            style={{ width: "70px" }}
+          />
+        </div>
+        <div className="client-item">
           <h3>Nike</h3>
           <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/nike_jz49d3.png"
@@ -152,6 +163,7 @@ export const Clients = () => {
             width="80"
             height="86"
             loading="lazy"
+            style={{ width: "75px" }}
           />
         </div>
         <div className="client-item">
