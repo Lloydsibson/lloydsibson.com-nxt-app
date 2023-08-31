@@ -94,7 +94,7 @@ export const Clients = () => {
             loading="lazy"
           />
         </div>
-        <div className="client-item">
+        {/* <div className="client-item">
           <h3>Shell</h3>
           <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1693173998/shell-logo_yytzh7.png"
@@ -104,7 +104,7 @@ export const Clients = () => {
             loading="lazy"
             style={{ width: "70px" }}
           />
-        </div>
+        </div> */}
         <div className="client-item">
           <h3>Nike</h3>
           <img
