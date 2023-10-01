@@ -267,7 +267,7 @@ const AboutPage = () => {
           technologies.
           <br />
           <br />
-          One of my personal projects is a voluntary role as UI Developer at
+          One of my personal projects is a voluntary role as a UI Developer at
           Arclight, a non-profit events company founded in 2019 with a passion
           for music and education to help make a change in what has locally
           become a dying part of the city&apos;s culture.
