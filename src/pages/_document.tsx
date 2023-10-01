@@ -18,7 +18,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PZP5NRH');`,
           }}
         />
-        <meta charSet="utf-8" />
+        {/* <meta charSet="utf-8" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -85,7 +85,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
         <meta name="application-name" content="Monocode App" />
         <meta name="msapplication-TileColor" content="#6700da" />
-        <meta name="theme-color" content="#6700da" />
+        <meta name="theme-color" content="#6700da" /> */}
       </Head>
       <body>
         <noscript

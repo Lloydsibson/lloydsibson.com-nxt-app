@@ -16,6 +16,7 @@ export const CalcDiffTwoDates = ({
     //var allMonths= currentDate.getMonth() - dateFrom.getMonth() + (12 * (currentDate.getFullYear() - dateFrom.getFullYear()));
     var allYears = currentDate.getFullYear() - dateFrom.getFullYear();
     var partialMonths = currentDate.getMonth() - dateFrom.getMonth();
+    console.log(partialMonths);
     if (partialMonths < 0) {
       allYears--;
       partialMonths = partialMonths + 12;
@@ -23,8 +24,15 @@ export const CalcDiffTwoDates = ({
     var total =
       allYears +
       `${allYears > 1 ? " yrs " : " yr "}` +
-      partialMonths +
-      `${partialMonths > 1 ? " mths " : " mth "}`;
+      `${
+        partialMonths === 0
+          ? ``
+          : `${
+              partialMonths > 1
+                ? `${partialMonths} mths `
+                : `${partialMonths} mth `
+            }`
+      }`;
     //console.log(total);
     return total;
   };
