@@ -267,10 +267,10 @@ const AboutPage = () => {
           technologies.
           <br />
           <br />
-          One of my personal projects is a voluntary role as UX Developer and
-          Designer at Arclight, a non-profit events company founded in 2019 with
-          a passion for music and education to help make a change in what has
-          locally become a dying part of the city&apos;s culture.
+          One of my personal projects is a voluntary role as UI Developer at
+          Arclight, a non-profit events company founded in 2019 with a passion
+          for music and education to help make a change in what has locally
+          become a dying part of the city&apos;s culture.
           <br />
           <br />
           To find out more about how I could make a significant contribution to
