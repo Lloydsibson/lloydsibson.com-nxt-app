@@ -240,8 +240,8 @@ const AboutPage = () => {
           <br />
           The areas in which I excel the most include coding and developing
           websites, customer service, communication and using various languages,
-          tools and frameworks, including HTML5, CSS3, JavaScript, JQuery and
-          Bootstrap.
+          tools and frameworks, including HTML5, CSS3, JavaScript, React, JQuery
+          and Bootstrap.
           <br />
           <br />
           I am currently working within an agile team as a Front-End Developer
