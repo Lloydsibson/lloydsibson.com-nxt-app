@@ -80,7 +80,8 @@ const AboutPage = () => {
               className="profile-img"
               style={{
                 backgroundImage:
-                  "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1667817743/img/linkedin-office-photo-tp_jjfyuo.jpg)",
+                  "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1697048863/linkedin-office-photo-otw_ft2yjb.jpg)",
+                // "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1667817743/img/linkedin-office-photo-tp_jjfyuo.jpg)",
               }}
             ></div>
             <div className="spinner-background"></div>
