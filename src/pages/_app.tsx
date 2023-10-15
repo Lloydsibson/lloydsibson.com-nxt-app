@@ -13,20 +13,18 @@ import { MobileNav } from "../components/MobileNav";
 import CookieConsent from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 
-// import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-// const PoppinsFont = Poppins({
-//   weight: ["100", "300", "400", "500", "600", "700"],
-//   style: ["normal", "italic"],
-//   subsets: ["devanagari", "latin", "latin-ext"],
-// });
+const PoppinsFont = Poppins({
+  weight: ["100", "300", "400", "500", "600", "700"],
+  style: ["normal", "italic"],
+  subsets: ["devanagari", "latin", "latin-ext"],
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // ADDS NEXT.JS FONT OPTIMISATION CLASS
-    //document.body.classList.add(`${PoppinsFont.className}`);
     // RUN FUNCTION ONCE PAGE HAS FULLY LOADED
     function ready(callbackFunc: any) {
       if (document.readyState === "complete") {
@@ -57,6 +55,12 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        {/* FONT FAMILY ADDED */}
+        <style jsx global>{`
+          body {
+            font-family: ${PoppinsFont};
+          }
+        `}</style>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
