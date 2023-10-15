@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 import { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 import { store } from "../../redux/store";
@@ -53,28 +55,36 @@ export default function App({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <Provider store={store}>
-      <CookieConsent />
-      <div className={`page-scroll`}>
-        <div className="page-container">
-          <Nav />
-          <main>
-            <Layout>
-              <Component {...pageProps} />
-              <Analytics />
-            </Layout>
-          </main>
-          <Footer />
+    <>
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+      </Head>
+      <Provider store={store}>
+        <CookieConsent />
+        <div className={`page-scroll`}>
+          <div className="page-container">
+            <Nav />
+            <main>
+              <Layout>
+                <Component {...pageProps} />
+                <Analytics />
+              </Layout>
+            </main>
+            <Footer />
+          </div>
         </div>
-      </div>
-      <MobileNav />
-      <div className={`loading-screen ${isLoading ? "-show" : "-hide"}`}>
-        <div className="spinner">
-          <div className="double-bounce1"></div>
-          <div className="double-bounce2"></div>
+        <MobileNav />
+        <div className={`loading-screen ${isLoading ? "-show" : "-hide"}`}>
+          <div className="spinner">
+            <div className="double-bounce1"></div>
+            <div className="double-bounce2"></div>
+          </div>
         </div>
-      </div>
-    </Provider>
+      </Provider>
+    </>
   );
 }
 
