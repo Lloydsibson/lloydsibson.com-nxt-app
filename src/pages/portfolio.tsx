@@ -214,22 +214,27 @@ const PortfolioPage = () => {
             <div className="vt-role-container__role">
               <h3 className="vt-role-title">UI Developer</h3>
               <h4 className="vt-role-company-name">
-                <a
+                {/* <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://www.arclightmusic.co.uk"
                 >
                   Arclight Music
+                </a> 
+                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />    
+                */}
+                <a href="#" style={{ borderBottom: "unset" }}>
+                  Arclight Music
                 </a>
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
-                  <CalcDiffTwoDates
+                  {/* <CalcDiffTwoDates
                     startDate={"01/01/2019"}
                     startYear={2019}
                     startMonth={"Jan"}
-                  />
+                  /> */}
+                  <span className="role-total-years">Jan 2019 - Dec 2022</span>
                 </h5>
                 <h6 className="vt-role-other__industry">Arts & Culture</h6>
               </div>
