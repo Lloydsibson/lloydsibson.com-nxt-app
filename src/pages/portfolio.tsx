@@ -214,18 +214,18 @@ const PortfolioPage = () => {
             <div className="vt-role-container__role">
               <h3 className="vt-role-title">UI Developer</h3>
               <h4 className="vt-role-company-name">
-                {/* <a
+                Github:&nbsp;
+                <a
                   target="_blank"
                   rel="noreferrer"
-                  href="https://www.arclightmusic.co.uk"
+                  href="https://github.com/Lloydsibson/arclightmusic.com"
                 >
                   Arclight Music
-                </a> 
-                  <FontAwesomeIcon icon={faArrowUpRightFromSquare} />    
-                */}
-                <a href="#" style={{ borderBottom: "unset" }}>
-                  Arclight Music
                 </a>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                {/* <a href="#" style={{ borderBottom: "unset" }}>
+                  Arclight Music
+                </a> */}
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
