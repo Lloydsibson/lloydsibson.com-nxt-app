@@ -113,12 +113,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
         <Main />
         <NextScript />
         {/* TIDIO - CHAT BOT */}
-        <Script
+        {/* <Script
           id="tidio-script"
           strategy="afterInteractive"
           src="//code.tidio.co/1wuhil6yeuojhxucewyyy0jaz2uqup5q.js"
           async
-        />
+        /> */}
       </body>
     </Html>
   );
