@@ -17,7 +17,7 @@ import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 
 const AboutPage = () => {
-  const startDate: any = new Date(2018, 8, 17);
+  const startDate: any = new Date(2016, 8, 17);
   const currentDate: any = new Date();
   const currentYear: any = currentDate.getFullYear().toString();
   const calcWorkingDays = (startDate: any, currentDate: any) => {
@@ -364,7 +364,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2015) / 1
+                    (currentDate.getFullYear() - 2015) / 2
                   )}0%`,
                 }}
               ></div>
@@ -382,7 +382,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2015) / 1
+                    (currentDate.getFullYear() - 2015) / 2
                   )}0%`,
                 }}
               ></div>
@@ -400,7 +400,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2019) / 1
+                    (currentDate.getFullYear() - 2019) / 2
                   )}0%`,
                 }}
               ></div>
@@ -434,9 +434,9 @@ const AboutPage = () => {
             <div className="skills-inner-container__skill-title-container">
               <h3>HTML/CSS</h3>
               <div className="skill-value">
-                {currentDate.getFullYear() - 2018 > 1
-                  ? `${currentDate.getFullYear() - 2018} Yrs`
-                  : `${currentDate.getFullYear() - 2018} Yr`}
+                {currentDate.getFullYear() - 2016 > 1
+                  ? `${currentDate.getFullYear() - 2016} Yrs`
+                  : `${currentDate.getFullYear() - 2016} Yr`}
               </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
@@ -444,7 +444,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2018) / 1
+                    (currentDate.getFullYear() - 2016) / 2
                   )}0%`,
                 }}
               ></div>
@@ -453,9 +453,9 @@ const AboutPage = () => {
             <div className="skills-inner-container__skill-title-container">
               <h3>JavaScript</h3>
               <div className="skill-value">
-                {currentDate.getFullYear() - 2018 > 1
-                  ? `${currentDate.getFullYear() - 2018} Yrs`
-                  : `${currentDate.getFullYear() - 2018} Yr`}
+                {currentDate.getFullYear() - 2016 > 1
+                  ? `${currentDate.getFullYear() - 2016} Yrs`
+                  : `${currentDate.getFullYear() - 2016} Yr`}
               </div>
             </div>
             <div className="skills-inner-container__skill-percentage-container">
@@ -463,7 +463,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2018) / 1
+                    (currentDate.getFullYear() - 2016) / 2
                   )}0%`,
                 }}
               ></div>
@@ -482,7 +482,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2020) / 1
+                    (currentDate.getFullYear() - 2020) / 2
                   )}0%`,
                 }}
               ></div>
@@ -500,7 +500,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2022) / 1
+                    (currentDate.getFullYear() - 2022) / 2
                   )}0%`,
                 }}
               ></div>
