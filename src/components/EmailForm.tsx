@@ -212,8 +212,16 @@ export const EmailForm = () => {
               <input type="checkbox" onChange={(e) => checkCheckBox(e)} />
               <span className="control-indicator"></span>
               <p>
-                I understand that Monocode will securely hold my data in
-                accordance with their privacy policy.
+                I understand that FormSpree will securely hold my data in
+                accordance with their{" "}
+                <a
+                  href="https://formspree.io/legal/privacy-policy/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  privacy policy
+                </a>
+                .
               </p>
             </label>
           </div>

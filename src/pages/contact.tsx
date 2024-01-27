@@ -57,7 +57,7 @@ const ContactPage = () => {
               </p>
             </div>
           </div>
-          <div className="contact-cta-container">
+          {/* <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
               <FontAwesomeIcon icon={faTag} />
             </div>
@@ -68,7 +68,7 @@ const ContactPage = () => {
                 requirements for a FREE quote.
               </p>
             </div>
-          </div>
+          </div> */}
         </aside>
         <section className="content-container__message-container">
           <header className="subheading-container">

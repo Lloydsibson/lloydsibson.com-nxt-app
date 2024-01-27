@@ -47,8 +47,9 @@
     margin-top: 0;
     margin-bottom: 20px;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1rem;
+    text-transform: uppercase;
   }
   p {
     font-size: 1rem;
@@ -191,6 +192,9 @@
       img {
         max-width: 200px;
       }
+    }
+    h3 {
+      font-size: 0.9rem;
     }
   }
 }

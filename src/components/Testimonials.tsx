@@ -58,42 +58,6 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               <img
-                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/car-review_ewlz1v.jpg"
-                alt="Carla Cabeça's selfie"
-                width="80"
-                height="80"
-              />
-              <div className="spinner">
-                <div className="double-bounce1"></div>
-                <div className="double-bounce2"></div>
-              </div>
-            </div>
-            <section className="review-container__text-container">
-              <p>
-                Lloyd is exceptional at using HTML, CSS, and JavaScript to
-                deliver pixel perfect and responsive pages from our UI/UX
-                designs.
-                {/* I worked with Lloyd on the same Agile team at WOS Group. He is
-                  a very passionate and knowledgeable Front-End Developer. Also
-                  exceptional at using HTML, CSS, And JavaScript to deliver
-                  pixel perfect user interfaces and responsive content pages
-                  from our UI/UX designs. A natural problem solver, creative and
-                  easily approachable. Lloyd is a great asset to any company and
-                  he has my full recommendation. */}
-              </p>
-              {/* <ReadMoreBtn text={"Read More"} /> */}
-            </section>
-            <section className="review-container__client-details">
-              <h2>Carla Cabeça</h2>
-              <h3>UI/UX Designer @ FARFETCH</h3>
-              {/* <h4>FARFETCH</h4> */}
-            </section>
-          </article>
-        </div>
-        <div className="review-item">
-          <article className="review-container">
-            <div className="review-container__image-container">
-              <img
                 src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1688124335/saul_e3mjs7.webp"
                 alt="Saul Gooding's selfie"
                 width="80"
@@ -133,7 +97,7 @@ export const Testimonials = () => {
             </div>
             <section className="review-container__text-container">
               <p>
-                Awesome team to work with, have done an incredible job on my
+                Awesome guy to work with, he&apos;s done an incredible job on my
                 website and the ongoing design. Would 10/10 recomend!!
               </p>
               {/* <ReadMoreBtn text={"Read More"} /> */}
@@ -142,6 +106,42 @@ export const Testimonials = () => {
               <h2>Cameron Hamilton</h2>
               <h3>Founder @ Arclight Music</h3>
               {/* <h4>Arclight Music</h4> */}
+            </section>
+          </article>
+        </div>
+        <div className="review-item">
+          <article className="review-container">
+            <div className="review-container__image-container">
+              <img
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/car-review_ewlz1v.jpg"
+                alt="Carla Cabeça's selfie"
+                width="80"
+                height="80"
+              />
+              <div className="spinner">
+                <div className="double-bounce1"></div>
+                <div className="double-bounce2"></div>
+              </div>
+            </div>
+            <section className="review-container__text-container">
+              <p>
+                Lloyd is exceptional at using HTML, CSS, and JavaScript to
+                deliver pixel perfect and responsive pages from our UI/UX
+                designs.
+                {/* I worked with Lloyd on the same Agile team at WOS Group. He is
+                  a very passionate and knowledgeable Front-End Developer. Also
+                  exceptional at using HTML, CSS, And JavaScript to deliver
+                  pixel perfect user interfaces and responsive content pages
+                  from our UI/UX designs. A natural problem solver, creative and
+                  easily approachable. Lloyd is a great asset to any company and
+                  he has my full recommendation. */}
+              </p>
+              {/* <ReadMoreBtn text={"Read More"} /> */}
+            </section>
+            <section className="review-container__client-details">
+              <h2>Carla Cabeça</h2>
+              <h3>UI/UX Designer @ FARFETCH</h3>
+              {/* <h4>FARFETCH</h4> */}
             </section>
           </article>
         </div>
@@ -161,7 +161,7 @@ export const Testimonials = () => {
             </div>
             <section className="review-container__text-container">
               <p>
-                Such creative and perfectionist team, Lloyd has been doing a
+                Such creative and perfectionist person, Lloyd has been doing a
                 great job with my website, highly recommend to anyone.
               </p>
               {/* <ReadMoreBtn text={"Read More"} /> */}
