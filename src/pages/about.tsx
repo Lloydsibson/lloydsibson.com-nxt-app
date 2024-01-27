@@ -233,50 +233,29 @@ const AboutPage = () => {
           <h2>About</h2>
         </header>
         <p className="read-more-text">
-          As a self-motivated and proactive Front-End Developer with a BA (Hons)
-          in Fine Art, I have successfully developed unique websites and complex
-          user interfaces for high profile clients including Rolex, Tudor, Tag
-          Heuer, Cartier, Gucci, Omega, Breitling and IWC.
+          As a Front End Developer at Next, I apply my technical and creative
+          skills to develop complex and user-friendly websites/components for a
+          leading clothing, footwear and home products retailer. <br />
+          <br />I work within an agile team, using various languages, tools and
+          frameworks, such as React, TypeScript, JavaScript, CSS, HTML, Monetate
+          and Figma. I act as a point of escalation for front-end development
+          queries, plan and manage projects from inception to completion, and
+          contribute to the development of A/B tests, realising an uplift of
+          £10M.
           <br />
           <br />
-          The areas in which I excel the most include coding and developing
-          websites, customer service, communication and using various languages,
-          tools and frameworks, including HTML5, CSS3, JavaScript, React, JQuery
-          and Bootstrap.
-          <br />
-          <br />
-          I am currently working within an agile team as a Front-End Developer
-          for Next, multinational clothing, footwear and home products retailer.
-          Previously, I worked as a Front-End Developer on all E-commerce
-          websites for The Watches of Switzerland Group, the largest prestige
-          luxury jewellers and timepieces specialist in the UK, where I was also
-          the dedicated UK and USA Developer for Rolex and official
-          representative for The WOS Group. Using my creative design approach,
-          coupled with extensive industry, E-commerce and UI/UX knowledge, I
-          created a bespoke website journey for Rolex on behalf of Watches of
-          Switzerland, whilst adhering to Rolex&apos;s strict design and
-          development requirements.
-          <br />
-          <br />
-          In addition to being a successful developer, I also have an
-          entrepreneurial and creative design background. I founded and managed
-          Monocode, an innovative digital agency, where I combine both creative
-          and technical aspects of design and development to optimise
-          clients&apos; online presence and brand awareness. I create unique
-          graphics and web designs for a range of clients in a freelance
-          capacity, utilising various design techniques, development tools and
-          technologies.
-          <br />
-          <br />
-          One of my personal projects is a voluntary role as a UI Developer at
-          Arclight, a non-profit events company founded in 2019 with a passion
-          for music and education to help make a change in what has locally
-          become a dying part of the city&apos;s culture.
-          <br />
-          <br />
-          To find out more about how I could make a significant contribution to
-          your organisation, please reach out through the Contact page or send
-          me an InMail on Linkedin.
+          Before joining Next, I worked as a Front End Developer for The Watches
+          of Switzerland Group, where I was the dedicated UK and USA Developer
+          for Rolex and the official representative for The WOS Group. I created
+          a bespoke website journey for Rolex, adhering to their strict design
+          and development requirements, and shipped features continuously into
+          production using an agile product development flow. <br />
+          <br />I also founded and managed Monocode, an innovative digital
+          agency, where I combined both creative and technical aspects of design
+          and development to optimise clients’ online presence and brand
+          awareness. I have a BA (Hons) in Fine Art from De Montfort University,
+          and I am passionate about creating unique and engaging digital
+          experiences.
         </p>
         <ReadMoreBtn text={"Read More"} />
       </section>
