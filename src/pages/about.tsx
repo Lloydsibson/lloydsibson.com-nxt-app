@@ -109,7 +109,7 @@ const AboutPage = () => {
               <div className="btn-primary">
                 {/* <a aria-disabled={true}>Download CV</a> */}
                 <a
-                  href="/static/lloyd-sibson-ba-front-end-developer-cv-2024.pdf"
+                  href="/static/lloyd-sibson-ba-front-end-developer-cv.pdf"
                   download
                 >
                   Download CV
