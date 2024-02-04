@@ -487,7 +487,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <div className="custom-divider"></div>
+      {/* <div className="custom-divider"></div>
       <section className="learning-container">
         <header className="subheading-container">
           <h2>Learning</h2>
@@ -525,26 +525,8 @@ const AboutPage = () => {
             <h3 className="learning-tech-x__title">Jest</h3>
             <p className="learning-tech-x__type">Unit Testing</p>
           </div>
-          {/* <div className="learning-tech-x">
-            <img
-              className="learning-tech-x__image"
-              src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
-              loading="lazy"
-              alt="Reduxs logo"
-            />
-            <h3 className="learning-tech-x__title">Redux</h3>
-          </div>
-          <div className="learning-tech-x">
-            <img
-              className="learning-tech-x__image"
-              src="https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/074/full/nextjs.png"
-              loading="lazy"
-              alt="Next JS logo"
-            />
-            <h3 className="learning-tech-x__title">Next.js</h3>
-          </div> */}
         </div>
-      </section>
+      </section> */}
       <div className="custom-divider"></div>
       <section className="tech-stack-container">
         <header className="subheading-container">
