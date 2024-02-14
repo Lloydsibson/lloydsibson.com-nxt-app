@@ -42,7 +42,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         <meta property="og:url" content="https://www.lloydsibson.com/" />
         <meta
           property="og:title"
-          content="Lloyd Sibson BA | CRO, Front End Developer & UI/UX Designer"
+          content="Lloyd Sibson BA | Front End Developer & UI/UX Designer"
         />
         <meta
           property="og:description"
@@ -56,7 +56,7 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
         <meta property="twitter:url" content="https://www.lloydsibson.com/" />
         <meta
           property="twitter:title"
-          content="Lloyd Sibson BA | CRO, Front End Developer & UI/UX Designer"
+          content="Lloyd Sibson BA | Front End Developer & UI/UX Designer"
         />
         <meta
           property="twitter:description"

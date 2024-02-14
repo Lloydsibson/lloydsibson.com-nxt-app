@@ -28,7 +28,7 @@ const PortfolioPage = () => {
     {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
       linkText: "Cookie Banner Redesign",
-      postedDate: new Date(2023, 5, 28),
+      postedDate: new Date(2023, 11, 28),
       icon: faFigma,
     },
     {

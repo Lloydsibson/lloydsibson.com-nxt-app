@@ -95,7 +95,7 @@ const AboutPage = () => {
           <div className="bio-info-container">
             <h2 className="bio-info-container__name">Lloyd Sibson BA</h2>
             <h3 className="bio-info-container__sub-heading">
-              CRO & Front End Developer at 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | React |
+              Front End Developer at 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | CRO | React |
               TypeScript | JavaScript | CSS | HTML | UI/UX
             </h3>
             <p className="bio-info-container__country">
@@ -233,8 +233,8 @@ const AboutPage = () => {
           <h2>About</h2>
         </header>
         <p className="read-more-text">
-          As a CRO & Front End Developer at Next, I apply my technical and
-          creative skills to develop and test complex and user-friendly
+          As a Front End Developer at Next, I apply my technical and creative
+          skills to develop and test complex and user-friendly
           websites/components for a leading clothing, footwear and home products
           retailer. <br />
           <br />I work within an agile team, using various languages, tools and
