@@ -107,13 +107,14 @@ const AboutPage = () => {
             <p className="bio-info-container__connections">500+ Connections</p>
             <div className="bio-links">
               <div className="btn-primary">
-                {/* <a aria-disabled={true}>Download CV</a> */}
-                <a
+              <a aria-disabled={true}>Download CV</a>
+               {/*  <a
                   href="/static/lloyd-sibson-ba-front-end-developer-cv.pdf"
                   download
                 >
                   Download CV
                 </a>
+                */}
               </div>
               <div className="btn-primary bio-btn">
                 <a href="https://www.linkedin.com/in/lloyd-sibson/">
