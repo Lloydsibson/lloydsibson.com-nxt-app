@@ -112,6 +112,7 @@ export const EmailForm = () => {
                 required
                 type="text"
                 name="name"
+                autoComplete="on"
                 placeholder="Full Name"
                 onChange={(e) => handleNameChange(e)}
                 value={formName}
@@ -124,6 +125,7 @@ export const EmailForm = () => {
                 required
                 type="email"
                 name="email"
+                autoComplete="on"
                 // name="_replyto"
                 placeholder="Email Address"
                 onChange={(e) => handleEmailChange(e)}
@@ -186,6 +188,7 @@ export const EmailForm = () => {
                 required
                 name="message"
                 placeholder="Message"
+                spellCheck="true"
                 onChange={(e) => handleMessageChange(e)}
                 value={formMessage}
               />
