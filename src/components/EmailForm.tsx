@@ -172,6 +172,7 @@ export const EmailForm = () => {
                 required
                 type="text"
                 name="subject"
+                spellCheck="true"
                 placeholder="Subject"
                 onChange={(e) => handleSubjectChange(e)}
                 value={formSubject}

@@ -9,7 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDumbbell } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faGamepad } from "@fortawesome/free-solid-svg-icons";
-import { faGuitar } from "@fortawesome/free-solid-svg-icons";
+//import { faGuitar } from "@fortawesome/free-solid-svg-icons";
+import { faDrum } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 import { Clients } from "../components/Clients";
 import { ReadMoreBtn } from "../components/ReadMore";
@@ -706,7 +707,7 @@ const AboutPage = () => {
             <div className="fun-facts-container__fun-facts gaming">
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Played</h3>
-              <span>Spiderman 2</span>
+              <span>FF7: Rebirth</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />
@@ -714,9 +715,9 @@ const AboutPage = () => {
               <span>125KG</span>
             </div>
             <div className="fun-facts-container__fun-facts">
-              <FontAwesomeIcon icon={faGuitar} />
-              <h3>Playing Guitar Since</h3>
-              <span>2010</span>
+              <FontAwesomeIcon icon={faDrum} />
+              <h3>Playing Drums Since</h3>
+              <span>2023</span>
             </div>
           </div>
           {/* <PlexRSSFeed /> */}
