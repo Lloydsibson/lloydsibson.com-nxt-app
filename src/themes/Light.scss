@@ -77,6 +77,10 @@ body.light .review-item .review-container .review-container__client-details p {
   color: $light-secondary-text;
 }
 
+body.light a:focus-visible {
+  border: 1px solid #000;
+}
+
 // body.light .nav-container .contact {
 //   background-color: $light-fg;
 // }

@@ -48,13 +48,15 @@
         display: flex;
         align-items: center;
       }
-      svg {
-        color: #b0b0b0;
+      a {
         margin-right: 10px;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          // opacity: 1;
-          color: #fff;
+        svg {
+          color: #b0b0b0;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            // opacity: 1;
+            color: #fff;
+          }
         }
       }
     }

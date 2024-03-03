@@ -900,7 +900,7 @@ a {
 .btn-primary {
   margin-top: 27px;
   a {
-    color: #fff;
+    color: $primary-color;
     background-color: $secondary-color;
     border: 2px solid $secondary-color;
     padding: 0.7em 2.1em;
@@ -922,6 +922,10 @@ a {
   }
 }
 
+a:focus-visible {
+  border: 1px solid $primary-color;
+}
+
 @media screen and (max-width: 500px) {
   .btn-primary {
     a {
@@ -933,7 +937,7 @@ a {
 // FOR ONES WITH NO A LINK NESTED INSIDE
 .btn-primary-two {
   margin-top: 27px;
-  color: #fff;
+  color: $primary-color;
   background-color: $secondary-color;
   border: 2px solid $secondary-color;
   padding: 0.7em 2.1em;
