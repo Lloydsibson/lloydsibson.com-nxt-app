@@ -26,7 +26,7 @@ const VideoBackground = () => {
         autoPlay
         //ref={ref}
         loop
-        muted
+        muted={true}
         playsInline
         // ref="video"
         className="videoplayer"
