@@ -26,6 +26,12 @@ import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 const PortfolioPage = () => {
   const LinkData = [
     {
+      url: "https://codepen.io/lloydsibson/pen/MWReOgE",
+      linkText: "FashionPay Accordion",
+      postedDate: new Date(2024, 2, 12),
+      icon: faCodepen,
+    },
+    {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
       linkText: "Cookie Banner Redesign",
       postedDate: new Date(2023, 11, 28),
@@ -45,7 +51,7 @@ const PortfolioPage = () => {
     },
     {
       url: "https://codepen.io/lloydsibson/pen/rNJPNxm",
-      linkText: "NEXT - Custom Slider",
+      linkText: "Custom Slider",
       postedDate: new Date(2022, 5, 15),
       icon: faCodepen,
     },
@@ -91,12 +97,12 @@ const PortfolioPage = () => {
       postedDate: new Date(2021, 4, 8),
       icon: faFigma,
     },
-    {
-      url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
-      linkText: "WOS - Rolex",
-      postedDate: new Date(2021, 0, 15),
-      icon: faDesktop,
-    },
+    // {
+    //   url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
+    //   linkText: "WOS - Rolex",
+    //   postedDate: new Date(2021, 0, 15),
+    //   icon: faDesktop,
+    // },
     // {
     //   url: "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1",
     //   linkText: "APUK - Mobile Nav Design",
