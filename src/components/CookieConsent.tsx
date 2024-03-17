@@ -73,7 +73,16 @@ const CookieConsent = () => {
           <button id="cookie-accept" onClick={CookieHandler}>
             Accept All
           </button>
-          <button className="leave" onClick={() => router.back()}>
+          <button
+            className="leave"
+            onClick={() => {
+              router.back();
+              // FALL BACK - IF THERES NO HISTORY AND CANT GO BACK CLOSE THE TAB
+              setTimeout(function () {
+                window.close();
+              }, 400);
+            }}
+          >
             No, Leave Website
           </button>
         </div>
