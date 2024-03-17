@@ -63,15 +63,15 @@ const CookieConsent = () => {
             improvements, and personalise your experience.
           </p>
           <p>
-            Click ‘Accept All’ to get the best experience. There will be a
-            feature to ‘Manually Manage Cookies‘ in the future.
+            Click ‘Continue’ to get the best experience. There will be a feature
+            to ‘Manually Manage Cookies‘ in the future.
             {/* Click ‘Accept All’ to get the best experience. You can change these
             settings at any time by clicking ‘Manually Manage Cookies’ below. */}
           </p>
         </div>
         <div className="cookie-container__cookies-right">
           <button id="cookie-accept" onClick={CookieHandler}>
-            Accept All
+            Continue
           </button>
           <button
             className="leave"
