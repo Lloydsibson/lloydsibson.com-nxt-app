@@ -538,29 +538,6 @@ body.light .current-workplace-container a:hover {
   border-color: $light-theme;
 }
 
-// COOKIE POLICY
-body.light #cookie-message .cookie-container {
-  // background: rgba(255, 255, 255, 0.75);
-  // border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #27242c;
-  color: #fff;
-  border-left-color: $light-theme;
-}
-
-body.light .cookie-container__cookies-left span {
-  color: #fff;
-}
-
-body.light #cookie-message #cookie-accept {
-  color: #fff;
-  border-color: $light-theme;
-  // background-color: $light-theme;
-}
-body.light #cookie-message #cookie-accept:hover {
-  background-color: $light-theme;
-  color: $light-fg;
-}
-
 body.light .bk-to-top-container .bk-to-top-container__icon:hover {
   background-color: $light-theme;
   svg {

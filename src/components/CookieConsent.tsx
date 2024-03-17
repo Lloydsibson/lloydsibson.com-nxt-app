@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 const CookieConsent = () => {
   const [cookieMessage, setCookieMessage] = useState<boolean>(true);
+  const router = useRouter();
 
   // CREATE AND ADD COOKIE
 
@@ -42,7 +44,7 @@ const CookieConsent = () => {
       //SETS FADE IN DELAY WITH OPACITY CSS
       setTimeout(() => {
         setCookieMessage(false);
-      }, 1500);
+      }, 750);
     }
   }, []);
 
@@ -55,16 +57,25 @@ const CookieConsent = () => {
     <div id="cookie-message" className={cookieMessage ? "-close" : ""}>
       <div className="cookie-container">
         <div className="cookie-container__cookies-left">
-          {/* <span>Cookie Policy</span> */}
-          Cookies are used to improve the website experience and help to
-          understand how it can be made better. By continuing to use the site
-          you agree that you are happy to receive all cookies. If you would like
-          to turn off cookies you can manage cookies in your browser settings.
+          <h3 className="cookie-title">My Site Uses Cookies</h3>
+          <p>
+            Cookies help me to ensure my site works securely, continually make
+            improvements, and personalise your experience.
+          </p>
+          <p>
+            Click ‘Accept All’ to get the best experience. There will be a
+            feature to ‘Manually Manage Cookies‘ in the future.
+            {/* Click ‘Accept All’ to get the best experience. You can change these
+            settings at any time by clicking ‘Manually Manage Cookies’ below. */}
+          </p>
         </div>
         <div className="cookie-container__cookies-right">
-          <div id="cookie-accept" onClick={CookieHandler}>
-            Continue
-          </div>
+          <button id="cookie-accept" onClick={CookieHandler}>
+            Accept All
+          </button>
+          <button className="leave" onClick={() => router.back()}>
+            No, Leave Website
+          </button>
         </div>
       </div>
     </div>
