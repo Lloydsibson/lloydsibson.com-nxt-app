@@ -3,9 +3,40 @@ import { useEffect, useState } from "react";
 const CookieConsent = () => {
   const [cookieMessage, setCookieMessage] = useState<boolean>(true);
 
+  // CREATE AND ADD COOKIE
+
+  function createCookie(name: string, value: string, days: number) {
+    let date, expires;
+    if (days) {
+      date = new Date();
+      date.setDate(date.getDate() + days);
+      expires = "; expires=" + date.toUTCString();
+    } else {
+      expires = "";
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+
+  // SEARCH COOKIES & RETURN NAME
+
+  function getCookie(username: string) {
+    let name = username + "=";
+    let spli = document.cookie.split(";");
+    for (let j = 0; j < spli.length; j++) {
+      let char = spli[j];
+      while (char.charAt(0) == " ") {
+        char = char.substring(1);
+      }
+      if (char.indexOf(name) == 0) {
+        return char.substring(name.length, char.length);
+      }
+    }
+    return "";
+  }
+
   //RUN FUNCTION ONCE DOM HAS LOADED
   useEffect(() => {
-    if (localStorage.getItem("Lloydsibson.com-CookiePolicy") === "accepted") {
+    if (getCookie("LloydsibsonCookiePolicy").length > 0) {
       // DO NOTHING
     } else {
       //SETS FADE IN DELAY WITH OPACITY CSS
@@ -16,7 +47,7 @@ const CookieConsent = () => {
   }, []);
 
   const CookieHandler = () => {
-    localStorage.setItem("Lloydsibson.com-CookiePolicy", "accepted");
+    createCookie("LloydsibsonCookiePolicy", "Accepted", 365);
     setCookieMessage(true);
   };
 
