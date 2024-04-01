@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      {/* NEXGT.JS SPEED INSIGHTS */}
+      {/* NEXT.JS SPEED INSIGHTS */}
       <SpeedInsights />
       {/* ---------- */}
       <Head>
