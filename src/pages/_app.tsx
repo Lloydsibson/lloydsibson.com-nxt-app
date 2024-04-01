@@ -13,6 +13,8 @@ import { MobileNav } from "../components/MobileNav";
 import CookieConsent from "../components/CookieConsent";
 import { Footer } from "../components/Footer";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 // import { Poppins } from "next/font/google";
 
 // const PoppinsFont = Poppins({
@@ -54,6 +56,9 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
+      {/* NEXGT.JS SPEED INSIGHTS */}
+      <SpeedInsights />
+      {/* ---------- */}
       <Head>
         {/* FONT FAMILY ADDED */}
         {/* <style jsx global>{`
