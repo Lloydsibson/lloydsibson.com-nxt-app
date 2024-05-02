@@ -96,8 +96,8 @@ const AboutPage = () => {
           <div className="bio-info-container">
             <h2 className="bio-info-container__name">Lloyd Sibson BA</h2>
             <h3 className="bio-info-container__sub-heading">
-              Front End Developer at 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | CRO | React |
-              TypeScript | JavaScript | CSS | HTML | UI/UX
+              Front End Developer @ 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | CRO | Optimisation |
+              React | JavaScript | CSS | HTML | UI/UX
             </h3>
             <p className="bio-info-container__country">
               United Kingdom •&nbsp;
