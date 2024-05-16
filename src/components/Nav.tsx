@@ -6,6 +6,7 @@ import { useRouter } from "next/router";
 // import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 // import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { PagePositionScrollBar } from "./PagePositionScrollBar";
+import { AnnouncementBanner } from "@/components/AnnoucementBanner";
 
 // import { WeatherAPI } from "./ApiWeather";
 import { LDToggle } from "./LDToggle";
@@ -21,6 +22,7 @@ export const Nav = () => {
   };
   return (
     <header className="nav-container">
+      <AnnouncementBanner viewport="mobile" />
       <PagePositionScrollBar />
       <Link href="/" className="nav-container__name-container">
         <div className="logo-container">

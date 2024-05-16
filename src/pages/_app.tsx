@@ -128,3 +128,4 @@ import "../components/Testimonials.scss";
 import "../components/LazyLoadingIcon.scss";
 import "../components/CalcDiffTwoDates.scss";
 import "../components/AppleWatch.scss";
+import "../components/AnnoucementBanner.scss";

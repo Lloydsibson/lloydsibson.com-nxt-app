@@ -1,0 +1,85 @@
+.announcement-banner-container {
+  background: rgb(63, 0, 133);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 0, 133, 1) 0%,
+    rgba(132, 24, 252, 1) 68%,
+    rgba(106, 0, 224, 1) 100%
+  );
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  //   box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+  //   position: fixed;
+  //   top: 0;
+  //   z-index: 99999;
+}
+
+.announcement-banner-container__message {
+  font-size: 0.9rem;
+  margin: unset;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  max-height: 45px;
+  overflow: hidden;
+  color: #fff;
+}
+
+.announcement-banner-container__message > a {
+  text-decoration: underline;
+}
+
+.announcement-banner-container.mobile {
+  display: none;
+}
+
+.announcement-banner-container.mobile {
+  position: absolute;
+  top: -45px;
+  left: 0;
+  background: rgb(63, 0, 133);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 0, 133, 1) 0%,
+    rgba(132, 24, 252, 1) 68%,
+    rgba(106, 0, 224, 1) 100%
+  );
+}
+
+@media only screen and (max-width: 900px) {
+  .announcement-banner-container.desktop {
+    display: none;
+  }
+  .announcement-banner-container.mobile {
+    display: block;
+  }
+}
+
+// LIGHT MODE
+body.light .announcement-banner-container.desktop {
+  background: rgb(0, 44, 115);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 44, 115, 1) 0%,
+    rgba(0, 99, 255, 1) 68%,
+    rgba(23, 78, 166, 1) 100%
+  );
+}
+
+body.light .announcement-banner-container.mobile {
+  background: rgb(0, 44, 115);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 44, 115, 1) 0%,
+    rgba(0, 99, 255, 1) 68%,
+    rgba(23, 78, 166, 1) 100%
+  );
+}
+
+body.light .announcement-banner-container p,
+body.light .announcement-banner-container a {
+  color: #fff;
+}
