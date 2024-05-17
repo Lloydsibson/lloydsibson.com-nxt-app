@@ -69,6 +69,12 @@
   }
 }
 
+@media (max-height: 940px) {
+  .announcement-banner-container.desktop {
+    display: none;
+  }
+}
+
 // LIGHT MODE
 body.light .announcement-banner-container.desktop {
   background: rgb(0, 44, 115);
