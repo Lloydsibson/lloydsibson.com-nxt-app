@@ -3,6 +3,7 @@ import Head from "next/head";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
 import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
+import { useEffect } from "react";
 
 // import Image from "next/image";
 // import logoBackground from "/public/assets/logo-homepage.png";
@@ -29,6 +30,16 @@ const HomePage = () => {
   //     // transport: "xhr", // optional, beacon/xhr/image
   //   });
   // };
+
+  useEffect(() => {
+    // Add or remove classes to the body element based on the page being viewed
+    document.body.classList.add("homepage"); // Add your desired class here
+
+    // Return a cleanup function to remove the class when the component unmounts
+    return () => {
+      document.body.classList.remove("homepage"); // Remove the class when the component unmounts
+    };
+  }, []); // Empty dependency array to ensure the effect runs only once on component mount
 
   return (
     <>
