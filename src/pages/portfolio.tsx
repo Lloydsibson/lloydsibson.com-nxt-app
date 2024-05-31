@@ -26,6 +26,12 @@ import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 const PortfolioPage = () => {
   const LinkData = [
     {
+      url: "https://codepen.io/lloydsibson/pen/gOJmPev",
+      linkText: "NextPay Credit Form",
+      postedDate: new Date(2024, 4, 31),
+      icon: faCodepen,
+    },
+    {
       url: "https://codepen.io/lloydsibson/pen/MWReOgE",
       linkText: "FashionPay Accordion",
       postedDate: new Date(2024, 2, 12),
@@ -91,12 +97,12 @@ const PortfolioPage = () => {
       postedDate: new Date(2021, 7, 19),
       icon: faFigma,
     },
-    {
-      url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
-      linkText: "New Website Design",
-      postedDate: new Date(2021, 4, 8),
-      icon: faFigma,
-    },
+    // {
+    //   url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
+    //   linkText: "New Website Design",
+    //   postedDate: new Date(2021, 4, 8),
+    //   icon: faFigma,
+    // },
     // {
     //   url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
     //   linkText: "WOS - Rolex",
