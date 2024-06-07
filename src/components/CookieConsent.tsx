@@ -57,6 +57,11 @@ const CookieConsent = () => {
     <div id="cookie-message" className={cookieMessage ? "-close" : ""}>
       <div className="cookie-container">
         <div className="cookie-container__cookies-left">
+          <img
+            className="cookie-img"
+            alt="Cartoon cookie"
+            src="https://cdn-icons-png.flaticon.com/512/5473/5473473.png"
+          />
           <h3 className="cookie-title">My Site Uses Cookies</h3>
           <p>
             Cookies help me to ensure my site works securely, continually make
@@ -73,7 +78,7 @@ const CookieConsent = () => {
           <button id="cookie-accept" onClick={CookieHandler}>
             Continue
           </button>
-          <button
+          {/* <button
             className="leave"
             onClick={() => {
               router.back();
@@ -84,7 +89,7 @@ const CookieConsent = () => {
             }}
           >
             No, Leave Website
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
