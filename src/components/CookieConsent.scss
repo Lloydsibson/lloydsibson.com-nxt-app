@@ -36,7 +36,7 @@ body #cookie-message.-close {
   padding: 35px 35px 44px 35px;
   width: 100%;
   max-width: 400px;
-  background-color: #fff;
+  background-color: #333;
   // border: 1px solid #404040;
 }
 #cookie-message #cookie-accept {
@@ -74,14 +74,12 @@ body #cookie-message.-close {
   font-size: 1.563rem;
   text-align: left;
   margin-top: unset;
-  color: #000;
 }
 
 .cookie-container__cookies-left > p {
   text-align: left;
   max-width: 583px;
   margin: 16px auto 16px auto;
-  color: #000;
 }
 
 .cookie-container__cookies-left span {
