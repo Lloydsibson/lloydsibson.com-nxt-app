@@ -26,6 +26,12 @@ import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 const PortfolioPage = () => {
   const LinkData = [
     {
+      url: "https://codepen.io/lloydsibson/pen/abrwgaq",
+      linkText: "VIP jQuery Slider",
+      postedDate: new Date(2024, 5, 7),
+      icon: faCodepen,
+    },
+    {
       url: "https://codepen.io/lloydsibson/pen/gOJmPev",
       linkText: "NextPay Credit Form",
       postedDate: new Date(2024, 4, 31),
@@ -56,12 +62,6 @@ const PortfolioPage = () => {
       icon: faFigma,
     },
     {
-      url: "https://codepen.io/lloydsibson/pen/rNJPNxm",
-      linkText: "Custom Slider",
-      postedDate: new Date(2022, 5, 15),
-      icon: faCodepen,
-    },
-    {
       url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
       linkText: "Eventbrite API",
       postedDate: new Date(2022, 3, 22),
@@ -73,30 +73,30 @@ const PortfolioPage = () => {
       postedDate: new Date(2021, 9, 26),
       icon: faFigma,
     },
-    {
-      url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
-      linkText: "Covid API (UI Design)",
-      postedDate: new Date(2021, 8, 30),
-      icon: faFigma,
-    },
-    {
-      url: "https://www.beasportsclinic.co.uk/",
-      linkText: "Client Home Redesign",
-      postedDate: new Date(2021, 7, 29),
-      icon: faDesktop,
-    },
-    {
-      url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-      linkText: "Client Wireframe",
-      postedDate: new Date(2021, 7, 24),
-      icon: faFigma,
-    },
-    {
-      url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-      linkText: "Client Wireframe (Low Fi.)",
-      postedDate: new Date(2021, 7, 19),
-      icon: faFigma,
-    },
+    // {
+    //   url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
+    //   linkText: "Covid API (UI Design)",
+    //   postedDate: new Date(2021, 8, 30),
+    //   icon: faFigma,
+    // },
+    // {
+    //   url: "https://www.beasportsclinic.co.uk/",
+    //   linkText: "Client Home Redesign",
+    //   postedDate: new Date(2021, 7, 29),
+    //   icon: faDesktop,
+    // },
+    // {
+    //   url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
+    //   linkText: "Client Wireframe",
+    //   postedDate: new Date(2021, 7, 24),
+    //   icon: faFigma,
+    // },
+    // {
+    //   url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
+    //   linkText: "Client Wireframe (Low Fi.)",
+    //   postedDate: new Date(2021, 7, 19),
+    //   icon: faFigma,
+    // },
     // {
     //   url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
     //   linkText: "New Website Design",
