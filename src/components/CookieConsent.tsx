@@ -60,7 +60,7 @@ const CookieConsent = () => {
           <img
             className="cookie-img"
             alt="Cartoon cookie"
-            src="https://cdn-icons-png.flaticon.com/512/5473/5473473.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1717799936/cartoon-cookie-icon-tp_ytoysq.png"
           />
           <h3 className="cookie-title">My Site Uses Cookies</h3>
           <p>
