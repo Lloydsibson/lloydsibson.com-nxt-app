@@ -60,7 +60,7 @@ const CookieConsent = () => {
           <img
             className="cookie-img"
             alt="Cartoon cookie"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1717799936/cartoon-cookie-icon-tp_ytoysq.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1717876666/cookie-banner-image-var-2-tp_a1tlze.png"
           />
           <h3 className="cookie-title">My Site Uses Cookies</h3>
           <p>
@@ -78,7 +78,7 @@ const CookieConsent = () => {
           <button id="cookie-accept" onClick={CookieHandler}>
             Continue
           </button>
-          {/* <button
+          <button
             className="leave"
             onClick={() => {
               router.back();
@@ -89,7 +89,7 @@ const CookieConsent = () => {
             }}
           >
             No, Leave Website
-          </button> */}
+          </button>
         </div>
       </div>
     </div>
