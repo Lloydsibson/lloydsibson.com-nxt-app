@@ -27,51 +27,59 @@ const PortfolioPage = () => {
   const LinkData = [
     {
       url: "https://codepen.io/lloydsibson/pen/abrwgaq",
-      linkText: "VIP jQuery Slider",
+      linkText: "VIP Slider",
       postedDate: new Date(2024, 5, 7),
       icon: faCodepen,
+      tags: ["Next", "jQuery"],
     },
     {
       url: "https://codepen.io/lloydsibson/pen/gOJmPev",
       linkText: "NextPay Credit Form",
       postedDate: new Date(2024, 4, 31),
       icon: faCodepen,
+      tags: ["Credit", "Accessibility"],
     },
     {
       url: "https://codepen.io/lloydsibson/pen/MWReOgE",
       linkText: "FashionPay Accordion",
       postedDate: new Date(2024, 2, 12),
       icon: faCodepen,
+      tags: ["Payment", "Accordion"],
     },
     {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
       linkText: "Cookie Banner Redesign",
       postedDate: new Date(2023, 11, 28),
       icon: faFigma,
+      tags: ["UI", "Pop-up"],
     },
     {
       url: "https://youtu.be/23Af9vhmL-4",
       linkText: "QA Demo #98",
       postedDate: new Date(2022, 9, 27),
       icon: faYoutube,
+      tags: ["Video", "Monetate"],
     },
     {
       url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
       linkText: "RP Sensors",
       postedDate: new Date(2022, 8, 25),
       icon: faFigma,
+      tags: ["UI", "Design", "Tablet"],
     },
     {
       url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
       linkText: "Eventbrite API",
       postedDate: new Date(2022, 3, 22),
       icon: faCodepen,
+      tags: ["API", "Data"],
     },
     {
       url: "https://www.figma.com/file/UrJ8rP5ZPKUB66aTE1mvrX/Arclight-Music---Home?node-id=0%3A1",
-      linkText: "Arclight (UI Design)",
+      linkText: "Arclight Website",
       postedDate: new Date(2021, 9, 26),
       icon: faFigma,
+      tags: ["UI/UX", "Design"],
     },
     // {
     //   url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
@@ -203,6 +211,13 @@ const PortfolioPage = () => {
                   </a>
                   <div className="posted-container">
                     {postedDate(LinkData.postedDate)}
+                  </div>
+                  <div className="link-tag-container">
+                    {LinkData.tags.map((tags, id) => (
+                      <p className="link-tag-container__tag" key={id}>
+                        {tags}
+                      </p>
+                    ))}
                   </div>
                 </div>
               </div>

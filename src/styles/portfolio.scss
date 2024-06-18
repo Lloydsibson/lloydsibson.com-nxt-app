@@ -404,14 +404,14 @@
   }
   .link-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 23%;
     margin: 1%;
     line-height: normal;
     a {
       border-bottom: 1px solid #d5d5d5;
       // opacity: 0.55;
-      color: #d5d5d5;
+      // color: #d5d5d5;
       font-size: 1rem;
       &:hover {
         opacity: 1;
@@ -420,6 +420,7 @@
     }
     svg {
       color: #d5d5d5;
+      margin-top: 5px;
       margin-right: 5%;
       font-size: 1.2rem;
       width: 20px;
@@ -428,8 +429,10 @@
   }
   .posted-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
     opacity: 0.75;
+    margin-top: 5px;
     span {
       color: #be89fb;
       margin-right: 5px;
@@ -439,6 +442,25 @@
     p {
       margin: 0;
       font-size: 0.9rem;
+      width: 100%;
+    }
+  }
+  .link-tag-container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin: 5px 0 10px 0;
+    .link-tag-container__tag {
+      padding: 0 10px;
+      background-color: #333;
+      border-radius: 100px;
+      margin: 0;
+      font-size: 0.75rem;
+      font-weight: 400;
+      line-height: 23px;
+      color: #d5d5d5;
     }
   }
 }
@@ -522,6 +544,9 @@ body.light {
         }
       }
     }
+  }
+  .portfolio-container__links-container.spotlight .link-container p {
+    color: #d5d5d5;
   }
   .portfolio-container__api-container {
     .api-container {
