@@ -76,6 +76,9 @@ const HomePage = () => {
                 <Link href="/contact" className="contact">
                   Get a <span>FREE</span> quote today!
                 </Link>
+                <Link href="/portfolio" className="vwo portfolio">
+                  Explore My Work
+                </Link>
                 {/* <a href={CvTwoPage} download>
                   Download CV
                 </a> */}
