@@ -176,9 +176,15 @@ body #cookie-message.-close {
   }
 }
 
-@media only screen and (max-height: 630px) {
+@media only screen and (max-height: 665px) {
   #cookie-message .cookie-img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #cookie-message .cookie-img {
+    max-width: 80px;
   }
 }
 
