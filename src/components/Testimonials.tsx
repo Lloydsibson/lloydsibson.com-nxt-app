@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Clients } from "../components/Clients";
 
 //import { ReadMoreBtn } from "../components/ReadMore";
 
@@ -330,6 +331,7 @@ export const Testimonials = () => {
           </article>
         </div> */}
       </Slider>
+      <Clients />
     </section>
   );
 };
