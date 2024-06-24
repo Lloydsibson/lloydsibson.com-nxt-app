@@ -14,22 +14,22 @@ export const GitHubBadges = ({ Classname }: Props) => {
         <div className={`github-badges-container ${Classname}`}>
           <img
             className="github-badges-container__artic"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246256/arctic-code-vault-tp_hg9ayc.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246792/arctic-code-vault-contributor-default-tp_ukmhwl.png"
             alt="Arctic Vault Achievement"
           />
           <img
             className="github-badges-container__sponsor"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246256/GitHubSponsorBadge-tp_rrp2tq.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246793/GitHubSponsorBadge-tp_vch09x.png"
             alt="Sponsorship Achievement"
           />
           <img
             className="github-badges-container__yolo"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246257/YOLO_Badge-tp_ld8kx2.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246794/YOLO_Badge-tp_wxgtro.png"
             alt="Yolo Achievement"
           />
           <img
             className="github-badges-container__pullshark"
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246257/pull-shark-tp_yfmjck.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246793/pull-shark-default-tp_rhga48.png"
             alt="Pull Shark Achievement"
           />
         </div>
