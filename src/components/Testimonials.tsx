@@ -6,7 +6,7 @@ import { Clients } from "../components/Clients";
 //import { ReadMoreBtn } from "../components/ReadMore";
 
 export const Testimonials = () => {
-  const settings = {
+  const settingsTestimonials = {
     dots: true,
     arrows: false,
     infinite: true,
@@ -54,7 +54,7 @@ export const Testimonials = () => {
       {/* <div className="testomonials-container__title">
           <h2>Testimonials</h2>
         </div> */}
-      <Slider {...settings}>
+      <Slider {...settingsTestimonials}>
         <div className="review-item">
           <article className="review-container">
             <div className="review-container__image-container">

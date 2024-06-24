@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 export const Clients = () => {
-  const settings = {
+  const settingsClients = {
     dots: false,
     arrows: false,
     infinite: true,
@@ -53,7 +53,7 @@ export const Clients = () => {
       {/* <div className="subheading-container">
         <h2>Brands & Companies</h2>
       </div> */}
-      <Slider {...settings}>
+      <Slider {...settingsClients}>
         <div className="client-item">
           <h3>Timberland</h3>
           <img
