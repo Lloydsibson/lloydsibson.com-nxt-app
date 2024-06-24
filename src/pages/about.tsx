@@ -560,15 +560,16 @@ const AboutPage = () => {
         <div className="tech-stack-container__info-container">
           <div className="tech-container">
             <div className="tech-container__tech-info">
-              <h3 className="skill-spotlight">HTML5</h3>
+              {/* className="skill-spotlight" */}
+              <h3>HTML5</h3>
               <p>Markup Lang.</p>
             </div>
             <div className="tech-container__tech-info">
-              <h3 className="skill-spotlight">CSS3</h3>
+              <h3>CSS3</h3>
               <p>Stylesheet Lang.</p>
             </div>
             <div className="tech-container__tech-info">
-              <h3 className="skill-spotlight">JavaScript</h3>
+              <h3>JavaScript</h3>
               <p>ES5/ES6</p>
             </div>
             <div className="tech-container__tech-info">
