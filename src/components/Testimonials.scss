@@ -189,6 +189,8 @@ body.light {
 
 // VWO TEST SLIDER ON CONTACT PAGE
 .testomonials-container > .testomonials-container.clients {
-  margin-top: 20px;
-  display: none;
+  visibility: hidden;
+  margin: unset;
+  padding: unset;
+  height: 0;
 }
