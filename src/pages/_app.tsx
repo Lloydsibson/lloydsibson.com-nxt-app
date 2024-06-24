@@ -129,3 +129,4 @@ import "../components/LazyLoadingIcon.scss";
 import "../components/CalcDiffTwoDates.scss";
 import "../components/AppleWatch.scss";
 import "../components/AnnoucementBanner.scss";
+import "../components/GitHubBadges.scss";
