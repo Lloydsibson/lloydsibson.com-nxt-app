@@ -12,7 +12,7 @@ import { faGamepad } from "@fortawesome/free-solid-svg-icons";
 import { faGuitar } from "@fortawesome/free-solid-svg-icons";
 //import { faDrum } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
-import { Clients } from "../components/Clients";
+// import { Clients } from "../components/Clients";
 import { ReadMoreBtn } from "../components/ReadMore";
 import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
@@ -208,7 +208,7 @@ const AboutPage = () => {
             </div>
           </aside>
         </div>
-        <Clients />
+        {/* <Clients /> */}
       </section>
       <div className="custom-divider"></div>
       <section className="recommendations-container">
