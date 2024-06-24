@@ -12,6 +12,7 @@ import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
 import { faComment } from "@fortawesome/free-solid-svg-icons";
 
+import { GitHubBadges } from "./GitHubBadges";
 //import { WeatherAPIMobile } from "./MbApiWeather";
 //import { CovidAPIWidget } from "./CovidAPIWidget";
 
@@ -102,6 +103,7 @@ export const MobileNav = () => {
         </ul>
         {/* <CovidAPIWidget /> */}
         {/* <WeatherAPIMobile /> */}
+        <GitHubBadges Classname="mobile" />
         <div className="custom-divider"></div>
         <div className="tech-stack-logos-container">
           <a href="https://github.com/Lloydsibson">

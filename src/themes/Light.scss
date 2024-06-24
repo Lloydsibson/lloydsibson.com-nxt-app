@@ -246,13 +246,13 @@ body.light .nav-container li a.selected {
     color: $light-secondary-text;
   }
   body.light .mb-nav-container ul li a.active {
-    // background-color: $light-theme;
-    // color: $light-fg;
+    background-color: #000;
+    color: $light-fg;
     border-left-color: $light-theme;
   }
-  // body.light .mb-nav-container ul li a.selected .mb-nav-container__icon svg {
-  //   color: $light-fg;
-  // }
+  body.light .mb-nav-container ul li a.active .mb-nav-container__icon svg {
+    color: #fff;
+  }
   body.light .mb-nav-container h3 {
     background-color: $light-fg-2;
     border-color: $light-fg;

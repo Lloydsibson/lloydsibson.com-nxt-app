@@ -6,6 +6,7 @@ import { faCss3 } from "@fortawesome/free-brands-svg-icons";
 import { faJsSquare } from "@fortawesome/free-brands-svg-icons";
 
 import { BackToTop } from "./BackToTop";
+import { GitHubBadges } from "./GitHubBadges";
 
 export const Footer = () => {
   const currentDate: Date = new Date();
@@ -15,6 +16,9 @@ export const Footer = () => {
     <footer className="footer-container">
       <BackToTop />
       <ul>
+        <li>
+          <GitHubBadges Classname={"desktop"} />
+        </li>
         <li>
           <a href="https://github.com/Lloydsibson">Github</a>
         </li>

@@ -1,0 +1,77 @@
+.github-badges-container {
+  display: flex;
+}
+
+.github-badges-container.desktop {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.github-badges-container.desktop img {
+  max-width: 30px;
+  filter: grayscale(1);
+  transition: all 0.3s ease-in-out;
+}
+
+.github-badges-container.desktop img:hover {
+  filter: unset;
+  cursor: pointer;
+}
+
+.github-badges-container.desktop .github-badges-container__artic {
+  margin-right: 1px;
+}
+
+.github-badges-container.desktop .github-badges-container__sponsor {
+  margin-right: 3px;
+}
+
+.github-badges-container.desktop .github-badges-container__quickdraw {
+  margin-right: 5px;
+}
+
+.github-badges-container.mobile {
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 12px 20px 12px;
+}
+
+.github-badges-container.mobile img {
+  max-width: 45px;
+}
+
+.github-badges-container.mobile .github-badges-container__artic {
+  margin-right: 1px;
+}
+
+.github-badges-container.mobile .github-badges-container__sponsor {
+  margin-right: 5px;
+}
+
+.github-badges-container.mobile .github-badges-container__quickdraw {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer-container ul li {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 901px) {
+  .github-badges-container.desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .github-badges-container.mobile img {
+    max-width: 40px;
+  }
+}
+
+@media screen and (max-height: 455px) {
+  .github-badges-container {
+    display: none;
+  }
+}
