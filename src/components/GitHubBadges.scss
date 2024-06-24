@@ -1,7 +1,12 @@
+.github-badges-title {
+  padding: 10px 16px 0px 16px;
+  font-weight: 600;
+  margin: unset;
+}
+
 .github-badges-container {
   display: flex;
 }
-
 .github-badges-container.desktop {
   align-items: center;
   justify-content: space-evenly;
@@ -70,7 +75,8 @@
   }
 }
 
-@media screen and (max-height: 455px) {
+@media screen and (max-height: 500px) {
+  .github-badges-title,
   .github-badges-container {
     display: none;
   }
