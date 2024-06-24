@@ -7,7 +7,9 @@ interface Props {
 export const GitHubBadges = ({ Classname }: Props) => {
   return (
     <>
-      <h4 className="github-badges-title">GitHub Achievements</h4>
+      <h4 className={`github-badges-title ${Classname}`}>
+        GitHub Achievements
+      </h4>
       <Link href="https://github.com/Lloydsibson?tab=achievements">
         <div className={`github-badges-container ${Classname}`}>
           <img
