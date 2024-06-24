@@ -100,10 +100,10 @@ export const MobileNav = () => {
               Contact
             </Link>
           </li>
+          <GitHubBadges Classname="ghb-mobile" />
         </ul>
         {/* <CovidAPIWidget /> */}
         {/* <WeatherAPIMobile /> */}
-        <GitHubBadges Classname="mobile" />
         <div className="custom-divider"></div>
         <div className="tech-stack-logos-container">
           <a href="https://github.com/Lloydsibson">

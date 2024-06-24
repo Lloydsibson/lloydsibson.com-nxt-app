@@ -4,76 +4,93 @@
   margin: unset;
 }
 
-.github-badges-title.desktop {
+.footer-container ul li.ghb-desktop .github-badges-title {
   display: none;
 }
 
 .github-badges-container {
   display: flex;
 }
-.github-badges-container.desktop {
+
+.ghb-desktop .github-badges-container {
   align-items: center;
   justify-content: space-evenly;
 }
 
-.github-badges-container.desktop img {
+.ghb-desktop .github-badges-container img {
   max-width: 30px;
   filter: grayscale(1);
   transition: all 0.3s ease-in-out;
 }
 
-.github-badges-container.desktop img:hover {
+.ghb-desktop .github-badges-container img:hover {
   filter: unset;
   cursor: pointer;
 }
 
-.github-badges-container.desktop .github-badges-container__artic {
+.ghb-desktop .github-badges-container .github-badges-container__artic {
   margin-right: 1px;
 }
 
-.github-badges-container.desktop .github-badges-container__sponsor {
+.ghb-desktop .github-badges-container .github-badges-container__sponsor {
   margin-right: 3px;
 }
 
-.github-badges-container.desktop .github-badges-container__yolo {
+.ghb-desktop .github-badges-container .github-badges-container__yolo {
   margin-right: 5px;
 }
 
-.github-badges-container.mobile {
+.mb-nav-container ul li.ghb-mobile {
+  position: absolute;
+  bottom: 0;
+  margin: unset;
+  padding: unset;
+  width: 100%;
+}
+
+.mb-nav-container ul li.ghb-mobile > a {
+  border-left: unset;
+  padding: unset;
+  display: unset;
+  font-size: unset;
+  font-weight: unset;
+}
+
+.ghb-mobile .github-badges-container {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 10px 12px 20px 12px;
 }
 
-.github-badges-container.mobile img {
+.ghb-mobile .github-badges-container img {
   max-width: 45px;
 }
 
-.github-badges-container.mobile .github-badges-container__artic {
+.ghb-mobile .github-badges-container .github-badges-container__artic {
   margin-right: 1px;
 }
 
-.github-badges-container.mobile .github-badges-container__sponsor {
+.ghb-mobile .github-badges-container .github-badges-container__sponsor {
   margin-right: 5px;
 }
 
-.github-badges-container.mobile .github-badges-container__yolo {
+.ghb-mobile .github-badges-container .github-badges-container__yolo {
   margin-right: 8px;
 }
 
 @media screen and (max-width: 901px) {
-  .github-badges-container.desktop {
+  .footer-container ul li.ghb-desktop {
     display: none;
   }
 }
 
 @media screen and (max-width: 330px) {
-  .github-badges-container.mobile img {
+  .ghb-mobile .github-badges-container img {
     max-width: 40px;
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 550px) {
   .github-badges-title,
   .github-badges-container {
     display: none;

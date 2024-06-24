@@ -6,12 +6,10 @@ interface Props {
 
 export const GitHubBadges = ({ Classname }: Props) => {
   return (
-    <>
-      <h4 className={`github-badges-title ${Classname}`}>
-        GitHub Achievements
-      </h4>
+    <li className={Classname}>
+      <h4 className="github-badges-title">GitHub Achievements</h4>
       <Link href="https://github.com/Lloydsibson?tab=achievements">
-        <div className={`github-badges-container ${Classname}`}>
+        <div className="github-badges-container">
           <img
             className="github-badges-container__artic"
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1719246792/arctic-code-vault-contributor-default-tp_ukmhwl.png"
@@ -34,6 +32,6 @@ export const GitHubBadges = ({ Classname }: Props) => {
           />
         </div>
       </Link>
-    </>
+    </li>
   );
 };

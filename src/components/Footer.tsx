@@ -16,9 +16,7 @@ export const Footer = () => {
     <footer className="footer-container">
       <BackToTop />
       <ul>
-        <li>
-          <GitHubBadges Classname={"desktop"} />
-        </li>
+        <GitHubBadges Classname={"ghb-desktop"} />
         <li>
           <a href="https://github.com/Lloydsibson">Github</a>
         </li>
