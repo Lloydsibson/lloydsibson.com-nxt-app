@@ -1,6 +1,7 @@
 //import CvTwoPage from "../../public/static/lloyd-sibson-ba-front-end-developer-cv-2023.pdf";
 import Link from "next/link";
 import Head from "next/head";
+import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 // import { faDesktop } from "@fortawesome/free-solid-svg-icons";
@@ -18,6 +19,12 @@ import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 
 const AboutPage = () => {
+  useEffect(() => {
+    document.body.classList.add("about-page"); // Add your desired class here
+    return () => {
+      document.body.classList.remove("about-page"); // Remove the class when the component unmounts
+    };
+  }, []);
   const startDate: any = new Date(2016, 8, 17);
   const currentDate: any = new Date();
   const currentYear: any = currentDate.getFullYear().toString();

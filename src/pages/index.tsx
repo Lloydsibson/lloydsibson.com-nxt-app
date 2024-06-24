@@ -33,11 +33,11 @@ const HomePage = () => {
 
   useEffect(() => {
     // Add or remove classes to the body element based on the page being viewed
-    document.body.classList.add("homepage"); // Add your desired class here
+    document.body.classList.add("home-page"); // Add your desired class here
 
     // Return a cleanup function to remove the class when the component unmounts
     return () => {
-      document.body.classList.remove("homepage"); // Remove the class when the component unmounts
+      document.body.classList.remove("home-page"); // Remove the class when the component unmounts
     };
   }, []); // Empty dependency array to ensure the effect runs only once on component mount
 

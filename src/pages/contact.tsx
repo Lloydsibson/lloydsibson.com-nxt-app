@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useEffect } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
@@ -9,6 +10,12 @@ import { EmailForm } from "../components/EmailForm";
 import { Testimonials } from "../components/Testimonials";
 
 const ContactPage = () => {
+  useEffect(() => {
+    document.body.classList.add("contact-page"); // Add your desired class here
+    return () => {
+      document.body.classList.remove("contact-page"); // Remove the class when the component unmounts
+    };
+  }, []);
   return (
     <>
       <Head>

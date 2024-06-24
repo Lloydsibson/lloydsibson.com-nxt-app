@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
 
-//import { useEffect } from "react";
+import { useEffect } from "react";
 //import Link from "next/link";
 import Head from "next/head";
 // import { Card } from "../components/Card";
@@ -24,6 +24,12 @@ import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 
 const PortfolioPage = () => {
+  useEffect(() => {
+    document.body.classList.add("portfolio-page"); // Add your desired class here
+    return () => {
+      document.body.classList.remove("portfolio-page"); // Remove the class when the component unmounts
+    };
+  }, []);
   const LinkData = [
     {
       url: "https://codepen.io/lloydsibson/pen/abrwgaq",
