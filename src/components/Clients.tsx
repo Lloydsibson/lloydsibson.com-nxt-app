@@ -6,46 +6,54 @@ import "slick-carousel/slick/slick-theme.css";
 export const Clients = () => {
   const settingsClients = {
     dots: false,
-    arrows: false,
+    arrows: true,
     infinite: true,
     // speed: 500,
     // slidesToShow: 7,
     // slidesToScroll: 1,
-    accessibility: false,
-    autoplaySpeed: 2000,
-    speed: 9000,
-    autoplay: true,
+    accessibility: true,
+    // autoplaySpeed: 2000,
+    // speed: 9000,
+    // autoplay: true,
     // autoplaySpeed: 0,
-    cssEase: "linear",
-    slidesToShow: 1,
+    // cssEase: "linear",
+    slidesToShow: 8,
     slidesToScroll: 1,
-    variableWidth: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1230,
-    //     settings: {
-    //       slidesToShow: 7,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 767,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 500,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 1,
-    //       infinite: true,
-    //     },
-    //   },
-    // ],
+    // variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1230,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          // infinite: true,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          // infinite: true,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          // infinite: true,
+        },
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          // infinite: true,
+        },
+      },
+    ],
   };
 
   return (
@@ -54,26 +62,6 @@ export const Clients = () => {
         <h2>Brands & Companies</h2>
       </div> */}
       <Slider {...settingsClients}>
-        <div className="client-item">
-          <h3>Timberland</h3>
-          <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/timberland_ogbzan.png"
-            alt="Timberland's logo"
-            width="80"
-            height="14"
-            loading="lazy"
-          />
-        </div>
-        <div className="client-item">
-          <h3>Gucci</h3>
-          <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/gucci_xfb176.png"
-            alt="Gucci's logo"
-            width="80"
-            height="13"
-            loading="lazy"
-          />
-        </div>
         <div className="client-item">
           <h3>Rolex</h3>
           <img
@@ -106,22 +94,22 @@ export const Clients = () => {
           />
         </div>
         <div className="client-item">
-          <h3>Nike</h3>
-          <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/nike_jz49d3.png"
-            alt="Nike's logo"
-            width="80"
-            height="30"
-            loading="lazy"
-          />
-        </div>
-        <div className="client-item">
           <h3>Google</h3>
           <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/google_pbncid.png"
             alt="Googles logo"
             width="80"
             height="27"
+            loading="lazy"
+          />
+        </div>
+        <div className="client-item">
+          <h3>Nike</h3>
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/nike_jz49d3.png"
+            alt="Nike's logo"
+            width="80"
+            height="30"
             loading="lazy"
           />
         </div>
@@ -146,16 +134,6 @@ export const Clients = () => {
           />
         </div>
         <div className="client-item">
-          <h3>Vans</h3>
-          <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/Vans_stjm6l.png"
-            alt="Vans logo"
-            width="80"
-            height="29"
-            loading="lazy"
-          />
-        </div>
-        <div className="client-item">
           <h3>Watches of Switzerland Group PLC</h3>
           <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430865/img/brand-logos/wos_wfpxrd.png"
@@ -164,6 +142,16 @@ export const Clients = () => {
             height="86"
             loading="lazy"
             style={{ width: "75px" }}
+          />
+        </div>
+        <div className="client-item">
+          <h3>Arclight Music</h3>
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/arclight-music_guktkm.png"
+            alt="Arclight music's logo"
+            width="80"
+            height="30"
+            loading="lazy"
           />
         </div>
         <div className="client-item">
@@ -177,12 +165,12 @@ export const Clients = () => {
           />
         </div>
         <div className="client-item">
-          <h3>Arclight Music</h3>
+          <h3>Vans</h3>
           <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/arclight-music_guktkm.png"
-            alt="Arclight music's logo"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/Vans_stjm6l.png"
+            alt="Vans logo"
             width="80"
-            height="30"
+            height="29"
             loading="lazy"
           />
         </div>
@@ -231,6 +219,26 @@ export const Clients = () => {
           <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/converse_yzks6u.png"
             alt="Converse's logo"
+            width="80"
+            height="13"
+            loading="lazy"
+          />
+        </div>
+        <div className="client-item">
+          <h3>Timberland</h3>
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/timberland_ogbzan.png"
+            alt="Timberland's logo"
+            width="80"
+            height="14"
+            loading="lazy"
+          />
+        </div>
+        <div className="client-item">
+          <h3>Gucci</h3>
+          <img
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654430864/img/brand-logos/gucci_xfb176.png"
+            alt="Gucci's logo"
             width="80"
             height="13"
             loading="lazy"
