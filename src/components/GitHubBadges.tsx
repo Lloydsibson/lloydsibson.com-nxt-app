@@ -18,17 +18,15 @@ export const GitHubBadges = ({ Classname }: Props) => {
           src="https://raw.githubusercontent.com/drknzz/GitHub-Achievements/main/Media/Badges/GitHub-Sponsor/PNG/GitHubSponsorBadge.png"
           alt="Sponsorship Achievement"
         />
-
-        <img
-          className="github-badges-container__quickdraw"
-          src="https://raw.githubusercontent.com/drknzz/GitHub-Achievements/main/Media/Badges/Quick-Draw/PNG/Skin-Tones/QuickDraw_SkinTone1.png"
-          alt="Quickdraw Achievement"
-        />
-
         <img
           className="github-badges-container__yolo"
           src="https://github.com/drknzz/GitHub-Achievements/blob/main/Media/Badges/YOLO/PNG/YOLO_Badge.png?raw=true"
           alt="Yolo Achievement"
+        />
+        <img
+          className="github-badges-container__pullshark"
+          src="https://raw.githubusercontent.com/Schweinepriester/github-profile-achievements/main/images/pull-shark-default.png"
+          alt="Pull Shark Achievement"
         />
       </div>
     </Link>
