@@ -88,7 +88,7 @@ const HomePage = () => {
         </div>
         <div className="homepage-container__image-container">
           <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1620401501/img/logo-homepage.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage.png"
             alt="Monocode Logo"
           />
           {/* <Image
