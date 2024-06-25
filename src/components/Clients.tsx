@@ -3,6 +3,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
+
 export const Clients = () => {
   const settingsClients = {
     dots: false,
@@ -71,6 +73,15 @@ export const Clients = () => {
             height="43"
             loading="lazy"
           />
+          {/* <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/rolex_ihkvqf"
+            imgALT="Rolex's logo"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80,e_blur:200,f_auto,q_auto/v1654430864/img/brand-logos/rolex_ihkvqf"
+            elemName="clients"
+            imgTransparent={true}
+            imgWidth="80px"
+            imgHeight="43px"
+          /> */}
         </div>
         <div className="client-item">
           <h3>NEXT</h3>
