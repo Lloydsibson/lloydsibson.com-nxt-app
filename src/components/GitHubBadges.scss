@@ -17,16 +17,22 @@
   justify-content: space-evenly;
 }
 
-.ghb-desktop .github-badges-container img {
+.ghb-desktop .githubbadges {
   max-width: 30px;
   filter: grayscale(1);
   transition: all 0.3s ease-in-out;
 }
 
-.ghb-desktop .github-badges-container img:hover {
+.ghb-desktop .github-badges-container .githubbadges.loaded:hover {
   filter: unset;
   cursor: pointer;
 }
+
+// .github-badges-container__artic,
+// .github-badges-container__sponsor,
+// .github-badges-container__yolo {
+//   margin-right: 5px;
+// }
 
 .ghb-desktop .github-badges-container .github-badges-container__artic {
   margin-right: 1px;

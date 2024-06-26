@@ -5,6 +5,8 @@ import VideoBackground from "../components/VideoBackground";
 import { HPCarousel } from "../components/HPCarousel";
 import { useEffect } from "react";
 
+import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
+
 // import Image from "next/image";
 // import logoBackground from "/public/assets/logo-homepage.png";
 
@@ -54,7 +56,19 @@ const HomePage = () => {
       <section className="homepage container">
         <div className="homepage-container__text-container">
           <div className="text-inner-container">
-            <div className="hp-image"></div>
+            {/* <div className="hp-image"></div> */}
+            {/* url("https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage") */}
+            <AdvancedLazyLoad
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage"
+              imgALT="Home page logo"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto//v1620401501/img/logo-homepage"
+              imgIdName={undefined}
+              elemName="hp-desktop-logo"
+              imgTransparent={true}
+              imgWidth={undefined}
+              imgHeight={undefined}
+              imgClassName="hp-image"
+            />
             <h1>
               Front End <span>Dev & Designer</span>
             </h1>
@@ -87,9 +101,20 @@ const HomePage = () => {
           </div>
         </div>
         <div className="homepage-container__image-container">
-          <img
+          {/* <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage.png"
             alt="Monocode Logo"
+          /> */}
+          <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage"
+            imgALT="Monocode Logo"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_13/e_blur:75,f_auto,q_auto/v1620401501/img/logo-homepage"
+            elemName="homepage-mobile-logo"
+            imgIdName={undefined}
+            imgTransparent={true}
+            imgWidth={"200px"}
+            imgHeight={"200px"}
+            imgClassName={undefined}
           />
           {/* <Image
             className="html-video-container__img"

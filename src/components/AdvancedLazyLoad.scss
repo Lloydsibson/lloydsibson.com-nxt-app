@@ -1,15 +1,12 @@
 .blurred-img {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .blurred-img img {
   opacity: 0;
-}
-
-.blurred-img {
-  background-repeat: no-repeat;
-  background-size: cover;
+  transition: opacity 250ms ease-in-out;
 }
 
 .blurred-img::before {
@@ -42,11 +39,6 @@
   content: none;
 }
 
-.blurred-img img {
-  opacity: 0;
-  transition: opacity 250ms ease-in-out;
-}
-
 .blurred-img.loaded img {
   opacity: 1;
 }
@@ -62,3 +54,57 @@
 // .advlazyload-container.clients {
 //   background-size: contain;
 // }
+
+// GITHUB BADGES
+.githubbadges {
+  display: flex;
+  border-radius: 100%;
+}
+
+.ghb-desktop .githubbadges {
+  filter: grayscale(1);
+}
+
+// NAV LOGO IMG
+.nav-logo-img.advlazyload-container {
+  background-size: 40px;
+}
+
+// HOMEPAGE MOBILE LOGO
+.homepage-mobile-logo {
+  width: 200px;
+  height: 200px;
+  border-radius: 1000px;
+  -webkit-box-shadow: 0 0 17px 0 rgba(0, 0, 0, 80%);
+  -moz-box-shadow: 0 0 17px 0 rgba(0, 0, 0, 80%);
+  box-shadow: 0 0 17px 0 rgba(0, 0, 0, 80%);
+}
+
+// HOMEPAGE DESKTOP LOGO
+.hp-desktop-logo,
+.hp-desktop-logo img {
+  height: 528px;
+  width: 528px;
+}
+
+@media screen and (max-width: 1100px) {
+  .hp-desktop-logo,
+  .hp-desktop-logo img {
+    height: 428px;
+    width: 428px;
+  }
+  .hp-desktop-logo.hp-image {
+    top: -50px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .homepage-mobile-logo {
+    margin-bottom: 20px;
+  }
+  .homepage-mobile-logo,
+  .homepage-mobile-logo img {
+    width: 296px;
+    height: 296px;
+  }
+}

@@ -7,6 +7,7 @@ import { useRouter } from "next/router";
 // import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { PagePositionScrollBar } from "./PagePositionScrollBar";
 import { AnnouncementBanner } from "@/components/AnnoucementBanner";
+import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
 
 // import { WeatherAPI } from "./ApiWeather";
 import { LDToggle } from "./LDToggle";
@@ -27,12 +28,23 @@ export const Nav = () => {
       <Link href="/" className="nav-container__name-container">
         <div className="logo-container">
           {/* <WeatherAPI /> */}
-          <img
+          {/* <img
             id="nav-logo"
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1557013440/img/logo-small.png"
             alt="Logo"
             width="50"
             height="50"
+          /> */}
+          <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1557013440/img/logo-small"
+            imgALT="Logo"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_10/e_blur:50,f_auto,q_auto/v1557013440/img/logo-small"
+            imgIdName={"nav-logo"}
+            elemName="nav-logo-img"
+            imgTransparent={true}
+            imgWidth={"50px"}
+            imgHeight={"50px"}
+            imgClassName="github-badges-container__artic"
           />
         </div>
         <h2 id="nav-title">

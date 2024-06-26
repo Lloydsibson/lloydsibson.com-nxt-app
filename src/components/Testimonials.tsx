@@ -69,10 +69,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1688124335/saul_e3mjs7"
                 imgALT="Saul Gooding's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80,e_blur:1000,f_auto,q_auto/v1688124335/saul_e3mjs7"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">
@@ -101,10 +103,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655935855/img/cam-review_yawxaz"
                 imgALT="Cameron Hamilton's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80,f_auto,e_blur:1000,q_auto/v1655935855/img/cam-review_yawxaz"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">
@@ -134,10 +138,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
                 imgALT="Carla Cabeça's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">
@@ -175,10 +181,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655935855/img/be-review_wsfols"
                 imgALT="Beatriz Meireles's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1655935855/img/be-review_wsfols"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">
@@ -208,10 +216,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1663239791/img/kiran-review_pr5tj6"
                 imgALT="Kirandeep Gills's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1663239791/img/kiran-review_pr5tj6"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">
@@ -265,10 +275,12 @@ export const Testimonials = () => {
                 imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1688124335/divya_cgxk3n"
                 imgALT="Divya Damien's selfie"
                 backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1688124335/divya_cgxk3n"
+                imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
+                imgClassName=""
               />
             </div>
             <section className="review-container__text-container">

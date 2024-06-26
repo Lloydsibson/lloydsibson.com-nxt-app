@@ -5,9 +5,11 @@ interface Props {
   imgALT: string;
   backgroundImg: string;
   elemName: string;
+  imgIdName: string | undefined;
   imgTransparent: boolean;
-  imgWidth: string;
-  imgHeight: string;
+  imgWidth: string | undefined;
+  imgHeight: string | undefined;
+  imgClassName: string | undefined;
 }
 
 export const AdvancedLazyLoad = ({
@@ -15,9 +17,11 @@ export const AdvancedLazyLoad = ({
   imgALT,
   backgroundImg,
   elemName,
+  imgIdName,
   imgTransparent,
   imgWidth,
   imgHeight,
+  imgClassName,
 }: Props) => {
   useEffect(() => {
     const blurredImageDivs = document.querySelectorAll(".blurred-img");
@@ -52,15 +56,17 @@ export const AdvancedLazyLoad = ({
     <div
       className={`advlazyload-container blurred-img ${elemName} ${
         imgTransparent ? "img-clear" : ""
-      }`}
+      } ${imgClassName ? imgClassName : ""}`}
       style={{ backgroundImage: `url(${backgroundImg})` }}
     >
       <img
+        id={imgIdName}
         src={imgURL}
         loading="lazy"
         alt={imgALT}
-        width={imgWidth}
-        height={imgHeight}
+        width={imgWidth ? imgWidth : undefined}
+        height={imgHeight ? imgHeight : undefined}
+        // className={imgClassName ? imgClassName : ""}
       />
     </div>
   );
