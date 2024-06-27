@@ -709,7 +709,10 @@ body.light {
   .portfolio-container__volunteering-container {
     .vt-role-techstack {
       .vt-role-techstack__tech {
-        overflow-y: scroll;
+        // overflow-y: scroll;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        height: 62px;
         -webkit-overflow-scrolling: touch;
       }
     }
