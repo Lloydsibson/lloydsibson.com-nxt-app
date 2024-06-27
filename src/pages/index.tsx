@@ -37,9 +37,35 @@ const HomePage = () => {
     // Add or remove classes to the body element based on the page being viewed
     document.body.classList.add("home-page"); // Add your desired class here
 
+    // AdvancedLazyLoad
+    const blurredImageDivs = document.querySelectorAll(".blurred-img");
+
+    const handleImageLoad = (e: any) => {
+      e.currentTarget.closest(".blurred-img").classList.add("loaded");
+    };
+
+    blurredImageDivs.forEach((div) => {
+      const img = div.querySelector("img");
+      if (img) {
+        if (img.complete) {
+          div.classList.add("loaded");
+        } else {
+          img.addEventListener("load", handleImageLoad);
+        }
+      }
+    });
+
     // Return a cleanup function to remove the class when the component unmounts
     return () => {
       document.body.classList.remove("home-page"); // Remove the class when the component unmounts
+
+      // AdvancedLazyLoad
+      blurredImageDivs.forEach((div) => {
+        const img = div.querySelector("img");
+        if (img) {
+          img.removeEventListener("load", handleImageLoad);
+        }
+      });
     };
   }, []); // Empty dependency array to ensure the effect runs only once on component mount
 
@@ -61,7 +87,7 @@ const HomePage = () => {
             <AdvancedLazyLoad
               imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_528/v1620401501/img/logo-homepage"
               imgALT="Home page logo"
-              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto//v1620401501/img/logo-homepage"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto/v1620401501/img/logo-homepage"
               imgIdName={undefined}
               elemName="hp-desktop-logo"
               imgTransparent={true}

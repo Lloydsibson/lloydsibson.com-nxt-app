@@ -12,8 +12,35 @@ import { Testimonials } from "../components/Testimonials";
 const ContactPage = () => {
   useEffect(() => {
     document.body.classList.add("contact-page"); // Add your desired class here
+
+    // AdvancedLazyLoad
+    const blurredImageDivs = document.querySelectorAll(".blurred-img");
+
+    const handleImageLoad = (e: any) => {
+      e.currentTarget.closest(".blurred-img").classList.add("loaded");
+    };
+
+    blurredImageDivs.forEach((div) => {
+      const img = div.querySelector("img");
+      if (img) {
+        if (img.complete) {
+          div.classList.add("loaded");
+        } else {
+          img.addEventListener("load", handleImageLoad);
+        }
+      }
+    });
+
     return () => {
       document.body.classList.remove("contact-page"); // Remove the class when the component unmounts
+
+      // AdvancedLazyLoad
+      blurredImageDivs.forEach((div) => {
+        const img = div.querySelector("img");
+        if (img) {
+          img.removeEventListener("load", handleImageLoad);
+        }
+      });
     };
   }, []);
   return (

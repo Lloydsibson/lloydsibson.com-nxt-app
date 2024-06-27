@@ -26,8 +26,34 @@ import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 const PortfolioPage = () => {
   useEffect(() => {
     document.body.classList.add("portfolio-page"); // Add your desired class here
+
+    // AdvancedLazyLoad
+    const blurredImageDivs = document.querySelectorAll(".blurred-img");
+
+    const handleImageLoad = (e: any) => {
+      e.currentTarget.closest(".blurred-img").classList.add("loaded");
+    };
+
+    blurredImageDivs.forEach((div) => {
+      const img = div.querySelector("img");
+      if (img) {
+        if (img.complete) {
+          div.classList.add("loaded");
+        } else {
+          img.addEventListener("load", handleImageLoad);
+        }
+      }
+    });
     return () => {
       document.body.classList.remove("portfolio-page"); // Remove the class when the component unmounts
+
+      // AdvancedLazyLoad
+      blurredImageDivs.forEach((div) => {
+        const img = div.querySelector("img");
+        if (img) {
+          img.removeEventListener("load", handleImageLoad);
+        }
+      });
     };
   }, []);
   const LinkData = [

@@ -119,3 +119,41 @@
   width: 100px;
   height: 100px;
 }
+//////////////////
+.advlazyload-container.profile-img-container {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 325px) {
+  .advlazyload-container.profile-img-container {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+//////////////////
+.advlazyload-container.header-banner-img-container {
+  display: flex;
+}
+.advlazyload-container.header-banner-img-container,
+.advlazyload-container.header-banner-img-container img {
+  width: 100%;
+  height: 100%;
+}
+/////////////////
+.bio-other-img-container {
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+}
+/////////////////
+.review-spotlight-img-container {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}

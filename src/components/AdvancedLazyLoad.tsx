@@ -25,35 +25,6 @@ export const AdvancedLazyLoad = ({
   imgClassName,
   containerClassName,
 }: Props) => {
-  useEffect(() => {
-    const blurredImageDivs = document.querySelectorAll(".blurred-img");
-
-    const handleImageLoad = (e: any) => {
-      e.currentTarget.closest(".blurred-img").classList.add("loaded");
-    };
-
-    blurredImageDivs.forEach((div) => {
-      const img = div.querySelector("img");
-      if (img) {
-        if (img.complete) {
-          div.classList.add("loaded");
-        } else {
-          img.addEventListener("load", handleImageLoad);
-        }
-      }
-    });
-
-    // Cleanup function to remove event listeners
-    return () => {
-      blurredImageDivs.forEach((div) => {
-        const img = div.querySelector("img");
-        if (img) {
-          img.removeEventListener("load", handleImageLoad);
-        }
-      });
-    };
-  }, []);
-
   return (
     <div
       className={`advlazyload-container blurred-img ${elemName} ${

@@ -17,12 +17,39 @@ import { faGuitar } from "@fortawesome/free-solid-svg-icons";
 import { ReadMoreBtn } from "../components/ReadMore";
 import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
+import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 
 const AboutPage = () => {
   useEffect(() => {
     document.body.classList.add("about-page"); // Add your desired class here
+
+    // AdvancedLazyLoad
+    const blurredImageDivs = document.querySelectorAll(".blurred-img");
+
+    const handleImageLoad = (e: any) => {
+      e.currentTarget.closest(".blurred-img").classList.add("loaded");
+    };
+
+    blurredImageDivs.forEach((div) => {
+      const img = div.querySelector("img");
+      if (img) {
+        if (img.complete) {
+          div.classList.add("loaded");
+        } else {
+          img.addEventListener("load", handleImageLoad);
+        }
+      }
+    });
     return () => {
       document.body.classList.remove("about-page"); // Remove the class when the component unmounts
+
+      // AdvancedLazyLoad
+      blurredImageDivs.forEach((div) => {
+        const img = div.querySelector("img");
+        if (img) {
+          img.removeEventListener("load", handleImageLoad);
+        }
+      });
     };
   }, []);
   const startDate: any = new Date(2016, 8, 17);
@@ -68,35 +95,59 @@ const AboutPage = () => {
           <header>
             <h2>About</h2>
           </header>
-          <div
+          {/* <div
             className="header-banner"
             style={{
               backgroundImage:
-                "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654419622/img/about-banner.jpg)",
+                "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654419622/img/about-banner)",
             }}
-          ></div>
-          <div className="spinner">
+          ></div> */}
+          <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_1320/v1654419622/img/about-banner"
+            imgALT="Next - bring it on"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1654419622/img/about-banner"
+            imgIdName={undefined}
+            elemName="header-banner-img-container"
+            imgTransparent={false}
+            imgWidth={"1320px"}
+            imgHeight={"330px"}
+            imgClassName={undefined}
+            containerClassName={undefined}
+          />
+          {/* <div className="spinner">
             <div className="double-bounce1"></div>
             <div className="double-bounce2"></div>
-          </div>
+          </div> */}
         </section>
       </div>
       <section className="bio-container">
         <div className="bio-container__profile-photo-container">
           <div className="profile-photo">
-            <div
+            {/* <div
               className="profile-img"
               style={{
                 backgroundImage:
                   //  "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1697048863/linkedin-office-photo-otw_ft2yjb.jpg)",
                   "url(https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1667817743/img/linkedin-office-photo-tp_jjfyuo.jpg)",
               }}
-            ></div>
-            <div className="spinner-background"></div>
+            ></div> */}
+            <AdvancedLazyLoad
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_160/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
+              imgALT="Lloyd Sibson in office"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:300,f_auto,q_auto/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
+              imgIdName={undefined}
+              elemName="profile-img-container"
+              imgTransparent={false}
+              imgWidth={"160px"}
+              imgHeight={"160px"}
+              imgClassName={undefined}
+              containerClassName={undefined}
+            />
+            {/* <div className="spinner-background"></div>
             <div className="spinner">
               <div className="double-bounce1"></div>
               <div className="double-bounce2"></div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="bio-container__bio">
@@ -156,16 +207,28 @@ const AboutPage = () => {
           <aside className="bio-other-container">
             <div className="bio-other-container__company">
               <div className="company-image">
-                <img
+                {/* <img
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654419622/img/next-logo.jpg"
                   alt="Nexts logo"
                   width="45"
                   height="45"
+                /> */}
+                <AdvancedLazyLoad
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1654419622/img/next-logo"
+                  imgALT="Nexts logo"
+                  backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/next-logo"
+                  imgIdName={undefined}
+                  elemName="bio-other-img-container"
+                  imgTransparent={false}
+                  imgWidth={"45px"}
+                  imgHeight={"45px"}
+                  imgClassName={undefined}
+                  containerClassName={undefined}
                 />
-                <div className="spinner">
+                {/* <div className="spinner">
                   <div className="double-bounce1"></div>
                   <div className="double-bounce2"></div>
-                </div>
+                </div> */}
               </div>
               <h3>
                 <a href="https://www.next.co.uk/">Next</a>
@@ -178,16 +241,28 @@ const AboutPage = () => {
             </div>
             <div className="bio-other-container__company">
               <div className="company-image">
-                <img
+                {/* <img
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1692825994/shell-small-logo-opt_kdr0im.png"
                   alt="Shells logo"
                   width="45"
                   height="45"
+                /> */}
+                <AdvancedLazyLoad
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1692825994/shell-small-logo-opt_kdr0im"
+                  imgALT="Shells logo"
+                  backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1692825994/shell-small-logo-opt_kdr0im"
+                  imgIdName={undefined}
+                  elemName="bio-other-img-container"
+                  imgTransparent={true}
+                  imgWidth={"45px"}
+                  imgHeight={"45px"}
+                  imgClassName={undefined}
+                  containerClassName={undefined}
                 />
-                <div className="spinner">
+                {/* <div className="spinner">
                   <div className="double-bounce1"></div>
                   <div className="double-bounce2"></div>
-                </div>
+                </div> */}
               </div>
               <h3>
                 <a href="https://www.shellenergy.co.uk/">Shell</a>
@@ -196,16 +271,28 @@ const AboutPage = () => {
             </div>
             <div className="bio-other-container__education">
               <div className="education-image">
-                <img
+                {/* <img
                   src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654419622/img/dmu-logo.jpg"
                   alt="De Montfort universities logo"
                   width="45"
                   height="45"
+                /> */}
+                <AdvancedLazyLoad
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1654419622/img/dmu-logo"
+                  imgALT="De Montfort universities logo"
+                  backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/dmu-logo"
+                  imgIdName={undefined}
+                  elemName="bio-other-img-container"
+                  imgTransparent={true}
+                  imgWidth={"45px"}
+                  imgHeight={"45px"}
+                  imgClassName={undefined}
+                  containerClassName={undefined}
                 />
-                <div className="spinner">
+                {/* <div className="spinner">
                   <div className="double-bounce1"></div>
                   <div className="double-bounce2"></div>
-                </div>
+                </div> */}
               </div>
               <h3>
                 <a href="https://www.dmu.ac.uk/home.aspx">
@@ -224,12 +311,24 @@ const AboutPage = () => {
         </header>
         <div className="recommendations-container__reviewer">
           <div className="reviewer-photo">
-            <img
+            {/* <img
               src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1654459494/img/martin-photo_ejatxf.jpg"
               alt="selfie of Martin Jackson"
               width="70"
               height="70"
               loading="lazy"
+            /> */}
+            <AdvancedLazyLoad
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_70/v1654459494/img/martin-photo_ejatxf"
+              imgALT="selfie of Martin Jackson"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654459494/img/martin-photo_ejatxf"
+              imgIdName={undefined}
+              elemName="review-spotlight-img-container"
+              imgTransparent={true}
+              imgWidth={"70px"}
+              imgHeight={"70px"}
+              imgClassName={undefined}
+              containerClassName={undefined}
             />
           </div>
           <div className="reviewer-info">
