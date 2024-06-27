@@ -157,3 +157,35 @@
   height: 70px;
   border-radius: 100%;
 }
+/////////////////
+.arclight-logo-img-container {
+  display: flex;
+  width: 74px;
+  height: 74px;
+  border-radius: 100%;
+}
+/////////////////
+.tech-stack-img-container {
+  width: 55px;
+  height: 55px;
+}
+
+.tech-stack-img-container.icon-border-radius img {
+  border-radius: 100%;
+}
+/////////////////
+.api-container-img-container {
+  width: 100px;
+  height: 100px;
+}
+////////////////
+.smart-watch-img-container {
+  width: 235px;
+  height: 420px;
+}
+////////////////
+.google-news-img-container {
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+}

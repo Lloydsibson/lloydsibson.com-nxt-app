@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { WosStockApi } from "./ApiStocksWOS";
 import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
+import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
 import { useDispatch } from "react-redux";
 import {
   ApiGoogleNewsWOSAction,
@@ -135,12 +136,24 @@ export const AppleWatch = () => {
   return (
     <div className="smart-watch-container">
       <div className="smart-watch-container__inner-container">
-        <img
+        {/* <img
           src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1609536150/img/apple-watch-mock-up.png"
           alt="Watch Face"
           title="Smart Watch"
           width="235"
           height="420"
+        /> */}
+        <AdvancedLazyLoad
+          imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1609536150/img/apple-watch-mock-up"
+          imgALT="Watch Face"
+          backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto/v1609536150/img/apple-watch-mock-up"
+          imgIdName={undefined}
+          elemName="smart-watch-img-container"
+          imgTransparent={true}
+          imgWidth={"235px"}
+          imgHeight={"420px"}
+          imgClassName={undefined}
+          containerClassName={undefined}
         />
         <div className="smart-watch-bg"></div>
         <div className="smart-watch-widgets">

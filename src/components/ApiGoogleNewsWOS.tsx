@@ -1,4 +1,5 @@
 import { useSelector } from "react-redux";
+import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
 
 export const GoogleNewsApi = () => {
   // ACCESS STATE FROM REDUX STORE
@@ -10,12 +11,24 @@ export const GoogleNewsApi = () => {
     <div className="google-news-wos">
       <div className="google-news-wos__card">
         <div className="google-news-title">
-          <img
+          {/* <img
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1599594465/img/google-news-icon.png"
             alt="Google News Icon"
             title="Google News"
             width="25"
             height="20"
+          /> */}
+          <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1599594465/img/google-news-icon"
+            imgALT="Google News Icon"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_10/e_blur:10,f_auto,q_auto/v1599594465/img/google-news-icon"
+            imgIdName={undefined}
+            elemName="google-news-img-container"
+            imgTransparent={true}
+            imgWidth={"25px"}
+            imgHeight={"20px"}
+            imgClassName={undefined}
+            containerClassName={undefined}
           />
           News
         </div>
