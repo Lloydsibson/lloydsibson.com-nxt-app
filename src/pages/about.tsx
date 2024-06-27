@@ -132,7 +132,7 @@ const AboutPage = () => {
               }}
             ></div> */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_260/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_300/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
               imgALT="Lloyd Sibson in office"
               backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:300,f_auto,q_auto/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
               imgIdName={undefined}
