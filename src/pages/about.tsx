@@ -132,7 +132,7 @@ const AboutPage = () => {
               }}
             ></div> */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_160/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_260/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
               imgALT="Lloyd Sibson in office"
               backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:300,f_auto,q_auto/v1667817743/img/linkedin-office-photo-tp_jjfyuo"
               imgIdName={undefined}
@@ -214,7 +214,7 @@ const AboutPage = () => {
                   height="45"
                 /> */}
                 <AdvancedLazyLoad
-                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1654419622/img/next-logo"
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_60/v1654419622/img/next-logo"
                   imgALT="Nexts logo"
                   backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/next-logo"
                   imgIdName={undefined}
@@ -248,7 +248,7 @@ const AboutPage = () => {
                   height="45"
                 /> */}
                 <AdvancedLazyLoad
-                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1692825994/shell-small-logo-opt_kdr0im"
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_60/v1692825994/shell-small-logo-opt_kdr0im"
                   imgALT="Shells logo"
                   backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1692825994/shell-small-logo-opt_kdr0im"
                   imgIdName={undefined}
@@ -278,7 +278,7 @@ const AboutPage = () => {
                   height="45"
                 /> */}
                 <AdvancedLazyLoad
-                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_45/v1654419622/img/dmu-logo"
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_60/v1654419622/img/dmu-logo"
                   imgALT="De Montfort universities logo"
                   backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/dmu-logo"
                   imgIdName={undefined}
@@ -319,7 +319,7 @@ const AboutPage = () => {
               loading="lazy"
             /> */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_70/v1654459494/img/martin-photo_ejatxf"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_85/v1654459494/img/martin-photo_ejatxf"
               imgALT="selfie of Martin Jackson"
               backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654459494/img/martin-photo_ejatxf"
               imgIdName={undefined}
