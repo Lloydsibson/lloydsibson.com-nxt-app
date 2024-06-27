@@ -74,7 +74,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/rolex_ihkvqf"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/rolex_ihkvqf"
             imgALT="Rolex's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:100,f_auto,q_auto/v1654430864/img/brand-logos/rolex_ihkvqf"
             imgIdName={undefined}
@@ -96,7 +96,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/next_ax8vcj"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/next_ax8vcj"
             imgALT="Next's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:100,f_auto,q_auto/v1654430864/img/brand-logos/next_ax8vcj"
             imgIdName={undefined}
@@ -119,7 +119,7 @@ export const Clients = () => {
             style={{ width: "70px" }}
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1693173998/shell-logo_yytzh7"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1693173998/shell-logo_yytzh7"
             imgALT="Shell's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:100,f_auto,q_auto/v1693173998/shell-logo_yytzh7"
             imgIdName={undefined}
@@ -141,7 +141,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/google_pbncid"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/google_pbncid"
             imgALT="Googles logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430864/img/brand-logos/google_pbncid"
             imgIdName={undefined}
@@ -163,7 +163,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/nike_jz49d3"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/nike_jz49d3"
             imgALT="Nike's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:70,f_auto,q_auto/v1654430864/img/brand-logos/nike_jz49d3"
             imgIdName={undefined}
@@ -185,7 +185,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/adidas_xaxixt"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/adidas_xaxixt"
             imgALT="Adidas's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430864/img/brand-logos/adidas_xaxixt"
             imgIdName={undefined}
@@ -207,7 +207,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/goldsmiths_v7vkux"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/goldsmiths_v7vkux"
             imgALT="Goldsmiths logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430864/img/brand-logos/goldsmiths_v7vkux"
             imgIdName={undefined}
@@ -230,7 +230,7 @@ export const Clients = () => {
             style={{ width: "75px" }}
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_75/v1654430865/img/brand-logos/wos_wfpxrd"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430865/img/brand-logos/wos_wfpxrd"
             imgALT="Watches of switzerland group's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430865/img/brand-logos/wos_wfpxrd"
             imgIdName={undefined}
@@ -252,7 +252,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/img/brand-logos/arclight-music_guktkm"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/img/brand-logos/arclight-music_guktkm"
             imgALT="Arclight music's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:80,f_auto,q_auto/img/brand-logos/arclight-music_guktkm"
             imgIdName={undefined}
@@ -274,7 +274,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/cartier_hxcnhj"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/cartier_hxcnhj"
             imgALT="Cartier's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:50,f_auto,q_auto/v1654430864/img/brand-logos/cartier_hxcnhj"
             imgIdName={undefined}
@@ -289,14 +289,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Vans</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/Vans_stjm6l.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/Vans_stjm6l.png"
             alt="Vans logo"
             width="80"
             height="29"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/Vans_stjm6l"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/Vans_stjm6l"
             imgALT="Vans logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:70,f_auto,q_auto/v1654430864/img/brand-logos/Vans_stjm6l"
             imgIdName={undefined}
@@ -311,14 +311,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Emporio Armani</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/ea_jcjmal.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/ea_jcjmal.png"
             alt="Emporio Armani's logo"
             width="80"
             height="8"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/ea_jcjmal"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/ea_jcjmal"
             imgALT="Emporio Armani's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:30,f_auto,q_auto/v1654430864/img/brand-logos/ea_jcjmal"
             imgIdName={undefined}
@@ -333,14 +333,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Superdry</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/superdry_pp25fj.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/superdry_pp25fj.png"
             alt="Superdry's logo"
             width="80"
             height="7"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/superdry_pp25fj"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/superdry_pp25fj"
             imgALT="Superdry's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:30,f_auto,q_auto/v1654430864/img/brand-logos/superdry_pp25fj"
             imgIdName={undefined}
@@ -355,14 +355,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Levi&apos;s</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/levis_culqaf.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/levis_culqaf.png"
             alt="Levi's logo"
             width="80"
             height="32"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/levis_culqaf"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/levis_culqaf"
             imgALT="Levi's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:20,f_auto,q_auto/v1654430864/img/brand-logos/levis_culqaf"
             imgIdName={undefined}
@@ -377,14 +377,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Victoria&apos;s Secret</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/victoria-secret_yp2zya.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/victoria-secret_yp2zya.png"
             alt="Victoria's Secrets logo"
             width="80"
             height="8"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/victoria-secret_yp2zya"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/victoria-secret_yp2zya"
             imgALT="Victoria's Secrets logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:40,f_auto,q_auto/v1654430864/img/brand-logos/victoria-secret_yp2zya"
             imgIdName={undefined}
@@ -399,14 +399,14 @@ export const Clients = () => {
         <div className="client-item">
           <h3>Converse</h3>
           {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/converse_yzks6u.png"
+            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/converse_yzks6u.png"
             alt="Converse's logo"
             width="80"
             height="13"
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/converse_yzks6u"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/converse_yzks6u"
             imgALT="Converse's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430864/img/brand-logos/converse_yzks6u"
             imgIdName={undefined}
@@ -428,7 +428,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/timberland_ogbzan"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/timberland_ogbzan"
             imgALT="Timberland's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:60,f_auto,q_auto/v1654430864/img/brand-logos/timberland_ogbzan"
             imgIdName={undefined}
@@ -450,7 +450,7 @@ export const Clients = () => {
             loading="lazy"
           /> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_80/v1654430864/img/brand-logos/gucci_xfb176"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654430864/img/brand-logos/gucci_xfb176"
             imgALT="Gucci's logo"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:50,f_auto,q_auto/v1654430864/img/brand-logos/gucci_xfb176"
             imgIdName={undefined}

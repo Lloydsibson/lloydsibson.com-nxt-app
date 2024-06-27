@@ -85,7 +85,7 @@ const HomePage = () => {
             {/* <div className="hp-image"></div> */}
             {/* url("https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage") */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_528/v1620401501/img/logo-homepage"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage"
               imgALT="Home page logo"
               backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto/v1620401501/img/logo-homepage"
               imgIdName={undefined}
