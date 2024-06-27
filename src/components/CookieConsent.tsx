@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
+import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
+
 const CookieConsent = () => {
   const [cookieMessage, setCookieMessage] = useState<boolean>(true);
   const router = useRouter();
@@ -57,10 +59,22 @@ const CookieConsent = () => {
     <div id="cookie-message" className={cookieMessage ? "-close" : ""}>
       <div className="cookie-container">
         <div className="cookie-container__cookies-left">
-          <img
+          {/* <img
             className="cookie-img"
             alt="Cartoon cookie"
             src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1717876666/cookie-banner-image-var-2-tp_a1tlze.png"
+          /> */}
+          <AdvancedLazyLoad
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1717876666/cookie-banner-image-var-2-tp_a1tlze"
+            imgALT="Cartoon cookie"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_35/e_blur:10,f_auto,q_auto/v1717876666/cookie-banner-image-var-2-tp_a1tlze"
+            imgIdName={undefined}
+            elemName="cookie-banner-img-container"
+            imgTransparent={true}
+            imgWidth={"100px"}
+            imgHeight={"100px"}
+            imgClassName="cookie-img"
+            containerClassName={undefined}
           />
           <h3 className="cookie-title">My Site Uses Cookies</h3>
           <p>

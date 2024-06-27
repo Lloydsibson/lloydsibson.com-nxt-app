@@ -32,7 +32,7 @@ const VideoBackground = () => {
         className="videoplayer"
         id="video"
         controlsList="nodownload"
-        poster="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1610816567/img/video-placeholder"
+        poster="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_1000,e_blur:50/v1610816567/img/video-placeholder"
       >
         <source
           type="video/mp4"

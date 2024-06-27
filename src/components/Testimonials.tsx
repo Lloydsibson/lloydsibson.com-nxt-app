@@ -74,7 +74,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">
@@ -108,7 +109,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">
@@ -143,7 +145,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">
@@ -186,7 +189,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">
@@ -221,7 +225,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">
@@ -280,7 +285,8 @@ export const Testimonials = () => {
                 imgTransparent={false}
                 imgWidth="80px"
                 imgHeight="80px"
-                imgClassName=""
+                imgClassName={undefined}
+                containerClassName={undefined}
               />
             </div>
             <section className="review-container__text-container">

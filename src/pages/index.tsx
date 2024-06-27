@@ -59,7 +59,7 @@ const HomePage = () => {
             {/* <div className="hp-image"></div> */}
             {/* url("https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage") */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1620401501/img/logo-homepage"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto,w_528/v1620401501/img/logo-homepage"
               imgALT="Home page logo"
               backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_100/e_blur:100,f_auto,q_auto//v1620401501/img/logo-homepage"
               imgIdName={undefined}
@@ -67,7 +67,8 @@ const HomePage = () => {
               imgTransparent={true}
               imgWidth={undefined}
               imgHeight={undefined}
-              imgClassName="hp-image"
+              imgClassName={undefined}
+              containerClassName="hp-image"
             />
             <h1>
               Front End <span>Dev & Designer</span>
@@ -115,6 +116,7 @@ const HomePage = () => {
             imgWidth={"200px"}
             imgHeight={"200px"}
             imgClassName={undefined}
+            containerClassName={undefined}
           />
           {/* <Image
             className="html-video-container__img"

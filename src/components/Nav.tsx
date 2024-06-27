@@ -44,7 +44,8 @@ export const Nav = () => {
             imgTransparent={true}
             imgWidth={"50px"}
             imgHeight={"50px"}
-            imgClassName="github-badges-container__artic"
+            imgClassName={undefined}
+            containerClassName="github-badges-container__artic"
           />
         </div>
         <h2 id="nav-title">

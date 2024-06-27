@@ -25,7 +25,8 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgTransparent={true}
             imgWidth={Classname == "ghb-desktop" ? "30px" : "50px"}
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
-            imgClassName="github-badges-container__artic"
+            imgClassName={undefined}
+            containerClassName={"github-badges-container__artic"}
           />
           {/* <img
             className="github-badges-container__sponsor"
@@ -41,7 +42,8 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgTransparent={true}
             imgWidth={Classname == "ghb-desktop" ? "30px" : "50px"}
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
-            imgClassName="github-badges-container__sponsor"
+            imgClassName={undefined}
+            containerClassName="github-badges-container__sponsor"
           />
           {/* <img
             className="github-badges-container__yolo"
@@ -57,7 +59,8 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgTransparent={true}
             imgWidth={Classname == "ghb-desktop" ? "30px" : "50px"}
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
-            imgClassName="github-badges-container__yolo"
+            imgClassName={undefined}
+            containerClassName="github-badges-container__yolo"
           />
           {/* <img
             className="github-badges-container__pullshark"
@@ -73,7 +76,8 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgTransparent={true}
             imgWidth={Classname == "ghb-desktop" ? "30px" : "50px"}
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
-            imgClassName="github-badges-container__pullshark"
+            imgClassName={undefined}
+            containerClassName="github-badges-container__pullshark"
           />
         </div>
       </Link>
