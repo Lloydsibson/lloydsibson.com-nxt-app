@@ -59,7 +59,7 @@ const PortfolioPage = () => {
   }, []);
   const LinkData = [
     {
-      url: "https://www.figma.com/design/iGYZapLn1bivJyg84Nz2vn/Portfolio-Page---Links---Pop-up?node-id=0-1&t=NcKL5dIrHwX9l0V0-0",
+      url: "https://www.figma.com/design/iGYZapLn1bivJyg84Nz2vn/Portfolio-Page---Links---Pop-up?node-id=0-1&t=J25vyDEXzjkqOxh7-1",
       linkText: "Links Pop-Up",
       postedDate: new Date(2024, 5, 28),
       icon: faFigma,
