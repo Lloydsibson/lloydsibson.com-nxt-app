@@ -59,6 +59,13 @@ const PortfolioPage = () => {
   }, []);
   const LinkData = [
     {
+      url: "https://www.figma.com/design/iGYZapLn1bivJyg84Nz2vn/Portfolio-Page---Links---Pop-up?node-id=0-1&t=NcKL5dIrHwX9l0V0-0",
+      linkText: "Links Pop-Up",
+      postedDate: new Date(2024, 5, 28),
+      icon: faFigma,
+      tags: ["UI", "Share", "Likes"],
+    },
+    {
       url: "https://codepen.io/lloydsibson/pen/abrwgaq",
       linkText: "VIP Slider",
       postedDate: new Date(2024, 5, 7),
@@ -100,13 +107,13 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["UI", "Design", "Tablet"],
     },
-    {
-      url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
-      linkText: "Eventbrite API",
-      postedDate: new Date(2022, 3, 22),
-      icon: faCodepen,
-      tags: ["API", "Data"],
-    },
+    // {
+    //   url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
+    //   linkText: "Eventbrite API",
+    //   postedDate: new Date(2022, 3, 22),
+    //   icon: faCodepen,
+    //   tags: ["API", "Data"],
+    // },
     {
       url: "https://www.figma.com/file/UrJ8rP5ZPKUB66aTE1mvrX/Arclight-Music---Home?node-id=0%3A1",
       linkText: "Arclight Website",
