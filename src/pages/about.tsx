@@ -529,7 +529,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2021) / 1
+                    (currentDate.getFullYear() - 2021) / 2
                   )}0%`,
                 }}
               ></div>
