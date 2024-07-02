@@ -93,7 +93,7 @@ const AboutPage = () => {
       <div className="page-title-container about">
         <section className="page-title-container__banner">
           <header>
-            <h2>About</h2>
+            <h1>About</h1>
           </header>
           {/* <div
             className="header-banner"
