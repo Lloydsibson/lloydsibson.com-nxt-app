@@ -360,7 +360,7 @@ const AboutPage = () => {
       <div className="custom-divider"></div>
       <section className="about-me-container">
         <header className="subheading-container">
-          <h2>About</h2>
+          <h2>Summary</h2>
         </header>
         <p className="read-more-text">
           As a Front End Developer at Next, I apply my technical and creative
