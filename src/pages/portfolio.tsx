@@ -88,10 +88,10 @@ const PortfolioPage = () => {
     },
     {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
-      linkText: "Cookie Banner Redesign",
+      linkText: "Cookie Banner",
       postedDate: new Date(2023, 11, 28),
       icon: faFigma,
-      tags: ["UI", "Pop-up"],
+      tags: ["UI", "Redesign"],
     },
     {
       url: "https://youtu.be/23Af9vhmL-4",
@@ -142,7 +142,7 @@ const PortfolioPage = () => {
     },
     {
       url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-      linkText: "Client Wireframe (Low Fi.)",
+      linkText: "Client Wireframe",
       postedDate: new Date(2021, 7, 19),
       icon: faFigma,
       tags: ["Wireframe", "Low Fidelity"],
