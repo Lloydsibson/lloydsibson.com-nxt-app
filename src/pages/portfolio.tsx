@@ -91,7 +91,7 @@ const PortfolioPage = () => {
       linkText: "Cookie Banner",
       postedDate: new Date(2023, 11, 28),
       icon: faFigma,
-      tags: ["UI", "Redesign"],
+      tags: ["UI", "Redesign", "Legal"],
     },
     {
       url: "https://youtu.be/23Af9vhmL-4",
@@ -119,7 +119,7 @@ const PortfolioPage = () => {
       linkText: "Arclight Website",
       postedDate: new Date(2021, 9, 26),
       icon: faFigma,
-      tags: ["UI/UX", "Design"],
+      tags: ["UI/UX", "Design", "Client"],
     },
     // {
     //   url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
