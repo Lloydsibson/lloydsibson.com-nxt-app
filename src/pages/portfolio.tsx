@@ -65,13 +65,13 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["UI", "Share", "Likes"],
     },
-    {
-      url: "https://codepen.io/lloydsibson/pen/abrwgaq",
-      linkText: "VIP Slider",
-      postedDate: new Date(2024, 5, 7),
-      icon: faCodepen,
-      tags: ["Next", "jQuery"],
-    },
+    // {
+    //   url: "https://codepen.io/lloydsibson/pen/abrwgaq",
+    //   linkText: "VIP Slider",
+    //   postedDate: new Date(2024, 5, 7),
+    //   icon: faCodepen,
+    //   tags: ["Next", "jQuery"],
+    // },
     {
       url: "https://codepen.io/lloydsibson/pen/gOJmPev",
       linkText: "NextPay Credit Form",
@@ -100,13 +100,13 @@ const PortfolioPage = () => {
       icon: faYoutube,
       tags: ["Video", "Monetate"],
     },
-    {
-      url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
-      linkText: "RP Sensors",
-      postedDate: new Date(2022, 8, 25),
-      icon: faFigma,
-      tags: ["UI", "Design", "Tablet"],
-    },
+    // {
+    //   url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
+    //   linkText: "RP Sensors",
+    //   postedDate: new Date(2022, 8, 25),
+    //   icon: faFigma,
+    //   tags: ["UI", "Design", "Tablet"],
+    // },
     // {
     //   url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
     //   linkText: "Eventbrite API",
@@ -131,20 +131,22 @@ const PortfolioPage = () => {
     //   url: "https://www.beasportsclinic.co.uk/",
     //   linkText: "Client Home Redesign",
     //   postedDate: new Date(2021, 7, 29),
-    //   icon: faDesktop,
-    // },
-    // {
-    //   url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-    //   linkText: "Client Wireframe",
-    //   postedDate: new Date(2021, 7, 24),
     //   icon: faFigma,
     // },
-    // {
-    //   url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-    //   linkText: "Client Wireframe (Low Fi.)",
-    //   postedDate: new Date(2021, 7, 19),
-    //   icon: faFigma,
-    // },
+    {
+      url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
+      linkText: "Client Final Design",
+      postedDate: new Date(2021, 7, 24),
+      icon: faFigma,
+      tags: ["Home Page", "Redesign"],
+    },
+    {
+      url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
+      linkText: "Client Wireframe (Low Fi.)",
+      postedDate: new Date(2021, 7, 19),
+      icon: faFigma,
+      tags: ["Wireframe", "Low Fidelity"],
+    },
     // {
     //   url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
     //   linkText: "New Website Design",
@@ -253,11 +255,13 @@ const PortfolioPage = () => {
                     {postedDate(LinkData.postedDate)}
                   </div>
                   <div className="link-tag-container">
-                    {LinkData.tags.map((tags, id) => (
-                      <p className="link-tag-container__tag" key={id}>
-                        {tags}
-                      </p>
-                    ))}
+                    {LinkData.tags
+                      ? LinkData.tags.map((tags, id) => (
+                          <p className="link-tag-container__tag" key={id}>
+                            {tags}
+                          </p>
+                        ))
+                      : undefined}
                   </div>
                 </div>
               </div>
