@@ -19,7 +19,10 @@ import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 
+import scrapedData from "../scrapedData.json";
+
 const AboutPage = () => {
+  const { latestGamePlayed } = scrapedData;
   useEffect(() => {
     document.body.classList.add("about-page"); // Add your desired class here
 
@@ -837,7 +840,7 @@ const AboutPage = () => {
             <div className="fun-facts-container__fun-facts gaming">
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Played</h3>
-              <span>FF7: Rebirth</span>
+              <span>{latestGamePlayed ? latestGamePlayed : "N/A"}</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />
