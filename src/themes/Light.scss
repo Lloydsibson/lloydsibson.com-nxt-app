@@ -360,7 +360,7 @@ body.light
   .tech-stack-container__fun-facts
   .fun-facts-container
   .fun-facts-container__fun-facts {
-  box-shadow: 5px 5px 10px #dcdade, -5px -5px 10px #ffffff;
+  // box-shadow: 5px 5px 10px #dcdade, -5px -5px 10px #ffffff;
   background-color: $light-bg;
   //border: unset;
   // border-color: #d5d5d5;
@@ -514,12 +514,12 @@ body.light .form-pp-container .control-indicator {
   background-color: #d1d1d6;
 }
 
-body.light
-  .content-container
-  .content-container__contact-details-container
-  .contact-cta-container {
-  background-color: $light-fg;
-}
+// body.light
+//   .content-container
+//   .content-container__contact-details-container
+//   .contact-cta-container {
+//   background-color: $light-fg;
+// }
 
 body.light
   .content-container
