@@ -127,7 +127,7 @@ body.light {
 
 @media only screen and (max-width: 900px) {
   .testomonials-container {
-    padding: 0 20px 60px 20px;
+    padding: 0 20px 50px 20px;
     .review-item {
       padding: 60px 20px 20px 20px;
       .review-container {
@@ -156,6 +156,7 @@ body.light {
 @media only screen and (min-width: 700px) and (max-width: 1300px) {
   .review-container__text-container p {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;
@@ -165,6 +166,7 @@ body.light {
 @media only screen and (max-width: 350px) {
   .review-container__text-container p {
     -webkit-line-clamp: 5;
+    line-clamp: 5;
     -webkit-box-orient: vertical;
     display: -webkit-box;
     overflow: hidden;

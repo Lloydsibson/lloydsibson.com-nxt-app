@@ -484,7 +484,7 @@
         // box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
         //   10px 10px 15px rgba(70, 70, 70, 0.12);
         background: #222222;
-        box-shadow: 5px 5px 10px #1d1d1d, -5px -5px 10px #272727;
+        // box-shadow: 5px 5px 10px #1d1d1d, -5px -5px 10px #272727;
         // -webkit-transition: all 0.2s ease-in-out;
         // -moz-transition: all 0.2s ease-in-out;
         // -o-transition: all 0.2s ease-in-out;
@@ -513,11 +513,13 @@
         }
         span {
           color: #fff;
-          font-size: 2.5rem;
+          font-weight: 200;
+          font-size: 2rem;
           line-height: 52px;
           display: block;
           margin: 0 10px;
           -webkit-line-clamp: 1;
+          line-clamp: 1;
           -webkit-box-orient: vertical;
           display: -webkit-box;
           overflow: hidden;
@@ -525,7 +527,7 @@
       }
       .fun-facts-container__fun-facts.gaming {
         span {
-          font-size: 2rem;
+          font-size: 1.5rem;
         }
       }
     }
