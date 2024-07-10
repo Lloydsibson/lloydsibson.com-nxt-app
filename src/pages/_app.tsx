@@ -12,6 +12,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { Nav } from "../components/Nav";
 import { MobileNav } from "../components/MobileNav";
 import CookieConsent from "../components/CookieConsent";
+import { ClientsCurrentsTime } from "@/components/ClientsCurrentTime";
 import { Footer } from "../components/Footer";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -73,6 +74,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <Provider store={store}>
+        <ClientsCurrentsTime />
         <CookieConsent />
         <div className={`page-scroll`}>
           <div className="page-container">

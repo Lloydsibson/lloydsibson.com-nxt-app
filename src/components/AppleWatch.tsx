@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { WosStockApi } from "./ApiStocksWOS";
 import { GoogleNewsApi } from "./ApiGoogleNewsWOS";
 import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
@@ -12,6 +13,11 @@ import { ApiStocksWOSAction } from "../../redux/ApiStocksWOSRedux";
 export const AppleWatch = () => {
   // REDUX DISPATCH
   const dispatch = useDispatch();
+
+  // ACCESS STATE FROM REDUX STORE
+  const { ClientsCurrentTimeState } = useSelector(
+    (state: any) => state.ClientsCurrentTimeStore
+  );
 
   const [watchDate, setWatchDate] = useState<string>("Date");
   const [watchDay, setWatchDay] = useState<string>("Day");
@@ -64,15 +70,6 @@ export const AppleWatch = () => {
       // code block
       // DO NOTHING
     }
-    //UPDATES EVERY 1 SECOND
-    setInterval(() => {
-      let dateAndTime: Date = new Date();
-      let currentHour: number = dateAndTime.getHours();
-      let currentMinutes: string = dateAndTime.getMinutes().toString();
-      currentMinutes = ("0" + currentMinutes).slice(-2);
-      let watchTimeAndMinutes: string = `${currentHour}:${currentMinutes}`;
-      setWatchTime(watchTimeAndMinutes);
-    }, 1000);
 
     //API CALLS + UPDATES REDUX STORE
     ///////////////////////////////
@@ -161,7 +158,9 @@ export const AppleWatch = () => {
             <div className="smart-watch__date-container__day">{watchDay}</div>
             <div className="smart-watch__date-container__date">{watchDate}</div>
           </div>
-          <div className="smart-watch__date-container__time">{watchTime}</div>
+          <div className="smart-watch__date-container__time">
+            {ClientsCurrentTimeState.time}
+          </div>
           <GoogleNewsApi />
           <WosStockApi />
         </div>
