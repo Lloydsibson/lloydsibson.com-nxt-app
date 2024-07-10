@@ -183,8 +183,10 @@ body #cookie-message.-close {
 }
 
 @media only screen and (max-width: 375px) {
-  #cookie-message .cookie-img {
-    max-width: 80px;
+  #cookie-message .cookie-img,
+  div.cookie-banner-img-container {
+    width: 80px;
+    height: 80px;
   }
 }
 

@@ -246,7 +246,7 @@ body.light .nav-container li a.selected {
     color: $light-secondary-text;
   }
   body.light .mb-nav-container ul li a.active {
-    background-color: #000;
+    background-color: $light-theme;
     color: $light-fg;
     border-left-color: $light-theme;
   }

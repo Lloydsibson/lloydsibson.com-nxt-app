@@ -82,12 +82,16 @@
           display: flex;
           align-items: center;
           padding: 10px 0 10px 20px;
-          border-left: 7px solid transparent;
+          // border-left: 7px solid transparent;
           // border-radius: 20px 0 0 20px;
         }
         a.active {
-          background-color: #333;
-          border-left: 7px solid #6700da;
+          background-color: #6700da;
+          //border-left: 7px solid #6700da;
+          border-radius: 5px 0px 0px 5px;
+          svg {
+            color: #fff;
+          }
         }
       }
     }
