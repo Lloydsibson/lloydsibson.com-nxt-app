@@ -207,22 +207,42 @@ const PortfolioPage = () => {
       </p>
     );
 
-    const day2To14 = (
+    const day2To30 = (
       <p>
         <span>New</span>
         Posted {daysSince} Days Ago
       </p>
     );
 
-    const beyond = <p>Posted {daysSince} Days Ago</p>;
+    const day2To364 = <p>Posted {daysSince} Days Ago</p>;
+
+    const OneYear = <p>Posted 1 Year Ago</p>;
+    const TwoYears = <p>Posted 2 Years Ago</p>;
+    const ThreeYears = <p>Posted 3 Years Ago</p>;
+    const FourYears = <p>Posted 4 Years Ago</p>;
+    const FiveYears = <p>Posted 5 Years Ago</p>;
+
+    const beyond = <p>5+ Years. Very old... 😅</p>;
 
     if (daysSince === 0) {
       // console.log("today");
       return today;
     } else if (daysSince === 1) {
       return day1;
-    } else if (daysSince > 1 && daysSince < 14) {
-      return day2To14;
+    } else if (daysSince > 1 && daysSince < 30) {
+      return day2To30;
+    } else if (daysSince > 30 && daysSince < 364) {
+      return day2To364;
+    } else if (daysSince > 365 && daysSince < 729) {
+      return OneYear;
+    } else if (daysSince > 730 && daysSince < 1094) {
+      return TwoYears;
+    } else if (daysSince > 1095 && daysSince < 1459) {
+      return ThreeYears;
+    } else if (daysSince > 1460 && daysSince < 1824) {
+      return FourYears;
+    } else if (daysSince > 1825 && daysSince < 2189) {
+      return FiveYears;
     } else {
       return beyond;
     }
