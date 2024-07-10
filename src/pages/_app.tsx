@@ -97,6 +97,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
       </Provider>
       {/* TAWK.TO CHAT WIDGET */}
+      {/* LIVE CHAT COLOR: #02B3A1 */}
       <Script id="tawk" strategy="lazyOnload">
         {`
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
