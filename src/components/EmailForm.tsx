@@ -106,7 +106,7 @@ export const EmailForm = () => {
         {/* ---- */}
         <div className="fs-contact-form-container__inner-container">
           <div className="contact-info-container">
-            <label>
+            <label className="contact-info-container__name">
               Name:
               <input
                 required
@@ -119,7 +119,7 @@ export const EmailForm = () => {
               />
             </label>
 
-            <label>
+            <label className="contact-info-container__email">
               Email:
               <input
                 required
@@ -166,10 +166,10 @@ export const EmailForm = () => {
         placeholder="Budget (Optional)"
       ></input>
     </label> */}
-            <label>
+            <label className="contact-info-container__subject">
               Subject:
               <input
-                required
+                // required
                 type="text"
                 name="subject"
                 spellCheck="true"
@@ -183,7 +183,7 @@ export const EmailForm = () => {
           {/* <input type="text" name="_gotcha" hidden /> */}
 
           <div className="contact-message-container">
-            <label>
+            <label className="contact-info-container__message">
               Message:
               <textarea
                 required
