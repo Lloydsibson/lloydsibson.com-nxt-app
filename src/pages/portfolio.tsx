@@ -65,13 +65,13 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["UI", "Share", "Likes"],
     },
-    // {
-    //   url: "https://codepen.io/lloydsibson/pen/abrwgaq",
-    //   linkText: "VIP Slider",
-    //   postedDate: new Date(2024, 5, 7),
-    //   icon: faCodepen,
-    //   tags: ["Next", "jQuery"],
-    // },
+    {
+      url: "https://codepen.io/lloydsibson/pen/abrwgaq",
+      linkText: "VIP Slider",
+      postedDate: new Date(2024, 5, 7),
+      icon: faCodepen,
+      tags: ["Next", "jQuery"],
+    },
     {
       url: "https://codepen.io/lloydsibson/pen/gOJmPev",
       linkText: "NextPay Credit Form",
@@ -100,20 +100,20 @@ const PortfolioPage = () => {
       icon: faYoutube,
       tags: ["Video", "Monetate"],
     },
-    // {
-    //   url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
-    //   linkText: "RP Sensors",
-    //   postedDate: new Date(2022, 8, 25),
-    //   icon: faFigma,
-    //   tags: ["UI", "Design", "Tablet"],
-    // },
-    // {
-    //   url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
-    //   linkText: "Eventbrite API",
-    //   postedDate: new Date(2022, 3, 22),
-    //   icon: faCodepen,
-    //   tags: ["API", "Data"],
-    // },
+    {
+      url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
+      linkText: "RP Sensors",
+      postedDate: new Date(2022, 8, 25),
+      icon: faFigma,
+      tags: ["UI", "Design", "Tablet"],
+    },
+    {
+      url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
+      linkText: "Eventbrite API",
+      postedDate: new Date(2022, 3, 22),
+      icon: faCodepen,
+      tags: ["API", "Data"],
+    },
     {
       url: "https://www.figma.com/file/UrJ8rP5ZPKUB66aTE1mvrX/Arclight-Music---Home?node-id=0%3A1",
       linkText: "Arclight Website",
@@ -121,24 +121,19 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["UI/UX", "Design", "Client"],
     },
-    // {
-    //   url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
-    //   linkText: "Covid API (UI Design)",
-    //   postedDate: new Date(2021, 8, 30),
-    //   icon: faFigma,
-    // },
-    // {
-    //   url: "https://www.beasportsclinic.co.uk/",
-    //   linkText: "Client Home Redesign",
-    //   postedDate: new Date(2021, 7, 29),
-    //   icon: faFigma,
-    // },
     {
-      url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
-      linkText: "Client Final Design",
-      postedDate: new Date(2021, 7, 24),
+      url: "https://www.figma.com/file/dgj6fvLAAhsRF79iDH3U2W/Mobile-Nav-and-Widget?node-id=0%3A1",
+      linkText: "Covid Widget",
+      postedDate: new Date(2021, 8, 30),
       icon: faFigma,
-      tags: ["Home Page", "Redesign"],
+      tags: ["API", "UI", "COVID"],
+    },
+    {
+      url: "https://www.beasportsclinic.co.uk/",
+      linkText: "Client Home Page",
+      postedDate: new Date(2021, 7, 29),
+      icon: faFigma,
+      tags: ["Sports", "Redesign"],
     },
     {
       url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
@@ -147,37 +142,47 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["Wireframe", "Low Fidelity"],
     },
-    // {
-    //   url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
-    //   linkText: "New Website Design",
-    //   postedDate: new Date(2021, 4, 8),
-    //   icon: faFigma,
-    // },
-    // {
-    //   url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
-    //   linkText: "WOS - Rolex",
-    //   postedDate: new Date(2021, 0, 15),
-    //   icon: faDesktop,
-    // },
-    // {
-    //   url: "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1",
-    //   linkText: "APUK - Mobile Nav Design",
-    //   postedDate: new Date(2021, 3, 10),
-    //   icon: faFigma,
-    // },
-    // {
-    //   url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
-    //   linkText: "WOS - Servicing Your Rolex",
-    //   postedDate: new Date(2021, 0, 15),
-    //   icon: faDesktop,
-    // },
-    // {
-    //   url: "https://www.mappinandwebb.com/rolex/contact-us",
-    //   linkText: "M&W Rolex Map",
-    //   postedDate: new Date(2020, 6, 22),
-    //   icon: faDesktop,
-    // },
   ];
+
+  // const LinkDataAdditional = [
+  //   {
+  //     url: "https://www.figma.com/file/1KCPCSEHcV0lxoaFCzI1P8/Bea's-Sport-Clinic---Home-Page-Redesign?node-id=0%3A1",
+  //     linkText: "Client Final Design",
+  //     postedDate: new Date(2021, 7, 24),
+  //     icon: faFigma,
+  //     tags: ["Home Page", "Redesign"],
+  //   },
+  //   {
+  //     url: "https://www.figma.com/file/xawnaEYP9XECDnxihvXTNn/New-Website-%26-Theme-V2.1",
+  //     linkText: "New Website Design",
+  //     postedDate: new Date(2021, 4, 8),
+  //     icon: faFigma,
+  //   },
+  //   {
+  //     url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
+  //     linkText: "WOS - Rolex",
+  //     postedDate: new Date(2021, 0, 15),
+  //     icon: faDesktop,
+  //   },
+  //   {
+  //     url: "https://www.figma.com/file/kSUletznveK6k1NFJDhrUR/Monocode-Portfolio?node-id=0%3A1",
+  //     linkText: "APUK - Mobile Nav Design",
+  //     postedDate: new Date(2021, 3, 10),
+  //     icon: faFigma,
+  //   },
+  //   {
+  //     url: "https://www.watches-of-switzerland.co.uk/rolex/servicing-your-rolex",
+  //     linkText: "WOS - Servicing Your Rolex",
+  //     postedDate: new Date(2021, 0, 15),
+  //     icon: faDesktop,
+  //   },
+  //   {
+  //     url: "https://www.mappinandwebb.com/rolex/contact-us",
+  //     linkText: "M&W Rolex Map",
+  //     postedDate: new Date(2020, 6, 22),
+  //     icon: faDesktop,
+  //   },
+  // ];
 
   // TAKES POSTED DATE AND WORKS OUT HOW MANY DAYS HAVE PASSED AGAINST CURRENT DATE
   const postedDate = (PostedDate: any) => {
@@ -237,6 +242,7 @@ const PortfolioPage = () => {
           <h1>Portfolio</h1>
         </header>
         <p>Selected Examples</p>
+        <AppleWatch />
       </section>
       <div className="portfolio-container">
         <section className="portfolio-container__links-container spotlight">
@@ -266,6 +272,30 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
+          </div>
+          <div className="links-container additional">
+            {/* {LinkDataAdditional.map((LinkData, id) => (
+              <div key={id} className="link-container">
+                <FontAwesomeIcon icon={LinkData.icon} />
+                <div className="link-container__info">
+                  <a target="_blank" rel="noreferrer" href={LinkData.url}>
+                    {LinkData.linkText}
+                  </a>
+                  <div className="posted-container">
+                    {postedDate(LinkData.postedDate)}
+                  </div>
+                  <div className="link-tag-container">
+                    {LinkData.tags
+                      ? LinkData.tags.map((tags, id) => (
+                          <p className="link-tag-container__tag" key={id}>
+                            {tags}
+                          </p>
+                        ))
+                      : undefined}
+                  </div>
+                </div>
+              </div>
+            ))} */}
           </div>
         </section>
         <div className="custom-divider spotlight"></div>
@@ -795,6 +825,7 @@ const PortfolioPage = () => {
             </div>
           </div> */}
         </section>
+        {/*
         <div className="custom-divider"></div>
         <section className="portfolio-container__api-container">
           <header className="subheading-container">
@@ -815,13 +846,6 @@ const PortfolioPage = () => {
                 aria-label="Github Account"
               >
                 <div className="api-container__portfolio-link github">
-                  {/* <img
-                    src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/GitHub-logo_noc0g4.png"
-                    alt="Github's logo"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                  /> */}
                   <AdvancedLazyLoad
                     imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655656093/img/GitHub-logo_noc0g4"
                     imgALT="Github's logo"
@@ -845,13 +869,6 @@ const PortfolioPage = () => {
                 aria-label="CodePen account"
               >
                 <div className="api-container__portfolio-link codepen">
-                  {/* <img
-                    src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/codepen-logo_lvevhg.png"
-                    alt="Codepen's logo"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                  /> */}
                   <AdvancedLazyLoad
                     imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655656093/img/codepen-logo_lvevhg"
                     imgALT="Codepen's logo"
@@ -875,13 +892,6 @@ const PortfolioPage = () => {
                 aria-label="Figma Account"
               >
                 <div className="api-container__portfolio-link figma">
-                  {/* <img
-                    src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655656093/img/figma-logo_z80hhu.png"
-                    alt="Figma's logo"
-                    width="100"
-                    height="100"
-                    loading="lazy"
-                  /> */}
                   <AdvancedLazyLoad
                     imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655656093/img/figma-logo_z80hhu"
                     imgALT="Figma's logo"
@@ -899,6 +909,7 @@ const PortfolioPage = () => {
             </div>
           </div>
         </section>
+        */}
       </div>
       {/* <Lightbox /> */}
     </>
