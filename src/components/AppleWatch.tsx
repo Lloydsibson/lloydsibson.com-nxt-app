@@ -21,7 +21,7 @@ export const AppleWatch = () => {
 
   const [watchDate, setWatchDate] = useState<string>("Date");
   const [watchDay, setWatchDay] = useState<string>("Day");
-  const [watchTime, setWatchTime] = useState<string>("00:00");
+  // const [watchTime, setWatchTime] = useState<string>("00:00");
 
   useEffect(() => {
     const dateAndTime: Date = new Date();

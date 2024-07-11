@@ -19,10 +19,11 @@ import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 
-import scrapedData from "../scrapedData.json";
+import scrapedData from "../../scrapedData.json";
 
 const AboutPage = () => {
-  const { latestGamePlayed } = scrapedData;
+  const latestGamePlayed = scrapedData[0].data[0];
+
   useEffect(() => {
     document.body.classList.add("about-page"); // Add your desired class here
 
