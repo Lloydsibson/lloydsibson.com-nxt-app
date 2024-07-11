@@ -1,5 +1,8 @@
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
+import { useSelector } from "react-redux";
+
+// import scrapedData from "../../scrapedData.json";
 
 export const GoogleNewsApi = () => {
   // ACCESS STATE FROM REDUX STORE
@@ -7,17 +10,13 @@ export const GoogleNewsApi = () => {
     (state: any) => state.ApiGoogleNewsWOSStore
   );
 
+  // const wosBingNews = scrapedData[1].data[0];
+  // const wosBingNewsLink = scrapedData[1].data[1];
+
   return (
     <div className="google-news-wos">
       <div className="google-news-wos__card">
         <div className="google-news-title">
-          {/* <img
-            src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1599594465/img/google-news-icon.png"
-            alt="Google News Icon"
-            title="Google News"
-            width="25"
-            height="20"
-          /> */}
           <AdvancedLazyLoad
             imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1599594465/img/google-news-icon"
             imgALT="Google News Icon"
@@ -35,11 +34,13 @@ export const GoogleNewsApi = () => {
         <div className="new-info-container">
           <a
             href={ApiGoogleNewsWOSState.googleLink}
+            // href={wosBingNewsLink}
             className="news-link"
             target="_blank"
             rel="noreferrer"
           >
             <p className="news-title">{ApiGoogleNewsWOSState.googleNews}</p>
+            {/* <p className="news-title">{wosBingNews}</p> */}
           </a>
         </div>
       </div>
