@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Script from "next/script";
+// import Script from "next/script";
 
 import { useState, useEffect } from "react";
 import { Provider } from "react-redux";
@@ -96,22 +96,6 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
       </Provider>
-      {/* TAWK.TO CHAT WIDGET */}
-      {/* LIVE CHAT COLOR: #02B3A1 */}
-      <Script id="tawk" strategy="lazyOnload">
-        {`
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/668d81f67a36f5aaec96679e/1i2cc7aon';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-`}
-      </Script>
-      {/* END */}
     </>
   );
 }
