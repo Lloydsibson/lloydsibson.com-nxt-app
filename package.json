@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "prebuild": "node nodeWebPageScraper.js",
-    "dev": "next dev",
+    "dev": "node nodeLightHouseReport.js && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
