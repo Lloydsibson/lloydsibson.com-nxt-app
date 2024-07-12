@@ -10,7 +10,7 @@ const urls = [
 urls.forEach((url) => {
   // Generate a unique filename for each URL's report
   const filename = url.split("//")[1].replace(/\W+/g, "_") + ".html";
-  const options = `--output=html --output-path=./lighthouse/${filename}`;
+  const options = `--output=html --output-path=public/lighthouse-reports/${filename}`;
 
   exec(`lighthouse ${url} ${options}`, (error, stdout, stderr) => {
     if (error) {
