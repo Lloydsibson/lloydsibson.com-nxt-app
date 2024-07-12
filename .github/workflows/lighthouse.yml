@@ -1,0 +1,38 @@
+name: Lighthouse Audit
+
+on:
+  push:
+    branches:
+      - production
+  pull_request:
+    branches:
+      - production
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Run Lighthouse Audit
+        uses: treosh/lighthouse-ci-action@v8
+        with:
+          urls: |
+            https://www.lloydsibson.com
+            https://www.lloydsibson.com/about
+            https://www.lloydsibson.com/portfolio
+            https://www.lloydsibson.com/contact
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 3
+          budgetPath: "./budget.json" # Optional: Define performance budgets
+
+      - name: Start server
+        run: npm start &
