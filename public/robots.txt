@@ -1,9 +1,13 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow: /static/lloyd-sibson-ba-front-end-developer-cv-2023.pdf
-Disallow: /lighthouse-reports/www_lloydsibson_com.html
-Disallow: /lighthouse-reports/www_lloydsibson_com_about.html
-Disallow: /lighthouse-reports/www_lloydsibson_com_portfolio.html
-Disallow: /lighthouse-reports/www_lloydsibson_com_contact.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_desktop.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_mobile.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_about_desktop.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_about_mobile.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_portfolio_desktop.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_portfolio_mobile.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_contact_desktop.html
+Disallow: /lighthouse-reports/www_lloydsibson_com_contact_mobile.html
 
 Sitemap: https://www.lloydsibson.com/sitemap.xml
