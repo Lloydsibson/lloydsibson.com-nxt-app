@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node nodeWebPageScraper.js && node nodeLightHouseReport.js",
+    "prebuild": "node nodeWebPageScraper.js",
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node nodeLightHouseReport.js"
     "start": "next start",
     "lint": "next lint"
   },
