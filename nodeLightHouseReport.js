@@ -1,4 +1,6 @@
 const { exec } = require("child_process");
+// Use the local installation of Lighthouse
+const lighthouseCmd = "./node_modules/.bin/lighthouse";
 
 const urls = [
   "https://www.lloydsibson.com",
@@ -19,7 +21,7 @@ urls.forEach((url) => {
 
     // Command for HTML report
     const htmlOptions = `--output=html --output-path=${htmlFilename} --emulated-form-factor=${formFactor} --chrome-flags="--headless"`;
-    exec(`lighthouse ${url} ${htmlOptions}`, (error, stdout, stderr) => {
+    exec(`${lighthouseCmd} ${url} ${htmlOptions}`, (error, stdout, stderr) => {
       if (error) {
         console.error(`exec error: ${error}`);
         return;

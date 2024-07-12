@@ -36,5 +36,8 @@
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.1.0"
   }
 }
