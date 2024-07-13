@@ -22,7 +22,7 @@ import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 import scrapedData from "../../scrapedData.json";
 
 const AboutPage = () => {
-  const latestGamePlayed = scrapedData[0].data[0];
+  const latestGamePlayed = scrapedData?.[0]?.data?.[0] ?? null;
 
   useEffect(() => {
     document.body.classList.add("about-page"); // Add your desired class here
