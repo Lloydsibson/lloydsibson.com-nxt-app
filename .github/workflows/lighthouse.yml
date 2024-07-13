@@ -29,7 +29,7 @@ jobs:
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 1
-          configPath: "../../lighthouse-desktop-config.js" # Path to desktop config
+          configPath: "lighthouse-desktop-config.js" # Path to desktop config
 
       - name: Run Lighthouse Audit on Mobile
         uses: treosh/lighthouse-ci-action@v9
@@ -42,4 +42,4 @@ jobs:
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 1
-          configPath: "../../lighthouse-mobile-config.js" # Path to mobile config
+          configPath: "lighthouse-mobile-config.js" # Path to mobile config
