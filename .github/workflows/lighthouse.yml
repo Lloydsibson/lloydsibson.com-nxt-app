@@ -21,6 +21,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Start server
+        run: npm start &
+        
+      - name: Wait for server
+        run: sleep 30
+
       - name: Run Lighthouse Audit
         uses: treosh/lighthouse-ci-action@v8
         with:
@@ -33,6 +39,3 @@ jobs:
           uploadArtifacts: true
           runs: 3
           budgetPath: "./budget.json" # Optional: Define performance budgets
-
-      - name: Start server
-        run: npm start &
