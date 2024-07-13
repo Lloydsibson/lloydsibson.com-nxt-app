@@ -9,8 +9,4 @@ jobs:
       uses: jakejarvis/lighthouse-action@master
       with:
         url: 'https://www.lloydsibson.com/'
-    - name: Upload results as an artifact
-      uses: actions/upload-artifact@master
-      with:
-        name: report
-        path: './report'
+    
