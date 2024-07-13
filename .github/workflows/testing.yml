@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [production, development]
+    branches: [production]
   pull_request:
-    branches: [production, development]
+    branches: [production]
 
 jobs:
   Unit-Tests:
@@ -16,20 +16,59 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Deploy:
+  Deploy-Development:
     needs: Unit-Tests
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm i -g vercel
+      - name: Deploy to Vercel (Development)
+        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
+        env:
+          CI: true
+
+  Lighthouse-Check:
+    needs: Deploy-Development
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Lighthouse Performance Check on Home Page
+        uses: JakePartusch/github-action-lighthouse@v1.0.0
+        with:
+          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
+          minimum_performance_score: "0.9"
+          minimum_accessibility_score: "0.9"
+      - name: Lighthouse Performance Check on About Page
+        uses: JakePartusch/github-action-lighthouse@v1.0.0
+        with:
+          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
+          minimum_performance_score: "0.9"
+          minimum_accessibility_score: "0.9"
+      - name: Lighthouse Performance Check on Portfolio Page
+        uses: JakePartusch/github-action-lighthouse@v1.0.0
+        with:
+          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
+          minimum_performance_score: "0.9"
+          minimum_accessibility_score: "0.9"
+      - name: Lighthouse Performance Check on Contact Page
+        uses: JakePartusch/github-action-lighthouse@v1.0.0
+        with:
+          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
+          minimum_performance_score: "0.9"
+          minimum_accessibility_score: "0.9"
+
+  Deploy-Production:
+    needs: Unit-Tests
+    if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm i -g vercel
       - name: Deploy to Vercel (Production)
-        if: github.ref == 'refs/heads/production'
         run: vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }}
-        env:
-          CI: true
-      - name: Deploy to Vercel (Development)
-        if: github.ref == 'refs/heads/development'
-        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
         env:
           CI: true
