@@ -1,4 +1,5 @@
-name: CI
+name: Lighthouse Audit - Live Site
+
 on:
   push:
     branches:
@@ -6,20 +7,27 @@ on:
   pull_request:
     branches:
       - production
+
 jobs:
   lighthouse:
-    name: Lighthouse CI
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout code
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v4
+
       - name: Install dependencies
         run: npm install
 
-      - name: lighthouse mobile audit
-        run: npm run lhci:mobile
-
-      - name: lighthouse desktop audit
-        run: npm run lhci:desktop
-        
+      - name: Run Lighthouse Audit
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://www.lloydsibson.com
+            https://www.lloydsibson.com/about
+            https://www.lloydsibson.com/portfolio
+            https://www.lloydsibson.com/contact
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 1
+          budgetPath: "./budget.json" # Optional: Define performance budgets
