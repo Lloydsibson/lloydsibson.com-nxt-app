@@ -1,6 +1,10 @@
 name: CI/CD Pipeline
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [production, development]
+  pull_request:
+    branches: [production, development]
 
 jobs:
   Unit-Tests:
@@ -14,13 +18,18 @@ jobs:
 
   Deploy:
     needs: Unit-Tests
-    if: github.ref == 'refs/heads/production' && success()
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Install Vercel CLI
         run: npm i -g vercel
-      - name: Deploy to Vercel
+      - name: Deploy to Vercel (Production)
+        if: github.ref == 'refs/heads/production'
         run: vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }}
+        env:
+          CI: true
+      - name: Deploy to Vercel (Development)
+        if: github.ref == 'refs/heads/development'
+        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
         env:
           CI: true
