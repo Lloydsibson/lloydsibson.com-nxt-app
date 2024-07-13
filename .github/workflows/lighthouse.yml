@@ -1,41 +1,16 @@
-name: Lighthouse Audit
-
-on:
-  push:
-    branches:
-      - production
-  pull_request:
-    branches:
-      - production
+name: Lighthouse Audit Live Site
+on: push
 
 jobs:
-  lighthouse:
+  audit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build
-        run: npm run build
-
-      - name: Start server
-        run: npm start &
-        
-      - name: Wait for server
-        run: sleep 30
-
-      - name: Run Lighthouse Audit
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          urls: |
-            https://www.lloydsibson.com
-            https://www.lloydsibson.com/about
-            https://www.lloydsibson.com/portfolio
-            https://www.lloydsibson.com/contact
-          temporaryPublicStorage: true
-          uploadArtifacts: true
-          runs: 1
-          budgetPath: "./budget.json" # Optional: Define performance budgets
+    - name: Audit live URL
+      uses: jakejarvis/lighthouse-action@master
+      with:
+        url: 'https://www.lloydsibson.com'
+    - name: Upload results as an artifact
+      uses: actions/upload-artifact@master
+      with:
+        name: report
+        path: './report'
