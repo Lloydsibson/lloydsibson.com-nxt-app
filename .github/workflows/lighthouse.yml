@@ -12,7 +12,6 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
 
@@ -30,4 +29,18 @@ jobs:
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 1
-          budgetPath: "./budget.json" # Optional: Define performance budgets
+          budgetPath: "./budget.json"
+          report: 'lhci_report.json' # Output the report to a JSON file
+
+      - name: Install Lighthouse
+        run: npm install -g lighthouse
+
+      - name: Convert Lighthouse JSON to HTML
+        run: lighthouse-lhci 'lhci_report.json' > 'lhci_report.html'
+        # This uses `lighthouse-lhci` command to convert JSON to HTML
+
+      - name: Upload Lighthouse Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Lighthouse Report
+          path: lhci_report.html
