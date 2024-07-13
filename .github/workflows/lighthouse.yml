@@ -1,33 +1,20 @@
-name: Lighthouse Audit - Live Site
-
-on:
-  push:
-    branches:
-      - production
-  pull_request:
-    branches:
-      - production
-
+name: CI
+on: [push]
 jobs:
-  lighthouse:
+  lhci:
+    name: Lighthouse
     runs-on: ubuntu-latest
     steps:
-
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Lighthouse Audit
-        uses: treosh/lighthouse-ci-action@v9
+      - uses: actions/checkout@v3
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v3
         with:
-          urls: |
-            https://www.lloydsibson.com
-            https://www.lloydsibson.com/about
-            https://www.lloydsibson.com/portfolio
-            https://www.lloydsibson.com/contact
-          temporaryPublicStorage: true
-          uploadArtifacts: true
-          runs: 1
-          budgetPath: "./budget.json" # Optional: Define performance budgets
+          node-version: 16.x
+      - name: npm install, build
+        run: |
+          npm install
+          npm run build
+      - name: run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.14.x
+          lhci autorun
