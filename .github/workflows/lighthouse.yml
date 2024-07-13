@@ -20,11 +20,11 @@ jobs:
         run: npm install
 
       - name: lighthouse mobile audit
-        run: npm lhci:mobile
+        run: npm run lhci:mobile
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
 
       - name: lighthouse desktop audit
-        run: npm lhci:desktop
+        run: npm run lhci:desktop
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
