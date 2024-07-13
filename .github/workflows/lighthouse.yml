@@ -25,10 +25,10 @@ jobs:
         uses: treosh/lighthouse-ci-action@v8
         with:
           urls: |
-            https://www.lloydsibson.com
-            https://www.lloydsibson.com/about
-            https://www.lloydsibson.com/portfolio
-            https://www.lloydsibson.com/contact
+            http://localhost:3000
+            http://localhost:3000/about
+            http://localhost:3000/portfolio
+            http://localhost:3000/contact
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 3
