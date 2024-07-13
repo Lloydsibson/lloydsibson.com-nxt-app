@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node nodeWebPageScraper.js",
+    "prebuild": "node nodeWebPageScraper.js && npm test",
     "dev": "next dev",
     "build": "next build",
+    "test": "jest",
     "start": "next start",
     "lint": "next lint"
   },
@@ -35,5 +36,12 @@
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.24.7",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
