@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on: [push, pull_request]
 
 jobs:
-  test:
+  Unit-Tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,8 +12,8 @@ jobs:
       - name: Run tests
         run: npm test
 
-  deploy:
-    needs: test
+  Deploy:
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/production' && success()
     runs-on: ubuntu-latest
     steps:
@@ -21,6 +21,6 @@ jobs:
       - name: Install Vercel CLI
         run: npm i -g vercel
       - name: Deploy to Vercel
-        run: vercel --prod --token ${{ secrets.VERCEL_TOKEN }}
+        run: vercel --prod --yes --token ${{ secrets.VERCEL_TOKEN }}
         env:
           CI: true
