@@ -2,44 +2,26 @@ name: Lighthouse Audit - Live Site
 
 on:
   push:
-    branches:
-      - production
+    branches: [production]
   pull_request:
-    branches:
-      - production
+    branches: [production]
 
 jobs:
   lighthouse:
+    name: Lighthouse Audit
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Lighthouse Audit on Desktop
-        uses: treosh/lighthouse-ci-action@v9
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v2
         with:
-          urls: |
-            https://lloydsibson.com
-            https://lloydsibson.com/about
-            https://lloydsibson.com/portfolio
-            https://lloydsibson.com/contact
-          temporaryPublicStorage: true
-          uploadArtifacts: true
-          runs: 1
-          configPath: "lighthouse-desktop-config.js" # Path to desktop config
+          node-version: "14.x"
 
-      - name: Run Lighthouse Audit on Mobile
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          urls: |
-            https://lloydsibson.com
-            https://lloydsibson.com/about
-            https://lloydsibson.com/portfolio
-            https://lloydsibson.com/contact
-          temporaryPublicStorage: true
-          uploadArtifacts: true
-          runs: 1
-          configPath: "lighthouse-mobile-config.js" # Path to mobile config
+      - name: Prepare Application
+        run: |
+          npm install
+          npm run build
+
+      - name: Run Lighthouse CI
+        run: |
+          npm install -g @lhci/cli@0.8.x
+          lhci autorun
