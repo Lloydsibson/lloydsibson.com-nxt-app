@@ -61,7 +61,7 @@ jobs:
           minimum_accessibility_score: "0.9"
 
   Deploy-Production:
-    needs: Unit-Tests
+    needs: Lighthouse-Check
     if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
