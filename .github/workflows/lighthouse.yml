@@ -12,22 +12,34 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run Lighthouse Audit
+      - name: Run Lighthouse Audit on Desktop
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: |
-            https://www.lloydsibson.com
-            https://www.lloydsibson.com/about
-            https://www.lloydsibson.com/portfolio
-            https://www.lloydsibson.com/contact
+            https://lloydsibson.com
+            https://lloydsibson.com/about
+            https://lloydsibson.com/portfolio
+            https://lloydsibson.com/contact
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 1
-          budgetPath: "./budget.json" # Optional: Define performance budgets
+          configPath: "./lighthouse-desktop-config.js" # Path to desktop config
+
+      - name: Run Lighthouse Audit on Mobile
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            https://lloydsibson.com
+            https://lloydsibson.com/about
+            https://lloydsibson.com/portfolio
+            https://lloydsibson.com/contact
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 1
+          configPath: "./lighthouse-mobile-config.js" # Path to mobile config
