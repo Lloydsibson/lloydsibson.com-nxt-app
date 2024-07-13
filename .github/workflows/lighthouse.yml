@@ -20,7 +20,9 @@ jobs:
         run: |
           npm install
           npm run build
+          npm install -g serve
 
-      - name: Run Lighthouse CI using npx
+      - name: Serve Application and Run Lighthouse CI
         run: |
+          serve -s build &
           npx @lhci/cli autorun
