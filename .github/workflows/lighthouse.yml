@@ -21,7 +21,6 @@ jobs:
           npm install
           npm run build
 
-      - name: Run Lighthouse CI
+      - name: Run Lighthouse CI using npx
         run: |
-          npm install -g @lhci/cli
-          lhci autorun
+          npx @lhci/cli autorun
