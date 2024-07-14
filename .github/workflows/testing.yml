@@ -60,7 +60,7 @@ jobs:
       - name: Merge Development to Production
         run: |
           git fetch --all
-          git checkout -b production origin/production
+          git checkout production
           git merge development
           git push origin production
 
