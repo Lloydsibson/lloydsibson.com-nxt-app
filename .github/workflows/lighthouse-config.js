@@ -8,7 +8,7 @@ module.exports = {
       height: 1080,
       deviceScaleRatio: 1,
       mobile: false,
-      disabled: true,
+      disabled: false,
     },
     audits: [
       {
