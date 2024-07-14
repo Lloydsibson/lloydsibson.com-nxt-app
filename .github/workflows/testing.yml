@@ -44,11 +44,23 @@ jobs:
   #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
   #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
   #         configPath: ".github/workflows/lighthouserc.json"
-  #         temporaryPublicStorage: true
+  #
+
+  Merge-Development-to-Production:
+    needs: Unit-Tests
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Merge Development to Production
+        run: |
+          git checkout production
+          git merge development
+          git push origin production
 
   Deploy-Production:
-    needs: Unit-Tests
-    if: github.ref == 'refs/heads/production'
+    needs: Merge-Development-to-Production
+    # if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
