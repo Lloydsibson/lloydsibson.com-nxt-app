@@ -9,8 +9,8 @@ on:
     branches: [development, production]
   pull_request:
     branches: [development, production]
-  schedule:
-    - cron: "0 0 * * 0" # Runs at 00:00 every Sunday
+  # schedule:
+  #   - cron: "0 0 * * 0" # Runs at 00:00 every Sunday
 
 jobs:
   Unit-Tests:
@@ -23,7 +23,7 @@ jobs:
       - name: Run Tests
         run: npm test
 
-  Deploy-Preview:
+  Deploy-Dev:
     needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
@@ -38,8 +38,8 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
-  Lighthouse-Tests:
-    needs: Deploy-Preview
+  Lighthouse-Audit:
+    needs: Deploy-Dev
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -56,8 +56,8 @@ jobs:
           temporaryPublicStorage: true
           uploadArtifacts: true
 
-  Merge-Dev-to-Prod:
-    needs: Lighthouse-Tests
+  Merge-Prod:
+    needs: Lighthouse-Audit
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -76,8 +76,8 @@ jobs:
           message: Merge Development into Production
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
-  Deploy-Production:
-    needs: Merge-Dev-to-Prod
+  Deploy-Prod:
+    needs: Merge-Prod
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
