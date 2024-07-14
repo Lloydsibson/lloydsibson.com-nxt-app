@@ -16,15 +16,8 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Check-Files:
-    needs: Unit-Tests
-    runs-on: ubuntu-latest
-    steps:
-      - name: List files in the repository
-        run: ls -la
-
   Lighthouse-Check:
-    needs: Check-Files
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -37,7 +30,7 @@ jobs:
             "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
             "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
             "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
-          configPath: "./lighthouserc.json"
+          configPath: ".github/workflows/lighthouserc.json"
           temporaryPublicStorage: true
           uploadArtifacts: true
           runs: 3
