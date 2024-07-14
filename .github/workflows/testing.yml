@@ -57,15 +57,36 @@ jobs:
         run: |
           git config user.email "lloydsibson@gmail.com"
           git config user.name "Lloyd Sibson"
-      - name: Merge Development to Production
-        run: |
-          git fetch --all
-          git checkout production
-          git pull origin production
-          git merge ${{ github.ref }} --no-ff --allow-unrelated-histories
-          git push origin production
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Fetch all branches
+        run: git fetch --all
+
+      - name: Merge Dev -> Prod
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          target_branch: production
+          message: Merge development into production
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Merge branch to production
+      #   id: merge
+      #   run: |
+      #     git checkout production
+      #     git pull origin production
+      #     git merge ${{ github.ref }} --no-ff --allow-unrelated-histories || echo "Merge conflict detected" > conflict.txt
+
+      # - name: Check for merge conflicts
+      #   run: |
+      #     if [ -f conflict.txt ]; then
+      #       echo "Merge conflict detected. Manual resolution required."
+      #        exit 1
+      #     fi
+
+      # - name: Push changes
+      #   if: success()
+      #   run: |
+      #     git push origin production
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   Deploy-Production:
     needs: Merge-Dev-to-Prod
