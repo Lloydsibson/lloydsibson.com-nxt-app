@@ -9,6 +9,8 @@ on:
     branches: [development, production]
   pull_request:
     branches: [development, production]
+  schedule:
+    - cron: "0 0 * * 0" # Runs at 00:00 every Sunday
 
 jobs:
   Unit-Tests:
@@ -16,6 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Set Git User Info
+        run: |
+          git config user.email "lloydsibson@gmail.com"
+          git config user.name "Lloyd Sibson"
+      - name: Update NPM Packages
+        run: |
+          npm update
+          git add .
+          git commit -m "Update npm packages" || echo "No changes to commit"
+          git push
       - name: Install dependencies
         run: npm install
       - name: Run tests
@@ -66,7 +78,6 @@ jobs:
           git config user.name "Lloyd Sibson"
       - name: Fetch all branches
         run: git fetch --all
-
       - name: Merge Dev -> Prod
         uses: devmasx/merge-branch@master
         with:
