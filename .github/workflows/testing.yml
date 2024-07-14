@@ -90,7 +90,7 @@ jobs:
 
   Deploy-Production:
     needs: Merge-Dev-to-Prod
-    # if: github.ref == 'refs/heads/production'
+    if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
