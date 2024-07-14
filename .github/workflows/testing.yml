@@ -55,6 +55,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Merge Development to Production
         run: |
+          git fetch --all
           git checkout production
           git merge development
           git push origin production
