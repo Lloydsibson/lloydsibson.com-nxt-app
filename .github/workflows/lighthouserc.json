@@ -4,6 +4,7 @@
       "settings": {
         "preset": "desktop"
       }
+      "numberOfRuns": 3
     }
   }
 }
