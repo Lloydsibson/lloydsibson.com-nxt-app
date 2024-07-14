@@ -16,21 +16,14 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Deploy-Development:
-    needs: Unit-Tests
-    if: github.ref == 'refs/heads/development'
+  Check-Files:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install Vercel CLI
-        run: npm i -g vercel
-      - name: Deploy to Vercel (Development)
-        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
-        env:
-          CI: true
+      - name: List files in the repository
+        run: ls -la
 
   Lighthouse-Check:
-    needs: Deploy-Development
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
