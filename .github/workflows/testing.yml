@@ -21,18 +21,20 @@ jobs:
   #     - name: Run tests
   #       run: npm test
 
-  # Deploy-Development:
-  #   needs: Unit-Tests
-  #   if: github.ref == 'refs/heads/development'
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Install Vercel CLI
-  #       run: npm i -g vercel
-  #     - name: Deploy to Vercel (Development)
-  #       run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
-  #       env:
-  #         CI: true
+  Deploy-Development:
+    #   needs: Unit-Tests
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+      - name: Pull Vercel Environment Information
+        run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Build Project Artifacts
+        run: vercel build --token=${{ secrets.VERCEL_TOKEN }}
+      - name: Deploy Project Artifacts to Vercel
+        run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
   # Lighthouse-Tests:
   #   needs: Deploy-Development
@@ -52,7 +54,7 @@ jobs:
   #
 
   Merge-Dev-to-Prod:
-    # needs: Unit-Tests
+    needs: Deploy-Development
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
