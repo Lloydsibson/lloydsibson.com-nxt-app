@@ -17,13 +17,14 @@ jobs:
         run: npm test
 
   Check-Files:
+    needs: Unit-Tests
     runs-on: ubuntu-latest
     steps:
       - name: List files in the repository
         run: ls -la
 
   Lighthouse-Check:
-    needs: Unit-Tests
+    needs: Check-Files
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
