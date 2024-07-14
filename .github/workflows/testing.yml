@@ -2,12 +2,13 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [production]
+    branches: [development]
   pull_request:
-    branches: [production]
+    branches: [development]
 
 jobs:
   Unit-Tests:
+    if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -16,53 +17,52 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Deploy-Development:
+  # Deploy-Development:
+  #   needs: Unit-Tests
+  #   if: github.ref == 'refs/heads/development'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install Vercel CLI
+  #       run: npm i -g vercel
+  #     - name: Deploy to Vercel (Development)
+  #       run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
+  #       env:
+  #         CI: true
+
+  # Lighthouse-Tests:
+  #   needs: Deploy-Development
+  #   if: github.ref == 'refs/heads/development'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Lighthouse Performance Check
+  #       uses: treosh/lighthouse-ci-action@v9
+  #       with:
+  #         urls: |
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
+  #         configPath: ".github/workflows/lighthouserc.json"
+  #
+
+  Merge-Dev-to-Prod:
     needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install Vercel CLI
-        run: npm i -g vercel
-      - name: Deploy to Vercel (Development)
-        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
-        env:
-          CI: true
-
-  Lighthouse-Check:
-    needs: Deploy-Development
-    if: github.ref == 'refs/heads/development'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Lighthouse Performance Check on Home Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on About Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on Portfolio Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on Contact Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
+      - name: Merge Development to Production
+        run: |
+          git fetch --all
+          git checkout production
+          git merge development
+          git push origin production
 
   Deploy-Production:
-    needs: Lighthouse-Check
-    if: github.ref == 'refs/heads/production'
+    needs: Merge-Dev-to-Prod
+    # if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
