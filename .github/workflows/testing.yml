@@ -62,7 +62,7 @@ jobs:
       - name: Merge branch to production
         id: merge
         run: |
-          git checkout production
+          git checkout production --fetch-depth: 0
           git pull origin production
           git merge ${{ github.ref }} --no-ff --allow-unrelated-histories || echo "Merge conflict detected" > conflict.txt
 
