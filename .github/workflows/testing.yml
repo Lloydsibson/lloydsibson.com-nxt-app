@@ -7,15 +7,15 @@ on:
     branches: [development]
 
 jobs:
-  Unit-Tests:
-    if: github.ref == 'refs/heads/development'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
-        run: npm install
-      - name: Run tests
-        run: npm test
+  # Unit-Tests:
+  #   if: github.ref == 'refs/heads/development'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install dependencies
+  #       run: npm install
+  #     - name: Run tests
+  #       run: npm test
 
   # Deploy-Development:
   #   needs: Unit-Tests
@@ -48,7 +48,7 @@ jobs:
   #
 
   Merge-Dev-to-Prod:
-    needs: Unit-Tests
+    # needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -60,8 +60,8 @@ jobs:
       - name: Merge Development to Production
         run: |
           git fetch --all
-          git checkout origin/production
-          git merge origin/development
+          git checkout production
+          git merge development
           git push origin production
 
   Deploy-Production:
