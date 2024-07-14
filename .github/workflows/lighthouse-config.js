@@ -1,6 +1,7 @@
 module.exports = {
   extends: "lighthouse:default",
   formFactor: "desktop",
+  emulatedUserAgent: false,
   settings: {
     screenEmulation: {
       width: 1920,
