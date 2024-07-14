@@ -62,7 +62,7 @@ jobs:
           git fetch --all
           git checkout production
           git pull origin production
-          git merge ${{ github.ref }} --no-ff
+          git merge ${{ github.ref }} --no-ff --allow-unrelated-histories
           git push origin production
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
