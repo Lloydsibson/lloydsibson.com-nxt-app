@@ -59,10 +59,10 @@ jobs:
           git config user.name "Lloyd Sibson"
       - name: Merge Development to Production
         run: |
-          git checkout production
-          git pull origin production
+          git checkout main
+          git pull origin main
           git merge ${{ github.ref }} --no-ff --allow-unrelated-histories
-          git push origin production
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
