@@ -151,6 +151,7 @@ export const AppleWatch = () => {
           imgHeight={"420px"}
           imgClassName={undefined}
           containerClassName={undefined}
+          loadingAttr={undefined}
         />
         <div className="smart-watch-bg"></div>
         <div className="smart-watch-widgets">

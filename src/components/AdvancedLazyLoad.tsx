@@ -11,6 +11,7 @@ interface Props {
   imgHeight: string | undefined;
   containerClassName: string | undefined;
   imgClassName: string | undefined;
+  loadingAttr: "lazy" | "eager" | undefined;
 }
 
 export const AdvancedLazyLoad = ({
@@ -24,6 +25,7 @@ export const AdvancedLazyLoad = ({
   imgHeight,
   imgClassName,
   containerClassName,
+  loadingAttr,
 }: Props) => {
   return (
     <div
@@ -35,7 +37,7 @@ export const AdvancedLazyLoad = ({
       <img
         id={imgIdName}
         src={imgURL}
-        loading="lazy"
+        loading={loadingAttr ? "lazy" : undefined}
         alt={imgALT}
         width={imgWidth ? imgWidth : undefined}
         height={imgHeight ? imgHeight : undefined}

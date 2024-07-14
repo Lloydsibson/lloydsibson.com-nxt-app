@@ -95,6 +95,7 @@ const HomePage = () => {
               imgHeight={undefined}
               imgClassName={undefined}
               containerClassName="hp-image"
+              loadingAttr="lazy"
             />
             <h1>
               Front End <span>Dev & Designer</span>
@@ -104,9 +105,9 @@ const HomePage = () => {
             </div>
           </div>
           <div className="text-inner-other-container">
-            <h3>Founder of Monocode V10</h3>
+            <h3>Founder of Monocode</h3>
             <p>
-              I&apos;ve worked with over 350+ brands such as Rolex, Nike, Gucci
+              I&apos;ve worked with over 200+ brands such as Rolex, Nike, Gucci
               & Adidas. Founder of Monocode & UI Developer at Arclight Music.
               Supercharge your brand into its best digital self.
             </p>
@@ -143,6 +144,7 @@ const HomePage = () => {
             imgHeight={"200px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
           {/* <Image
             className="html-video-container__img"

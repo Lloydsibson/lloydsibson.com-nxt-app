@@ -75,6 +75,7 @@ const CookieConsent = () => {
             imgHeight={"100px"}
             imgClassName="cookie-img"
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
           <h3 className="cookie-title">My Site Uses Cookies</h3>
           <p>

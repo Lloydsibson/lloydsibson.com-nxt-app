@@ -76,6 +76,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">
@@ -111,6 +112,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">
@@ -147,6 +149,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">
@@ -191,6 +194,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">
@@ -227,6 +231,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">
@@ -287,6 +292,7 @@ export const Testimonials = () => {
                 imgHeight="80px"
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <section className="review-container__text-container">

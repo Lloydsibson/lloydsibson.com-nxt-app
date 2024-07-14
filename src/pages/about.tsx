@@ -117,6 +117,7 @@ const AboutPage = () => {
             imgHeight={"330px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
           {/* <div className="spinner">
             <div className="double-bounce1"></div>
@@ -146,6 +147,7 @@ const AboutPage = () => {
               imgHeight={"160px"}
               imgClassName={undefined}
               containerClassName={undefined}
+              loadingAttr="lazy"
             />
             {/* <div className="spinner-background"></div>
             <div className="spinner">
@@ -228,6 +230,7 @@ const AboutPage = () => {
                   imgHeight={"45px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
                 {/* <div className="spinner">
                   <div className="double-bounce1"></div>
@@ -262,6 +265,7 @@ const AboutPage = () => {
                   imgHeight={"45px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
                 {/* <div className="spinner">
                   <div className="double-bounce1"></div>
@@ -292,6 +296,7 @@ const AboutPage = () => {
                   imgHeight={"45px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
                 {/* <div className="spinner">
                   <div className="double-bounce1"></div>
@@ -333,6 +338,7 @@ const AboutPage = () => {
               imgHeight={"70px"}
               imgClassName={undefined}
               containerClassName={undefined}
+              loadingAttr="lazy"
             />
           </div>
           <div className="reviewer-info">

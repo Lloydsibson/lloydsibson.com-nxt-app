@@ -46,6 +46,7 @@ export const Nav = () => {
             imgHeight={"50px"}
             imgClassName={undefined}
             containerClassName="github-badges-container__artic"
+            loadingAttr="lazy"
           />
         </div>
         <h2 id="nav-title">

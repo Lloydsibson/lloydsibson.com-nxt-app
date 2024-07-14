@@ -342,6 +342,7 @@ const PortfolioPage = () => {
                 imgHeight={"74px"}
                 imgClassName={undefined}
                 containerClassName={undefined}
+                loadingAttr="lazy"
               />
             </div>
             <div className="vt-role-container__role">
@@ -399,6 +400,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -425,6 +427,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a href="https://graphql.org/" target="_blank" rel="noreferrer">
@@ -446,6 +449,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -471,6 +475,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
@@ -492,6 +497,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -517,6 +523,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -542,6 +549,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -567,6 +575,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -592,6 +601,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a href="https://www.appzi.com/" target="_blank" rel="noreferrer">
@@ -614,6 +624,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a
@@ -640,6 +651,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
               <a href="https://formspree.io/" target="_blank" rel="noreferrer">
@@ -661,6 +673,7 @@ const PortfolioPage = () => {
                   imgHeight={"55px"}
                   imgClassName={undefined}
                   containerClassName={undefined}
+                  loadingAttr="lazy"
                 />
               </a>
             </div>
@@ -877,6 +890,7 @@ const PortfolioPage = () => {
                     imgHeight={"100px"}
                     imgClassName={undefined}
                     containerClassName={undefined}
+                    loadingAttr="lazy"
                   />
                 </div>
               </a>
@@ -900,6 +914,7 @@ const PortfolioPage = () => {
                     imgHeight={"100px"}
                     imgClassName={undefined}
                     containerClassName={undefined}
+                    loadingAttr="lazy"
                   />
                 </div>
               </a>
@@ -923,6 +938,7 @@ const PortfolioPage = () => {
                     imgHeight={"100px"}
                     imgClassName={undefined}
                     containerClassName={undefined}
+                    loadingAttr="lazy"
                   />
                 </div>
               </a>

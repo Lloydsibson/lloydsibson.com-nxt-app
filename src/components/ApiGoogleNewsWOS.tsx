@@ -28,6 +28,7 @@ export const GoogleNewsApi = () => {
             imgHeight={"20px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
           News
         </div>

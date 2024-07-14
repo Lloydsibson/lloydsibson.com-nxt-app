@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Deploy-Development:
+  Deploy-Preview:
     needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
@@ -37,7 +37,7 @@ jobs:
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
   Lighthouse-Tests:
-    needs: Deploy-Development
+    needs: Deploy-Preview
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -51,6 +51,8 @@ jobs:
             "https://lloydsibson-com-nxt-app.vercel.app/portfolio"
             "https://lloydsibson-com-nxt-app.vercel.app/contact"
           configPath: ".github/workflows/lighthouserc.json"
+          temporaryPublicStorage: true
+          uploadArtifacts: true
 
   Merge-Dev-to-Prod:
     needs: Lighthouse-Tests

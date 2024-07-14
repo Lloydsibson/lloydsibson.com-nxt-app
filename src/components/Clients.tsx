@@ -84,6 +84,7 @@ export const Clients = () => {
             imgHeight={"43px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -106,6 +107,7 @@ export const Clients = () => {
             imgHeight={"23px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -129,6 +131,7 @@ export const Clients = () => {
             imgHeight={"74px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -151,6 +154,7 @@ export const Clients = () => {
             imgHeight={"27px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -173,6 +177,7 @@ export const Clients = () => {
             imgHeight={"30px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -195,6 +200,7 @@ export const Clients = () => {
             imgHeight={"58px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -217,6 +223,7 @@ export const Clients = () => {
             imgHeight={"15x"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -240,6 +247,7 @@ export const Clients = () => {
             imgHeight={"80x"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -262,6 +270,7 @@ export const Clients = () => {
             imgHeight={"30x"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -284,6 +293,7 @@ export const Clients = () => {
             imgHeight={"26x"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -306,6 +316,7 @@ export const Clients = () => {
             imgHeight={"29x"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -328,6 +339,7 @@ export const Clients = () => {
             imgHeight={"8px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -350,6 +362,7 @@ export const Clients = () => {
             imgHeight={"7px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -372,6 +385,7 @@ export const Clients = () => {
             imgHeight={"32px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -394,6 +408,7 @@ export const Clients = () => {
             imgHeight={"8px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -416,6 +431,7 @@ export const Clients = () => {
             imgHeight={"6px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -438,6 +454,7 @@ export const Clients = () => {
             imgHeight={"14px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
         <div className="client-item">
@@ -460,6 +477,7 @@ export const Clients = () => {
             imgHeight={"13px"}
             imgClassName={undefined}
             containerClassName={undefined}
+            loadingAttr="lazy"
           />
         </div>
       </Slider>
