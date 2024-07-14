@@ -34,31 +34,19 @@ jobs:
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Lighthouse Performance Check on Home Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
+      - uses: actions/checkout@v4
+      - name: Lighthouse Performance Check
+        uses: treosh/lighthouse-ci-action@v9
         with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on About Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on Portfolio Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
-      - name: Lighthouse Performance Check on Contact Page
-        uses: JakePartusch/github-action-lighthouse@v1.0.0
-        with:
-          url: "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
-          minimum_performance_score: "0.9"
-          minimum_accessibility_score: "0.9"
+          urls: |
+            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
+            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
+            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
+            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
+          configPath: "../../lighthouserc.json"
+          temporaryPublicStorage: true
+          uploadArtifacts: true
+          runs: 3
 
   Deploy-Production:
     needs: Lighthouse-Check
