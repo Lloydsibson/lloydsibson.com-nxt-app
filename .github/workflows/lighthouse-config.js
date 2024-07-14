@@ -1,8 +1,6 @@
 module.exports = {
   extends: "lighthouse:default",
   settings: {
-    emulatedFormFactor: "desktop",
-    preset: "desktop",
     screenEmulation: {
       width: 1920,
       height: 1080,
@@ -12,7 +10,7 @@ module.exports = {
     },
     audits: [
       {
-        path: "metrics/performance-score",
+        path: "metrics/first-contentful-paint",
         options: { scorePODR: 800, scoreMedian: 1600 },
       },
     ],
