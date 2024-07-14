@@ -13,7 +13,7 @@ module.exports = {
     audits: [
       {
         path: "metrics/accessibility",
-        options: { score: 0.9 },
+        options: { score: 0.98 },
       },
     ],
   },

@@ -7,7 +7,7 @@ on:
     branches: [production, development]
 
 jobs:
-  Lighthouse-Check:
+  Lighthouse-Accessibility-Check:
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +24,7 @@ jobs:
           temporaryPublicStorage: true
 
   Deploy-Production:
-    needs: Lighthouse-Check
+    needs: Lighthouse-Accessibility-Check
     if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
