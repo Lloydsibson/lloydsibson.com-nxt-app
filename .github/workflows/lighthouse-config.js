@@ -2,6 +2,7 @@ module.exports = {
   extends: "lighthouse:default",
   settings: {
     emulatedFormFactor: "desktop",
+    preset: "desktop",
     screenEmulation: {
       width: 1920,
       height: 1080,
