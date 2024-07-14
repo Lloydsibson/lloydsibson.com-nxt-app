@@ -46,7 +46,7 @@ jobs:
   #         configPath: ".github/workflows/lighthouserc.json"
   #
 
-  Merge-Development-to-Production:
+  Merge-Dev-to-Prod:
     needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
@@ -54,12 +54,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: Merge Development to Production
         run: |
+          git fetch --all
           git checkout production
           git merge development
           git push origin production
 
   Deploy-Production:
-    needs: Merge-Development-to-Production
+    needs: Merge-Dev-to-Prod
     # if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
