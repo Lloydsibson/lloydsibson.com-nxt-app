@@ -61,8 +61,11 @@ jobs:
         run: |
           git fetch --all
           git checkout production
-          git merge development
+          git pull origin production
+          git merge ${{ github.ref }} --no-ff
           git push origin production
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   Deploy-Production:
     needs: Merge-Dev-to-Prod
