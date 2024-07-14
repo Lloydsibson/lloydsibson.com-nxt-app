@@ -32,8 +32,6 @@ jobs:
             "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
           configPath: ".github/workflows/lighthouserc.json"
           temporaryPublicStorage: true
-          uploadArtifacts: true
-          runs: 3
 
   Deploy-Production:
     needs: Lighthouse-Check
