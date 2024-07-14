@@ -27,6 +27,7 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
             imgClassName={undefined}
             containerClassName={"github-badges-container__artic"}
+            loadingAttr="lazy"
           />
           {/* <img
             className="github-badges-container__sponsor"
@@ -44,6 +45,7 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
             imgClassName={undefined}
             containerClassName="github-badges-container__sponsor"
+            loadingAttr="lazy"
           />
           {/* <img
             className="github-badges-container__yolo"
@@ -61,6 +63,7 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
             imgClassName={undefined}
             containerClassName="github-badges-container__yolo"
+            loadingAttr="lazy"
           />
           {/* <img
             className="github-badges-container__pullshark"
@@ -78,6 +81,7 @@ export const GitHubBadges = ({ Classname }: Props) => {
             imgHeight={Classname == "ghb-desktop" ? "30px" : "45px"}
             imgClassName={undefined}
             containerClassName="github-badges-container__pullshark"
+            loadingAttr="lazy"
           />
         </div>
       </Link>
