@@ -67,33 +67,14 @@ jobs:
           target_branch: production
           message: Merge development into production
           github_token: ${{ secrets.GITHUB_TOKEN }}
-      # - name: Merge branch to production
-      #   id: merge
-      #   run: |
-      #     git checkout production
-      #     git pull origin production
-      #     git merge ${{ github.ref }} --no-ff --allow-unrelated-histories || echo "Merge conflict detected" > conflict.txt
-
-      # - name: Check for merge conflicts
-      #   run: |
-      #     if [ -f conflict.txt ]; then
-      #       echo "Merge conflict detected. Manual resolution required."
-      #        exit 1
-      #     fi
-
-      # - name: Push changes
-      #   if: success()
-      #   run: |
-      #     git push origin production
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   Deploy-Production:
     needs: Merge-Dev-to-Prod
-    if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          ref: "production" # Ensure it checks out the production branch
       - name: Install Vercel CLI
         run: npm i -g vercel
       - name: Deploy to Vercel (Production)
