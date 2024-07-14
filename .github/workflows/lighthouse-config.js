@@ -2,6 +2,7 @@ module.exports = {
   extends: "lighthouse:default",
   settings: {
     emulatedFormFactor: "desktop",
+    presets: "desktop",
     audits: [
       {
         path: "metrics/first-contentful-paint",
