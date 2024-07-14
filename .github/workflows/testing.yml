@@ -36,25 +36,24 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
-  # Lighthouse-Tests:
-  #   needs: Deploy-Development
-  #   if: github.ref == 'refs/heads/development'
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v4
-  #     - name: Lighthouse Performance Check
-  #       uses: treosh/lighthouse-ci-action@v9
-  #       with:
-  #         urls: |
-  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
-  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
-  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
-  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
-  #         configPath: ".github/workflows/lighthouserc.json"
-  #
+  Lighthouse-Tests:
+    needs: Deploy-Development
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Lighthouse Performance Check
+        uses: treosh/lighthouse-ci-action@v9
+        with:
+          urls: |
+            "https://lloydsibson-com-nxt-app.vercel.app"
+            "https://lloydsibson-com-nxt-app.vercel.app/about"
+            "https://lloydsibson-com-nxt-app.vercel.app/portfolio"
+            "https://lloydsibson-com-nxt-app.vercel.app/contact"
+          configPath: ".github/workflows/lighthouserc.json"
 
   Merge-Dev-to-Prod:
-    needs: Deploy-Development
+    needs: Lighthouse-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -71,7 +70,7 @@ jobs:
         with:
           type: now
           target_branch: production
-          message: Merge development into production
+          message: Merge Development into Production
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   Deploy-Production:
