@@ -57,6 +57,8 @@ jobs:
         run: |
           git config user.email "lloydsibson@gmail.com"
           git config user.name "Lloyd Sibson"
+      - name: Fetch all branches
+        run: git fetch --all
       - name: Merge branch to production
         id: merge
         run: |
