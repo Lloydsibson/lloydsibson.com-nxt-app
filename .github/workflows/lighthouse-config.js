@@ -3,8 +3,6 @@ module.exports = {
   emulatedUserAgent: false,
   settings: {
     formFactor: "desktop",
-    screenEmulation: constants.screenEmulationMetrics.desktop,
-    emulatedUserAgent: constants.userAgents.desktop,
     screenEmulation: {
       width: 1920,
       height: 1080,
