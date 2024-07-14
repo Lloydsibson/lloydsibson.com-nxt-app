@@ -11,18 +11,18 @@ on:
     branches: [development, production]
 
 jobs:
-  # Unit-Tests:
-  #   if: github.ref == 'refs/heads/development'
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - name: Install dependencies
-  #       run: npm install
-  #     - name: Run tests
-  #       run: npm test
+  Unit-Tests:
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
 
   Deploy-Development:
-    #   needs: Unit-Tests
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
