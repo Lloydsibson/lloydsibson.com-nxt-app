@@ -58,6 +58,7 @@ jobs:
           git fetch --all
           git checkout production
           git merge development
+          git commit -m "Merge development to production"
           git push origin production
 
   Deploy-Production:
