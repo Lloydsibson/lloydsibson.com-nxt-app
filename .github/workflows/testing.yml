@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
-      - name: Run tests
+      - name: Run Tests
         run: npm test
 
   Deploy-Preview:
@@ -66,7 +66,7 @@ jobs:
         run: |
           git config user.email "lloydsibson@gmail.com"
           git config user.name "Lloyd Sibson"
-      - name: Fetch all branches
+      - name: Fetch All Branches
         run: git fetch --all
       - name: Merge Dev -> Prod
         uses: devmasx/merge-branch@master
