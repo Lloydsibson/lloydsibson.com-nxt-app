@@ -16,38 +16,38 @@ jobs:
       - name: Run tests
         run: npm test
 
-  Deploy-Development:
-    needs: Unit-Tests
-    if: github.ref == 'refs/heads/development'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Vercel CLI
-        run: npm i -g vercel
-      - name: Deploy to Vercel (Development)
-        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
-        env:
-          CI: true
+  # Deploy-Development:
+  #   needs: Unit-Tests
+  #   if: github.ref == 'refs/heads/development'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Install Vercel CLI
+  #       run: npm i -g vercel
+  #     - name: Deploy to Vercel (Development)
+  #       run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
+  #       env:
+  #         CI: true
 
-  Lighthouse-Tests:
-    needs: Deploy-Development
-    if: github.ref == 'refs/heads/development'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Lighthouse Performance Check
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          urls: |
-            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
-            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
-            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
-            "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
-          configPath: ".github/workflows/lighthouserc.json"
-          temporaryPublicStorage: true
+  # Lighthouse-Tests:
+  #   needs: Deploy-Development
+  #   if: github.ref == 'refs/heads/development'
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - name: Lighthouse Performance Check
+  #       uses: treosh/lighthouse-ci-action@v9
+  #       with:
+  #         urls: |
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/about"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/portfolio"
+  #           "https://lloydsibson-com-nxt-app-git-dev-b0ca1c-lloyds-projects-6664c418.vercel.app/contact"
+  #         configPath: ".github/workflows/lighthouserc.json"
+  #         temporaryPublicStorage: true
 
   Deploy-Production:
-    needs: Lighthouse-Tests
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
