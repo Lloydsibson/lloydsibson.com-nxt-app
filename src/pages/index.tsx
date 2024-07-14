@@ -106,7 +106,7 @@ const HomePage = () => {
           <div className="text-inner-other-container">
             <h3>Founder of Monocode V4</h3>
             <p>
-              I&apos;ve worked with over 200+ brands such as Rolex, Nike, Gucci
+              I&apos;ve worked with over 350+ brands such as Rolex, Nike, Gucci
               & Adidas. Founder of Monocode & UI Developer at Arclight Music.
               Supercharge your brand into its best digital self.
             </p>
