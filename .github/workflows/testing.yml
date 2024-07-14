@@ -18,16 +18,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set Git User Info
-        run: |
-          git config user.email "lloydsibson@gmail.com"
-          git config user.name "Lloyd Sibson"
-      - name: Update NPM Packages
-        run: |
-          npm update
-          git add .
-          git commit -m "Update npm packages" || echo "No changes to commit"
-          git push
       - name: Install dependencies
         run: npm install
       - name: Run tests
