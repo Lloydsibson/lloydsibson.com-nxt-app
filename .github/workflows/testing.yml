@@ -53,6 +53,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: Set Git User Info
+        run: |
+          git config user.email "lloydsibson@gmail.com"
+          git config user.name "Lloyd Sibson"
       - name: Merge Development to Production
         run: |
           git fetch --all
