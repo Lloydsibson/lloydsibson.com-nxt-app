@@ -2,12 +2,35 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [production, development]
+    branches: [development]
   pull_request:
-    branches: [production, development]
+    branches: [development]
 
 jobs:
-  Lighthouse-Accessibility-Check:
+  Unit-Tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: npm install
+      - name: Run tests
+        run: npm test
+
+  Deploy-Development:
+    needs: Unit-Tests
+    if: github.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install Vercel CLI
+        run: npm i -g vercel
+      - name: Deploy to Vercel (Development)
+        run: vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
+        env:
+          CI: true
+
+  Lighthouse-Tests:
+    needs: Deploy-Development
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
@@ -24,7 +47,7 @@ jobs:
           temporaryPublicStorage: true
 
   Deploy-Production:
-    needs: Lighthouse-Accessibility-Check
+    needs: Lighthouse-Tests
     if: github.ref == 'refs/heads/production'
     runs-on: ubuntu-latest
     steps:
