@@ -59,7 +59,6 @@ jobs:
           git config user.name "Lloyd Sibson"
       - name: Merge Development to Production
         run: |
-          git fetch --all
           git checkout production
           git pull origin production
           git merge ${{ github.ref }} --no-ff --allow-unrelated-histories
