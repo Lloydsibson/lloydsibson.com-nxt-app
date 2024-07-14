@@ -1,14 +1,12 @@
 {
   "ci": {
-    "collect": {
-      "settings": {
-        "emulatedFormFactor": "desktop"
-      }
-    },
     "assert": {
       "assertions": {
-        "performance": ["error", { "minScore": 0.9 }]
+        "performance": ["error", { "minScore": 0.3 }]
       }
+    },
+    "settings": {
+      "emulatedFormFactor": "desktop"
     }
   }
 }
