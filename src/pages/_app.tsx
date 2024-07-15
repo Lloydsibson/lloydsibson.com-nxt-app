@@ -134,3 +134,4 @@ import "../components/AppleWatch.scss";
 import "../components/AnnoucementBanner.scss";
 import "../components/GitHubBadges.scss";
 import "../components/AdvancedLazyLoad.scss";
+import "../components/CiCd/CiCd.scss";

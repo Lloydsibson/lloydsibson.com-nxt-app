@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 interface Props {
   imgURL: string;
   imgALT: string;

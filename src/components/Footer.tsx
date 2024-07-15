@@ -18,7 +18,7 @@ export const Footer = () => {
       <ul>
         <GitHubBadges Classname={"ghb-desktop"} />
         <li>
-          <a href="https://github.com/Lloydsibson">Github</a>
+          <a href="https://github.com/Lloydsibson">GitHub</a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/lloyd-sibson/">Linkedin</a>

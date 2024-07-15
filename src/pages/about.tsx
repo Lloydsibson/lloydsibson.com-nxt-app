@@ -18,6 +18,7 @@ import { ReadMoreBtn } from "../components/ReadMore";
 import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
+import { CiCd } from "@/components/CiCd/CiCd";
 
 import scrapedData from "../../scrapedData.json";
 
@@ -84,6 +85,32 @@ const AboutPage = () => {
     DateDiff -= Adjust; // take into account both days on weekend
     return DateDiff + 1; // add 1 because dates are inclusive
   };
+
+  // const CicdNameList = [
+  //   {
+  //     name: "Unit Tests",
+  //   },
+  //   {
+  //     name: "Deploy-Dev",
+  //   },
+  //   {
+  //     name: "Lighthouse-Audit",
+  //   },
+  //   {
+  //     name: "Merg-Prod",
+  //   },
+  //   {
+  //     name: "Deploy-Prod",
+  //   },
+  // ];
+
+  const CicdNameList = [
+    "Unit Tests",
+    "Deploy-Dev",
+    "Lighthouse-Audit",
+    "Merg-Prod",
+    "Deploy-Prod",
+  ];
 
   return (
     <>
@@ -783,6 +810,30 @@ const AboutPage = () => {
               <p>Office Tools</p>
             </div>
           </div>
+        </div>
+      </section>
+      <div className="custom-divider"></div>
+      <section className="cicd-container">
+        <header className="subheading-container">
+          <h2>CI/CD Pipeline</h2>
+        </header>
+        <div className="cicd-container__inner-container">
+          <div className="cicd-actions-container">
+            {CicdNameList.map((name, index) => {
+              return <CiCd actionName={name} key={index} />;
+            })}
+            <div aria-hidden="true" className="cicd-actions-container__line">
+              &nbsp;
+            </div>
+          </div>
+          <Link
+            className="cicd-github-actions-link"
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/Lloydsibson/lloydsibson.com-nxt-app/actions/workflows/testing.yml"
+          >
+            View GitHub Actions
+          </Link>
         </div>
       </section>
       <div className="custom-divider"></div>
