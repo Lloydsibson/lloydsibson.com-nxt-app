@@ -119,14 +119,16 @@
       a {
         display: block;
         width: 100%;
-        max-width: 55px;
+        max-width: 40px;
         margin: 5px 5px 0 5px;
+        filter: grayscale(1);
         img {
-          width: 55px;
+          width: 40px;
           height: auto;
-          &:hover {
-            cursor: pointer;
-          }
+        }
+        &:hover {
+          cursor: pointer;
+          filter: unset;
         }
         .border-rd {
           border-radius: 100px;

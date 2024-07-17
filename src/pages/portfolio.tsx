@@ -1,7 +1,7 @@
 // import { useEffect } from "react";
 
 import { useEffect } from "react";
-//import Link from "next/link";
+import Link from "next/link";
 import Head from "next/head";
 // import { Card } from "../components/Card";
 // import { Lightbox } from "../components/Lightbox";
@@ -23,6 +23,7 @@ import { ReadMoreBtn } from "../components/ReadMore";
 import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
+import { CiCd } from "@/components/CiCd/CiCd";
 
 const PortfolioPage = () => {
   useEffect(() => {
@@ -248,6 +249,15 @@ const PortfolioPage = () => {
     }
   };
 
+  // CI/CD ACTIONS
+  const CicdNameList = [
+    "Unit Tests",
+    "Deploy-Dev",
+    "Lighthouse-Audit",
+    "Merg-Prod",
+    "Deploy-Prod",
+  ];
+
   return (
     <>
       <Head>
@@ -382,13 +392,6 @@ const PortfolioPage = () => {
             <h3>Tech Stack</h3>
             <div className="vt-role-techstack__tech">
               <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638998/img/react-logo_bqlswo.png"
-                  alt="React logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638998/img/react-logo_bqlswo"
                   imgALT="React logo"
@@ -408,14 +411,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/gatsby-logo_cpbryq.png"
-                  alt="Gatsby logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                />
-                 */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/gatsby-logo_cpbryq"
                   imgALT="Gatsby logo"
@@ -431,13 +426,6 @@ const PortfolioPage = () => {
                 />
               </a>
               <a href="https://graphql.org/" target="_blank" rel="noreferrer">
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/graphql-logo_cbwhil.png"
-                  alt="GraphQL logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/graphql-logo_cbwhil"
                   imgALT="GraphQL logo"
@@ -457,13 +445,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/contentful-logo_odnw3o.png"
-                  alt="Contentful logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/contentful-logo_odnw3o"
                   imgALT="Contentful logo"
@@ -479,13 +460,6 @@ const PortfolioPage = () => {
                 />
               </a>
               <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638998/img/sass-logo_w7pevn.png"
-                  alt="Sass logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638998/img/sass-logo_w7pevn"
                   imgALT="Sass logo"
@@ -505,13 +479,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638998/img/opencart-logo_tfz8or.png"
-                  alt="OpenCart logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638998/img/opencart-logo_tfz8or"
                   imgALT="OpenCart logo"
@@ -531,13 +498,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/evenbrite-logo_svqkil.png"
-                  alt="Eventbrite logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/evenbrite-logo_svqkil"
                   imgALT="Eventbrite logo"
@@ -557,13 +517,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638998/img/trustpilot-logo_lfvejl.png"
-                  alt="Trustpilot logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638998/img/trustpilot-logo_lfvejl"
                   imgALT="Trustpilot logo"
@@ -583,13 +536,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/ga-logo_bfjbun.png"
-                  alt="Google Analytics logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/ga-logo_bfjbun"
                   imgALT="Google Analytics logo"
@@ -605,14 +551,6 @@ const PortfolioPage = () => {
                 />
               </a>
               <a href="https://www.appzi.com/" target="_blank" rel="noreferrer">
-                {/* <img
-                  className="border-rd"
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/appzi-logo_zegevc.png"
-                  alt="Appzi logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/appzi-logo_zegevc"
                   imgALT="Appzi logo"
@@ -632,14 +570,6 @@ const PortfolioPage = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* <img
-                  className="border-rd"
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638998/img/hj-logo_dv7xp4.png"
-                  alt="Hotjar logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638998/img/hj-logo_dv7xp4"
                   imgALT="Hotjar logo"
@@ -655,13 +585,6 @@ const PortfolioPage = () => {
                 />
               </a>
               <a href="https://formspree.io/" target="_blank" rel="noreferrer">
-                {/* <img
-                  src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655638997/img/formspree-logo_lqona9.png"
-                  alt="Formspree logo"
-                  width="55"
-                  height="55"
-                  loading="lazy"
-                /> */}
                 <AdvancedLazyLoad
                   imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655638997/img/formspree-logo_lqona9"
                   imgALT="Formspree logo"
