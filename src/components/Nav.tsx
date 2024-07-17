@@ -67,21 +67,21 @@ export const Nav = () => {
             </Link>
           </li>
           <li>
-            {/* <a href="#Offline">About Me</a> */}
-            <Link
-              href="/about"
-              className={router.pathname == "/about" ? "active" : ""}
-            >
-              About
-            </Link>
-          </li>
-          <li>
             {/* <a href="#Offline">Portfolio</a> */}
             <Link
               href="/portfolio"
               className={router.pathname == "/portfolio" ? "active" : ""}
             >
               Portfolio
+            </Link>
+          </li>
+          <li>
+            {/* <a href="#Offline">About Me</a> */}
+            <Link
+              href="/about"
+              className={router.pathname == "/about" ? "active" : ""}
+            >
+              About
             </Link>
           </li>
           <li>
