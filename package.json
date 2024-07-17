@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prebuild": "node nodeWebPageScraper.js",
-    "dev": "next dev",
+    "prebuild": "",
+    "dev": "node nodeWebPageScraper.js && next dev",
     "build": "next build",
     "test": "jest",
     "start": "next start",
