@@ -98,14 +98,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         ></noscript>
         <div className="website-background"></div>
-        <div className="announcement-banner-container desktop">
+        <a
+          className="announcement-banner-container desktop"
+          target="_blank"
+          href="https://digitalaccessibilitytraining.org"
+        >
           <p className="announcement-banner-container__message">
             &#127881; Recently Completed:&nbsp;
-            <a target="_blank" href="https://digitalaccessibilitytraining.org">
+            <span>
               DAC Certificate for Accessible Awareness & Understanding
-            </a>
+            </span>
           </p>
-        </div>
+        </a>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Main />
         <NextScript />
