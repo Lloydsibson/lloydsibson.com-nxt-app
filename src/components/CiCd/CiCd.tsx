@@ -9,7 +9,9 @@ export const CiCd = ({ actionName }: Props) => {
   return (
     <div className="cicd-actions-container__action">
       <FontAwesomeIcon icon={faCircleCheck} />
-      <p className="cicd-action-name">{actionName}</p>
+      <p className="cicd-action-name" data-testid="faCircleCheck">
+        {actionName}
+      </p>
     </div>
   );
 };
