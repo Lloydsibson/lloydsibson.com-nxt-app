@@ -61,19 +61,6 @@ export const MobileNav = () => {
             </Link>
           </li>
           <li>
-            {/* <a href="#Offline">About Me</a> */}
-            <Link
-              href="/about"
-              onClick={NavItemToggle}
-              className={router.pathname == "/about" ? "active" : ""}
-            >
-              <div className="mb-nav-container__icon">
-                <FontAwesomeIcon icon={faUser} />
-              </div>
-              About
-            </Link>
-          </li>
-          <li>
             {/* <a href="#Offline">Portfolio</a> */}
             <Link
               href="/portfolio"
@@ -84,6 +71,19 @@ export const MobileNav = () => {
                 <FontAwesomeIcon icon={faFolder} />
               </div>
               Portfolio
+            </Link>
+          </li>
+          <li>
+            {/* <a href="#Offline">About Me</a> */}
+            <Link
+              href="/about"
+              onClick={NavItemToggle}
+              className={router.pathname == "/about" ? "active" : ""}
+            >
+              <div className="mb-nav-container__icon">
+                <FontAwesomeIcon icon={faUser} />
+              </div>
+              About
             </Link>
           </li>
           <li>
