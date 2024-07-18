@@ -82,7 +82,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <main>
               <Layout>
                 <Component {...pageProps} />
-                <Analytics />
+                <Analytics mode={"production"} debug={false} />
               </Layout>
             </main>
             <Footer />
