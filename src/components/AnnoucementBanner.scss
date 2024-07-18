@@ -26,6 +26,7 @@
   font-size: 0.9rem;
   margin: unset;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   max-height: 45px;
@@ -33,7 +34,7 @@
   color: #fff;
 }
 
-.announcement-banner-container__message > a {
+.announcement-banner-container__message > span {
   text-decoration: underline;
 }
 

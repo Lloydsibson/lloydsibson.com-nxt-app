@@ -119,7 +119,7 @@ import "../components/Footer.scss";
 import "../components/CookieConsent.scss";
 import "../components/LDToggle.scss";
 import "../components/VideoBackground.scss";
-import "../components/ReadMore.scss";
+import "../components/ReadMore/ReadMore.scss";
 import "../components/Clients.scss";
 import "../components/BackToTop.scss";
 import "../components/PagePositionScrollBar.scss";

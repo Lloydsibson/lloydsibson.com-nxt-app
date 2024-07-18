@@ -7,13 +7,15 @@ interface Props {
 
 export const AnnouncementBanner = ({ viewport }: Props) => {
   return (
-    <div className={`announcement-banner-container ${viewport}`}>
+    <a
+      className={`announcement-banner-container ${viewport}`}
+      target="_blank"
+      href="https://digitalaccessibilitytraining.org"
+    >
       <p className="announcement-banner-container__message">
         &#127881; Recently Completed:&nbsp;
-        <a target="_blank" href="https://digitalaccessibilitytraining.org">
-          DAC Certificate for Accessible Awareness & Understanding
-        </a>
+        <span>DAC Certificate for Accessible Awareness & Understanding</span>
       </p>
-    </div>
+    </a>
   );
 };

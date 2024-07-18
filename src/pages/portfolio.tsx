@@ -19,11 +19,10 @@ import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 // import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
 
 import { AppleWatch } from "../components/AppleWatch";
-import { ReadMoreBtn } from "../components/ReadMore";
+import { ReadMoreBtn } from "../components/ReadMore/ReadMore";
 import { CalcDiffTwoDates } from "@/components/CalcDiffTwoDates";
 // import { EventBriteCard } from "../components/ApiEventBriteCard";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
-import { CiCd } from "@/components/CiCd/CiCd";
 
 const PortfolioPage = () => {
   useEffect(() => {

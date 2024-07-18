@@ -14,7 +14,7 @@ import { faGuitar } from "@fortawesome/free-solid-svg-icons";
 //import { faDrum } from "@fortawesome/free-solid-svg-icons";
 // import { Testimonials } from "../components/Testimonials";
 // import { Clients } from "../components/Clients";
-import { ReadMoreBtn } from "../components/ReadMore";
+import { ReadMoreBtn } from "../components/ReadMore/ReadMore";
 import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
@@ -815,7 +815,7 @@ const AboutPage = () => {
       <div className="custom-divider"></div>
       <section className="cicd-container">
         <header className="subheading-container">
-          <h2>CI/CD Pipeline</h2>
+          <h2>Website CI/CD</h2>
         </header>
         <div className="cicd-container__inner-container">
           <div className="cicd-actions-container">
