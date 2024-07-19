@@ -851,6 +851,10 @@ main {
     color: #f5f5f5;
     font-size: 2.8rem;
     font-weight: 600;
+    background: -webkit-linear-gradient(45deg, #fff, #6700da 180px);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   > p {
     color: #b0b0b0;
@@ -867,6 +871,10 @@ main {
     h1 {
       font-size: 2.2rem;
       margin-bottom: 0;
+      background: -webkit-linear-gradient(45deg, #fff, #6700da 140px);
+      background: linear-gradient(45deg, #fff, #6700da 140px);
+      -webkit-background-clip: text;
+      background-clip: text;
     }
   }
 }

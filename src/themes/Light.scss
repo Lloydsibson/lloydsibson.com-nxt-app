@@ -89,6 +89,13 @@ body.light .page-container {
   background-color: $light-bg;
 }
 
+body.light .page-title-container h1 {
+  background: -webkit-linear-gradient(45deg, #000, #2274f9 140px);
+  background: linear-gradient(45deg, #000, #2274f9 140px);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 body.light .footer-container {
   background-color: $light-fg-2;
 }
@@ -260,6 +267,12 @@ body.light .nav-container li a.selected {
   body.light .mb-nav-container .tech-stack-logos-container {
     background-color: $light-fg;
     border-color: $light-fg;
+  }
+  body.light .page-title-container h1 {
+    background: -webkit-linear-gradient(45deg, #000, #2274f9 120px);
+    background: linear-gradient(45deg, #000, #2274f9 120px);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
 }
 
