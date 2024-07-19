@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Provider } from "react-redux";
 import { store } from "../../redux/store";
 
-import type { AppProps } from "next/app";
+//import type { AppProps } from "next/app";
 import { Layout } from "../components/Layout";
 import { Analytics } from "@vercel/analytics/react";
 
@@ -17,6 +17,8 @@ import { Footer } from "../components/Footer";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
+import { withLDProvider } from "launchdarkly-react-client-sdk";
+
 // import { Poppins } from "next/font/google";
 
 // const PoppinsFont = Poppins({
@@ -25,7 +27,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 //   subsets: ["devanagari", "latin", "latin-ext"],
 // });
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: any) {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -99,6 +101,17 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+// LAUNCH DARKLY WRAPPER
+export default withLDProvider({
+  clientSideID: `${process.env.NEXT_PUBLIC_LAUNCH_DARKLY_CLIENT_ID}`,
+  user: {
+    anonymous: true,
+  },
+  options: {
+    bootstrap: "localStorage",
+  },
+})(App);
 
 // GLOBAL
 import "../styles/global.scss";
