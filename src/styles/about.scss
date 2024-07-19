@@ -79,6 +79,11 @@
       .bio-info-container__name {
         font-weight: 600;
         margin: 0 auto 5px auto;
+        background: -webkit-linear-gradient(45deg, #fff, #6700da 180px);
+        background: linear-gradient(45deg, #fff, #6700da 180px);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
       .bio-info-container__sub-heading {
         font-size: 1.1rem;
@@ -900,4 +905,17 @@ body.light {
   a.vwo.linkedin
   svg {
   margin-right: 10px;
+}
+
+// LIGHT MODE
+body.light {
+  .bio-container
+    .bio-container__bio
+    .bio-info-container
+    .bio-info-container__name {
+    background: -webkit-linear-gradient(45deg, #000, #2274f9 140px);
+    background: linear-gradient(45deg, #000, #2274f9 140px);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
 }
