@@ -110,6 +110,7 @@ export default withLDProvider({
   },
   options: {
     bootstrap: "localStorage",
+    diagnosticOptOut: false,
   },
 })(App);
 
