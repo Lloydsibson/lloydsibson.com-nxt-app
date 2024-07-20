@@ -4,12 +4,15 @@ import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPencil } from "@fortawesome/free-solid-svg-icons";
 // import { faTag } from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
 // import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { EmailForm } from "../components/EmailForm";
 import { Testimonials } from "../components/Testimonials";
 
 const ContactPage = () => {
+  const currentDate: any = new Date();
+
   useEffect(() => {
     document.body.classList.add("contact-page"); // Add your desired class here
 
@@ -43,6 +46,7 @@ const ContactPage = () => {
       });
     };
   }, []);
+
   return (
     <>
       <Head>
@@ -61,6 +65,9 @@ const ContactPage = () => {
       <Testimonials />
       <div className="content-container">
         <aside className="content-container__contact-details-container">
+          <header className="subheading-container">
+            <h2>Why Hire Me?</h2>
+          </header>
           <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
               <FontAwesomeIcon icon={faCode} />
@@ -68,7 +75,9 @@ const ContactPage = () => {
             <div className="contact-cta-container__text">
               <h3>Website Development</h3>
               <p>
-                5+ years commercial experience within small, medium and
+                {`${currentDate.getFullYear() - 2016}+`}
+                {` `}
+                years of commercial experience within small, medium and
                 enterprise level businesses.
                 {/* <a
                   href="https://api.whatsapp.com/send?phone=447462944899"
@@ -84,25 +93,26 @@ const ContactPage = () => {
               <FontAwesomeIcon icon={faPencil} />
             </div>
             <div className="contact-cta-container__text">
-              <h3>UI & Graphic Design</h3>
+              <h3>UI/UX + Graphic Design</h3>
               <p>
                 Graduated with a 2:1 from De Montfort University - a leading UK
                 university for Art & Design.
               </p>
             </div>
           </div>
-          {/* <div className="contact-cta-container">
+          <div className="contact-cta-container">
             <div className="contact-cta-container__icon">
-              <FontAwesomeIcon icon={faTag} />
+              <FontAwesomeIcon icon={faChartLine} />
             </div>
             <div className="contact-cta-container__text">
-              <h3>Upto 50% Off</h3>
+              <h3>CRO Testing</h3>
               <p>
-                This offer is for new clients only. Please email me with your
-                requirements for a FREE quote.
+                {`${currentDate.getFullYear() - 2019}+`}
+                {` `} years in A/B testing, multivariate testing, machine
+                learning, optimisation and personalisation.
               </p>
             </div>
-          </div> */}
+          </div>
         </aside>
         <section className="content-container__message-container">
           <header className="subheading-container">
