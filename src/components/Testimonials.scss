@@ -1,5 +1,10 @@
+main > .testomonials-container {
+  border-bottom: 2px solid #333;
+}
 .testomonials-container {
-  padding: 0 70px 75px 70px;
+  padding: 70px;
+  background-color: #111;
+  margin-bottom: 70px;
   .slick-dots li.slick-active {
     margin: 0 15px 0 5px;
     button {
@@ -40,7 +45,7 @@
     position: relative;
     position: relative;
     padding: 30px 20px 20px 60px;
-    background-color: #282828;
+    background-color: #222;
     border-radius: 8px;
     border: 2px solid #444;
     .review-container__text-container {
@@ -127,7 +132,8 @@ body.light {
 
 @media only screen and (max-width: 900px) {
   .testomonials-container {
-    padding: 0 20px 50px 20px;
+    padding: 30px 20px 40px 20px;
+    margin-bottom: 40px;
     .review-item {
       padding: 60px 20px 20px 20px;
       .review-container {

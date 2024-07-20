@@ -60,15 +60,15 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               {/* <img
-                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1688124335/saul_e3mjs7.jpg"
-                alt="Saul Gooding's selfie"
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/car-review_ewlz1v.jpg"
+                alt="Carla Cabeça's selfie"
                 width="80"
                 height="80"
               /> */}
               <AdvancedLazyLoad
-                imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1688124335/saul_e3mjs7"
-                imgALT="Saul Gooding's selfie"
-                backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80,e_blur:1000,f_auto,q_auto/v1688124335/saul_e3mjs7"
+                imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
+                imgALT="Carla Cabeça's selfie"
+                backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
                 imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
@@ -81,14 +81,23 @@ export const Testimonials = () => {
             </div>
             <section className="review-container__text-container">
               <p>
-                The first person I&apos;ll approach if I have a technical
-                question. Contructive and thorough code reviews which keeps the
-                team to a high standard.
+                Lloyd is exceptional at using HTML, CSS, and JavaScript to
+                deliver pixel perfect and responsive pages from our UI/UX
+                designs.
+                {/* I worked with Lloyd on the same Agile team at WOS Group. He is
+                  a very passionate and knowledgeable Front-End Developer. Also
+                  exceptional at using HTML, CSS, And JavaScript to deliver
+                  pixel perfect user interfaces and responsive content pages
+                  from our UI/UX designs. A natural problem solver, creative and
+                  easily approachable. Lloyd is a great asset to any company and
+                  he has my full recommendation. */}
               </p>
+              {/* <ReadMoreBtn text={"Read More"} /> */}
             </section>
             <section className="review-container__client-details">
-              <h2>Saul Gooding</h2>
-              <h3>Developer @ NEXT</h3>
+              <h2>Carla Cabeça</h2>
+              <h3>UI/UX Designer @ FARFETCH</h3>
+              {/* <h4>FARFETCH</h4> */}
             </section>
           </article>
         </div>
@@ -133,15 +142,15 @@ export const Testimonials = () => {
           <article className="review-container">
             <div className="review-container__image-container">
               {/* <img
-                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1655935855/img/car-review_ewlz1v.jpg"
-                alt="Carla Cabeça's selfie"
+                src="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1688124335/saul_e3mjs7.jpg"
+                alt="Saul Gooding's selfie"
                 width="80"
                 height="80"
               /> */}
               <AdvancedLazyLoad
-                imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
-                imgALT="Carla Cabeça's selfie"
-                backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:1000,f_auto,q_auto/v1655935855/img/car-review_ewlz1v"
+                imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1688124335/saul_e3mjs7"
+                imgALT="Saul Gooding's selfie"
+                backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80,e_blur:1000,f_auto,q_auto/v1688124335/saul_e3mjs7"
                 imgIdName={undefined}
                 elemName="testomonial"
                 imgTransparent={false}
@@ -154,23 +163,14 @@ export const Testimonials = () => {
             </div>
             <section className="review-container__text-container">
               <p>
-                Lloyd is exceptional at using HTML, CSS, and JavaScript to
-                deliver pixel perfect and responsive pages from our UI/UX
-                designs.
-                {/* I worked with Lloyd on the same Agile team at WOS Group. He is
-                  a very passionate and knowledgeable Front-End Developer. Also
-                  exceptional at using HTML, CSS, And JavaScript to deliver
-                  pixel perfect user interfaces and responsive content pages
-                  from our UI/UX designs. A natural problem solver, creative and
-                  easily approachable. Lloyd is a great asset to any company and
-                  he has my full recommendation. */}
+                The first person I&apos;ll approach if I have a technical
+                question. Contructive and thorough code reviews which keeps the
+                team to a high standard.
               </p>
-              {/* <ReadMoreBtn text={"Read More"} /> */}
             </section>
             <section className="review-container__client-details">
-              <h2>Carla Cabeça</h2>
-              <h3>UI/UX Designer @ FARFETCH</h3>
-              {/* <h4>FARFETCH</h4> */}
+              <h2>Saul Gooding</h2>
+              <h3>Developer @ NEXT</h3>
             </section>
           </article>
         </div>
