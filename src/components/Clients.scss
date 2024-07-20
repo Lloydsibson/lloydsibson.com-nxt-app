@@ -100,21 +100,21 @@
 }
 
 // LIGHT CLASS
-body.light {
-  .client-item {
-    img {
-      filter: brightness(0.5);
-    }
-  }
-  .clients .slick-slider {
-    button.slick-next:before {
-      filter: unset;
-    }
-    button.slick-prev:before {
-      filter: unset;
-    }
-  }
-}
+// body.light {
+//   .client-item {
+//     img {
+//       filter: brightness(0.5);
+//     }
+//   }
+//   // .clients .slick-slider {
+//   //   button.slick-next:before {
+//   //     filter: unset;
+//   //   }
+//   //   button.slick-prev:before {
+//   //     filter: unset;
+//   //   }
+//   // }
+// }
 
 // VWO TEST SLIDER ON CONTACT PAGE
 // .testomonials-container.clients {

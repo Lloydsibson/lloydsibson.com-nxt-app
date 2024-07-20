@@ -833,17 +833,14 @@ main {
 .page-title-container {
   display: block;
   position: relative;
-  background-color: #fdfdfd;
-  border-top: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
   padding: 65px 70px;
   // margin-right: -70px;
   // margin-left: -70px;
-  margin-bottom: 65px;
+  // margin-bottom: 65px;
   text-align: left;
   background-color: #252525;
-  border-top-color: #333;
-  border-bottom-color: #333;
   overflow: hidden;
   h1 {
     margin-top: 0;
@@ -867,7 +864,7 @@ main {
     padding: 30px 20px;
     // margin-right: -40px;
     // margin-left: -40px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     h1 {
       font-size: 2.2rem;
       margin-bottom: 0;
@@ -1043,4 +1040,5 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   padding-top: 40px;
   margin: 0 auto 40px auto;
+  border-bottom: 2px solid #333;
 }
