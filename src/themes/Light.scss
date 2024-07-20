@@ -396,6 +396,10 @@ body.light .testomonials-container .slick-dots li.slick-active button:before {
   background-color: $light-theme;
 }
 
+body.light .slick-dots li button:hover:before {
+  background-color: #174ea6;
+}
+
 // LINKS - PORTFOLIO
 body.light .portfolio-container__links-container {
   background-color: #000;
