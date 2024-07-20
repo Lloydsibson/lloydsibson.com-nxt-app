@@ -101,6 +101,13 @@ const PortfolioPage = () => {
       tags: ["Video", "Monetate"],
     },
     {
+      url: "https://codepen.io/lloydsibson/pen/xxzaBrb",
+      linkText: "Experian Test",
+      postedDate: new Date(2022, 11, 9),
+      icon: faCodepen,
+      tags: ["Slider", "Dynamic"],
+    },
+    {
       url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
       linkText: "RP Sensors",
       postedDate: new Date(2022, 8, 25),
@@ -128,20 +135,27 @@ const PortfolioPage = () => {
       icon: faFigma,
       tags: ["API", "UI", "COVID"],
     },
-    {
-      url: "https://www.beasportsclinic.co.uk/",
-      linkText: "Client Home Page",
-      postedDate: new Date(2021, 7, 29),
-      icon: faFigma,
-      tags: ["Sports", "Redesign"],
-    },
+    // {
+    //   url: "https://www.beasportsclinic.co.uk/",
+    //   linkText: "Client Home Page",
+    //   postedDate: new Date(2021, 7, 29),
+    //   icon: faFigma,
+    //   tags: ["Sports", "Redesign"],
+    // },
     {
       url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
-      linkText: "Client Wireframe",
-      postedDate: new Date(2021, 7, 19),
-      icon: faFigma,
-      tags: ["Wireframe", "Low Fidelity"],
+      linkText: "React Slick Slider",
+      postedDate: new Date(2017, 7, 19),
+      icon: faCodepen,
+      tags: ["🔥Hot", "10k+ Views"],
     },
+    // {
+    //   url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
+    //   linkText: "Client Wireframe",
+    //   postedDate: new Date(2021, 7, 19),
+    //   icon: faFigma,
+    //   tags: ["Wireframe", "Low Fidelity"],
+    // },
   ];
 
   // const LinkDataAdditional = [
@@ -222,7 +236,7 @@ const PortfolioPage = () => {
     const FourYears = <p>Posted 4 Years Ago</p>;
     const FiveYears = <p>Posted 5 Years Ago</p>;
 
-    const beyond = <p>5+ Years. Very old... 😅</p>;
+    const beyond = <p>Posted 5+ Years Ago</p>;
 
     if (daysSince === 0) {
       // console.log("today");
