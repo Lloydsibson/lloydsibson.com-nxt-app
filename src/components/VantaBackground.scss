@@ -1,0 +1,19 @@
+.vanta-container {
+  position: absolute;
+  top: -200px;
+  width: 100%;
+  left: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .vanta-container {
+    top: 0px;
+  }
+}
+
+// LIGHT MODE
+body.light {
+  .vanta-container {
+    filter: invert(1);
+  }
+}

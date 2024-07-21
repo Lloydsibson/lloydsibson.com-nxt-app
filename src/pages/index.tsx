@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Head from "next/head";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
-import VideoBackground from "../components/VideoBackground";
+//import VideoBackground from "../components/VideoBackground";
+import { VantaBackground } from "../components/VantaBackground";
 import { HPCarousel } from "../components/HPCarousel";
 import { useEffect } from "react";
 
@@ -9,7 +10,7 @@ import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 
 // import Image from "next/image";
 // import logoBackground from "/public/assets/logo-homepage.png";
-
+//
 // SEO
 
 // GA-4
@@ -78,7 +79,9 @@ const HomePage = () => {
           content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
         />
       </Head>
-      <VideoBackground />
+      <VantaBackground />
+      {/* <VideoBackground /> */}
+
       <section className="homepage container">
         <div className="homepage-container__text-container">
           <div className="text-inner-container">

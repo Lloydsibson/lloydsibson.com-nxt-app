@@ -149,3 +149,4 @@ import "../components/AnnoucementBanner.scss";
 import "../components/GitHubBadges.scss";
 import "../components/AdvancedLazyLoad.scss";
 import "../components/CiCd/CiCd.scss";
+import "../components/VantaBackground.scss";

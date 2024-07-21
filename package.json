@@ -37,7 +37,9 @@
     "react-slick": "^0.29.0",
     "sass": "^1.61.0",
     "slick-carousel": "^1.8.1",
-    "typescript": "5.0.4"
+    "three": "^0.121.0",
+    "typescript": "5.0.4",
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.24.7",
