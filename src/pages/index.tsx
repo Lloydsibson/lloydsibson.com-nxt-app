@@ -9,7 +9,7 @@ import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
 
 // import Image from "next/image";
 // import logoBackground from "/public/assets/logo-homepage.png";
-
+//
 // SEO
 
 // GA-4
@@ -78,7 +78,7 @@ const HomePage = () => {
           content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
         />
       </Head>
-      <VideoBackground />
+      {/* <VideoBackground /> */}
       <section className="homepage container">
         <div className="homepage-container__text-container">
           <div className="text-inner-container">
