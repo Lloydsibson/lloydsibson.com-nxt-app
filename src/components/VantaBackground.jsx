@@ -24,29 +24,6 @@ export const VantaBackground = () => {
       );
     }
 
-    // const reportWindowSize = () => {
-    //   console.log("FIRED RESIZE");
-    //   if (!vantaEffect) {
-    //     setVantaEffect(
-    //       WAVES({
-    //         el: vantaRef.current,
-    //         THREE: THREE,
-    //         mouseControls: true,
-    //         touchControls: true,
-    //         gyroControls: true,
-    //         minHeight: 900.0,
-    //         minWidth: 1340.0,
-    //         scale: 1.0,
-    //         scaleMobile: 1.0,
-    //         color: 0x111111,
-    //         effect: "resize",
-    //       })
-    //     );
-    //   }
-    // };
-
-    // window.addEventListener("resize", reportWindowSize);
-
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
