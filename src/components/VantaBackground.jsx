@@ -16,7 +16,7 @@ export const VantaBackground = () => {
           touchControls: false,
           gyroControls: false,
           minHeight: 800.0,
-          minWidth: 800.0,
+          minWidth: 1340.0,
           scale: 1.0,
           scaleMobile: 1.0,
           color: 0x111111,
@@ -28,7 +28,7 @@ export const VantaBackground = () => {
     };
   }, [vantaEffect]);
   return (
-    <div ref={vantaRef} className="vanta-container" style={{ top: "-130px" }}>
+    <div ref={vantaRef} className="vanta-container">
       {/* <p style={{ color: "#fff", paddingTop: "20px" }}>
         Animated website backgrounds in a few lines of code.
       </p> */}

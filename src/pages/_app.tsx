@@ -19,8 +19,6 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { withLDProvider } from "launchdarkly-react-client-sdk";
 
-import { VantaBackground } from "../components/VantaBackground";
-
 // import { Poppins } from "next/font/google";
 
 // const PoppinsFont = Poppins({
@@ -82,7 +80,6 @@ function App({ Component, pageProps }: any) {
         <CookieConsent />
         <div className={`page-scroll`}>
           <div className="page-container">
-            <VantaBackground />
             <Nav />
             <main>
               <Layout>
@@ -152,3 +149,4 @@ import "../components/AnnoucementBanner.scss";
 import "../components/GitHubBadges.scss";
 import "../components/AdvancedLazyLoad.scss";
 import "../components/CiCd/CiCd.scss";
+import "../components/VantaBackground.scss";
