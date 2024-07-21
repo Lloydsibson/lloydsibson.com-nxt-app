@@ -15,14 +15,15 @@ export const VantaBackground = () => {
           mouseControls: true,
           touchControls: true,
           gyroControls: true,
-          minHeight: 840.0,
-          minWidth: 1340.0,
+          // minHeight: 900.0,
+          // minWidth: 1340.0,
           scale: 1.0,
           scaleMobile: 1.0,
           color: 0x111111,
         })
       );
     }
+
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
