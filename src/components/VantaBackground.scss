@@ -11,3 +11,10 @@
     top: -73px;
   }
 }
+
+// LIGHT MODE
+body.light {
+  .vanta-container {
+    filter: invert(1);
+  }
+}
