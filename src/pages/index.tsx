@@ -98,7 +98,7 @@ const HomePage = () => {
               imgHeight={undefined}
               imgClassName={undefined}
               containerClassName="hp-image"
-              loadingAttr="lazy"
+              loadingAttr={undefined}
             />
             <h1>
               Front End <span>Dev & Designer</span>
