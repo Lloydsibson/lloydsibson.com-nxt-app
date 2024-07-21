@@ -150,6 +150,8 @@
 
 @media only screen and (max-width: 900px) {
   .homepage.container {
+    min-height: 75vh;
+    justify-content: center;
     .homepage-container__text-container {
       margin-bottom: 0;
     }
