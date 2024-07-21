@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 // import CvTwoPage from "../static/lloyd-sibson-ba-front-end-developer-cv-2021.pdf";
-import VideoBackground from "../components/VideoBackground";
+//import VideoBackground from "../components/VideoBackground";
 import { VantaBackground } from "../components/VantaBackground";
 import { HPCarousel } from "../components/HPCarousel";
 import { useEffect } from "react";
