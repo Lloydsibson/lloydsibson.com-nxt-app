@@ -118,10 +118,10 @@ const HomePage = () => {
               <div
                 className="btn-primary" // onClick={(e) => handleGetFreeQuoteTodayBtn(e)}
               >
-                <Link href="/contact" className="contact">
+                {/* <Link href="/contact" className="vwp contact">
                   Get a <span>FREE</span> quote today!
-                </Link>
-                <Link href="/portfolio" className="vwo portfolio">
+                </Link> */}
+                <Link href="/portfolio" className="portfolio">
                   Explore My Work
                 </Link>
                 {/* <a href={CvTwoPage} download>
