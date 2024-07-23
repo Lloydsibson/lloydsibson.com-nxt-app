@@ -513,7 +513,7 @@ $secondary-color: #6700da;
 
 // MOUSE - SELECTING TEXT - HIGHLIGHT COLOUR
 ::selection {
-  background: $secondary-color;
+  background: rgba(103, 0, 218, 0.5);
   color: $primary-color;
 }
 
