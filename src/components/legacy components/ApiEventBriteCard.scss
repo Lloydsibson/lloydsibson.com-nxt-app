@@ -160,7 +160,7 @@
   margin: 0 auto;
   text-align: center;
   line-height: 25px;
-  font-family: "Poppins", Helvetica, sans-serif;
+  // font-family: "Poppins", Helvetica, sans-serif;
 }
 
 .event-card.loading-card {
@@ -342,6 +342,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   text-transform: capitalize;
 }
 .card-cta {
@@ -369,7 +370,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-family: "Poppins", Helvetica, sans-serif;
+  // font-family: "Poppins", Helvetica, sans-serif;
 }
 
 .event-card.no-events .no-events-container img {
