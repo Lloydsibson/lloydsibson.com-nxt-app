@@ -25,6 +25,7 @@ const PoppinsFont = Poppins({
   weight: ["100", "300", "400", "500", "600", "700"],
   style: ["normal"],
   subsets: ["latin"],
+  fallback: ["helvetica", "sans-serif"],
 });
 
 function App({ Component, pageProps }: any) {
