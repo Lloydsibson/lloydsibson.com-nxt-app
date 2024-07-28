@@ -42,9 +42,10 @@ body {
 @media only screen and (max-width: 900px) {
   .bk-to-top-container {
     .bk-to-top-container__icon {
-      padding: 11px 13px;
+      padding: 11px 13.2px;
       svg {
         font-size: 1.3rem;
+        margin-bottom: -2px;
       }
     }
   }
