@@ -19,13 +19,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { withLDProvider } from "launchdarkly-react-client-sdk";
 
-// import { Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 
-// const PoppinsFont = Poppins({
-//   weight: ["100", "300", "400", "500", "600", "700"],
-//   style: ["normal", "italic"],
-//   subsets: ["devanagari", "latin", "latin-ext"],
-// });
+const PoppinsFont = Poppins({
+  weight: ["100", "300", "400", "500", "600", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+});
 
 function App({ Component, pageProps }: any) {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,16 +65,34 @@ function App({ Component, pageProps }: any) {
       {/* ---------- */}
       <Head>
         {/* FONT FAMILY ADDED */}
-        {/* <style jsx global>{`
-          body {
-            font-family: ${PoppinsFont};
-          }
-        `}</style> */}
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
       </Head>
+      <style jsx global>{`
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        span,
+        li,
+        a,
+        input,
+        textarea,
+        form,
+        button,
+        #cookie-message,
+        .skill-value,
+        #type-text input {
+          font-family: ${PoppinsFont.style.fontFamily};
+        }
+      `}</style>
       <Provider store={store}>
         <ClientsCurrentsTime />
         <CookieConsent />
