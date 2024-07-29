@@ -3,6 +3,13 @@ import { useRouter } from "next/router";
 
 import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
 
+// Extend the Window interface
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 const CookieConsent = () => {
   const [cookieMessage, setCookieMessage] = useState<boolean>(true);
   const router = useRouter();
@@ -53,6 +60,13 @@ const CookieConsent = () => {
   const CookieHandler = () => {
     createCookie("LloydsibsonCookiePolicy", "Accepted", 365);
     setCookieMessage(true);
+
+    // Fire Google Tag Manager
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: "cookieConsentAccepted" });
+    } else {
+      window.dataLayer = [{ event: "cookieConsentAccepted" }];
+    }
   };
 
   return (
