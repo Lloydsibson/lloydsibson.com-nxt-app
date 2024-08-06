@@ -9,7 +9,7 @@ import { PagePositionScrollBar } from "./PagePositionScrollBar";
 import { AnnouncementBanner } from "@/components/AnnoucementBanner";
 import { AdvancedLazyLoad } from "./AdvancedLazyLoad";
 
-import { useFlags } from "launchdarkly-react-client-sdk";
+// import { useFlags } from "launchdarkly-react-client-sdk";
 
 // import { WeatherAPI } from "./ApiWeather";
 import { LDToggle } from "./LDToggle";
@@ -18,7 +18,7 @@ import { LDToggleMobile } from "./LDToggle";
 export const Nav = () => {
   const router = useRouter();
 
-  const { darkMode } = useFlags();
+  // const { darkMode } = useFlags();
 
   const NavToggle = () => {
     document.body.classList.add("menu-open");
@@ -112,15 +112,21 @@ export const Nav = () => {
               <FontAwesomeIcon icon={faFigma} />
             </a>
           </li> */}
-
-          {darkMode ? (
+          {/* LAUNCH DARKLY */}
+          {/* {darkMode ? (
             <li>
               <LDToggle viewport={"desktop"} />
             </li>
-          ) : null}
+          ) : null} */}
+
+          <li>
+            <LDToggle viewport={"desktop"} />
+          </li>
         </ul>
       </nav>
-      {darkMode ? <LDToggleMobile viewport={"mobile"} /> : null}
+      {/* LAUNCH DARKLY */}
+      {/* {darkMode ? <LDToggleMobile viewport={"mobile"} /> : null} */}
+      <LDToggleMobile viewport={"mobile"} />
       <div id="nav-icon" onClick={NavToggle}>
         <span></span>
         <span></span>
