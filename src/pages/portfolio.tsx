@@ -143,7 +143,7 @@ const PortfolioPage = () => {
     //   tags: ["Sports", "Redesign"],
     // },
     {
-      url: "https://www.figma.com/file/L963Av0kWVoSCZr6qGQNMY/Bea's-Sports-Clinic---Homepage---Layout-Redesign---Low-Fi-Wireframe",
+      url: "https://codepen.io/lloydsibson/pen/yWPBXo",
       linkText: "React Slick Slider",
       postedDate: new Date(2017, 7, 19),
       icon: faCodepen,

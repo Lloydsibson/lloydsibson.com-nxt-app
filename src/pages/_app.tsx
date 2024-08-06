@@ -17,7 +17,7 @@ import { Footer } from "../components/Footer";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import { withLDProvider } from "launchdarkly-react-client-sdk";
+// import { withLDProvider } from "launchdarkly-react-client-sdk";
 
 import { Poppins } from "next/font/google";
 
@@ -121,17 +121,19 @@ function App({ Component, pageProps }: any) {
   );
 }
 
+export default App;
+
 // LAUNCH DARKLY WRAPPER
-export default withLDProvider({
-  clientSideID: `${process.env.NEXT_PUBLIC_LAUNCH_DARKLY_CLIENT_ID}`,
-  user: {
-    anonymous: true,
-  },
-  options: {
-    bootstrap: "localStorage",
-    diagnosticOptOut: false,
-  },
-})(App);
+// export default withLDProvider({
+//   clientSideID: `${process.env.NEXT_PUBLIC_LAUNCH_DARKLY_CLIENT_ID}`,
+//   user: {
+//     anonymous: true,
+//   },
+//   options: {
+//     bootstrap: "localStorage",
+//     diagnosticOptOut: false,
+//   },
+// })(App);
 
 // GLOBAL
 import "../styles/global.scss";
