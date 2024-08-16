@@ -185,7 +185,18 @@ const AboutPage = () => {
         </div>
         <div className="bio-container__bio">
           <div className="bio-info-container">
-            <h2 className="bio-info-container__name">Lloyd Sibson BA</h2>
+            <div className="bio-info-container__name">
+              <h2 className="bio-info-container-name">Lloyd Sibson BA</h2>
+              <svg
+                className="bio-info-container-svg"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                role="none"
+              >
+                <path d="M18.5 11c0 3.79-2.29 6.76-6.09 8.21l-.4.14-.38-.14C7.8 17.76 5.5 14.78 5.5 11V6.8L12 4.63l6.5 2.17V11zm-6.49-9L3 5v6c0 5 3.12 8.81 7.77 10.56L12 22l1.27-.44C17.9 19.81 21.01 16 21.01 11V5l-8.99-3zm-1.62 10.63L14.11 8h3.21l-5.85 7.28-.87 1.09-.99-.99-2.96-2.97 1.77-1.77 1.98 1.98z"></path>
+              </svg>
+            </div>
+
             <h3 className="bio-info-container__sub-heading">
               Front End Developer @ 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | CRO | Optimisation |
               React | JavaScript | CSS | HTML | UI/UX
@@ -212,7 +223,7 @@ const AboutPage = () => {
                   className="vwo linkedin"
                   href="https://www.linkedin.com/in/lloyd-sibson/"
                 >
-                  {/* <svg
+                  <svg
                     className="vwo linkedin-logo"
                     role="img"
                     xmlns="http://www.w3.org/2000/svg"
@@ -225,7 +236,13 @@ const AboutPage = () => {
                   >
                     <title>Linkedin Logo</title>
                     <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                  </svg> */}
+                  </svg>
+                  <span className="vwo view-text">View&nbsp;</span>LinkedIn
+                </a>
+                <a
+                  className="linkedin"
+                  href="https://www.linkedin.com/in/lloyd-sibson/"
+                >
                   View LinkedIn
                 </a>
               </div>
