@@ -942,12 +942,11 @@ body.light {
   .bio-container
     .bio-container__bio
     .bio-info-container
-    .btn-primary.bio-btn
-    a.vwo.linkedin {
-    padding: 0.7em 2.1em;
+    .bio-info-container__name
+    .bio-info-container-svg {
+    margin-top: 5.5px;
   }
 }
-
 // LIGHT MODE
 body.light {
   .bio-container
