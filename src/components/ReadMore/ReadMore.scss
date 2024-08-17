@@ -1,5 +1,6 @@
 .read-more-text {
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   display: -webkit-box;
   max-height: 112px;
@@ -15,7 +16,7 @@
   p {
     z-index: 2;
     position: relative;
-    line-height: 25px;
+    line-height: 35px;
     margin: 0 !important;
     font-size: 0.9rem;
     background-color: #6700da;
