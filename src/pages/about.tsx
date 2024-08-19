@@ -136,12 +136,12 @@ const AboutPage = () => {
           <AdvancedLazyLoad
             imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1724109679/British-gas-background_tb7wrd"
             imgALT="Looking after your world"
-            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1654419622/img/about-banner"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1724109679/British-gas-background_tb7wrd"
             imgIdName={undefined}
             elemName="header-banner-img-container"
             imgTransparent={false}
             imgWidth={"1320px"}
-            imgHeight={"330px"}
+            imgHeight={"489px"}
             imgClassName={undefined}
             containerClassName={undefined}
             loadingAttr="lazy"
