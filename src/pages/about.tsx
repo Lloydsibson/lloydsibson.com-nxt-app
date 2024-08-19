@@ -198,8 +198,9 @@ const AboutPage = () => {
             </div>
 
             <h3 className="bio-info-container__sub-heading">
-              CRO Specialist & Front End Developer @ British Gas ⚡ | A/B
-              Testing | Optimisation | React | JavaScript | CSS | HTML | UI/UX
+              CRO Specialist & Front End Developer @ <span>British Gas</span> ⚡
+              | A/B Testing | Optimisation | React | JavaScript | CSS | HTML |
+              UI/UX
             </h3>
             <p className="bio-info-container__country">
               United Kingdom •&nbsp;

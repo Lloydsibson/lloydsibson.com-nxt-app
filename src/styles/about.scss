@@ -105,6 +105,9 @@
         margin: 0;
         line-height: 25px;
         max-width: 535px;
+        span {
+          font-weight: 500;
+        }
       }
       .bio-info-container__country {
         margin: 5px auto 10px auto;
