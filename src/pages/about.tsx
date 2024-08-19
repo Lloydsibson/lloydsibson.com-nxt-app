@@ -277,7 +277,7 @@ const AboutPage = () => {
                 </div> */}
               </div>
               <h3>
-                <a href="https://www.next.co.uk/">British Gas</a>
+                <a href="https://www.britishgas.co.uk/">British Gas</a>
                 {/* <CalcDiffTwoDates
                   startDate={"08/02/2024"}
                   startYear={2024}
