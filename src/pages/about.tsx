@@ -134,8 +134,8 @@ const AboutPage = () => {
             }}
           ></div> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654419622/img/about-banner"
-            imgALT="Next - bring it on"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1724109679/British-gas-background_tb7wrd"
+            imgALT="Looking after your world"
             backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1654419622/img/about-banner"
             imgIdName={undefined}
             elemName="header-banner-img-container"
@@ -198,8 +198,8 @@ const AboutPage = () => {
             </div>
 
             <h3 className="bio-info-container__sub-heading">
-              Front End Developer @ 𝗡𝗘𝗫𝗧 🛍️ | A/B Testing | CRO | Optimisation |
-              React | JavaScript | CSS | HTML | UI/UX
+              CRO Specialist & Front End Developer @ British Gas ⚡ | A/B
+              Testing | Optimisation | React | JavaScript | CSS | HTML | UI/UX
             </h3>
             <p className="bio-info-container__country">
               United Kingdom •&nbsp;
@@ -258,8 +258,8 @@ const AboutPage = () => {
                   height="45"
                 /> */}
                 <AdvancedLazyLoad
-                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654419622/img/next-logo"
-                  imgALT="Nexts logo"
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1724109679/British-gas-logo_uj9q5p"
+                  imgALT="British gas logo"
                   backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/next-logo"
                   imgIdName={undefined}
                   elemName="bio-other-img-container"
@@ -276,12 +276,13 @@ const AboutPage = () => {
                 </div> */}
               </div>
               <h3>
-                <a href="https://www.next.co.uk/">Next</a>
-                <CalcDiffTwoDates
-                  startDate={"10/22/2021"}
-                  startYear={2021}
-                  startMonth={"Oct"}
-                />
+                <a href="https://www.next.co.uk/">British Gas</a>
+                {/* <CalcDiffTwoDates
+                  startDate={"08/02/2024"}
+                  startYear={2024}
+                  startMonth={"Sept"}
+                /> */}
+                <span className="role-total-years">Sept 2024 - Present</span>
               </h3>
             </div>
             <div className="bio-other-container__company">
@@ -293,9 +294,9 @@ const AboutPage = () => {
                   height="45"
                 /> */}
                 <AdvancedLazyLoad
-                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1692825994/shell-small-logo-opt_kdr0im"
-                  imgALT="Shells logo"
-                  backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1692825994/shell-small-logo-opt_kdr0im"
+                  imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654419622/img/next-logo"
+                  imgALT="Nexts logo"
+                  backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654419622/img/next-logo"
                   imgIdName={undefined}
                   elemName="bio-other-img-container"
                   imgTransparent={true}
@@ -311,8 +312,8 @@ const AboutPage = () => {
                 </div> */}
               </div>
               <h3>
-                <a href="https://www.shellenergy.co.uk/">Shell</a>
-                <span className="role-total-years">Mar 2021 - Oct 2021</span>
+                <a href="https://www.next.co.uk/">Next</a>
+                <span className="role-total-years">Oct 2021 - Aug 2024</span>
               </h3>
             </div>
             <div className="bio-other-container__education">
@@ -411,24 +412,25 @@ const AboutPage = () => {
           <h2>Summary</h2>
         </header>
         <p className="read-more-text">
-          As a Front End Developer at Next, I apply my technical and creative
-          skills to develop and test complex and user-friendly
-          websites/components for a leading clothing, footwear and home products
-          retailer. <br />
-          <br />I work within an agile team, using various languages, tools and
-          frameworks, such as React, TypeScript, JavaScript, CSS, HTML, Monetate
-          and Figma. I act as a point of escalation for front-end development
-          queries, plan and manage projects from inception to completion, and
-          contribute to the development of A/B tests, realising an uplift of
-          £10M.
+          As a CRO Speciaist and Front End Developer at British Gas, I apply my
+          technical and creative skills to design, execute, and manage of A/B
+          and multivariate tests for the UK&apos;s largest energy and home
+          services provider. <br />
+          <br />I work within a cross-functional team, using various languages,
+          tools and frameworks, such as React, jQuery, JavaScript, CSS, HTML,
+          Adobe Target, Adobe Analytics, and Figma. I act as a point of
+          escalation for front-end development queries, plan and manage projects
+          from inception to completion, contribute to the development of A/B
+          tests and make data-driven recommendations to stakeholders.
+          {/* realising an uplift of £10M. */}
           <br />
           <br />
-          Before joining Next, I worked as a Front End Developer for The Watches
-          of Switzerland Group, where I was the dedicated UK and USA Developer
-          for Rolex and the official representative for The WOS Group. I created
-          a bespoke website journey for Rolex, adhering to their strict design
-          and development requirements, and shipped features continuously into
-          production using an agile product development flow. <br />
+          Before joining British Gas, I worked as a Front End and CRO Developer
+          for Next, where I was responsible for the development of A/B tests,
+          using Monetate and Google Analytics; contributing to an uplift of
+          £25M. I regularly collaborated with product owners, business users and
+          an established team of internal and external developers.
+          <br />
           <br />I also founded and managed Monocode, an innovative digital
           agency, where I combined both creative and technical aspects of design
           and development to optimise clients’ online presence and brand
@@ -809,16 +811,16 @@ const AboutPage = () => {
               <p>A/B Testing</p>
             </div>
             <div className="tech-container__tech-info">
+              <h3>Adobe Target</h3>
+              <p>Variant Testing</p>
+            </div>
+            <div className="tech-container__tech-info">
               <h3>G. Analytics</h3>
               <p>Trends (UX)</p>
             </div>
             <div className="tech-container__tech-info">
-              <h3>Photoshop {currentYear}</h3>
-              <p>Designing</p>
-            </div>
-            <div className="tech-container__tech-info">
-              <h3>Google Suite</h3>
-              <p>Office Tools</p>
+              <h3>Adobe Analytics</h3>
+              <p>Data Analysis</p>
             </div>
           </div>
         </div>
