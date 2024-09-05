@@ -73,10 +73,12 @@ const HomePage = () => {
   return (
     <>
       <Head>
-        <title>Lloyd Sibson BA | Front-End Web Developer & Designer</title>
+        <title>
+          Lloyd Sibson BA | Front-End Web Developer, CRO Specialist & Designer
+        </title>
         <meta
           name="description"
-          content="Developer at NEXT with over 5+ years commerical experience | Worked with 200+ brands such as Rolex, Nike, Gucci & Adidas | Founder of Monocode & UI Developer at Arclight Music."
+          content="CRO Specialist & Developer at British Gas with over 5+ years commerical experience | Worked with 200+ brands such as Shell, Next & Rolex | Founder of Monocode & UI Developer at Arclight Music."
         />
       </Head>
       <VantaBackground />
@@ -110,8 +112,8 @@ const HomePage = () => {
           <div className="text-inner-other-container">
             <h3>Founder of Monocode</h3>
             <p>
-              I&apos;ve worked with over 200+ brands such as Rolex, Nike, Gucci
-              & Adidas. Founder of Monocode & UI Developer at Arclight Music.
+              I&apos;ve worked with over 200+ major brands such as Shell, Next &
+              Rolex. Founder of Monocode & UI Developer at Arclight Music.
               Supercharge your brand into its best digital self.
             </p>
             <div className="btn-container">

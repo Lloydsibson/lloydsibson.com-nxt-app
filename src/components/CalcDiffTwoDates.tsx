@@ -21,7 +21,14 @@ export const CalcDiffTwoDates = ({
       allYears--;
       partialMonths = partialMonths + 12;
     }
+    if (allYears === 0) {
+      return partialMonths > 0
+        ? `· ${partialMonths} ${partialMonths > 1 ? "mths" : "mth"}`
+        : "";
+    }
+
     var total =
+      "· " +
       allYears +
       `${allYears > 1 ? " yrs " : " yr "}` +
       `${
@@ -39,7 +46,7 @@ export const CalcDiffTwoDates = ({
 
   return (
     <span className="role-total-years">
-      {startMonth} {startYear} - Present ·{" "}
+      {startMonth} {startYear} - Present{" "}
       <span>{totalYearsAndMonthsCalc()}</span>
     </span>
   );
