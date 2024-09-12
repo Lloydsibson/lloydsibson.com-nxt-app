@@ -134,9 +134,9 @@ const AboutPage = () => {
             }}
           ></div> */}
           <AdvancedLazyLoad
-            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1724109679/British-gas-background_tb7wrd"
+            imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1726141498/bg-linkedin-banner_jasz1t"
             imgALT="Looking after your world"
-            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1724109679/British-gas-background_tb7wrd"
+            backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_500/e_blur:400,f_auto,q_auto/v1726141498/bg-linkedin-banner_jasz1t"
             imgIdName={undefined}
             elemName="header-banner-img-container"
             imgTransparent={false}
