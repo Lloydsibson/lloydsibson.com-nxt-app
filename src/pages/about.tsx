@@ -141,7 +141,7 @@ const AboutPage = () => {
             elemName="header-banner-img-container"
             imgTransparent={false}
             imgWidth={"1320px"}
-            imgHeight={"489px"}
+            imgHeight={"330px"}
             imgClassName={undefined}
             containerClassName={undefined}
             loadingAttr="lazy"
