@@ -413,31 +413,39 @@ const AboutPage = () => {
           <h2>Summary</h2>
         </header>
         <p className="read-more-text">
-          As a CRO Speciaist and Front End Developer at British Gas, I apply my
-          technical and creative skills to design, execute, and manage of A/B
-          and multivariate tests for the UK&apos;s largest energy and home
-          services provider. <br />
-          <br />I work within a cross-functional team, using various languages,
-          tools and frameworks, such as React, jQuery, JavaScript, CSS, HTML,
-          Adobe Target, Adobe Analytics, and Figma. I act as a point of
-          escalation for front-end development queries, plan and manage projects
-          from inception to completion, contribute to the development of A/B
-          tests and make data-driven recommendations to stakeholders.
-          {/* realising an uplift of £10M. */}
+          As a CRO Specialist and Front-End Developer at British Gas, I apply
+          both technical expertise and creative insights to design, implement,
+          and manage A/B and multivariate testing strategies using Adobe Target.
+          With a focus on optimising user experiences, I leverage test outcomes
+          and business insights to continuously enhance the digital journey for
+          the UK’s largest energy and home services provider.
           <br />
           <br />
-          Before joining British Gas, I worked as a Front End and CRO Developer
-          for Next, where I was responsible for the development of A/B tests,
-          using Monetate and Google Analytics; contributing to an uplift of
-          £25M. I regularly collaborated with product owners, business users and
-          an established team of internal and external developers.
+          In my current role, I write robust, clean, and well-documented code to
+          bring the visual elements of tests to life within Adobe Target,
+          ensuring cross-browser and cross-device compatibility. I collaborate
+          closely with cross-functional teams, including UX/UI designers,
+          product managers, and data analysts, to develop testing strategies
+          aligned with business goals. Additionally, I provide mentorship and
+          technical guidance to junior developers, while staying abreast of
+          industry trends and advancements in testing technologies.
           <br />
-          <br />I also founded and managed Monocode, an innovative digital
-          agency, where I combined both creative and technical aspects of design
-          and development to optimise clients’ online presence and brand
-          awareness. I have a BA (Hons) in Fine Art from De Montfort University,
-          and I am passionate about creating unique and engaging digital
-          experiences.
+          <br />
+          I am also responsible for interpreting test data and generating
+          comprehensive reports, transforming complex insights into actionable,
+          data-driven recommendations for stakeholders. Effective communication
+          is key, and I ensure that testing plans, progress, and results are
+          clearly conveyed to both technical and non-technical stakeholders.
+          <br />
+          <br />
+          Prior to British Gas, I worked as a CRO Developer and Front End
+          Developer at Next, where I was instrumental in driving a £25 million
+          uplift through A/B testing. I also founded Monocode, a digital agency
+          that blends creative and technical expertise to optimise client
+          websites and strengthen brand presence. With a BA (Hons) in Fine Art
+          from De Montfort University, I am passionate about delivering
+          engaging, innovative digital experiences that drive measurable
+          results.
         </p>
         <ReadMoreBtn text={"Read More"} />
       </section>
