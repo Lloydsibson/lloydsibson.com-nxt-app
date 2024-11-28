@@ -409,7 +409,7 @@ const AboutPage = () => {
             timescales. <br />
             <br />
             Lloyds front end dev skills are outstanding and he has received
-            flawing feedback from various stakeholders within the business
+            flawing feedback from various stakeholders within the business.
           </p>
           <ReadMoreBtn text={"Read More"} />
         </div>
