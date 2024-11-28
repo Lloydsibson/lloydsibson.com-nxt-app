@@ -368,9 +368,9 @@ const AboutPage = () => {
               loading="lazy"
             /> */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1654459494/img/martin-photo_ejatxf"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/f_auto,q_auto/v1732798923/monika-selfie_i0bie4"
               imgALT="selfie of Martin Jackson"
-              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1654459494/img/martin-photo_ejatxf"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_20/e_blur:50,f_auto,q_auto/v1732798923/monika-selfie_i0bie4"
               imgIdName={undefined}
               elemName="review-spotlight-img-container"
               imgTransparent={true}
@@ -382,27 +382,34 @@ const AboutPage = () => {
             />
           </div>
           <div className="reviewer-info">
-            <h3 className="reviewer-info__name">Martin Jackson</h3>
+            <h3 className="reviewer-info__name">Monika Aleksova-Stankova</h3>
             <h4 className="reviewer-info__job-title">
-              Scrum Master / Team Lead at NEXT
+              Analytics Lead @ British Gas
             </h4>
             <p className="reviewer-info__review-date">
-              May 13, 2022, Martin Managed Lloyd directly
+              Nov 28, 2024, Monika Managed Lloyd directly
             </p>
           </div>
         </div>
         <div className="recommendations-container__review">
           <p className="read-more-text">
-            Lloyd joined the team at Next and it didn&apos;t take long for him
-            to begin to show his potential. After becoming familiar with the
-            team&apos;s Agile processes he began to display superb technical
-            skills, and additionally has proven to be a real help to other
-            developers coming into the team.
+            Lloyd joined the business at the beginning of September 2024 and
+            ever since has shown a great work ethic, delivery at a very high
+            standard and the ability to work autonomously.
+            <span className="read-more-text__space">&nbsp;</span>
             <br />
             <br />
-            <span className="read-more-text__space">&nbsp;</span>Efficient,
-            skilled, prompt, approachable and knowledgeable, Lloyd is going to
-            be a valuable asset to any team that he is a part of.
+            Immediately he managed to fit well within the team as well as the
+            wider function. He has grasped Adobe Target very quickly and managed
+            to deliver on numerous AB tests since joining. All of the output was
+            thoroughly checked by him and there were no errors. <br />
+            <br />
+            His approach to work is very professional - always meeting
+            deadlines, working above and beyond in occasions where we have tight
+            timescales. <br />
+            <br />
+            Lloyds front end dev skills are outstanding and he has received
+            flawing feedback from various stakeholders within the business
           </p>
           <ReadMoreBtn text={"Read More"} />
         </div>
@@ -1000,7 +1007,8 @@ const AboutPage = () => {
             <div className="fun-facts-container__fun-facts gaming">
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Played</h3>
-              <span>{latestGamePlayed ? latestGamePlayed : "N/A"}</span>
+              {/* <span>{latestGamePlayed ? latestGamePlayed : "N/A"}</span> */}
+              <span>Astro Bot</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />
