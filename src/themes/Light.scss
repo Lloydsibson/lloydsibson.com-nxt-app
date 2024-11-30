@@ -333,6 +333,11 @@ body.light
   .skills-container
   .skills-container__dev-skills-container
   .skills-inner-container__skill-percentage-container
+  .skill-percentage,
+body.light
+  .skills-container
+  .skills-container__cro-skills-container
+  .skills-inner-container__skill-percentage-container
   .skill-percentage {
   background-color: $light-theme;
   border-color: $light-bg;
@@ -345,6 +350,10 @@ body.light
 body.light
   .skills-container
   .skills-container__dev-skills-container
+  .skills-inner-container__skill-percentage-container,
+body.light
+  .skills-container
+  .skills-container__cro-skills-container
   .skills-inner-container__skill-percentage-container {
   border-color: $light-secondary-text;
 }
@@ -357,6 +366,11 @@ body.light
 body.light
   .skills-container
   .skills-container__dev-skills-container
+  .skills-inner-container__skill-title-container
+  .skill-value,
+body.light
+  .skills-container
+  .skills-container__cro-skills-container
   .skills-inner-container__skill-title-container
   .skill-value {
   color: $light-secondary-text;
