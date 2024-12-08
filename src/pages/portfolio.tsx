@@ -380,22 +380,29 @@ const PortfolioPage = () => {
                   Arclight Music
                 </a> */}
                 <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://arclightmusic.lloydsibson.com/"
+                >
+                  Arclight Music (Legacy Site)
+                </a>
+                {/* <a
                   href="https://arclightmusic.co.uk/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   Arclight Music
-                </a>
+                </a> */}
                 <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
-                  <CalcDiffTwoDates
+                  {/* <CalcDiffTwoDates
                     startDate={"01/01/2019"}
                     startYear={2019}
                     startMonth={"Jan"}
-                  />
-                  {/* <span className="role-total-years">Jan 2019 - Dec 2022</span> */}
+                  /> */}
+                  <span className="role-total-years">Jan 2019 - Nov 2023 </span>
                 </h5>
                 <h6 className="vt-role-other__industry">Arts & Culture</h6>
               </div>
