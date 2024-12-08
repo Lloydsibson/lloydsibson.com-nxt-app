@@ -104,7 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           href="https://digitalaccessibilitytraining.org"
         >
           <p className="announcement-banner-container__message">
-            &#127881; Recently Completed:&nbsp;
+            &#127881; Completed Course:&nbsp;
             <span>
               DAC Certificate for Accessible Awareness & Understanding
             </span>
