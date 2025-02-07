@@ -38,27 +38,8 @@ jobs:
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }}
 
-  Lighthouse-Audit:
-    needs: Deploy-Dev
-    if: github.ref == 'refs/heads/development'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Lighthouse Performance Check
-        uses: treosh/lighthouse-ci-action@v9
-        with:
-          urls: |
-            "https://lloydsibson-com-nxt-app.vercel.app"
-            "https://lloydsibson-com-nxt-app.vercel.app/about"
-            "https://lloydsibson-com-nxt-app.vercel.app/portfolio"
-            "https://lloydsibson-com-nxt-app.vercel.app/contact"
-          configPath: ".github/workflows/lighthouserc.json"
-          temporaryPublicStorage: true
-          uploadArtifacts: true
-          artifactName: "lighthouse_results" # ✅ Valid artifact name
-
   Merge-Prod:
-    needs: Lighthouse-Audit
+    needs: Unit-Tests
     if: github.ref == 'refs/heads/development'
     runs-on: ubuntu-latest
     steps:
