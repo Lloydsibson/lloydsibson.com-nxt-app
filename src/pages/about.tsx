@@ -921,7 +921,7 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
-      <div className="custom-divider"></div>
+      {/* <div className="custom-divider"></div>
       <section className="cicd-container">
         <header className="subheading-container">
           <h2>Website CI/CD</h2>
@@ -944,7 +944,7 @@ const AboutPage = () => {
             View GitHub Actions
           </Link>
         </div>
-      </section>
+      </section> */}
       <div className="custom-divider"></div>
       <div className="tech-stack-container other">
         {/* <section className="tech-stack-container__info-container">
