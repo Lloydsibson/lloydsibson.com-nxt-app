@@ -55,6 +55,7 @@ jobs:
           configPath: ".github/workflows/lighthouserc.json"
           temporaryPublicStorage: true
           uploadArtifacts: true
+          artifactName: "lighthouse_results" # ✅ Valid artifact name
 
   Merge-Prod:
     needs: Lighthouse-Audit
