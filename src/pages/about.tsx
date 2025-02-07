@@ -198,9 +198,9 @@ const AboutPage = () => {
             </div>
 
             <h3 className="bio-info-container__sub-heading">
-              CRO Specialist & Front End Developer @ <span>British Gas</span> ⚡
-              | A/B Testing | Optimisation | React | JavaScript | CSS | HTML |
-              UI/UX
+              CRO Developer & UI/UX Designer @ <span>British Gas</span> ⚡ | A/B
+              Testing | Optimisation | Adobe Target | React | JavaScript | CSS |
+              HTML
             </h3>
             <p className="bio-info-container__country">
               United Kingdom •&nbsp;
@@ -420,9 +420,9 @@ const AboutPage = () => {
           <h2>Summary</h2>
         </header>
         <p className="read-more-text">
-          As a CRO Specialist and Front-End Developer at British Gas, I apply
-          both technical expertise and creative insights to design, implement,
-          and manage A/B and multivariate testing strategies using Adobe Target.
+          As a CRO Developer & UI/UX Designer at British Gas, I apply both
+          technical expertise and creative insights to design, implement, and
+          manage A/B and multivariate testing strategies using Adobe Target.
           With a focus on optimising user experiences, I leverage test outcomes
           and business insights to continuously enhance the digital journey for
           the UK’s largest energy and home services provider.
