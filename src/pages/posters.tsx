@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const PostersPage = () => {
   useEffect(() => {
-    document.body.classList.add("portfolio-page"); // Add your desired class here
+    document.body.classList.add("poster-page"); // Add your desired class here
 
     // AdvancedLazyLoad
     const blurredImageDivs = document.querySelectorAll(".blurred-img");
@@ -23,7 +23,7 @@ const PostersPage = () => {
       }
     });
     return () => {
-      document.body.classList.remove("portfolio-page"); // Remove the class when the component unmounts
+      document.body.classList.remove("poster-page"); // Remove the class when the component unmounts
 
       // AdvancedLazyLoad
       blurredImageDivs.forEach((div) => {
