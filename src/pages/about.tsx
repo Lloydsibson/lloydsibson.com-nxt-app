@@ -198,7 +198,7 @@ const AboutPage = () => {
             </div>
 
             <h3 className="bio-info-container__sub-heading">
-              CRO Developer & UI/UX Designer @ <span>British Gas</span> ⚡ A/B
+              CRO & Front End Developer @ <span>British Gas</span> ⚡ A/B
               Testing | Optimisation | Adobe Target | React | JavaScript | CSS |
               HTML
             </h3>
