@@ -79,7 +79,7 @@ const HomePage = () => {
         </title>
         <meta
           name="description"
-          content="CRO Developer & UI/UX Designer at British Gas with over 5+ years commerical experience | Worked with 200+ brands such as Shell, Next & Rolex | Founder of Monocode & UI Developer at Arclight Music."
+          content="CRO & Front End Developer at British Gas with over 5+ years commerical experience | Worked with 200+ brands such as Shell, Next & Rolex | Founder of Monocode & UI Developer at Arclight Music."
         />
       </Head>
       <VantaBackground />
