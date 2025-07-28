@@ -164,9 +164,9 @@ const AboutPage = () => {
               }}
             ></div> */}
             <AdvancedLazyLoad
-              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1747640740/profile-photo-25_pdlzda"
-              imgALT="Lloyd Sibson in office"
-              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:300,f_auto,q_auto/v1747640740/profile-photo-25_pdlzda"
+              imgURL="https://res.cloudinary.com/cloudinary-ls-images/image/upload/v1753712385/linkedin-photo-1000x1000-crop_eqebwu"
+              imgALT="Lloyd Sibson outdoor photo"
+              backgroundImg="https://res.cloudinary.com/cloudinary-ls-images/image/upload/w_80/e_blur:300,f_auto,q_auto/v1753712385/linkedin-photo-1000x1000-crop_eqebwu"
               imgIdName={undefined}
               elemName="profile-img-container"
               imgTransparent={false}
