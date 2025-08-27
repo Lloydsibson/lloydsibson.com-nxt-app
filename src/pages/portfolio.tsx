@@ -378,6 +378,7 @@ const PortfolioPage = () => {
             <div className="vt-role-container__role">
               <h3 className="vt-role-title">UI Developer</h3>
               <h4 className="vt-role-company-name">
+                Arclight Music
                 {/* Github:&nbsp;
                 <a
                   target="_blank"
@@ -386,7 +387,7 @@ const PortfolioPage = () => {
                 >
                   Arclight Music
                 </a> */}
-                <a
+                {/* <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://arclightmusic.lloydsibson.com/"
@@ -400,7 +401,7 @@ const PortfolioPage = () => {
                 >
                   Arclight Music
                 </a> */}
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+                {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} /> */}
               </h4>
               <div className="vt-role-other">
                 <h5 className="vt-role-other__date">
