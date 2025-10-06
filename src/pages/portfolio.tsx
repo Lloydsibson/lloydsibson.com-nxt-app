@@ -8,7 +8,8 @@ import Head from "next/head";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFigma } from "@fortawesome/free-brands-svg-icons";
 import { faCodepen } from "@fortawesome/free-brands-svg-icons";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+//import { faArrowUpRightFromSquare, faGlobe } from "@fortawesome/free-solid-svg-icons";
 // import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 // import { faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -59,6 +60,13 @@ const PortfolioPage = () => {
   }, []);
   const LinkData = [
     {
+      url: "https://www.fallingbelow.com/",
+      linkText: "Falling Below",
+      postedDate: new Date(2025, 9, 6),
+      icon: faGlobe,
+      tags: ["Website", "Band"],
+    },
+    {
       url: "https://www.figma.com/design/pmXiOPl70TX3BC5m0lFFSp/Falling-Below---Website?node-id=0-1&t=OodygTvqRjF5uXve-1",
       linkText: "Website Re-Design",
       postedDate: new Date(2025, 4, 19),
@@ -86,13 +94,13 @@ const PortfolioPage = () => {
       icon: faCodepen,
       tags: ["Credit", "Accessibility"],
     },
-    {
-      url: "https://codepen.io/lloydsibson/pen/MWReOgE",
-      linkText: "FashionPay Accordion",
-      postedDate: new Date(2024, 2, 12),
-      icon: faCodepen,
-      tags: ["Payment", "Accordion"],
-    },
+    // {
+    //   url: "https://codepen.io/lloydsibson/pen/MWReOgE",
+    //   linkText: "FashionPay Accordion",
+    //   postedDate: new Date(2024, 2, 12),
+    //   icon: faCodepen,
+    //   tags: ["Payment", "Accordion"],
+    // },
     {
       url: "https://www.figma.com/file/RBoplwmRErJYzx54ZBG2kH/Cookie-Banner?type=design&node-id=0%3A1&mode=design&t=5QBWrvZQCXafsYzq-1",
       linkText: "Cookie Banner",
@@ -378,15 +386,14 @@ const PortfolioPage = () => {
             <div className="vt-role-container__role">
               <h3 className="vt-role-title">UI Developer</h3>
               <h4 className="vt-role-company-name">
-                Arclight Music
-                {/* Github:&nbsp;
+                {/* Arclight Music */}
                 <a
                   target="_blank"
                   rel="noreferrer"
                   href="https://github.com/Lloydsibson/arclightmusic.com"
                 >
-                  Arclight Music
-                </a> */}
+                  Arclight Music (Legacy Repo)
+                </a>
                 {/* <a
                   target="_blank"
                   rel="noreferrer"
