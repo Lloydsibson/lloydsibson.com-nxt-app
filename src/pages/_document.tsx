@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-sync-scripts */
 import { Html, Head, Main, NextScript } from "next/document";
 import Script from "next/script";
+import { AnnouncementBanner } from "@/components/AnnoucementBanner";
 
 export default function Document() {
   return (
@@ -98,7 +99,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         ></noscript>
         <div className="website-background"></div>
-        <a
+        <AnnouncementBanner viewport="desktop" />
+        {/* <a
           className="announcement-banner-container desktop"
           target="_blank"
           href="https://digitalaccessibilitytraining.org"
@@ -109,7 +111,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
               DAC Certificate for Accessible Awareness & Understanding
             </span>
           </p>
-        </a>
+        </a> */}
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Main />
         <NextScript />

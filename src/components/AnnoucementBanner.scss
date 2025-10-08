@@ -32,6 +32,7 @@
   max-height: 45px;
   overflow: hidden;
   color: #fff;
+  text-align: center;
 }
 
 .announcement-banner-container__message > span {
@@ -70,7 +71,7 @@
   }
 }
 
-@media (max-height: 940px) {
+@media (max-height: 992px) {
   .announcement-banner-container.desktop {
     display: none;
   }

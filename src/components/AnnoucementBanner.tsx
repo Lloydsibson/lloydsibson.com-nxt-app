@@ -10,11 +10,11 @@ export const AnnouncementBanner = ({ viewport }: Props) => {
     <a
       className={`announcement-banner-container ${viewport}`}
       target="_blank"
-      href="https://digitalaccessibilitytraining.org"
+      href="https://www.instagram.com/lloydfallingbelow/"
     >
       <p className="announcement-banner-container__message">
-        &#127881; Completed Course:&nbsp;
-        <span>DAC Certificate for Accessible Awareness & Understanding</span>
+        ⬆️&nbsp;&nbsp;2,000 Followers Reached:&nbsp;
+        <span>Instagram</span>
       </p>
     </a>
   );
