@@ -127,7 +127,7 @@ export const Testimonials = () => {
             <section className="review-container__text-container">
               <p>
                 Awesome guy to work with, he&apos;s done an incredible job on my
-                website and the ongoing design. Would 10/10 recomend!!
+                website and the ongoing design. Would 10/10 recommend!!
               </p>
               {/* <ReadMoreBtn text={"Read More"} /> */}
             </section>
