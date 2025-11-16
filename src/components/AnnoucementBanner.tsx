@@ -10,7 +10,7 @@ export const AnnouncementBanner = ({ viewport }: Props) => {
     <a
       className={`announcement-banner-container ${viewport}`}
       target="_blank"
-      href="https://www.instagram.com/lloydfallingbelow/"
+      href="https://www.instagram.com/lloydsibson"
     >
       <p className="announcement-banner-container__message">
         ⬆️&nbsp;&nbsp;2,000 Followers Reached:&nbsp;
