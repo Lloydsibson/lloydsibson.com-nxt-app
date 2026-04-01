@@ -18,13 +18,9 @@ import { ReadMoreBtn } from "../components/ReadMore/ReadMore";
 import { CalcDiffTwoDates } from "../components/CalcDiffTwoDates";
 // import { PlexRSSFeed } from "../components/PlexWatchListFeed";
 import { AdvancedLazyLoad } from "@/components/AdvancedLazyLoad";
-import { CiCd } from "@/components/CiCd/CiCd";
-
-import scrapedData from "../../scrapedData.json";
+// import { CiCd } from "@/components/CiCd/CiCd";
 
 const AboutPage = () => {
-  const latestGamePlayed = scrapedData?.[0]?.data?.[0] ?? null;
-
   useEffect(() => {
     document.body.classList.add("about-page"); // Add your desired class here
 
@@ -74,7 +70,7 @@ const AboutPage = () => {
     Weekday1 = Weekday1 > 5 ? 5 : Weekday1; // only count weekdays
     Weekday2 = Weekday2 > 5 ? 5 : Weekday2;
     Weeks = Math.floor(
-      (currentDate.getTime() - startDate.getTime()) / 604800000
+      (currentDate.getTime() - startDate.getTime()) / 604800000,
     );
     if (Weekday1 < Weekday2) {
       //Equal to makes it reduce 5 days
@@ -540,7 +536,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2016) / 2
+                    (currentDate.getFullYear() - 2016) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -559,7 +555,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2016) / 2
+                    (currentDate.getFullYear() - 2016) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -578,7 +574,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2020) / 2
+                    (currentDate.getFullYear() - 2020) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -596,7 +592,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2022) / 2
+                    (currentDate.getFullYear() - 2022) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -621,7 +617,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2015) / 2
+                    (currentDate.getFullYear() - 2015) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -639,7 +635,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2015) / 2
+                    (currentDate.getFullYear() - 2015) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -657,7 +653,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2019) / 2
+                    (currentDate.getFullYear() - 2019) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -676,7 +672,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2021) / 2
+                    (currentDate.getFullYear() - 2021) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -701,7 +697,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2019) / 2
+                    (currentDate.getFullYear() - 2019) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -719,7 +715,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2021) / 2
+                    (currentDate.getFullYear() - 2021) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -738,7 +734,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2021) / 2
+                    (currentDate.getFullYear() - 2021) / 2,
                   )}0%`,
                 }}
               ></div>
@@ -756,7 +752,7 @@ const AboutPage = () => {
                 className="skill-percentage"
                 style={{
                   width: `${Math.floor(
-                    (currentDate.getFullYear() - 2021) / 2
+                    (currentDate.getFullYear() - 2021) / 2,
                   )}0%`,
                 }}
               ></div>
