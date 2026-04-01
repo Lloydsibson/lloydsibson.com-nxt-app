@@ -8,8 +8,7 @@
     "build": "next build",
     "test": "jest",
     "start": "next start",
-    "lint": "next lint",
-    "knip": "knip"
+    "lint": "next lint"
   },
   "dependencies": {
     "@formspree/react": "^2.4.1",
