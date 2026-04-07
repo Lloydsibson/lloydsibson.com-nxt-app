@@ -13,7 +13,7 @@ export const AnnouncementBanner = ({ viewport }: Props) => {
       href="https://www.instagram.com/lloydsibson"
     >
       <p className="announcement-banner-container__message">
-        ⬆️&nbsp;&nbsp;2,000 Followers Reached:&nbsp;
+        ⬆️&nbsp;&nbsp;1,750 Followers Reached:&nbsp;
         <span>Instagram</span>
       </p>
     </a>

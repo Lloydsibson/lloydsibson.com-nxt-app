@@ -79,7 +79,7 @@ const HomePage = () => {
         </title>
         <meta
           name="description"
-          content="CRO & Front End Developer at British Gas with over 5+ years commerical experience | Worked with 200+ brands such as Shell, Next & Rolex | Founder of Monocode & UI Developer at Arclight Music."
+          content="CRO & Front End Developer at British Gas with over 5+ years commerical experience | Worked with 200+ brands such as Shell, Next & Rolex | AI enthusiast & founder of Monocode."
         />
       </Head>
       <VantaBackground />
@@ -113,8 +113,8 @@ const HomePage = () => {
           <div className="text-inner-other-container">
             <h3>Founder of Monocode</h3>
             <p>
-              I&apos;ve worked with over 200+ major brands such as Shell, Next &
-              Rolex. Founder of Monocode & UI Developer at Arclight Music.
+              I&apos;ve worked with over 200+ major brands such as British Gas,
+              Shell, Next & Rolex. AI enthusiast & founder of Monocode.
               Supercharge your brand into its best digital self.
             </p>
             <div className="btn-container">

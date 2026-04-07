@@ -66,6 +66,23 @@ const PortfolioPage = () => {
     //   icon: faGlobe,
     //   tags: ["Website", "Band"],
     // },
+
+    {
+      url: "https://www.dk-electrical.com/",
+      linkText: "DK-Electrical.com",
+      postedDate: new Date(2026, 3, 6),
+      icon: faGlobe,
+      tags: ["Client", "Website", ""],
+    },
+
+    {
+      url: "https://www.figma.com/design/ucgCSKZCllli9899o3TOOP/DK-Electrical-Website--One-Page-?node-id=0-1&t=TKoiivpPHUjZBlVY-1",
+      linkText: "Website Design",
+      postedDate: new Date(2026, 2, 26),
+      icon: faFigma,
+      tags: ["Design", "UI", ""],
+    },
+
     {
       url: "https://www.figma.com/design/pmXiOPl70TX3BC5m0lFFSp/Falling-Below---Website?node-id=0-1&t=OodygTvqRjF5uXve-1",
       linkText: "Website Re-Design",
@@ -115,20 +132,20 @@ const PortfolioPage = () => {
       icon: faYoutube,
       tags: ["Video", "Monetate"],
     },
-    {
-      url: "https://codepen.io/lloydsibson/pen/xxzaBrb",
-      linkText: "Experian Test",
-      postedDate: new Date(2022, 11, 9),
-      icon: faCodepen,
-      tags: ["Slider", "Dynamic"],
-    },
-    {
-      url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
-      linkText: "RP Sensors",
-      postedDate: new Date(2022, 8, 25),
-      icon: faFigma,
-      tags: ["UI", "Design", "Tablet"],
-    },
+    // {
+    //   url: "https://codepen.io/lloydsibson/pen/xxzaBrb",
+    //   linkText: "Experian Test",
+    //   postedDate: new Date(2022, 11, 9),
+    //   icon: faCodepen,
+    //   tags: ["Slider", "Dynamic"],
+    // },
+    // {
+    //   url: "https://www.figma.com/file/USiOpYPNZButiqepyshZX7/Raspberry-PI-Sensor-Page---%2Frp?node-id=0%3A1",
+    //   linkText: "RP Sensors",
+    //   postedDate: new Date(2022, 8, 25),
+    //   icon: faFigma,
+    //   tags: ["UI", "Design", "Tablet"],
+    // },
     {
       url: "https://codepen.io/lloydsibson/pen/bGBqKpN",
       linkText: "Eventbrite API",
