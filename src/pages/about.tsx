@@ -1027,7 +1027,7 @@ const AboutPage = () => {
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Played</h3>
               {/* <span>{latestGamePlayed ? latestGamePlayed : "N/A"}</span> */}
-              <span>DOOM: Dark Age</span>
+              <span>Expedition 33</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />
