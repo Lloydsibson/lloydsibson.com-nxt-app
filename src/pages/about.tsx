@@ -194,9 +194,8 @@ const AboutPage = () => {
             </div>
 
             <h3 className="bio-info-container__sub-heading">
-              Experimentation Engineer | CRO Developer @{" "}
-              <span>British Gas</span> ⚡ | Adobe Target | Monetate | A/B
-              Testing | AI | Personalisation
+              CRO Developer @ <span>British Gas</span> ⚡ | Web Dev | UI/UX |
+              Adobe Target | Monetate | A/B Testing | AI | Personalisation
             </h3>
             <p className="bio-info-container__country">
               United Kingdom •&nbsp;
@@ -416,12 +415,12 @@ const AboutPage = () => {
           <h2>Summary</h2>
         </header>
         <p className="read-more-text">
-          I&apos;m a Experimentation Engineer and Front-End Developer who
-          bridges the gap between creative design and technical engineering.
-          With a background in Fine Art and deep expertise in enterprise-level
-          personalisation platforms like Adobe Target and Monetate, I build
-          scalable, high-performance experimentation strategies for the
-          UK&apos;s largest digital brands.
+          I&apos;m a CRO Developer and Front-End Developer who bridges the gap
+          between creative design and technical engineering. With a background
+          in Fine Art and deep expertise in enterprise-level personalisation
+          platforms like Adobe Target and Monetate, I build scalable,
+          high-performance experimentation strategies for the UK&apos;s largest
+          digital brands.
           <br />
           <br />
           Unlike traditional CRO specialists who rely on drag-and-drop tools, I
@@ -1027,7 +1026,7 @@ const AboutPage = () => {
               <FontAwesomeIcon icon={faGamepad} />
               <h3>Recently Played</h3>
               {/* <span>{latestGamePlayed ? latestGamePlayed : "N/A"}</span> */}
-              <span>Expedition 33</span>
+              <span>Pragmata</span>
             </div>
             <div className="fun-facts-container__fun-facts">
               <FontAwesomeIcon icon={faDumbbell} />

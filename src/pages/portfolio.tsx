@@ -77,10 +77,10 @@ const PortfolioPage = () => {
 
     {
       url: "https://www.figma.com/design/ucgCSKZCllli9899o3TOOP/DK-Electrical-Website--One-Page-?node-id=0-1&t=TKoiivpPHUjZBlVY-1",
-      linkText: "Website Design",
+      linkText: "DK Website Design",
       postedDate: new Date(2026, 2, 26),
       icon: faFigma,
-      tags: ["Design", "UI", ""],
+      tags: ["Design", "UI", "Client"],
     },
 
     {
